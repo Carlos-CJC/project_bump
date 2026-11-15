@@ -30,11 +30,21 @@
  *   [status] ...                    每 10s 打印一次状态
  *   [scan] ...                      扫描采样（全局限流 500ms 一条，便于调试）
  *   {"event":"encounter",...}       偶遇事件（JSON，一行一条）
+ *
+ * 构建模式（见 platformio.ini）
+ *   - nanorp2040connect      ：真实广播 + 扫描。
+ *   - nanorp2040connect_mock ：在真实广播之外，注入确定性的模拟对端样本。模拟样本走与
+ *     真实扫描相同的解析/判定流水线，串口以 [mock] 前缀输出，偶遇事件带 "sim":true。
+ *     用于只有一块板时的演示与中期报告，确保模拟数据不会被误当成实测。
  */
 
 #include <Arduino.h>
 #include <ArduinoBLE.h>
 #include <stdarg.h>
+
+#ifndef BUMP_MOCK
+#define BUMP_MOCK 0
+#endif
 
 // ---------------------------------------------------------------------------
 // BLE 协议常量
@@ -49,6 +59,8 @@ static const int8_t TX_POWER_CAL = -4;        // 标称发射功率(dBm)，尚�
 
 // 厂商数据中 Company ID 之后的载荷长度：ver(1) + short_id(6) + flags(1) + tx_power(1)
 static const uint8_t MFG_PAYLOAD_LEN = 9;
+// 完整厂商数据帧长度：Company ID(2) + 载荷
+static const uint8_t MFG_FRAME_LEN = MFG_PAYLOAD_LEN + 2;
 
 // ---------------------------------------------------------------------------
 // 偶遇判定参数
@@ -126,6 +138,29 @@ static void formatId(const uint8_t* id, char* out) {
   out[12] = '\0';
 }
 
+/** 将字节数组转成小写十六进制字符串；调用方缓冲区至少 2*len+1 字节。 */
+static void hexString(const uint8_t* data, int len, char* out) {
+  static const char hex[] = "0123456789abcdef";
+  for (int i = 0; i < len; i++) {
+    out[i * 2] = hex[data[i] >> 4];
+    out[i * 2 + 1] = hex[data[i] & 0x0F];
+  }
+  out[len * 2] = '\0';
+}
+
+/**
+ * 组装一个完整的厂商数据帧（含 Company ID）。
+ * 真实广播与 mock 注入共用同一布局，保证接收端解析路径一致。
+ */
+static void buildMfgFrame(const uint8_t* id, uint8_t* out) {
+  out[0] = COMPANY_ID & 0xFF;
+  out[1] = COMPANY_ID >> 8;
+  out[2] = PROTO_VER;
+  memcpy(&out[3], id, 6);
+  out[9] = FLAG_JOINABLE;
+  out[10] = (uint8_t)TX_POWER_CAL;
+}
+
 /**
  * 生成匿名短 ID。
  * 熵源为 micros() 与两个悬空模拟引脚的噪声，因此每次上电都不同；
@@ -149,12 +184,10 @@ static void makeShortId(uint8_t* id) {
  * 必须是 static（生命周期贯穿整个程序），否则广播时读到的是已释放的栈内存。
  */
 static void applyAdvertisingData() {
-  static uint8_t payload[MFG_PAYLOAD_LEN];
-  payload[0] = PROTO_VER;
-  memcpy(&payload[1], shortId, 6);
-  payload[7] = FLAG_JOINABLE;
-  payload[8] = (uint8_t)TX_POWER_CAL;
-  BLE.setManufacturerData(COMPANY_ID, payload, sizeof(payload));
+  static uint8_t frame[MFG_FRAME_LEN];
+  buildMfgFrame(shortId, frame);
+  // 传 &frame[2]：库会自行在载荷前加上 Company ID
+  BLE.setManufacturerData(COMPANY_ID, &frame[2], MFG_PAYLOAD_LEN);
 }
 
 /**
@@ -230,6 +263,59 @@ static Peer* findOrCreatePeer(const uint8_t* id, uint32_t now) {
 }
 
 // ---------------------------------------------------------------------------
+// Mock 场景（仅 BUMP_MOCK=1 时编译）
+// ---------------------------------------------------------------------------
+
+#if BUMP_MOCK
+
+static const uint8_t MOCK_PEER_A[6] = {0xA1, 0x00, 0x00, 0x00, 0x00, 0x01};
+static const uint8_t MOCK_PEER_B[6] = {0xB2, 0x00, 0x00, 0x00, 0x00, 0x02};
+
+struct MockPhase {
+  uint32_t durationMs;
+  int16_t rssiStart;
+  int16_t rssiEnd;
+  const uint8_t* peer;  // nullptr = 静默，无广播
+};
+
+/**
+ * 一次约 41s 的确定性场景：A 靠近 -> 停留 -> 离开，间隔后 B 重复。
+ * 停留段强信号约 9s，足以满足「>=5 样本且停留 >=3s」的偶遇判定。
+ * 靠近段 RSSI 低于阈值，用于展示弱信号样本会被忽略。
+ */
+static const MockPhase MOCK_SCENARIO[] = {
+    {3000, -95, -95, nullptr},      // 静默
+    {2500, -85, -72, MOCK_PEER_A},  // A 靠近（弱信号）
+    {9000, -68, -56, MOCK_PEER_A},  // A 停留（触发偶遇）
+    {3000, -72, -90, MOCK_PEER_A},  // A 离开
+    {4000, -95, -95, nullptr},      // 间隔
+    {2500, -84, -71, MOCK_PEER_B},  // B 靠近（弱信号）
+    {9000, -67, -55, MOCK_PEER_B},  // B 停留（触发偶遇）
+    {3000, -71, -89, MOCK_PEER_B},  // B 离开
+    {5000, -95, -95, nullptr},      // 结束前静默
+};
+static const uint8_t MOCK_PHASE_COUNT = sizeof(MOCK_SCENARIO) / sizeof(MOCK_SCENARIO[0]);
+
+static const uint16_t MOCK_SAMPLE_MS = 200;  // 扫描阶段内的模拟采样间隔
+
+static uint32_t mockStart;
+static uint32_t mockNextSample;
+static uint32_t mockRng = 0x12345678;
+static bool mockComplete;
+static uint8_t mockEncounterCount;
+static uint16_t mockSamples;
+
+static void mockTick(uint32_t now);
+
+/** 固定种子的 LCG，给 RSSI 叠加 ±2dB 抖动，保证每次运行输出一致。 */
+static int16_t mockJitter() {
+  mockRng = mockRng * 1664525UL + 1013904223UL;
+  return (int16_t)((mockRng >> 16) % 5) - 2;
+}
+
+#endif  // BUMP_MOCK
+
+// ---------------------------------------------------------------------------
 // 偶遇判定与上报
 // ---------------------------------------------------------------------------
 
@@ -241,10 +327,16 @@ static void emitEncounter(const Peer* p, uint32_t now) {
   char id[13];
   formatId(p->id, id);
   unsigned long durationS = (p->lastSeen - p->firstSeen) / 1000;
+#if BUMP_MOCK
+  mockEncounterCount++;  // mock 构建下用于最后的场景统计
+  const char* simField = ",\"sim\":true";
+#else
+  const char* simField = "";
+#endif
   logf("{\"event\":\"encounter\",\"peer\":\"%s\",\"rssi_avg\":%d,\"rssi_last\":%d,"
-       "\"duration_s\":%lu,\"samples\":%u,\"flags\":%u,\"uptime_s\":%lu}",
+       "\"duration_s\":%lu,\"samples\":%u,\"flags\":%u,\"uptime_s\":%lu%s}",
        id, p->rssiAvg, p->rssiLast, durationS, (unsigned)p->samples,
-       (unsigned)p->flags, (unsigned long)(now / 1000));
+       (unsigned)p->flags, (unsigned long)(now / 1000), simField);
 }
 
 /**
@@ -301,9 +393,55 @@ static void onSample(const uint8_t* id, int rssi, uint8_t flags, int8_t txPower,
 }
 
 /**
- * 排空 GAP 的扫描结果队列。
- * 只接受本公司 ID + 匹配版本号的厂商数据帧；其余帧（含其他 BLE 设备）直接忽略。
- * [scan] 调试输出做 500ms 全局限流，避免高频广播刷屏拖慢主循环。
+ * 校验并处理一个厂商数据帧。
+ * 真实扫描与 mock 注入共用此函数，保证两条路径的解析和判定逻辑完全一致。
+ *
+ * @param prefix    日志前缀（"[scan]" 或 "[mock] rx"）
+ * @param alwaysLog true 时每个样本都打印；false 时全局限流 500ms
+ */
+static void ingestFrame(const uint8_t* buf, int len, int rssi, uint32_t now,
+                        const char* prefix, bool alwaysLog) {
+  if (len < (int)MFG_FRAME_LEN) {
+    return;
+  }
+  if (buf[0] != (COMPANY_ID & 0xFF) || buf[1] != (COMPANY_ID >> 8)) {
+    return;
+  }
+  if (buf[2] != PROTO_VER) {
+    return;
+  }
+
+  const uint8_t* peerId = &buf[3];
+  uint8_t flags = buf[9];
+  int8_t txPower = (int8_t)buf[10];
+
+  onSample(peerId, rssi, flags, txPower, now);
+
+  bool shouldLog = alwaysLog || ((int32_t)(now - lastDebugPrint) >= 500);
+  if (!shouldLog) {
+    return;
+  }
+  if (!alwaysLog) {
+    lastDebugPrint = now;
+  }
+
+  char id[13];
+  formatId(peerId, id);
+  Peer* p = findPeer(peerId);
+  int avg = (p && p->samples > 0) ? p->rssiAvg : rssi;
+  unsigned n = p ? (unsigned)p->samples : 0u;
+  if (alwaysLog) {
+    char hex[2 * MFG_FRAME_LEN + 1];
+    hexString(buf, MFG_FRAME_LEN, hex);
+    logf("%s mfg=%s rssi=%d avg=%d n=%u", prefix, hex, rssi, avg, n);
+  } else {
+    logf("%s peer=%s rssi=%d avg=%d n=%u flags=0x%02x tx=%d",
+         prefix, id, rssi, avg, n, flags, txPower);
+  }
+}
+
+/**
+ * 排空 GAP 的扫描结果队列；只把厂商数据交给 ingestFrame，其余帧直接丢弃。
  */
 static void handleAdvertisements(uint32_t now) {
   for (;;) {
@@ -312,37 +450,70 @@ static void handleAdvertisements(uint32_t now) {
       break;
     }
 
-    // 缓冲区包含 2 字节 Company ID + 载荷
-    uint8_t buf[MFG_PAYLOAD_LEN + 2];
+    uint8_t buf[MFG_FRAME_LEN];
     int len = device.manufacturerData(buf, sizeof(buf));
     if (len < (int)sizeof(buf)) {
       continue;
     }
-    if (buf[0] != (COMPANY_ID & 0xFF) || buf[1] != (COMPANY_ID >> 8)) {
-      continue;
-    }
-    if (buf[2] != PROTO_VER) {
-      continue;
-    }
-
-    const uint8_t* peerId = &buf[3];
-    uint8_t flags = buf[9];
-    int8_t txPower = (int8_t)buf[10];
-    int rssi = device.rssi();
-
-    onSample(peerId, rssi, flags, txPower, now);
-
-    if ((int32_t)(now - lastDebugPrint) >= 500) {
-      lastDebugPrint = now;
-      char id[13];
-      formatId(peerId, id);
-      Peer* p = findPeer(peerId);
-      int avg = (p && p->samples > 0) ? p->rssiAvg : rssi;
-      logf("[scan] peer=%s rssi=%d avg=%d n=%u flags=0x%02x tx=%d",
-           id, rssi, avg, p ? (unsigned)p->samples : 0u, flags, txPower);
-    }
+    ingestFrame(buf, len, device.rssi(), now, "[scan]", false);
   }
 }
+
+#if BUMP_MOCK
+/**
+ * 推进模拟场景，在扫描阶段按 MOCK_SAMPLE_MS 注入样本。
+ * 场景按真实时间推进；注入点限制在扫描阶段，模拟真实的接收窗口。
+ */
+static void mockTick(uint32_t now) {
+  if (mockComplete) {
+    return;
+  }
+
+  uint32_t elapsed = now - mockStart;
+  uint32_t acc = 0;
+  const MockPhase* ph = nullptr;
+  uint32_t phaseElapsed = 0;
+  for (uint8_t i = 0; i < MOCK_PHASE_COUNT; i++) {
+    if (elapsed < acc + MOCK_SCENARIO[i].durationMs) {
+      ph = &MOCK_SCENARIO[i];
+      phaseElapsed = elapsed - acc;
+      break;
+    }
+    acc += MOCK_SCENARIO[i].durationMs;
+  }
+
+  if (!ph) {
+    mockComplete = true;
+    logf("[mock] scenario complete: %u samples, %u encounter event(s) simulated",
+         (unsigned)mockSamples, (unsigned)mockEncounterCount);
+    return;
+  }
+
+  if (phase != PHASE_SCAN) {
+    return;
+  }
+  if ((int32_t)(now - mockNextSample) < 0) {
+    return;
+  }
+  mockNextSample = now + MOCK_SAMPLE_MS;
+
+  if (!ph->peer) {
+    return;  // 静默阶段
+  }
+
+  int32_t span = (int32_t)ph->rssiEnd - ph->rssiStart;
+  int32_t rssi = ph->rssiStart +
+                 span * (int32_t)phaseElapsed / (int32_t)ph->durationMs +
+                 mockJitter();
+  if (rssi < -95) rssi = -95;
+  if (rssi > -40) rssi = -40;
+
+  uint8_t frame[MFG_FRAME_LEN];
+  buildMfgFrame(ph->peer, frame);
+  mockSamples++;
+  ingestFrame(frame, sizeof(frame), (int)rssi, now, "[mock] rx", true);
+}
+#endif  // BUMP_MOCK
 
 /** 每 10s 打印状态：当前阶段、本机短 ID、最近 30s 内活跃的 peer 数、运行时长。 */
 static void printStatus(uint32_t now) {
@@ -374,6 +545,11 @@ void setup() {
 
   makeShortId(shortId);
 
+#if BUMP_MOCK
+  // 固定后续相位抖动序列，使模拟场景的串口输出可复现（仅 mock 构建）
+  randomSeed(0xB0B5EED);
+#endif
+
   if (!BLE.begin()) {
     Serial.println("[fatal] BLE.begin() failed. Check NINA firmware >= 3.0.1.");
     for (;;) {
@@ -388,10 +564,25 @@ void setup() {
 
   char id[13];
   formatId(shortId, id);
-  logf("[boot] Bump BLE MVP: self=%s uuid=%s rssi_thr=%d min_samples=%u "
+  const char* mode = BUMP_MOCK ? "mock" : "real";
+  logf("[boot] Bump BLE MVP: mode=%s self=%s uuid=%s rssi_thr=%d min_samples=%u "
        "dwell=%ums adv=%ums scan=%ums",
-       id, SERVICE_UUID, RSSI_THRESHOLD, MIN_SAMPLES,
+       mode, id, SERVICE_UUID, RSSI_THRESHOLD, MIN_SAMPLES,
        (unsigned)DWELL_MS, (unsigned)ADV_MS, (unsigned)SCAN_MS);
+
+  // 打印实际发出的广播厂商数据帧，可直接放入报告作为「发射」证据
+  uint8_t frame[MFG_FRAME_LEN];
+  char hex[2 * MFG_FRAME_LEN + 1];
+  buildMfgFrame(shortId, frame);
+  hexString(frame, MFG_FRAME_LEN, hex);
+  logf("[tx] adv uuid=%s mfg=%s", SERVICE_UUID, hex);
+
+#if BUMP_MOCK
+  logf("[mock] injecting 2 simulated peers through the real RX pipeline; "
+       "events carry \"sim\":true");
+  mockStart = millis();
+  mockNextSample = mockStart;
+#endif
 
   enterAdvPhase();
 }
@@ -414,6 +605,10 @@ void loop() {
   if (phase == PHASE_SCAN) {
     handleAdvertisements(now);
   }
+
+#if BUMP_MOCK
+  mockTick(now);
+#endif
 
   if ((int32_t)(now - lastStatusPrint) >= 10000) {
     lastStatusPrint = now;
