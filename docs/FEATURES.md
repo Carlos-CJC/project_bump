@@ -83,8 +83,12 @@
    设置本地名 `Bump`、广播 Service UUID `a5b0`、不可连接、广播间隔 100
    （HCI 单位 0.625ms，约 62.5ms）；打印启动参数；进入广播阶段。
 2. **时分复用**：NINA 模块无法稳定地同时广播与扫描，因此
-   **广播 600ms ↔ 扫描 400ms** 交替，每次切换附加 ±100ms 随机抖动，
-   避免两台设备长期同相而互相错过。切换时先停止当前角色再启动另一角色。
+   **广播 3s ↔ 扫描 2s** 交替，每次切换附加 ±100ms 随机抖动，
+   避免两台设备长期同相而互相错过。扫描切回广播时不能直接重开广播：
+   NINA 固件会让命令永远等不到响应（SPI 层无超时），整个固件卡死；
+   因此切换时先 `BLE.stopAdvertise()` 进入扫描，扫描结束则
+   `BLE.end()` 重启协议栈、重试 `BLE.begin()`（首次通常失败）并重新
+   配置广播参数。单次重启约 1–2s，周期太短重启会失败，故周期取 3s/2s。
 3. **扫描阶段**：排空扫描结果队列，按 Company ID 与协议版本过滤，
    解析 short_id / flags / tx_power，连同 RSSI 交给偶遇判定。
 4. **偶遇判定**：见 §3.4。
@@ -96,7 +100,8 @@
   避免人体遮挡造成的瞬时跳变。
 - 距上次收到该 peer 超过 **30s** 则重置其计数窗口。
 - 从首个强信号样本起 **10s 窗口**内：
-  - 强信号样本数 ≥ **5**；
+  - 强信号样本数 ≥ **2**（扫描启用控制器级去重，每轮扫描每个 peer
+    只上报一次，10s 窗口内通常只能拿到 2 个样本）；
   - 停留时间 ≥ **3s**；
   - 平均 RSSI ≥ **-70 dBm**；
   - 同一 peer 处于 **8 小时冷却期**之外。
@@ -107,13 +112,13 @@
 | 常量 | 值 | 含义 |
 | --- | --- | --- |
 | `RSSI_THRESHOLD` | -70 dBm | 强信号门限 |
-| `MIN_SAMPLES` | 5 | 窗口内所需样本数 |
+| `MIN_SAMPLES` | 2 | 窗口内所需样本数（去重扫描下每轮 1 个） |
 | `DWELL_MS` | 3000 ms | 最短停留时间 |
 | `SAMPLE_WINDOW_MS` | 10000 ms | 样本计数窗口 |
 | `PEER_RESET_MS` | 30000 ms | 超过该间隔未见则重置 |
 | `COOLDOWN_MS` | 8 小时 | 同一 peer 去重冷却 |
-| `ADV_MS` | 600 ms | 每轮广播时长 |
-| `SCAN_MS` | 400 ms | 每轮扫描时长 |
+| `ADV_MS` | 3000 ms | 每轮广播时长 |
+| `SCAN_MS` | 2000 ms | 每轮扫描时长 |
 | `PHASE_JITTER_MS` | ±100 ms | 阶段随机抖动 |
 | `MAX_PEERS` | 16 | 固定容量 peer 表（LRU 淘汰） |
 
@@ -122,7 +127,7 @@
 启动信息：
 
 ```
-[boot] Bump BLE MVP: self=3f9a01c47b2e uuid=a5b0 rssi_thr=-70 min_samples=5 dwell=3000ms adv=600ms scan=400ms
+[boot] Bump BLE MVP: self=3f9a01c47b2e uuid=a5b0 rssi_thr=-70 min_samples=2 dwell=3000ms adv=3000ms scan=2000ms
 ```
 
 周期性状态（每 10s）：
@@ -140,7 +145,7 @@
 偶遇事件（一行一条 JSON）：
 
 ```
-{"event":"encounter","peer":"8c21d0a9e4f5","rssi_avg":-65,"rssi_last":-63,"duration_s":3,"samples":6,"flags":1,"uptime_s":57}
+{"event":"encounter","peer":"8c21d0a9e4f5","rssi_avg":-65,"rssi_last":-63,"duration_s":7,"samples":2,"flags":1,"uptime_s":57}
 ```
 
 | JSON 字段 | 含义 |
@@ -260,8 +265,11 @@ pio device monitor -p /dev/cu.usbmodemYYYY
 - **无持久化、无上传、无 NTP**：时间均为开机后的相对时间，重启后清零。
 - **short_id 每次上电随机**：无法跨重启识别设备；后续再做按天轮换 +
   服务端映射。
-- **NINA 无法稳定同时广播与扫描**：所以采用时分复用，单轮广播/扫描
-  各有 400–700ms，极端相位下可能短暂漏收。
+- **NINA 无法稳定同时广播与扫描**：采用时分复用（3s/2s），扫描切回
+  广播需要重启 BLE 栈（约 1–2s），这段时间既不广播也不扫描；两台设备
+  相位错开时可能漏收数秒。周期再缩短会令重启失败，不做进一步压缩。
+- **扫描去重**：`withDuplicates=false` 下控制器每轮扫描对同一 peer 只上报
+  一次，样本数偏低，判定阈值相应降为 2。
 - **Peer 表容量 16**：密集环境下 LRU 淘汰可能丢失旧 peer 的冷却信息。
 - **连接自检与默认固件共用 UUID `a5b0`**：只有可连接的外设（`nano_a`）
   能完成自检；默认固件的广播不可连接。
