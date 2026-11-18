@@ -17,7 +17,7 @@
  *      命中后向串口输出一行 JSON 事件。
  *
  * 偶遇判定（参数见下方常量）
- *   - 强信号样本（RSSI >= -70dBm）在 10s 窗口内至少 5 次；
+ *   - 强信号样本（RSSI >= -70dBm）在 10s 窗口内至少 2 次；
  *   - 从首个强信号样本起持续至少 3s；
  *   - 同一 short_id 在 8 小时冷却期内只上报一次。
  *
@@ -74,7 +74,9 @@ static const uint8_t MFG_PAYLOAD_LEN = 9;
 // ---------------------------------------------------------------------------
 
 static const int RSSI_THRESHOLD = -70;            // dBm；弱于此值的样本不计入
-static const uint8_t MIN_SAMPLES = 5;             // 窗口内所需强信号样本数
+// 窗口内所需强信号样本数。扫描端开启了控制器级去重（duplicates=false），
+// 每轮扫描只能拿到同一 peer 的一个样本，10s 窗口内约 2 个，故阈值取 2。
+static const uint8_t MIN_SAMPLES = 2;
 static const uint32_t DWELL_MS = 3000;            // 最短停留时间
 static const uint32_t SAMPLE_WINDOW_MS = 10000;   // 样本计数窗口
 static const uint32_t PEER_RESET_MS = 30000;      // 超过此间隔未见则重置该 peer 的窗口
