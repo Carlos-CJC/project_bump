@@ -32,6 +32,24 @@
  *   {"event":"encounter",...}       偶遇事件（JSON，一行一条）
  */
 
+#ifndef BUMP_TEST_ROLE
+#define BUMP_TEST_ROLE 0
+#endif
+
+#if BUMP_TEST_ROLE
+
+// 双板连接自检模式（nano_a / nano_b 环境）：实现见 conn_test.cpp。
+// 与下方偶遇 MVP 互斥，setup/loop 仅做转发。
+// Arduino.h 里以 extern "C" 声明 setup/loop，缺了它符号会被 C++ 名字修饰。
+#include <Arduino.h>
+
+#include "conn_test.h"
+
+void setup() { connTestSetup(); }
+void loop() { connTestLoop(); }
+
+#else
+
 #include <Arduino.h>
 #include <ArduinoBLE.h>
 #include <stdarg.h>
@@ -420,3 +438,5 @@ void loop() {
     printStatus(now);
   }
 }
+
+#endif  // BUMP_TEST_ROLE
