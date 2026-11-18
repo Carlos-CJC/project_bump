@@ -49,6 +49,12 @@
 #define BUMP_UPLOAD_MIN_INTERVAL_MS 0
 #endif
 
+// 硬件看门狗超时。NINA 的 SPI 驱动没有超时，射频切换一旦卡死只能复位恢复；
+// 看门狗把这种死锁变成自动重启。取值需大于单次 TLS 握手 + CONNACK 的耗时。
+#ifndef BUMP_WDT_TIMEOUT_MS
+#define BUMP_WDT_TIMEOUT_MS 16000
+#endif
+
 #ifndef BUMP_NTP
 #define BUMP_NTP 0
 #endif
