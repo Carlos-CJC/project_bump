@@ -72,6 +72,13 @@ void loop() { connTestLoop(); }
 #include <ArduinoBLE.h>
 #include <stdarg.h>
 
+#include "bump_config.h"
+#if BUMP_MQTT
+#include "device_identity.h"
+#include "event_queue.h"
+#include "mqtt_uploader.h"
+#endif
+
 // ---------------------------------------------------------------------------
 // BLE 协议常量
 // ---------------------------------------------------------------------------
@@ -329,6 +336,22 @@ static void emitEncounter(const Peer* p, uint32_t now) {
        "\"duration_s\":%lu,\"samples\":%u,\"flags\":%u,\"uptime_s\":%lu}",
        id, p->rssiAvg, p->rssiLast, durationS, (unsigned)p->samples,
        (unsigned)p->flags, (unsigned long)(now / 1000));
+
+#if BUMP_MQTT
+  // 串口输出保持不变，同一份字段入队，等下一个 TDM 阶段边界上传。
+  EncEvent ev;
+  ev.seq = identityNextEventSeq();
+  ev.occurredUptimeMs = now;
+  memcpy(ev.peerId, p->id, 6);
+  ev.rssiAvg = p->rssiAvg;
+  ev.rssiLast = p->rssiLast;
+  ev.durationS = durationS;
+  ev.samples = p->samples;
+  ev.flags = p->flags;
+  ev.peerTxPower = p->txPower;
+  eventQueuePush(ev);
+  uploaderNotifyEvent();
+#endif
 }
 
 /**
@@ -458,9 +481,16 @@ static void printStatus(uint32_t now) {
   }
   char id[13];
   formatId(shortId, id);
+#if BUMP_MQTT
+  logf("[status] phase=%s self=%s peers=%u uptime=%lus q=%u drop=%lu",
+       phase == PHASE_ADV ? "adv" : "scan", id, (unsigned)peerCount,
+       (unsigned long)(now / 1000), (unsigned)eventQueueCount(),
+       (unsigned long)eventQueueDropped());
+#else
   logf("[status] phase=%s self=%s peers=%u uptime=%lus",
        phase == PHASE_ADV ? "adv" : "scan", id, (unsigned)peerCount,
        (unsigned long)(now / 1000));
+#endif
 }
 
 // ---------------------------------------------------------------------------
@@ -476,6 +506,12 @@ void setup() {
   }
 
   makeShortId(shortId);
+
+#if BUMP_MQTT
+  // 读取 Wi-Fi MAC 派生稳定的 device_id；boot_id 每次上电随机。
+  identityInit();
+  eventQueueInit();
+#endif
 
   if (!BLE.begin()) {
     Serial.println("[fatal] BLE.begin() failed. Check NINA firmware >= 3.0.1.");
@@ -493,6 +529,12 @@ void setup() {
        id, SERVICE_UUID, RSSI_THRESHOLD, MIN_SAMPLES,
        (unsigned)DWELL_MS, (unsigned)ADV_MS, (unsigned)SCAN_MS);
 
+#if BUMP_MQTT
+  logf("[boot] mqtt dev=%s boot=%s fw=%s", identityDeviceId(),
+       identityBootId(), BUMP_FW_VERSION);
+  uploaderBegin(enterAdvPhase);
+#endif
+
   // 随机错开初始相位：两块板同时上电且周期相近时，广播/扫描会一直同相，
   // 双方永远听不到对方。offset 覆盖一个完整周期，保证至少一端错开。
   delay(random(0, ADV_MS + SCAN_MS + 4000));
@@ -505,8 +547,15 @@ void loop() {
 
   uint32_t now = millis();
 
-  // 时分复用：阶段到期后切换角色（无符号差值转有符号，兼容 millis() 回绕）
+  // 时分复用：阶段到期后切换角色（无符号差值转有符号，兼容 millis() 回绕）。
+  // MQTT 模式下先在边界尝试上传；上传窗口内部会恢复广播阶段并更新
+  // phaseUntil，此时跳过常规切换。
   if ((int32_t)(now - phaseUntil) >= 0) {
+#if BUMP_MQTT
+    if (uploaderMaybeUpload(now)) {
+      now = millis();
+    } else
+#endif
     if (phase == PHASE_ADV) {
       enterScanPhase();
     } else {
