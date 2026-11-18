@@ -38,6 +38,17 @@ void wifiTestSetup() {
     for (;;) delay(1000);
   }
   Serial.print("[wifi] firmware="); Serial.println(WiFi.firmwareVersion());
+
+  // NINA 只能看 2.4GHz；扫一遍周边热点，确认目标 SSID 真的可见。
+  int n = WiFi.scanNetworks();
+  Serial.print("[wifi] scan count="); Serial.println(n);
+  for (int i = 0; i < n; i++) {
+    Serial.print("[wifi] ssid='"); Serial.print(WiFi.SSID(i));
+    Serial.print("' rssi="); Serial.print(WiFi.RSSI(i));
+    Serial.print(" ch="); Serial.print(WiFi.channel(i));
+    Serial.print(" enc="); Serial.println(WiFi.encryptionType(i));
+  }
+
   Serial.print("[wifi] connecting to '"); Serial.print(WIFI_SSID); Serial.println("'");
 
   int status = WiFi.begin(WIFI_SSID, WIFI_PASS);
