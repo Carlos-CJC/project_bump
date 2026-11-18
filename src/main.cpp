@@ -39,8 +39,22 @@
 #ifndef BUMP_TEST_ROLE
 #define BUMP_TEST_ROLE 0
 #endif
+#ifndef BUMP_WIFI_TEST
+#define BUMP_WIFI_TEST 0
+#endif
 
-#if BUMP_TEST_ROLE
+#if BUMP_WIFI_TEST
+
+// WiFi 连接自检模式（wifi_test 环境）：实现见 wifi_test.cpp。
+// 与下方偶遇 MVP 互斥，setup/loop 仅做转发。
+#include <Arduino.h>
+
+#include "wifi_test.h"
+
+void setup() { wifiTestSetup(); }
+void loop() { wifiTestLoop(); }
+
+#elif BUMP_TEST_ROLE
 
 // 双板连接自检模式（nano_a / nano_b 环境）：实现见 conn_test.cpp。
 // 与下方偶遇 MVP 互斥，setup/loop 仅做转发。
