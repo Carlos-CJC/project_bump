@@ -11,7 +11,8 @@
  *        Service UUID : 0xA5B0（原型用 16-bit，正式版可换 128-bit）
  *        Manufacturer : company(2) | ver(1) | short_id(6) | flags(1) | tx_power(1)
  *   3. 同一 NINA 模块无法可靠地同时广播与扫描，因此采用时分复用：
- *        广播 600ms <-> 扫描 400ms，并加 ±100ms 随机抖动，避免两台设备相位锁定。
+ *        广播 3s <-> 扫描 2s，并加 ±100ms 随机抖动，避免两台设备相位锁定。
+ *      扫描切回广播时必须重启 BLE 栈（NINA 会卡死），周期太短则重启失败。
  *   4. 扫描阶段按 Service UUID 过滤，解析厂商数据；用 RSSI + 停留时间判定偶遇，
  *      命中后向串口输出一行 JSON 事件。
  *
@@ -79,9 +80,11 @@ static const uint32_t SAMPLE_WINDOW_MS = 10000;   // 样本计数窗口
 static const uint32_t PEER_RESET_MS = 30000;      // 超过此间隔未见则重置该 peer 的窗口
 static const uint32_t COOLDOWN_MS = 8UL * 3600UL * 1000UL;  // 同一 peer 去重冷却 8 小时
 
-// 时分复用参数：广播/扫描时长与抖动
-static const uint16_t ADV_MS = 600;
-static const uint16_t SCAN_MS = 400;
+// 时分复用参数：广播/扫描时长与抖动。
+// 周期不能太短：扫描->广播需要重启 BLE 栈（见 enterAdvPhase），
+// 而 NINA 每轮重启约需 1–2s，1s 级周期的重启几乎全部失败。
+static const uint16_t ADV_MS = 3000;
+static const uint16_t SCAN_MS = 2000;
 static const int16_t PHASE_JITTER_MS = 100;
 
 static const uint8_t MAX_PEERS = 16;              // 固定容量 peer 表，避免动态内存
@@ -176,11 +179,37 @@ static void applyAdvertisingData() {
 }
 
 /**
- * 进入广播阶段：先停止扫描（避免双角色冲突），再发布广播。
+ * 应用广播配置（本地名、Service UUID、不可连接、广播间隔）。
+ * BLE.end()/BLE.begin() 会清空这些设置，所以每次重启栈之后都要重新调用。
+ */
+static void configureAdvertising() {
+  BLE.setLocalName("Bump");
+  BLE.setAdvertisedServiceUuid(SERVICE_UUID);
+  BLE.setConnectable(false);      // 不可连接广播：只广播、不建立连接
+  BLE.setAdvertisingInterval(100);
+}
+
+/**
+ * 进入广播阶段。
+ *
+ * NINA 固件在扫描之后直接重新广播会卡死：SPI 传输层的 waitForSlaveReady()
+ * 没有超时，控制器始终不回应，整个 loop 永久阻塞（stopScan 本身也可能卡）。
+ * 因此这里不做 stopScan，而是直接重启 BLE 栈丢弃扫描状态，再重新配置广播。
+ * 实测 begin() 首次常失败、第二次即可成功，故必须带重试。
  * 阶段长度叠加随机抖动，降低两机长期同相、互相错过的概率。
  */
 static void enterAdvPhase() {
-  BLE.stopScan();
+  BLE.end();
+  delay(500);
+  uint16_t attempts = 0;
+  while (!BLE.begin()) {
+    if (++attempts == 10) {
+      logf("[ble] restart slow, still retrying");
+    }
+    delay(400);
+  }
+
+  configureAdvertising();
   applyAdvertisingData();
   BLE.advertise();
   phase = PHASE_ADV;
@@ -189,11 +218,12 @@ static void enterAdvPhase() {
 
 /**
  * 进入扫描阶段：先停止广播，再按 UUID 扫描。
- * withDuplicates = true 表示不去重，这样才能拿到同一设备的多次 RSSI 采样。
+ * withDuplicates = false：该参数在 NINA 上配合 stopScan 会触发上述死锁，
+ * 且每轮扫描都从新栈开始，去重配置不影响实际采样。
  */
 static void enterScanPhase() {
   BLE.stopAdvertise();
-  BLE.scanForUuid(SERVICE_UUID, true);
+  BLE.scanForUuid(SERVICE_UUID, false);
   phase = PHASE_SCAN;
   phaseUntil = millis() + SCAN_MS + random(-PHASE_JITTER_MS, PHASE_JITTER_MS + 1);
 }
@@ -399,10 +429,7 @@ void setup() {
     }
   }
 
-  BLE.setLocalName("Bump");
-  BLE.setAdvertisedServiceUuid(SERVICE_UUID);
-  BLE.setConnectable(false);      // 不可连接广播：只广播、不建立连接
-  BLE.setAdvertisingInterval(100);
+  configureAdvertising();
 
   char id[13];
   formatId(shortId, id);
