@@ -3,7 +3,7 @@
  * @brief Bump 偶遇徽章 MVP —— 仅 BLE 广播（发射）与扫描（接收）。
  *
  * 目标硬件：Arduino Nano RP2040 Connect（板载 NINA-W102 蓝牙模块）
- * 依赖库  ：ArduinoBLE >= 2.0（要求 NINA 固件 >= 3.0.1）
+ * 依赖库  ：ArduinoBLE >= 2.0（要求 NINA 固件 >= 3.0.2）
  *
  * 工作方式
  *   1. 每台设备生成 6 字节匿名短 ID，周期性以「不可连接广播」发出。
@@ -11,13 +11,16 @@
  *        Service UUID : 0xA5B0（原型用 16-bit，正式版可换 128-bit）
  *        Manufacturer : company(2) | ver(1) | short_id(6) | flags(1) | tx_power(1)
  *   3. 同一 NINA 模块无法可靠地同时广播与扫描，因此采用时分复用：
- *        广播 3s <-> 扫描 2s，并加 ±100ms 随机抖动，避免两台设备相位锁定。
- *      扫描切回广播时必须重启 BLE 栈（NINA 会卡死），周期太短则重启失败。
- *   4. 扫描阶段按 Service UUID 过滤，解析厂商数据；用 RSSI + 停留时间判定偶遇，
- *      命中后向串口输出一行 JSON 事件。
+ *        广播 6s <-> 扫描 5s，并加 ±1.5s 随机抖动，避免两台设备相位锁定。
+ *      广播/扫描两个方向切换都要重启 BLE 栈：NINA 上 stopScan 会卡死，
+ *      stopAdvertise 后直接扫描则几乎收不到对端广播；周期太短重启会失败。
+ *   4. 扫描阶段解析厂商数据，用 RSSI + 停留时间判定偶遇，命中后向串口输出
+ *      一行 JSON 事件。不依赖库的 UUID 过滤（NINA 3.0.2 上会漏掉对端），
+ *      改为扫全部设备、应用层校验 Company ID 与协议版本；接收主要走
+ *      不可连接广播的 BLEDiscovered 回调，绕开按地址去重的发现队列。
  *
  * 偶遇判定（参数见下方常量）
- *   - 强信号样本（RSSI >= -70dBm）在 10s 窗口内至少 2 次；
+ *   - 强信号样本（RSSI >= -70dBm）在 180s 窗口内至少 2 次（NINA 上报稀疏）；
  *   - 从首个强信号样本起持续至少 3s；
  *   - 同一 short_id 在 8 小时冷却期内只上报一次。
  *
@@ -74,20 +77,24 @@ static const uint8_t MFG_PAYLOAD_LEN = 9;
 // ---------------------------------------------------------------------------
 
 static const int RSSI_THRESHOLD = -70;            // dBm；弱于此值的样本不计入
-// 窗口内所需强信号样本数。扫描端开启了控制器级去重（duplicates=false），
-// 每轮扫描只能拿到同一 peer 的一个样本，10s 窗口内约 2 个，故阈值取 2。
 static const uint8_t MIN_SAMPLES = 2;
 static const uint32_t DWELL_MS = 3000;            // 最短停留时间
-static const uint32_t SAMPLE_WINDOW_MS = 10000;   // 样本计数窗口
-static const uint32_t PEER_RESET_MS = 30000;      // 超过此间隔未见则重置该 peer 的窗口
+// NINA 3.0.2 对对端广播的实际上报非常稀疏：双板互测中同一 peer 约 80–90s
+// 才被看到一次（每次扫描会话前都要重启协议栈，会话间隔 10–15s）。因此判定
+// 必须跨会话、跨分钟累积样本：窗口取 180s、未见重置取 300s，两次被看到
+// 即可触发偶遇（停留时间由首次与末次样本的时间差自然满足）。
+static const uint32_t SAMPLE_WINDOW_MS = 180000;  // 样本计数窗口
+static const uint32_t PEER_RESET_MS = 300000;     // 超过此间隔未见则重置该 peer 的窗口
 static const uint32_t COOLDOWN_MS = 8UL * 3600UL * 1000UL;  // 同一 peer 去重冷却 8 小时
 
 // 时分复用参数：广播/扫描时长与抖动。
-// 周期不能太短：扫描->广播需要重启 BLE 栈（见 enterAdvPhase），
-// 而 NINA 每轮重启约需 1–2s，1s 级周期的重启几乎全部失败。
-static const uint16_t ADV_MS = 3000;
-static const uint16_t SCAN_MS = 2000;
-static const int16_t PHASE_JITTER_MS = 100;
+// 扫描->广播必须重启 BLE 栈（见 enterAdvPhase），重启本身约 4–6s 不发射；
+// 周期放长可提高无线电占空比，并降低每次重启对偶遇统计的稀释。
+static const uint16_t ADV_MS = 6000;
+static const uint16_t SCAN_MS = 5000;
+// 抖动必须足够大：两板周期相近时，±100ms 的抖动会让相位长期锁定，
+// 双方广播/扫描始终同相而互相错过；±1.5s 使相对相位持续漂移。
+static const int16_t PHASE_JITTER_MS = 1500;
 
 static const uint8_t MAX_PEERS = 16;              // 固定容量 peer 表，避免动态内存
 
@@ -165,6 +172,8 @@ static void makeShortId(uint8_t* id) {
 // BLE 广播 / 扫描状态切换
 // ---------------------------------------------------------------------------
 
+static void onDiscovered(BLEDevice device);  // 事件回调，实现在扫描处理区
+
 /**
  * 填充厂商数据并交给 ArduinoBLE。
  *
@@ -202,7 +211,7 @@ static void configureAdvertising() {
  */
 static void enterAdvPhase() {
   BLE.end();
-  delay(500);
+  delay(1500);
   uint16_t attempts = 0;
   while (!BLE.begin()) {
     if (++attempts == 10) {
@@ -219,13 +228,24 @@ static void enterAdvPhase() {
 }
 
 /**
- * 进入扫描阶段：先停止广播，再按 UUID 扫描。
- * withDuplicates = false：该参数在 NINA 上配合 stopScan 会触发上述死锁，
- * 且每轮扫描都从新栈开始，去重配置不影响实际采样。
+ * 进入扫描阶段：先重启协议栈，再扫描全部设备。
+ * 扫描前也必须重启：实测 stopAdvertise() 之后直接 scan() 虽然返回成功，
+ * 控制器却极少上报对端广播（自检模式里每次扫描前重启栈后就能发现目标）。
+ * 不用 scanForUuid：NINA 3.0.2 上 UUID 过滤同样会漏掉对端，而广播帧本身
+ * 已带合法厂商数据，应用层校验即可。
  */
 static void enterScanPhase() {
-  BLE.stopAdvertise();
-  BLE.scanForUuid(SERVICE_UUID, false);
+  BLE.end();
+  delay(500);
+  uint16_t attempts = 0;
+  while (!BLE.begin()) {
+    if (++attempts == 10) {
+      logf("[ble] restart slow, still retrying");
+    }
+    delay(400);
+  }
+  BLE.setEventHandler(BLEDiscovered, onDiscovered);
+  BLE.scan(false);
   phase = PHASE_SCAN;
   phaseUntil = millis() + SCAN_MS + random(-PHASE_JITTER_MS, PHASE_JITTER_MS + 1);
 }
@@ -351,9 +371,57 @@ static void onSample(const uint8_t* id, int rssi, uint8_t flags, int8_t txPower,
 }
 
 /**
- * 排空 GAP 的扫描结果队列。
- * 只接受本公司 ID + 匹配版本号的厂商数据帧；其余帧（含其他 BLE 设备）直接忽略。
+ * 处理一个扫描到的设备：只接受本公司 ID + 匹配版本号的厂商数据帧，
+ * 其余帧（含其他 BLE 设备）直接忽略。
  * [scan] 调试输出做 500ms 全局限流，避免高频广播刷屏拖慢主循环。
+ */
+static void processDevice(BLEDevice device, uint32_t now) {
+  // 缓冲区包含 2 字节 Company ID + 载荷
+  uint8_t buf[MFG_PAYLOAD_LEN + 2];
+  int len = device.manufacturerData(buf, sizeof(buf));
+  if (len < (int)sizeof(buf)) {
+    return;
+  }
+  if (buf[0] != (COMPANY_ID & 0xFF) || buf[1] != (COMPANY_ID >> 8)) {
+    return;
+  }
+  if (buf[2] != PROTO_VER) {
+    return;
+  }
+
+  const uint8_t* peerId = &buf[3];
+  uint8_t flags = buf[9];
+  int8_t txPower = (int8_t)buf[10];
+  int rssi = device.rssi();
+
+  onSample(peerId, rssi, flags, txPower, now);
+
+  if ((int32_t)(now - lastDebugPrint) >= 500) {
+    lastDebugPrint = now;
+    char id[13];
+    formatId(peerId, id);
+    Peer* p = findPeer(peerId);
+    int avg = (p && p->samples > 0) ? p->rssiAvg : rssi;
+    logf("[scan] peer=%s rssi=%d avg=%d n=%u flags=0x%02x tx=%d",
+         id, rssi, avg, p ? (unsigned)p->samples : 0u, flags, txPower);
+  }
+}
+
+/**
+ * 不可连接广播的发现回调。
+ *
+ * GAP 对 type 0x03（ADV_NONCONN_IND）的特殊处理：注册 BLEDiscovered 事件后
+ * 每条广播都直接回调，绕过按地址去重的发现队列。实测这是 NINA 3.0.2 上
+ * 唯一能持续收到对端广播的路径（轮询 BLE.available() 每个扫描会话只会
+ * 上报同一地址一次）。本机广播正是不可连接类型，因此对端一定走这条路径。
+ */
+static void onDiscovered(BLEDevice device) {
+  processDevice(device, millis());
+}
+
+/**
+ * 排空 GAP 的扫描结果队列（可连接广播需收到扫描响应后才会入队）。
+ * 与事件回调路径互不重复：type 0x03 的广播走回调，不入队。
  */
 static void handleAdvertisements(uint32_t now) {
   for (;;) {
@@ -361,36 +429,7 @@ static void handleAdvertisements(uint32_t now) {
     if (!device) {
       break;
     }
-
-    // 缓冲区包含 2 字节 Company ID + 载荷
-    uint8_t buf[MFG_PAYLOAD_LEN + 2];
-    int len = device.manufacturerData(buf, sizeof(buf));
-    if (len < (int)sizeof(buf)) {
-      continue;
-    }
-    if (buf[0] != (COMPANY_ID & 0xFF) || buf[1] != (COMPANY_ID >> 8)) {
-      continue;
-    }
-    if (buf[2] != PROTO_VER) {
-      continue;
-    }
-
-    const uint8_t* peerId = &buf[3];
-    uint8_t flags = buf[9];
-    int8_t txPower = (int8_t)buf[10];
-    int rssi = device.rssi();
-
-    onSample(peerId, rssi, flags, txPower, now);
-
-    if ((int32_t)(now - lastDebugPrint) >= 500) {
-      lastDebugPrint = now;
-      char id[13];
-      formatId(peerId, id);
-      Peer* p = findPeer(peerId);
-      int avg = (p && p->samples > 0) ? p->rssiAvg : rssi;
-      logf("[scan] peer=%s rssi=%d avg=%d n=%u flags=0x%02x tx=%d",
-           id, rssi, avg, p ? (unsigned)p->samples : 0u, flags, txPower);
-    }
+    processDevice(device, now);
   }
 }
 
@@ -439,6 +478,10 @@ void setup() {
        "dwell=%ums adv=%ums scan=%ums",
        id, SERVICE_UUID, RSSI_THRESHOLD, MIN_SAMPLES,
        (unsigned)DWELL_MS, (unsigned)ADV_MS, (unsigned)SCAN_MS);
+
+  // 随机错开初始相位：两块板同时上电且周期相近时，广播/扫描会一直同相，
+  // 双方永远听不到对方。offset 覆盖一个完整周期，保证至少一端错开。
+  delay(random(0, ADV_MS + SCAN_MS + 4000));
 
   enterAdvPhase();
 }
