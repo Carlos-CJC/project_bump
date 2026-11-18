@@ -32,6 +32,7 @@ static const char* CHAR_UUID = "a5b1";
 static const uint32_t SERIAL_WAIT_MS = 2000;    // 等待 USB 串口就绪的上限
 static const uint32_t CONNECT_RETRY_MS = 5000;  // 中心断开后重新扫描的间隔
 static const uint32_t HOLD_MS = 1000;           // 建连后保持时长，验证链路稳定
+static const uint32_t SCAN_SESSION_MS = 4000;   // 单个扫描会话时长，到时重启协议栈
 
 static void logf(const char* fmt, ...) {
   char buf[192];
@@ -121,6 +122,29 @@ void connTestLoop() {
 
 static bool scanning = false;
 static uint32_t nextAttemptAt = 0;
+static uint32_t scanUntil = 0;
+
+/**
+ * 重启 BLE 栈并恢复中心角色配置。
+ *
+ * NINA 固件在一个扫描会话内对同一地址只上报一次，若该次 scan response
+ * 丢失也不会补报；同时扫描后直接 stopScan/重新广播可能让 SPI 命令永远
+ * 等不到响应。因此每轮扫描会话前都重启协议栈：既给对端刷新上报机会，
+ * 也避开停扫死锁。begin() 首次通常失败，需要重试。
+ */
+static void restartBleCentral() {
+  BLE.end();
+  delay(500);
+  uint16_t attempts = 0;
+  while (!BLE.begin()) {
+    if (++attempts == 10) {
+      logf("[test] BLE restart slow, still retrying");
+    }
+    delay(400);
+  }
+  BLE.setLocalName("Bump-Test-Central");
+  BLE.setConnectable(false);
+}
 
 void connTestSetup() {
   serialBegin();
@@ -194,20 +218,30 @@ void connTestLoop() {
     if ((int32_t)(now - nextAttemptAt) < 0) {
       return;
     }
+    restartBleCentral();
+    delay(300);  // 给控制器留出稳定时间再开扫
     BLE.scanForUuid(SERVICE_UUID, false);
     scanning = true;
+    scanUntil = millis() + SCAN_SESSION_MS;
     logf("[test] scanning for %s ...", SERVICE_UUID);
     return;
   }
 
   BLEDevice peripheral = BLE.available();
-  if (!peripheral) {
+  if (peripheral) {
+    scanning = false;
+    // 同上：不用 stopScan，重启协议栈后 BLEDevice 里的地址仍然有效
+    restartBleCentral();
+    runConnectTest(peripheral);
     return;
   }
 
-  BLE.stopScan();
-  scanning = false;
-  runConnectTest(peripheral);
+  if ((int32_t)(now - scanUntil) >= 0) {
+    // 本会话没发现目标：重启协议栈开始下一轮（同一设备每会话只上报一次）
+    scanning = false;
+    nextAttemptAt = now;
+    logf("[test] no target this session, restarting scan");
+  }
 }
 
 // ---------------------------------------------------------------------------
