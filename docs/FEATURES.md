@@ -14,18 +14,25 @@
 | 文件 | 职责 |
 | --- | --- |
 | `platformio.ini` | 构建环境、库依赖、串口监视配置 |
-| `src/main.cpp` | 默认固件：偶遇广播 / 扫描 / 判定 |
-| `src/conn_test.h` | 连接自检入口声明 |
-| `src/conn_test.cpp` | 双板连接自检（外设 / 中心两种角色） |
+| `src/main.cpp` | 默认固件：偶遇广播 / 扫描 / 判定（MQTT 模式下兼做入队与上传调度） |
+| `src/conn_test.h/.cpp` | 双板连接自检（外设 / 中心两种角色） |
+| `src/wifi_test.h/.cpp` | Wi-Fi 连接自检 |
+| `src/bump_config.h` | MQTT 构建开关与默认参数 |
+| `src/device_identity.h/.cpp` | device_id / boot_id / event_id / batch_id |
+| `src/event_queue.h/.cpp` | 定长待上传事件队列 |
+| `src/payload_writer.h/.cpp` | 手写 JSON 载荷（偶遇批次 / 状态） |
+| `src/mqtt_uploader.h/.cpp` | 上传窗口（Wi-Fi/TLS/MQTT、退避） |
 | `docs/FEATURES.md` | 本文件 |
 
-提供三个 PlatformIO 环境：
+提供五个 PlatformIO 环境：
 
 | 环境 | 角色 | 用途 |
 | --- | --- | --- |
 | `nanorp2040connect` | 默认 | 偶遇 MVP，两块板刷同一份固件 |
 | `nano_a` | BLE 外设 | 连接自检，可连接广播 + GATT 服务 |
 | `nano_b` | BLE 中心 | 连接自检，扫描、建连、读特征 |
+| `wifi_test` | Wi-Fi 客户端 | 验证 NINA 的 Wi-Fi 连接 |
+| `mqtt` | 偶遇 + 上报 | 偶遇 MVP + Wi-Fi/MQTT 上传 |
 
 ---
 
@@ -263,6 +270,10 @@ pio run -e nanorp2040connect -t upload --upload-port /dev/cu.usbmodemXXXX
 pio run -e nano_a -t upload --upload-port /dev/cu.usbmodemXXXX
 pio run -e nano_b -t upload --upload-port /dev/cu.usbmodemYYYY
 
+# Wi-Fi 连接自检 / 偶遇 + MQTT 上报
+pio run -e wifi_test -t upload --upload-port /dev/cu.usbmodemXXXX
+pio run -e mqtt -t upload --upload-port /dev/cu.usbmodemXXXX
+
 # 串口监视（115200，带时间戳）
 pio device monitor -p /dev/cu.usbmodemXXXX
 pio device monitor -p /dev/cu.usbmodemYYYY
@@ -311,3 +322,59 @@ pio device monitor -p /dev/cu.usbmodemYYYY
     都收不到，去掉过滤后同一窗口能看到 11–19 个设备。因此默认固件改为
     扫描全部设备、在应用层校验厂商数据。
 - **隐私**：MVP 不打印对端 MAC，仅使用匿名 short_id。
+
+---
+
+## 7. Wi-Fi 自检与 MQTT 上报
+
+### 7.1 `wifi_test`：Wi-Fi 连接自检
+
+输入：`build_flags` 注入的 `WIFI_SSID` / `WIFI_PASS`（默认 `iPhone` / 热点密码）。
+输出：连接结果与 IP / RSSI / MAC，每 5s 复核一次：
+
+```
+[wifi] firmware=3.0.2
+[wifi] mac=aa:bb:cc:dd:ee:ff
+[wifi] RESULT=PASS ip=172.20.10.9 rssi=-32
+```
+
+Wi-Fi 与 BLE 共用 NINA 模块，**不能同时工作**；该环境只用于验证 Wi-Fi，
+不含 BLE 逻辑。
+
+### 7.2 `mqtt`：偶遇事件上报
+
+协议契约见 [INTERFACES.md](INTERFACES.md)，实施细节见
+[FIRMWARE_MQTT_PLAN.md](FIRMWARE_MQTT_PLAN.md)。相对默认固件的变化：
+
+- **身份**：`device_id = bump-<Wi-Fi MAC 12 位 hex>`（重启不变）；
+  `boot_id` 每次上电 8 位随机 hex。事件 ID 形如
+  `ev_<dev12>_<boot8>_<seq8>`，重试不变，供服务端幂等去重。
+- **入队**：每次偶遇判定成立后，除原有串口 JSON 外把同一份字段压入
+  定长 16 条的内存队列（队满丢最旧并计数）。
+- **上传时机**：只在 TDM 阶段边界尝试。上传窗口依次
+  `BLE.end()` → 连 Wi-Fi（≤20s）→ TLS 8883 / MQTT（LWT + clean session）→
+  发布 `status online` → 按批（≤8 条）发布偶遇 → `status offline` →
+  `WiFi.end()` → 重启 BLE 回到广播阶段；整窗预算 40s。
+- **可靠性**：QoS1，收到 PUBACK 才出队；失败保留事件、指数退避
+  （10s×2ⁿ，上限 5min + 抖动）。重启会丢失未上传事件（无持久化）。
+- **凭据**：`BUMP_WIFI_SSID/PASS`、`BUMP_MQTT_HOST/PORT/PASS` 由
+  `build_flags` 注入；`BUMP_MQTT_HOST` 为空时上传禁用（只记一次日志），
+  不会为无意义的上传停掉 BLE。
+
+新增串口日志：
+
+```
+[boot] mqtt dev=bump-a1b2c3d4e5f6 boot=9f3c1a02 fw=0.4.0
+[mqtt] session start queued=1 fails=0
+[mqtt] wifi ok ip=172.20.10.9 rssi=-58
+[mqtt] mqtt connected
+[mqtt] tx ok batch=bt_a1b2c3d4e5f6_9f3c1a02_00000007_0001 n=1 bytes=421
+[mqtt] session done queued=0
+[mqtt] session failed stage=mqtt queued=1 fails=1
+[mqtt] backoff=10s
+[status] phase=adv self=3f9a01c47b2e peers=1 uptime=42s q=1 drop=0
+```
+
+已知代价：每次上传窗口期间 BLE 关闭（重启 2–15s + 上传最长 40s），
+偶遇检测存在 **10–55s 黑洞**；密集场景可用
+`BUMP_UPLOAD_MIN_INTERVAL_MS` 合并上传窗口（默认 0 = 立即）。

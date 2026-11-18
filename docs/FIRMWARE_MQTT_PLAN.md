@@ -35,7 +35,7 @@
 extends = env:nanorp2040connect
 lib_deps =
   arduino-libraries/ArduinoBLE@^2.1.0
-  arduino-libraries/WiFiNINA@^1.8.13
+  arduino-libraries/WiFiNINA@^2.0.0   ; 1.9.x 与 Arduino_SpiNINA 重复定义 spi_drv
   arduino-libraries/ArduinoMqttClient@^0.1.8
 build_src_filter = +<*> -<wifi_test.cpp>
 build_flags =
