@@ -5,13 +5,14 @@
 
 static bool s_running;
 
-void watchdogStart(uint32_t timeoutMs) {
+bool watchdogStart(uint32_t timeoutMs) {
   mbed::Watchdog& wd = mbed::Watchdog::get_instance();
   uint32_t maxMs = wd.get_max_timeout();
   if (maxMs != 0 && timeoutMs > maxMs) {
     timeoutMs = maxMs;
   }
   s_running = timeoutMs > 0 && wd.start(timeoutMs);
+  return s_running;
 }
 
 void watchdogKick() {
@@ -20,6 +21,6 @@ void watchdogKick() {
   }
 }
 #else
-void watchdogStart(uint32_t) {}
+bool watchdogStart(uint32_t) { return false; }
 void watchdogKick() {}
 #endif

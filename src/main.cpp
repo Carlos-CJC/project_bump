@@ -545,7 +545,9 @@ void setup() {
   delay(random(0, ADV_MS + SCAN_MS + 4000));
 
   // 初相错开之后再启动看门狗：此后所有 BLE 重启都不再能无限卡死。
-  watchdogStart(BUMP_WDT_TIMEOUT_MS);
+  bool wdtOn = watchdogStart(BUMP_WDT_TIMEOUT_MS);
+  logf("[boot] wdt=%s timeout=%ums", wdtOn ? "on" : "off",
+       (unsigned)BUMP_WDT_TIMEOUT_MS);
   enterAdvPhase();
 }
 
