@@ -111,8 +111,9 @@ static void runWindow() {
        (unsigned)s_failures);
 
   // Wi-Fi 与 BLE 共用 NINA 射频：先整体关闭 BLE，窗口结束后再恢复。
+  // 500ms 不够：NINA 从 BLE 模式释放射频需要数秒，过早 begin 会 20s 超时。
   BLE.end();
-  delay(500);
+  delay(3000);
 
   if (!wifiConnect()) {
     failWindow("wifi");
@@ -138,8 +139,21 @@ static void runWindow() {
   mqtt.write((const uint8_t*)status, statusLen);
   mqtt.endWill();
 
-  if (!mqtt.connect(BUMP_MQTT_HOST, BUMP_MQTT_PORT)) {
-    logf("[mqtt] connect failed err=%d", mqtt.connectError());
+  // BLE 刚释放射频时第一次 TLS 握手容易失败（NINA 内部状态残留），
+  // 隔 1s 再试一次通常即可成功，比整窗退避快得多。
+  bool connected = false;
+  for (uint8_t attempt = 0; attempt < 2; attempt++) {
+    if (mqtt.connect(BUMP_MQTT_HOST, BUMP_MQTT_PORT)) {
+      connected = true;
+      break;
+    }
+    logf("[mqtt] connect failed attempt=%u err=%d", (unsigned)attempt + 1,
+         mqtt.connectError());
+    if (attempt == 0) {
+      delay(1000);
+    }
+  }
+  if (!connected) {
     failWindow("mqtt");
     return;
   }
