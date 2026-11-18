@@ -15,6 +15,7 @@
 #include "device_identity.h"
 #include "event_queue.h"
 #include "payload_writer.h"
+#include "watchdog.h"
 
 static UploaderResumeFn s_resume;
 static char s_topicEnc[64];
@@ -61,6 +62,7 @@ static bool wifiConnect() {
       return false;
     }
     delay(500);
+    watchdogKick();
   }
   IPAddress ip = WiFi.localIP();
   logf("[mqtt] wifi ok ip=%u.%u.%u.%u rssi=%d",
@@ -97,10 +99,12 @@ static void scheduleBackoff() {
 }
 
 static void failWindow(const char* stage) {
+  watchdogKick();
   logf("[mqtt] session failed stage=%s queued=%u fails=%u", stage,
        (unsigned)eventQueueCount(), (unsigned)s_failures);
   WiFi.end();
   delay(500);
+  watchdogKick();
   scheduleBackoff();
   s_resume();
 }
@@ -114,6 +118,7 @@ static void runWindow() {
   // 500ms 不够：NINA 从 BLE 模式释放射频需要数秒，过早 begin 会 20s 超时。
   BLE.end();
   delay(3000);
+  watchdogKick();
 
   if (!wifiConnect()) {
     failWindow("wifi");
@@ -143,6 +148,7 @@ static void runWindow() {
   // 隔 1s 再试一次通常即可成功，比整窗退避快得多。
   bool connected = false;
   for (uint8_t attempt = 0; attempt < 2; attempt++) {
+    watchdogKick();
     if (mqtt.connect(BUMP_MQTT_HOST, BUMP_MQTT_PORT)) {
       connected = true;
       break;
@@ -167,6 +173,7 @@ static void runWindow() {
   }
 
   while (eventQueueCount() > 0) {
+    watchdogKick();
     if ((int32_t)(millis() - start) > (int32_t)BUMP_UPLOAD_BUDGET_MS) {
       logf("[mqtt] budget exceeded, deferring queued=%u",
            (unsigned)eventQueueCount());
@@ -206,6 +213,7 @@ static void runWindow() {
   mqtt.stop();
   WiFi.end();
   delay(500);
+  watchdogKick();
 
   s_failures = 0;
   s_lastWindowEnd = millis();

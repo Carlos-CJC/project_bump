@@ -73,6 +73,7 @@ void loop() { connTestLoop(); }
 #include <stdarg.h>
 
 #include "bump_config.h"
+#include "watchdog.h"
 #if BUMP_MQTT
 #include "device_identity.h"
 #include "event_queue.h"
@@ -233,12 +234,14 @@ static void configureAdvertising() {
 static void enterAdvPhase() {
   BLE.end();
   delay(1500);
+  watchdogKick();
   uint16_t attempts = 0;
   while (!BLE.begin()) {
     if (++attempts == 10) {
       logf("[ble] restart slow, still retrying");
     }
     delay(400);
+    watchdogKick();
   }
 
   configureAdvertising();
@@ -258,12 +261,14 @@ static void enterAdvPhase() {
 static void enterScanPhase() {
   BLE.end();
   delay(500);
+  watchdogKick();
   uint16_t attempts = 0;
   while (!BLE.begin()) {
     if (++attempts == 10) {
       logf("[ble] restart slow, still retrying");
     }
     delay(400);
+    watchdogKick();
   }
   BLE.setEventHandler(BLEDiscovered, onDiscovered);
   BLE.scan(false);
@@ -539,10 +544,13 @@ void setup() {
   // 双方永远听不到对方。offset 覆盖一个完整周期，保证至少一端错开。
   delay(random(0, ADV_MS + SCAN_MS + 4000));
 
+  // 初相错开之后再启动看门狗：此后所有 BLE 重启都不再能无限卡死。
+  watchdogStart(BUMP_WDT_TIMEOUT_MS);
   enterAdvPhase();
 }
 
 void loop() {
+  watchdogKick();
   BLE.poll();  // 让库处理 HCI 事件
 
   uint32_t now = millis();
