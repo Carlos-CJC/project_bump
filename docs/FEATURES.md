@@ -22,6 +22,7 @@
 | `src/event_queue.h/.cpp` | 定长待上传事件队列 |
 | `src/payload_writer.h/.cpp` | 手写 JSON 载荷（偶遇批次 / 状态） |
 | `src/mqtt_uploader.h/.cpp` | 上传窗口（Wi-Fi/TLS/MQTT、退避） |
+| `src/watchdog.h/.cpp` | 硬件看门狗（NINA SPI 死锁自动复位） |
 | `docs/FEATURES.md` | 本文件 |
 
 提供五个 PlatformIO 环境：
@@ -378,3 +379,9 @@ Wi-Fi 与 BLE 共用 NINA 模块，**不能同时工作**；该环境只用于�
 已知代价：每次上传窗口期间 BLE 关闭（重启 2–15s + 上传最长 40s），
 偶遇检测存在 **10–55s 黑洞**；密集场景可用
 `BUMP_UPLOAD_MIN_INTERVAL_MS` 合并上传窗口（默认 0 = 立即）。
+
+可靠性：NINA 的 SPI 驱动没有超时，BLE/Wi-Fi 切换偶尔会让 SPI 等待永久阻塞
+（串口静默、只能物理复位）。固件在初相错开后启用硬件看门狗
+（`BUMP_WDT_TIMEOUT_MS`，默认 16s，按平台上限封顶），主循环、BLE 重启循环、
+Wi-Fi 轮询/上传等待都会喂狗；真正卡死时看门狗自动重启，重启后重新进入广播阶段
+（未上传的内存事件会丢失，与断电等价）。
