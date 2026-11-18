@@ -51,23 +51,36 @@ static size_t buildStatusFor(char* buf, size_t cap, const char* state) {
   return buildStatus(buf, cap, info);
 }
 
+// BLE 刚关闭时第一次 WiFi.begin 常会一直停在 WL_IDLE，整轮超时；
+// WiFi.end() 后重新 begin 通常几秒内就能连上，因此失败后带一次重建重试。
 static bool wifiConnect() {
   if (BUMP_WIFI_SSID[0] == '\0') {
     return false;
   }
-  WiFi.begin(BUMP_WIFI_SSID, BUMP_WIFI_PASS);
-  uint32_t start = millis();
-  while (WiFi.status() != WL_CONNECTED) {
-    if ((int32_t)(millis() - start) > (int32_t)BUMP_WIFI_TIMEOUT_MS) {
-      return false;
+  const uint32_t attemptMs = BUMP_WIFI_TIMEOUT_MS / 2;
+  for (uint8_t attempt = 0; attempt < 2; attempt++) {
+    WiFi.begin(BUMP_WIFI_SSID, BUMP_WIFI_PASS);
+    uint32_t start = millis();
+    while (WiFi.status() != WL_CONNECTED) {
+      if ((int32_t)(millis() - start) > (int32_t)attemptMs) {
+        break;
+      }
+      delay(500);
+      watchdogKick();
     }
-    delay(500);
+    if (WiFi.status() == WL_CONNECTED) {
+      IPAddress ip = WiFi.localIP();
+      logf("[mqtt] wifi ok attempt=%u ip=%u.%u.%u.%u rssi=%d",
+           (unsigned)attempt + 1, ip[0], ip[1], ip[2], ip[3], (int)WiFi.RSSI());
+      return true;
+    }
+    logf("[mqtt] wifi attempt=%u failed status=%d", (unsigned)attempt + 1,
+         (int)WiFi.status());
+    WiFi.end();
+    delay(2000);
     watchdogKick();
   }
-  IPAddress ip = WiFi.localIP();
-  logf("[mqtt] wifi ok ip=%u.%u.%u.%u rssi=%d",
-       ip[0], ip[1], ip[2], ip[3], (int)WiFi.RSSI());
-  return true;
+  return false;
 }
 
 // QoS1 的 endMessage() 会阻塞等待 PUBACK，返回 1 表示 broker 已接收。
