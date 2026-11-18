@@ -109,6 +109,10 @@ static const uint32_t SAMPLE_WINDOW_MS = 180000;  // 样本计数窗口
 static const uint32_t PEER_RESET_MS = 300000;     // 超过此间隔未见则重置该 peer 的窗口
 static const uint32_t COOLDOWN_MS = 8UL * 3600UL * 1000UL;  // 同一 peer 去重冷却 8 小时
 
+// BLE 协议栈重启的最大重试次数。实测 Wi-Fi 使用后 NINA 偶发长时间拒绝
+// BLE 初始化（数十秒），超过阈值视为模块进入异常状态，主动复位比无限重试更快恢复。
+static const uint16_t BLE_RESTART_MAX = 30;
+
 // 时分复用参数：广播/扫描时长与抖动。
 // 扫描->广播必须重启 BLE 栈（见 enterAdvPhase），重启本身约 4–6s 不发射；
 // 周期放长可提高无线电占空比，并降低每次重启对偶遇统计的稀释。
@@ -240,6 +244,10 @@ static void enterAdvPhase() {
     if (++attempts == 10) {
       logf("[ble] restart slow, still retrying");
     }
+    if (attempts >= BLE_RESTART_MAX) {
+      logf("[ble] restart failed %u times, rebooting", (unsigned)attempts);
+      NVIC_SystemReset();
+    }
     delay(400);
     watchdogKick();
   }
@@ -266,6 +274,10 @@ static void enterScanPhase() {
   while (!BLE.begin()) {
     if (++attempts == 10) {
       logf("[ble] restart slow, still retrying");
+    }
+    if (attempts >= BLE_RESTART_MAX) {
+      logf("[ble] restart failed %u times, rebooting", (unsigned)attempts);
+      NVIC_SystemReset();
     }
     delay(400);
     watchdogKick();
