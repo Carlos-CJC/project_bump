@@ -522,6 +522,12 @@ void setup() {
     delay(10);
   }
 
+  // 尽早启动看门狗：软复位后 RP2040 的看门狗可能仍在倒计时，先喂一次重置它，
+  // 否则启动阶段（射频初始化）会被残留超时二次打断。
+  bool wdtOn = watchdogStart(BUMP_WDT_TIMEOUT_MS);
+  logf("[boot] wdt=%s timeout=%ums", wdtOn ? "on" : "off",
+       (unsigned)BUMP_WDT_TIMEOUT_MS);
+
   makeShortId(shortId);
 
 #if BUMP_MQTT
@@ -554,12 +560,13 @@ void setup() {
 
   // 随机错开初始相位：两块板同时上电且周期相近时，广播/扫描会一直同相，
   // 双方永远听不到对方。offset 覆盖一个完整周期，保证至少一端错开。
-  delay(random(0, ADV_MS + SCAN_MS + 4000));
+  // 等待期间要喂狗（最长 19s 已超过超时时间）。
+  uint32_t phaseOffsetUntil = millis() + random(0, ADV_MS + SCAN_MS + 4000);
+  while ((int32_t)(millis() - phaseOffsetUntil) < 0) {
+    watchdogKick();
+    delay(100);
+  }
 
-  // 初相错开之后再启动看门狗：此后所有 BLE 重启都不再能无限卡死。
-  bool wdtOn = watchdogStart(BUMP_WDT_TIMEOUT_MS);
-  logf("[boot] wdt=%s timeout=%ums", wdtOn ? "on" : "off",
-       (unsigned)BUMP_WDT_TIMEOUT_MS);
   enterAdvPhase();
 }
 
