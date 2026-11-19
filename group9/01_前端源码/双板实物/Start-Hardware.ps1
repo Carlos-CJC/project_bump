@@ -27,7 +27,7 @@ if ($CheckOnly -or -not $Independent) {
     exit 1
 }
 
-$runtime = [IO.Path]::GetFullPath((Join-Path $PSScriptRoot '..\..\.run\state\hardware-8876'))
+$runtime = [IO.Path]::GetFullPath((Join-Path $PSScriptRoot '..\..\.run\state\hardware'))
 if (-not (Test-Path -LiteralPath (Join-Path $runtime 'live-config.json'))) {
     & $runner server init --runtime $runtime --device-a bump-349454276354 --device-b bump-c8c9a3e65ba4 --web-port 8876 --mqtt-port 18884
     if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
