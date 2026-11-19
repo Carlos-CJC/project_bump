@@ -1,0 +1,133 @@
+{
+  "observed_at": "2026-11-18T17:40:06.124Z",
+  "page": "http://127.0.0.1:8875",
+  "browser": "Chrome / Playwright, isolated headless context",
+  "source_page_title": "Bump · 双板联调",
+  "role": "Bob",
+  "device_alias": "挂件 B",
+  "device_source_label": "挂件 MQTT 直传",
+  "cards": [
+    {
+      "alias": "挂件 A",
+      "label": "挂件 MQTT 直传",
+      "mutual": true,
+      "single_sided": false,
+      "review": false,
+      "metrics": [
+        "相遇 16.0 秒",
+        "平均信号 -67 dBm",
+        "30 次采样"
+      ],
+      "event_time_local": "2026/11/19 01:28:13 · 由设备运行时间估算",
+      "estimated_time_label": true
+    },
+    {
+      "alias": "挂件 A",
+      "label": "挂件 MQTT 直传",
+      "mutual": true,
+      "single_sided": false,
+      "review": false,
+      "metrics": [
+        "相遇 28.0 秒",
+        "平均信号 -65 dBm",
+        "57 次采样"
+      ],
+      "event_time_local": "2026/11/19 01:18:33 · 由设备运行时间估算",
+      "estimated_time_label": true
+    },
+    {
+      "alias": "挂件 A",
+      "label": "挂件 MQTT 直传",
+      "mutual": true,
+      "single_sided": false,
+      "review": false,
+      "metrics": [
+        "相遇 28.0 秒",
+        "平均信号 -66 dBm",
+        "54 次采样"
+      ],
+      "event_time_local": "2026/11/19 01:16:06 · 由设备运行时间估算",
+      "estimated_time_label": true
+    },
+    {
+      "alias": "挂件 A",
+      "label": "挂件 MQTT 直传",
+      "mutual": true,
+      "single_sided": false,
+      "review": false,
+      "metrics": [
+        "相遇 28.0 秒",
+        "平均信号 -65 dBm",
+        "54 次采样"
+      ],
+      "event_time_local": "2026/11/19 01:14:54 · 由设备运行时间估算",
+      "estimated_time_label": true
+    },
+    {
+      "alias": "挂件 A",
+      "label": "挂件 MQTT 直传",
+      "mutual": true,
+      "single_sided": false,
+      "review": false,
+      "metrics": [
+        "相遇 27.0 秒",
+        "平均信号 -65 dBm",
+        "54 次采样"
+      ],
+      "event_time_local": "2026/11/19 00:56:01 · 由设备运行时间估算",
+      "estimated_time_label": true
+    },
+    {
+      "alias": "挂件 A",
+      "label": "挂件 MQTT 直传",
+      "mutual": true,
+      "single_sided": false,
+      "review": false,
+      "metrics": [
+        "相遇 27.0 秒",
+        "平均信号 -65 dBm",
+        "52 次采样"
+      ],
+      "event_time_local": "2026/11/19 00:54:55 · 由设备运行时间估算",
+      "estimated_time_label": true
+    },
+    {
+      "alias": "挂件 A",
+      "label": "挂件 MQTT 直传",
+      "mutual": false,
+      "single_sided": true,
+      "review": false,
+      "metrics": [
+        "相遇 22.0 秒",
+        "平均信号 -70 dBm",
+        "6 次采样"
+      ],
+      "event_time_local": "2026/11/18 23:51:28 · 由设备运行时间估算",
+      "estimated_time_label": true
+    }
+  ],
+  "invitations": [
+    {
+      "alias": "挂件 A",
+      "label": "等待回应",
+      "ir": true,
+      "incoming": true,
+      "profile_visible": false
+    },
+    {
+      "alias": "挂件 A",
+      "label": "联系已撤销",
+      "ir": true,
+      "incoming": false,
+      "profile_visible": false
+    }
+  ],
+  "profiles_to_mask": 0,
+  "device_id_visible": false,
+  "email_visible": false,
+  "login_secret_field_empty": true,
+  "page_errors": 0,
+  "screenshot": "Bob_12秒错位BLE匹配.png",
+  "invitation_actions": 0,
+  "scope": "0.5.5 实体 BLE 双向观察，串口诊断错位开窗约 12.264 秒，离线后补传"
+}

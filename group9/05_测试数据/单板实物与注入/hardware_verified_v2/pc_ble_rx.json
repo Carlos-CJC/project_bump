@@ -1,0 +1,488 @@
+[
+  {
+    "host_utc": "2026-11-15T12:50:49.131642+00:00",
+    "rssi_dbm": -28,
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "local_name": null
+  },
+  {
+    "host_utc": "2026-11-15T12:50:49.132641+00:00",
+    "rssi_dbm": -28,
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "local_name": "BumpDiag"
+  },
+  {
+    "host_utc": "2026-11-15T12:50:50.932625+00:00",
+    "rssi_dbm": -27,
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "local_name": "BumpDiag"
+  },
+  {
+    "host_utc": "2026-11-15T12:50:50.932625+00:00",
+    "rssi_dbm": -26,
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "local_name": "BumpDiag"
+  },
+  {
+    "host_utc": "2026-11-15T12:50:51.979699+00:00",
+    "rssi_dbm": -28,
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "local_name": "BumpDiag"
+  },
+  {
+    "host_utc": "2026-11-15T12:50:51.980698+00:00",
+    "rssi_dbm": -28,
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "local_name": "BumpDiag"
+  },
+  {
+    "host_utc": "2026-11-15T12:50:52.937709+00:00",
+    "rssi_dbm": -19,
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "local_name": "BumpDiag"
+  },
+  {
+    "host_utc": "2026-11-15T12:50:52.938734+00:00",
+    "rssi_dbm": -19,
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "local_name": "BumpDiag"
+  },
+  {
+    "host_utc": "2026-11-15T12:50:53.041210+00:00",
+    "rssi_dbm": -28,
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "local_name": "BumpDiag"
+  },
+  {
+    "host_utc": "2026-11-15T12:50:53.042210+00:00",
+    "rssi_dbm": -28,
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "local_name": "BumpDiag"
+  },
+  {
+    "host_utc": "2026-11-15T12:50:53.150831+00:00",
+    "rssi_dbm": -25,
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "local_name": "BumpDiag"
+  },
+  {
+    "host_utc": "2026-11-15T12:50:53.151895+00:00",
+    "rssi_dbm": -25,
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "local_name": "BumpDiag"
+  },
+  {
+    "host_utc": "2026-11-15T12:50:53.998758+00:00",
+    "rssi_dbm": -19,
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "local_name": "BumpDiag"
+  },
+  {
+    "host_utc": "2026-11-15T12:50:54.000749+00:00",
+    "rssi_dbm": -19,
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "local_name": "BumpDiag"
+  },
+  {
+    "host_utc": "2026-11-15T12:50:54.099378+00:00",
+    "rssi_dbm": -28,
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "local_name": "BumpDiag"
+  },
+  {
+    "host_utc": "2026-11-15T12:50:54.100378+00:00",
+    "rssi_dbm": -28,
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "local_name": "BumpDiag"
+  },
+  {
+    "host_utc": "2026-11-15T12:50:55.881535+00:00",
+    "rssi_dbm": -28,
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "local_name": "BumpDiag"
+  },
+  {
+    "host_utc": "2026-11-15T12:50:55.882540+00:00",
+    "rssi_dbm": -28,
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "local_name": "BumpDiag"
+  },
+  {
+    "host_utc": "2026-11-15T12:50:55.992131+00:00",
+    "rssi_dbm": -25,
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "local_name": "BumpDiag"
+  },
+  {
+    "host_utc": "2026-11-15T12:50:55.993126+00:00",
+    "rssi_dbm": -25,
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "local_name": "BumpDiag"
+  },
+  {
+    "host_utc": "2026-11-15T12:50:56.098579+00:00",
+    "rssi_dbm": -19,
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "local_name": "BumpDiag"
+  },
+  {
+    "host_utc": "2026-11-15T12:50:56.099122+00:00",
+    "rssi_dbm": -19,
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "local_name": "BumpDiag"
+  },
+  {
+    "host_utc": "2026-11-15T12:50:56.628379+00:00",
+    "rssi_dbm": -28,
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "local_name": "BumpDiag"
+  },
+  {
+    "host_utc": "2026-11-15T12:50:56.629436+00:00",
+    "rssi_dbm": -28,
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "local_name": "BumpDiag"
+  },
+  {
+    "host_utc": "2026-11-15T12:50:56.947451+00:00",
+    "rssi_dbm": -28,
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "local_name": "BumpDiag"
+  },
+  {
+    "host_utc": "2026-11-15T12:50:56.948556+00:00",
+    "rssi_dbm": -28,
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "local_name": "BumpDiag"
+  },
+  {
+    "host_utc": "2026-11-15T12:50:57.050123+00:00",
+    "rssi_dbm": -25,
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "local_name": "BumpDiag"
+  },
+  {
+    "host_utc": "2026-11-15T12:50:57.051122+00:00",
+    "rssi_dbm": -25,
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "local_name": "BumpDiag"
+  },
+  {
+    "host_utc": "2026-11-15T12:50:57.998628+00:00",
+    "rssi_dbm": -28,
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "local_name": "BumpDiag"
+  },
+  {
+    "host_utc": "2026-11-15T12:50:58.000224+00:00",
+    "rssi_dbm": -28,
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "local_name": "BumpDiag"
+  },
+  {
+    "host_utc": "2026-11-15T12:50:59.052314+00:00",
+    "rssi_dbm": -28,
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "local_name": "BumpDiag"
+  },
+  {
+    "host_utc": "2026-11-15T12:50:59.053306+00:00",
+    "rssi_dbm": -28,
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "local_name": "BumpDiag"
+  },
+  {
+    "host_utc": "2026-11-15T12:50:59.777347+00:00",
+    "rssi_dbm": -28,
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "local_name": "BumpDiag"
+  },
+  {
+    "host_utc": "2026-11-15T12:50:59.778351+00:00",
+    "rssi_dbm": -28,
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "local_name": "BumpDiag"
+  },
+  {
+    "host_utc": "2026-11-15T12:50:59.887682+00:00",
+    "rssi_dbm": -25,
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "local_name": "BumpDiag"
+  },
+  {
+    "host_utc": "2026-11-15T12:50:59.888291+00:00",
+    "rssi_dbm": -25,
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "local_name": "BumpDiag"
+  },
+  {
+    "host_utc": "2026-11-15T12:51:00.719687+00:00",
+    "rssi_dbm": -19,
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "local_name": "BumpDiag"
+  },
+  {
+    "host_utc": "2026-11-15T12:51:00.720735+00:00",
+    "rssi_dbm": -18,
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "local_name": "BumpDiag"
+  },
+  {
+    "host_utc": "2026-11-15T12:51:01.556279+00:00",
+    "rssi_dbm": -28,
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "local_name": "BumpDiag"
+  },
+  {
+    "host_utc": "2026-11-15T12:51:01.557289+00:00",
+    "rssi_dbm": -28,
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "local_name": "BumpDiag"
+  },
+  {
+    "host_utc": "2026-11-15T12:51:01.659904+00:00",
+    "rssi_dbm": -25,
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "local_name": "BumpDiag"
+  },
+  {
+    "host_utc": "2026-11-15T12:51:01.660914+00:00",
+    "rssi_dbm": -25,
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "local_name": "BumpDiag"
+  },
+  {
+    "host_utc": "2026-11-15T12:51:01.770177+00:00",
+    "rssi_dbm": -19,
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "local_name": "BumpDiag"
+  },
+  {
+    "host_utc": "2026-11-15T12:51:01.771830+00:00",
+    "rssi_dbm": -19,
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "local_name": "BumpDiag"
+  },
+  {
+    "host_utc": "2026-11-15T12:51:02.398141+00:00",
+    "rssi_dbm": -26,
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "local_name": "BumpDiag"
+  },
+  {
+    "host_utc": "2026-11-15T12:51:02.398141+00:00",
+    "rssi_dbm": -27,
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "local_name": "BumpDiag"
+  },
+  {
+    "host_utc": "2026-11-15T12:51:02.721683+00:00",
+    "rssi_dbm": -27,
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "local_name": "BumpDiag"
+  },
+  {
+    "host_utc": "2026-11-15T12:51:02.722683+00:00",
+    "rssi_dbm": -27,
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "local_name": "BumpDiag"
+  },
+  {
+    "host_utc": "2026-11-15T12:51:04.389763+00:00",
+    "rssi_dbm": -28,
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "local_name": "BumpDiag"
+  },
+  {
+    "host_utc": "2026-11-15T12:51:04.390828+00:00",
+    "rssi_dbm": -28,
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "local_name": "BumpDiag"
+  },
+  {
+    "host_utc": "2026-11-15T12:51:05.441495+00:00",
+    "rssi_dbm": -28,
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "local_name": "BumpDiag"
+  },
+  {
+    "host_utc": "2026-11-15T12:51:05.442495+00:00",
+    "rssi_dbm": -28,
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "local_name": "BumpDiag"
+  },
+  {
+    "host_utc": "2026-11-15T12:51:08.289081+00:00",
+    "rssi_dbm": -27,
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "local_name": "BumpDiag"
+  },
+  {
+    "host_utc": "2026-11-15T12:51:08.290178+00:00",
+    "rssi_dbm": -27,
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "local_name": "BumpDiag"
+  }
+]

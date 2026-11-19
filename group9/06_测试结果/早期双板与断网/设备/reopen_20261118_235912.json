@@ -1,0 +1,98 @@
+{
+  "began": "2026-11-18T15:59:03.294219+00:00",
+  "ports": {
+    "0617355018835E82": "COM13",
+    "416523501C5F96C8": "COM14"
+  },
+  "reads": {
+    "A": [],
+    "B": [
+      {
+        "utc": "2026-11-18T15:59:03.349483+00:00",
+        "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.1-dual\",\"device_id\":\"bump-c8c9a3e65ba4\",\"boot_id\":\"225ee61c\",\"self_short_id\":\"e93e28731be4\",\"self_code16\":\"c371\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":633539,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":63131,\"motion_triggers\":0,\"network_configured\":true,\"transport\":\"wifi_mqtt_tcp\",\"accel_g\":[-0.10779,0.02380,0.98645]}"
+      },
+      {
+        "utc": "2026-11-18T15:59:03.370085+00:00",
+        "data": "STATUS state=IDLE my=0xC371"
+      },
+      {
+        "utc": "2026-11-18T15:59:03.993498+00:00",
+        "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.1-dual\",\"device_id\":\"bump-c8c9a3e65ba4\",\"boot_id\":\"225ee61c\",\"self_short_id\":\"e93e28731be4\",\"self_code16\":\"c371\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":634194,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":63201,\"motion_triggers\":0,\"network_configured\":true,\"transport\":\"wifi_mqtt_tcp\",\"accel_g\":[-0.10828,0.02490,0.98816]}"
+      },
+      {
+        "utc": "2026-11-18T15:59:05.005076+00:00",
+        "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.1-dual\",\"device_id\":\"bump-c8c9a3e65ba4\",\"boot_id\":\"225ee61c\",\"self_short_id\":\"e93e28731be4\",\"self_code16\":\"c371\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":635194,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":63307,\"motion_triggers\":0,\"network_configured\":true,\"transport\":\"wifi_mqtt_tcp\",\"accel_g\":[-0.10754,0.02393,0.98816]}"
+      },
+      {
+        "utc": "2026-11-18T15:59:05.358220+00:00",
+        "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.1-dual\",\"device_id\":\"bump-c8c9a3e65ba4\",\"boot_id\":\"225ee61c\",\"self_short_id\":\"e93e28731be4\",\"self_code16\":\"c371\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":635547,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":63345,\"motion_triggers\":0,\"network_configured\":true,\"transport\":\"wifi_mqtt_tcp\",\"accel_g\":[-0.10803,0.02441,0.98828]}"
+      },
+      {
+        "utc": "2026-11-18T15:59:05.378702+00:00",
+        "data": "STATUS state=IDLE my=0xC371"
+      },
+      {
+        "utc": "2026-11-18T15:59:05.892833+00:00",
+        "data": "[state=IDLE my=0xC371]"
+      },
+      {
+        "utc": "2026-11-18T15:59:05.999547+00:00",
+        "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.1-dual\",\"device_id\":\"bump-c8c9a3e65ba4\",\"boot_id\":\"225ee61c\",\"self_short_id\":\"e93e28731be4\",\"self_code16\":\"c371\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":636194,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":63414,\"motion_triggers\":0,\"network_configured\":true,\"transport\":\"wifi_mqtt_tcp\",\"accel_g\":[-0.10828,0.02490,0.98828]}"
+      },
+      {
+        "utc": "2026-11-18T15:59:06.994673+00:00",
+        "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.1-dual\",\"device_id\":\"bump-c8c9a3e65ba4\",\"boot_id\":\"225ee61c\",\"self_short_id\":\"e93e28731be4\",\"self_code16\":\"c371\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":637195,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":63521,\"motion_triggers\":0,\"network_configured\":true,\"transport\":\"wifi_mqtt_tcp\",\"accel_g\":[-0.10706,0.02502,0.98840]}"
+      },
+      {
+        "utc": "2026-11-18T15:59:07.372396+00:00",
+        "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.1-dual\",\"device_id\":\"bump-c8c9a3e65ba4\",\"boot_id\":\"225ee61c\",\"self_short_id\":\"e93e28731be4\",\"self_code16\":\"c371\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":637561,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":63560,\"motion_triggers\":0,\"network_configured\":true,\"transport\":\"wifi_mqtt_tcp\",\"accel_g\":[-0.10828,0.02539,0.98840]}"
+      },
+      {
+        "utc": "2026-11-18T15:59:07.392864+00:00",
+        "data": "STATUS state=IDLE my=0xC371"
+      },
+      {
+        "utc": "2026-11-18T15:59:07.990830+00:00",
+        "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.1-dual\",\"device_id\":\"bump-c8c9a3e65ba4\",\"boot_id\":\"225ee61c\",\"self_short_id\":\"e93e28731be4\",\"self_code16\":\"c371\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":638195,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":63627,\"motion_triggers\":0,\"network_configured\":true,\"transport\":\"wifi_mqtt_tcp\",\"accel_g\":[-0.10718,0.02332,0.98840]}"
+      },
+      {
+        "utc": "2026-11-18T15:59:09.005438+00:00",
+        "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.1-dual\",\"device_id\":\"bump-c8c9a3e65ba4\",\"boot_id\":\"225ee61c\",\"self_short_id\":\"e93e28731be4\",\"self_code16\":\"c371\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":639195,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":63734,\"motion_triggers\":0,\"network_configured\":true,\"transport\":\"wifi_mqtt_tcp\",\"accel_g\":[-0.10767,0.02441,0.98767]}"
+      },
+      {
+        "utc": "2026-11-18T15:59:09.383063+00:00",
+        "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.1-dual\",\"device_id\":\"bump-c8c9a3e65ba4\",\"boot_id\":\"225ee61c\",\"self_short_id\":\"e93e28731be4\",\"self_code16\":\"c371\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":639571,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":63774,\"motion_triggers\":0,\"network_configured\":true,\"transport\":\"wifi_mqtt_tcp\",\"accel_g\":[-0.10815,0.02466,0.98816]}"
+      },
+      {
+        "utc": "2026-11-18T15:59:09.404039+00:00",
+        "data": "STATUS state=IDLE my=0xC371"
+      },
+      {
+        "utc": "2026-11-18T15:59:10.005584+00:00",
+        "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.1-dual\",\"device_id\":\"bump-c8c9a3e65ba4\",\"boot_id\":\"225ee61c\",\"self_short_id\":\"e93e28731be4\",\"self_code16\":\"c371\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":640196,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":63841,\"motion_triggers\":0,\"network_configured\":true,\"transport\":\"wifi_mqtt_tcp\",\"accel_g\":[-0.10791,0.02478,0.98914]}"
+      },
+      {
+        "utc": "2026-11-18T15:59:10.888702+00:00",
+        "data": "[state=IDLE my=0xC371]"
+      },
+      {
+        "utc": "2026-11-18T15:59:10.994427+00:00",
+        "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.1-dual\",\"device_id\":\"bump-c8c9a3e65ba4\",\"boot_id\":\"225ee61c\",\"self_short_id\":\"e93e28731be4\",\"self_code16\":\"c371\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":641196,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":63947,\"motion_triggers\":0,\"network_configured\":true,\"transport\":\"wifi_mqtt_tcp\",\"accel_g\":[-0.10840,0.02588,0.98901]}"
+      },
+      {
+        "utc": "2026-11-18T15:59:11.388345+00:00",
+        "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.1-dual\",\"device_id\":\"bump-c8c9a3e65ba4\",\"boot_id\":\"225ee61c\",\"self_short_id\":\"e93e28731be4\",\"self_code16\":\"c371\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":641577,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":63988,\"motion_triggers\":0,\"network_configured\":true,\"transport\":\"wifi_mqtt_tcp\",\"accel_g\":[-0.10730,0.02344,0.98840]}"
+      },
+      {
+        "utc": "2026-11-18T15:59:11.408984+00:00",
+        "data": "STATUS state=IDLE my=0xC371"
+      },
+      {
+        "utc": "2026-11-18T15:59:11.989187+00:00",
+        "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.1-dual\",\"device_id\":\"bump-c8c9a3e65ba4\",\"boot_id\":\"225ee61c\",\"self_short_id\":\"e93e28731be4\",\"self_code16\":\"c371\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":642196,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":64054,\"motion_triggers\":0,\"network_configured\":true,\"transport\":\"wifi_mqtt_tcp\",\"accel_g\":[-0.10730,0.02429,0.98865]}"
+      }
+    ]
+  },
+  "errors": {},
+  "ended": "2026-11-18T15:59:12.348097+00:00"
+}

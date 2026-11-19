@@ -1,0 +1,47 @@
+{
+  "observed_at": "2026-11-18T15:59:10.345Z",
+  "page": "http://127.0.0.1:8875",
+  "browser": "Chrome / Playwright, isolated headless context",
+  "source_page_title": "Bump · 双板联调",
+  "role": "Bob",
+  "device_alias": "挂件 B",
+  "device_source_label": "挂件 MQTT 直传",
+  "cards": [
+    {
+      "alias": "挂件 A",
+      "label": "挂件 MQTT 直传",
+      "mutual": false,
+      "single_sided": true,
+      "metrics": [
+        "相遇 22.0 秒",
+        "平均信号 -70 dBm",
+        "6 次采样"
+      ],
+      "estimated_time_label": true
+    }
+  ],
+  "invitations": [
+    {
+      "alias": "挂件 A",
+      "label": "等待回应",
+      "ir": true,
+      "incoming": true,
+      "profile_visible": false
+    },
+    {
+      "alias": "挂件 A",
+      "label": "联系已撤销",
+      "ir": true,
+      "incoming": false,
+      "profile_visible": false
+    }
+  ],
+  "profiles_to_mask": 0,
+  "device_id_visible": false,
+  "email_visible": false,
+  "login_secret_field_empty": true,
+  "page_errors": 0,
+  "screenshot": "Bob_蓝牙单方相遇网页.png",
+  "invitation_actions": 0,
+  "scope": "0.5.1 真板 B 单方向 BLE 相遇；双方互遇仍待复测"
+}

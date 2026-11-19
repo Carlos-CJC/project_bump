@@ -1,0 +1,274 @@
+[
+  {
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "rssi_dbm": -22,
+    "host_utc": "2026-11-15T12:55:56.182065+00:00"
+  },
+  {
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "rssi_dbm": -22,
+    "host_utc": "2026-11-15T12:55:56.183157+00:00"
+  },
+  {
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "rssi_dbm": -23,
+    "host_utc": "2026-11-15T12:55:57.131933+00:00"
+  },
+  {
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "rssi_dbm": -23,
+    "host_utc": "2026-11-15T12:55:57.131933+00:00"
+  },
+  {
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "rssi_dbm": -22,
+    "host_utc": "2026-11-15T12:55:57.242444+00:00"
+  },
+  {
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "rssi_dbm": -22,
+    "host_utc": "2026-11-15T12:55:57.243444+00:00"
+  },
+  {
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "rssi_dbm": -17,
+    "host_utc": "2026-11-15T12:55:58.090239+00:00"
+  },
+  {
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "rssi_dbm": -17,
+    "host_utc": "2026-11-15T12:55:58.091330+00:00"
+  },
+  {
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "rssi_dbm": -24,
+    "host_utc": "2026-11-15T12:55:58.194252+00:00"
+  },
+  {
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "rssi_dbm": -23,
+    "host_utc": "2026-11-15T12:55:58.195253+00:00"
+  },
+  {
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "rssi_dbm": -22,
+    "host_utc": "2026-11-15T12:55:58.305022+00:00"
+  },
+  {
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "rssi_dbm": -23,
+    "host_utc": "2026-11-15T12:55:58.306022+00:00"
+  },
+  {
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "rssi_dbm": -17,
+    "host_utc": "2026-11-15T12:55:59.134804+00:00"
+  },
+  {
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "rssi_dbm": -17,
+    "host_utc": "2026-11-15T12:55:59.135839+00:00"
+  },
+  {
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "rssi_dbm": -23,
+    "host_utc": "2026-11-15T12:55:59.241416+00:00"
+  },
+  {
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "rssi_dbm": -24,
+    "host_utc": "2026-11-15T12:55:59.243459+00:00"
+  },
+  {
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "rssi_dbm": -22,
+    "host_utc": "2026-11-15T12:56:00.078260+00:00"
+  },
+  {
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "rssi_dbm": -22,
+    "host_utc": "2026-11-15T12:56:00.079252+00:00"
+  },
+  {
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "rssi_dbm": -17,
+    "host_utc": "2026-11-15T12:56:00.919632+00:00"
+  },
+  {
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "rssi_dbm": -17,
+    "host_utc": "2026-11-15T12:56:00.920592+00:00"
+  },
+  {
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "rssi_dbm": -22,
+    "host_utc": "2026-11-15T12:56:01.129276+00:00"
+  },
+  {
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "rssi_dbm": -22,
+    "host_utc": "2026-11-15T12:56:01.130481+00:00"
+  },
+  {
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "rssi_dbm": -17,
+    "host_utc": "2026-11-15T12:56:01.962411+00:00"
+  },
+  {
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "rssi_dbm": -16,
+    "host_utc": "2026-11-15T12:56:01.963419+00:00"
+  },
+  {
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "rssi_dbm": -23,
+    "host_utc": "2026-11-15T12:56:02.808456+00:00"
+  },
+  {
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "rssi_dbm": -23,
+    "host_utc": "2026-11-15T12:56:02.809558+00:00"
+  },
+  {
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "rssi_dbm": -22,
+    "host_utc": "2026-11-15T12:56:02.911618+00:00"
+  },
+  {
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "rssi_dbm": -22,
+    "host_utc": "2026-11-15T12:56:02.913217+00:00"
+  },
+  {
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "rssi_dbm": -17,
+    "host_utc": "2026-11-15T12:56:03.020658+00:00"
+  },
+  {
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "rssi_dbm": -17,
+    "host_utc": "2026-11-15T12:56:03.022174+00:00"
+  },
+  {
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "rssi_dbm": -22,
+    "host_utc": "2026-11-15T12:56:03.971669+00:00"
+  },
+  {
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "rssi_dbm": -22,
+    "host_utc": "2026-11-15T12:56:03.973243+00:00"
+  },
+  {
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "rssi_dbm": -22,
+    "host_utc": "2026-11-15T12:56:05.029583+00:00"
+  },
+  {
+    "manufacturer_hex": "ffff017c9ebd7de53e01fc",
+    "service_uuids": [
+      "0000a5b0-0000-1000-8000-00805f9b34fb"
+    ],
+    "rssi_dbm": -22,
+    "host_utc": "2026-11-15T12:56:05.030664+00:00"
+  }
+]

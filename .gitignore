@@ -1,2 +1,33 @@
 .pio
 .vscode
+
+# Python 环境与缓存
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.local-tools/
+
+# 运行时数据：账号口令、数据库、TLS 私钥、连接日志
+group9/.run/
+本地运行/
+group9/本地运行/
+**/credentials.txt
+**/live-config.json
+**/*.sqlite3
+**/*.sqlite3-journal
+**/mqtt-connection-stages.log
+**/service.log
+
+# 测试临时产物
+group9/**/evidence/
+**/.runtime/
+
+# 压缩交付包不入库
+/EIE568_Group9_Bump_*.zip
+
+# 系统与编辑器
+.DS_Store
+Thumbs.db
+*.swp

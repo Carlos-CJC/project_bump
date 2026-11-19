@@ -1,0 +1,43 @@
+{
+  "pages": 2,
+  "all_pages_visually_reviewed": true,
+  "template_reference_unchanged": true,
+  "original_title_block_unchanged": true,
+  "changed_package_parts": [
+    "word/document.xml"
+  ],
+  "canvas_submitted": false,
+  "diagnostic_v1_uploaded": true,
+  "diagnostic_v2_uploaded": true,
+  "diagnostic_v2_flash_verified": true,
+  "boot_version_observed": 2,
+  "imu_baseline_samples": 110,
+  "led_gpio_matches": 6,
+  "wifi_scan_counts": [
+    7,
+    6,
+    8
+  ],
+  "software_tests_passed": 76,
+  "ble_tested": true,
+  "pc_primary_receive_callbacks": 54,
+  "software_watchdog_restarts_passed": 1,
+  "serial_reopen_checks_passed": 2,
+  "rom_roundtrip_checks_passed": 1,
+  "current_app_is_independent_diagnostic": true,
+  "two_badges_tested": false,
+  "mqtt_hardware_tested": false,
+  "outputs": [
+    {
+      "path": "E:\\港理课程\\课程文件\\eie568\\Proposal_智能社交挂件\\2026-11-15_单板调试与进度报告\\Grp_9_EIE568Progress.docx",
+      "bytes": 26667,
+      "sha256": "a68c6a7b9e1888b85baefab5e721ba37ad3181e4130e0a832aa7d64dad201500"
+    },
+    {
+      "path": "E:\\港理课程\\课程文件\\eie568\\Proposal_智能社交挂件\\2026-11-15_单板调试与进度报告\\Grp_9_EIE568Progress.pdf",
+      "bytes": 142426,
+      "sha256": "fdf10012d8122e6d34b3e002c3e5c75f3ea9e3a5c9a2387a9dc5871bc7c45823"
+    }
+  ],
+  "raw_evidence": "hardware_verified_v2"
+}

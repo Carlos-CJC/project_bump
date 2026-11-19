@@ -1,0 +1,93 @@
+{
+  "service": "http://127.0.0.1:8875",
+  "trace": "firmware/verification/live-054-series20.jsonl",
+  "firmware": "0.5.4-dual",
+  "test_scope": "The first two physical BLE rounds opened by a serial diagnostic command. This verifies the radio/app chain, separately from motion-trigger testing.",
+  "matched": [
+    {
+      "round": 1,
+      "trace_line": 3,
+      "input": "serial_diagnostic",
+      "radio": "physical BLE",
+      "directions": {
+        "A": {
+          "role": "Alice",
+          "browser_peer_alias": "挂件 B",
+          "serial_phase": "scan",
+          "event_sequence": "00000001",
+          "samples": 48,
+          "duration_s": 27,
+          "rssi_avg": -65,
+          "transport": "mqtt",
+          "window_ms": 60000,
+          "app_ack_utc": "2026-11-18T16:55:00.665+00:00",
+          "browser_label": "双方记录已匹配",
+          "browser_screenshot": "Alice_蓝牙双方匹配网页.png"
+        },
+        "B": {
+          "role": "Bob",
+          "browser_peer_alias": "挂件 A",
+          "serial_phase": "advertise",
+          "event_sequence": "00000001",
+          "samples": 52,
+          "duration_s": 27,
+          "rssi_avg": -65,
+          "transport": "mqtt",
+          "window_ms": 60000,
+          "app_ack_utc": "2026-11-18T16:55:00.640+00:00",
+          "browser_label": "双方记录已匹配",
+          "browser_screenshot": "Bob_蓝牙双方匹配网页.png"
+        }
+      }
+    },
+    {
+      "round": 2,
+      "trace_line": 5,
+      "input": "serial_diagnostic",
+      "radio": "physical BLE",
+      "directions": {
+        "A": {
+          "role": "Alice",
+          "browser_peer_alias": "挂件 B",
+          "serial_phase": "scan",
+          "event_sequence": "00000002",
+          "samples": 40,
+          "duration_s": 21,
+          "rssi_avg": -65,
+          "transport": "mqtt",
+          "window_ms": 60000,
+          "app_ack_utc": "2026-11-18T16:56:07.008+00:00",
+          "browser_label": "双方记录已匹配",
+          "browser_screenshot": "Alice_蓝牙双方匹配网页.png"
+        },
+        "B": {
+          "role": "Bob",
+          "browser_peer_alias": "挂件 A",
+          "serial_phase": "advertise",
+          "event_sequence": "00000002",
+          "samples": 54,
+          "duration_s": 27,
+          "rssi_avg": -65,
+          "transport": "mqtt",
+          "window_ms": 60000,
+          "app_ack_utc": "2026-11-18T16:56:06.826+00:00",
+          "browser_label": "双方记录已匹配",
+          "browser_screenshot": "Bob_蓝牙双方匹配网页.png"
+        }
+      }
+    }
+  ],
+  "third_account_visibility": {
+    "alias": "未绑定挂件",
+    "encounter_cards": 0,
+    "invitations": 0,
+    "profiles": 0,
+    "observed_at": "2026-11-18T17:00:30.143Z",
+    "page_errors": 0
+  },
+  "summary_trace_line": 8,
+  "requested_rounds": 20,
+  "attempted_rounds": 3,
+  "verified_dual_direction_rounds": 2,
+  "notes": "Browser exposes badge aliases and metrics rather than raw event IDs; matching was performed using each exact sample count, duration, RSSI and transport. Bob retains an older separate 6-sample single-direction card."
+}

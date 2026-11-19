@@ -1,0 +1,59 @@
+{
+  "firmware": "0.5.6-dual",
+  "observation": "Two snapshots per board, while placed for unattended operation. Movement, distance and orientation were not instrumented. Wall times cover both boards concurrently. No wear/walk/backpack labels or human-trial denominator.",
+  "initial_serial_sha256": "77002a27d9dd3d3a60a8b3447d373ed8d76a0d916028e7d3bbd33a3edd6722db",
+  "boards": {
+    "A": {
+      "source_line_start": 451,
+      "end_snapshot_sha256": "dee21a9302471161c610b1826f5cb8dedc1dabb54b9abce1ff7d9cb05621076b",
+      "start_utc": "2026-11-18T19:23:02.424+00:00",
+      "end_utc": "2026-11-19T00:42:16.546579+00:00",
+      "elapsed_seconds": 19154.123,
+      "board_elapsed_seconds": 19154.131,
+      "imu_sample_delta": 2012167,
+      "motion_trigger_delta": 0,
+      "start": {
+        "boot_id": "4c68e8e8",
+        "uptime_ms": 459865,
+        "imu_samples": 44575,
+        "motion_triggers": 0,
+        "imu_ready": true,
+        "paused": false
+      },
+      "end": {
+        "boot_id": "4c68e8e8",
+        "uptime_ms": 19613996,
+        "imu_samples": 2056742,
+        "motion_triggers": 0,
+        "imu_ready": true,
+        "paused": false
+      }
+    },
+    "B": {
+      "source_line_start": 455,
+      "end_snapshot_sha256": "8f54c162785aeca243749618745e519fd6e92611c5360814f2e9c58e186e40b4",
+      "start_utc": "2026-11-18T19:23:02.813+00:00",
+      "end_utc": "2026-11-19T00:42:17.583409+00:00",
+      "elapsed_seconds": 19154.77,
+      "board_elapsed_seconds": 19154.699,
+      "imu_sample_delta": 2042801,
+      "motion_trigger_delta": 0,
+      "start": {
+        "boot_id": "a01735c2",
+        "uptime_ms": 457756,
+        "imu_samples": 45143,
+        "motion_triggers": 0,
+        "imu_ready": true,
+        "paused": false
+      },
+      "end": {
+        "boot_id": "a01735c2",
+        "uptime_ms": 19612455,
+        "imu_samples": 2087944,
+        "motion_triggers": 0,
+        "imu_ready": true,
+        "paused": false
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+Bump Starter - reproducible integration evidence
+Completed UTC: 2026-10-23T08:53:19.048837+00:00
+Transport: real TLS MQTT over isolated loopback sockets, temporary runtime, generated test CA.
+Application data: synthetic observations only; source=simulated; no IMU, BLE or physical badge measured.
+Time: the simulator advances the 60-second discovery window virtually.
+API assertions: FastAPI TestClient in the same process; not a real HTTP network/browser test.
+Faults: bounded client disconnect/broker restart, Python-only storage-failure and lost-ACK hooks.
+Authorization: invalid credentials/client ID/CA/Will/persistent session; topic isolation; failed duplicate IDs; valid reconnect.
+Frontend: separate Node VM regression wrapper (3 checks); not counted as real browser interaction.
+Full results: software-tests.xml and software-tests.txt.
+
+PASSED test_real_mqtt_scenarios_reach_durable_store_and_authorized_api[normal] (8.531 s)
+PASSED test_real_mqtt_scenarios_reach_durable_store_and_authorized_api[offline] (12.620 s)
+PASSED test_real_mqtt_scenarios_reach_durable_store_and_authorized_api[retry] (8.744 s)
+PASSED test_broker_restart_store_failure_and_lost_ack_recover_while_paused (9.022 s)
+PASSED test_real_broker_rejects_invalid_authentication_or_will[wrong_password] (2.135 s)
+PASSED test_real_broker_rejects_invalid_authentication_or_will[wrong_client_id] (2.081 s)
+PASSED test_real_broker_rejects_invalid_authentication_or_will[will] (2.135 s)
+PASSED test_real_broker_rejects_invalid_authentication_or_will[persistent_session] (2.184 s)
+PASSED test_failed_duplicate_id_connection_preserves_the_live_session[wrong_password] (8.098 s)
+PASSED test_failed_duplicate_id_connection_preserves_the_live_session[mismatched_account] (7.940 s)
+PASSED test_legitimate_clean_disconnect_and_new_client_reconnect (7.523 s)
+PASSED test_real_tls_rejects_a_different_runtime_ca (2.266 s)
+PASSED test_device_cannot_subscribe_to_other_accounts_or_event_wildcards[bump/v1/device/badge-b/ack] (2.162 s)
+PASSED test_device_cannot_subscribe_to_other_accounts_or_event_wildcards[bump/v1/device/+/events] (2.136 s)
+PASSED test_device_cannot_subscribe_to_other_accounts_or_event_wildcards[bump/#] (2.165 s)
+PASSED test_forbidden_publications_are_not_delivered_or_stored[other_events] (8.007 s)
+PASSED test_forbidden_publications_are_not_delivered_or_stored[own_ack] (8.105 s)
+PASSED test_forbidden_publications_are_not_delivered_or_stored[other_ack] (8.101 s)
+
+Integration cases: 18
+Full-suite case counts:
+tests.test_api: 8
+tests.test_device: 19
+tests.test_firmware_core: 2
+tests.test_frontend: 1
+tests.test_integration: 18
+tests.test_store: 28
+
+Exit code: 0
+============================== warnings summary ===============================
+================== 76 passed, 1 warning in 131.72s (0:02:11) ==================

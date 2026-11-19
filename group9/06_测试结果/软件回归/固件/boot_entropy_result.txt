@@ -1,0 +1,1 @@
+PASS: two entropy streams produce separate BLE/boot IDs; stuck and biased bits fail closed

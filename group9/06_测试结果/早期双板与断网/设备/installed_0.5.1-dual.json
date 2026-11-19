@@ -1,0 +1,72 @@
+[
+  {
+    "board": "A",
+    "utc": "2026-11-18T15:48:23.523717+00:00",
+    "uf2_sha256": "7d16eeae793c8a0f9d51f5d70fc042053aa090d4ef70c84f42433da55081091a",
+    "flash_verified": true,
+    "boot_banner_seen": true,
+    "status": {
+      "type": "status",
+      "firmware": "BumpDualBadge",
+      "fw": "0.5.1-dual",
+      "device_id": "bump-349454276354",
+      "boot_id": "88898e64",
+      "self_short_id": "91ebde7a9729",
+      "self_code16": "a30f",
+      "peer_code16": "0000",
+      "ir_paired": false,
+      "uptime_ms": 1533,
+      "paused": false,
+      "discovery": false,
+      "ble_phase": "idle",
+      "window_remaining_ms": 0,
+      "queued": 0,
+      "dropped": 0,
+      "imu_ready": true,
+      "imu_samples": 30,
+      "motion_triggers": 0,
+      "network_configured": false,
+      "transport": "wifi_mqtt_tcp",
+      "accel_g": [
+        0.02856,
+        -0.00684,
+        1.01685
+      ]
+    }
+  },
+  {
+    "board": "B",
+    "utc": "2026-11-18T15:48:31.334259+00:00",
+    "uf2_sha256": "7d16eeae793c8a0f9d51f5d70fc042053aa090d4ef70c84f42433da55081091a",
+    "flash_verified": true,
+    "boot_banner_seen": true,
+    "status": {
+      "type": "status",
+      "firmware": "BumpDualBadge",
+      "fw": "0.5.1-dual",
+      "device_id": "bump-c8c9a3e65ba4",
+      "boot_id": "225ee61c",
+      "self_short_id": "e93e28731be4",
+      "self_code16": "c371",
+      "peer_code16": "0000",
+      "ir_paired": false,
+      "uptime_ms": 1539,
+      "paused": false,
+      "discovery": false,
+      "ble_phase": "idle",
+      "window_remaining_ms": 0,
+      "queued": 0,
+      "dropped": 0,
+      "imu_ready": true,
+      "imu_samples": 31,
+      "motion_triggers": 0,
+      "network_configured": false,
+      "transport": "wifi_mqtt_tcp",
+      "accel_g": [
+        -0.1073,
+        0.02454,
+        0.98889
+      ]
+    }
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "firmware_version_observed": 2,
+  "baseline_imu_samples": 110,
+  "wifi_scan_network_counts": [
+    7,
+    6,
+    8
+  ],
+  "pc_primary_callbacks": 54,
+  "board_primary_scan_reports": 135,
+  "followup_matching_callbacks": [
+    33,
+    25,
+    35
+  ],
+  "serial_reopens_passed": 2,
+  "watchdog_restarts_passed": 1,
+  "rom_roundtrips_passed": 1,
+  "final_pc_callbacks": 34,
+  "all_checked": true,
+  "final_application": "independent diagnostic v2",
+  "elapsed_time_note": "reboot observation interval includes subsequent IMU collection; not reboot latency"
+}

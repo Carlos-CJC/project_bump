@@ -1,0 +1,50 @@
+{
+  "firmware": "BumpDualBadge 0.5.3-dual",
+  "compiled_utc": "2026-11-18T16:21:52.290114+00:00",
+  "fqbn": "arduino:mbed_nano:nanorp2040connect",
+  "core_version": "4.6.0",
+  "libraries": {
+    "ArduinoBLE": "2.1.0",
+    "WiFiNINA": "2.1.1",
+    "Arduino_SpiNINA": "0.0.2",
+    "ArduinoMqttClient": "0.1.8",
+    "Arduino_LSM6DSOX": "1.1.2",
+    "IRremote": "4.7.1"
+  },
+  "flash_bytes": 164742,
+  "static_ram_bytes": 50312,
+  "uf2_blocks": 646,
+  "uf2_target_address": "0x10000000",
+  "ble_gate": {
+    "rssi_min_dbm": -70,
+    "samples_min": 2,
+    "span_min_ms": 3000,
+    "window_ms": 60000
+  },
+  "offline_validation": {
+    "wire": "PASS: actual encoder holds stable 60000 ms discovery bounds on 45 s delayed retry; extreme BLE payload stays within 512-byte buffer; IR surface unchanged; application ACK and motion fixtures pass",
+    "artifact": "exact compiled source, ARM ELF and 646 valid UF2 blocks matching BIN",
+    "unchanged": "IR encoder, Wi-Fi/MQTT and application ACK logic, and physical-sample gates compared to 0.5.2"
+  },
+  "files": {
+    "BumpDualBadge/BadgeApp.cpp": "aa6ede89334463b9fc127b28f3431dc605131108b49aa7caa126727f281b7c1e",
+    "BumpDualBadge/BadgeApp.h": "abac674adc4269ebed412b87ad8aa5572be975b1e383f32bd9121273cfccbc05",
+    "BumpDualBadge/BumpDualBadge.ino": "56bffc54daeb2dc6df77f0faac6ebcdd7f0e8ecfc197f7997bb7ad665e7c8b2e",
+    "BumpDualBadge/MotionDetector.h": "7eaad6b70f964aa528086f26b3dbff1ca45d3bdae3cc38a5e4767a55ee5463da",
+    "BumpDualBadge/Nearfield.cpp": "8568ade31c63760d079b42c3bf5c463fcd14058743a410705bb1c209da24bb86",
+    "BumpDualBadge/Nearfield.h": "7564323c948fa43ec0dfbfc59d35918d4e2825dd3a72a6bc5f43f938f9a6f832",
+    "BumpDualBadge/WireAck.h": "1bcb42899fa2917c5cc3fd044022b9464146e6d82b962945ebf76ad99b9aa011",
+    "build/BumpDualBadge.ino.uf2": "5f1534459508e80ab244ee4cb34e4f93946efa1f2b0d96c49bb89e49d1a3a58f",
+    "build/BumpDualBadge.ino.bin": "ce55f08079f2c1a97d8f62bcc3400faea51a7e4aab0426f3cc02c9b2919245d6",
+    "build/BumpDualBadge.ino.elf": "3bf398d80cb6d0580c40adc90bbd9b28ee5ece9d00bee6668506945c6ade9ddf",
+    "vendor/IRremote-4.7.1.zip": "33d7630e883cc60088b8d81f4fd1129b72bf14894edd56ec3ddbed998b3d4ce1",
+    "vendor/firmware/nearfield_pairing/nearfield_pairing.ino": "5628e4a69a7869342866656ec9a13c29aaa21fff91f72abcf05bfc8ddbf75a8b",
+    "baseline-build/nearfield_pairing.ino.uf2": "ed8b40f5d03e7816f1af414ccf09a22cfd13c720093357bc33090947278a5aae",
+    "BumpDualBadge/BootEntropy.h": "6a24d97c8671d5342a353ad4ba91aa70e5bece35c2ae7f6db9484c806730cce0"
+  },
+  "changes": [
+    "Event-level BLE discovery window bounds stored at queue time",
+    "Single sample clock read for both window inclusion and observed uptime",
+    "All BLE data in a primary non-connectable advertisement with no scan response"
+  ]
+}

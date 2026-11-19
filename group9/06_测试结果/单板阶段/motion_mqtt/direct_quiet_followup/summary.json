@@ -1,0 +1,244 @@
+{
+  "started_utc": "2026-11-15T14:00:48.869247+00:00",
+  "boot_id": "b7c6074b-abfa-4971-91f9-e893473ff880",
+  "periodic_output": false,
+  "pc_ble_scanner": false,
+  "physical_motion_controlled": false,
+  "event": {
+    "v": 1,
+    "device_id": "badge-a",
+    "boot_id": "b7c6074b-abfa-4971-91f9-e893473ff880",
+    "seq": 3,
+    "event": "motion_trigger",
+    "source": "injected_test",
+    "transport": "wifi_mqtt",
+    "uptime_ms": 225267,
+    "accel_g": [
+      0.0,
+      0.0,
+      2.2
+    ],
+    "state": "DISCOVERY",
+    "window_ms": 60000
+  },
+  "completion": [
+    {
+      "type": "motion_ignored",
+      "source": "hardware",
+      "state": "DISCOVERY"
+    },
+    {
+      "type": "motion_ignored",
+      "source": "hardware",
+      "state": "DISCOVERY"
+    },
+    {
+      "type": "radio_stage",
+      "operation": "discovery_deadline",
+      "phase": "reached",
+      "uptime_ms": 285267
+    },
+    {
+      "type": "radio_stage",
+      "operation": "ble_stop_advertise",
+      "phase": "begin",
+      "uptime_ms": 285268
+    },
+    {
+      "type": "radio_stage",
+      "operation": "ble_stop_advertise",
+      "phase": "end",
+      "uptime_ms": 285276
+    },
+    {
+      "type": "radio_stage",
+      "operation": "ble_end",
+      "phase": "begin",
+      "uptime_ms": 285277
+    },
+    {
+      "type": "radio_stage",
+      "operation": "ble_end",
+      "phase": "end",
+      "uptime_ms": 285282
+    },
+    {
+      "type": "radio_stage",
+      "operation": "nina_driver_reset",
+      "phase": "begin",
+      "uptime_ms": 285282
+    },
+    {
+      "type": "radio_stage",
+      "operation": "nina_driver_reset",
+      "phase": "end",
+      "uptime_ms": 285283
+    },
+    {
+      "type": "discovery_complete",
+      "state": "IDLE"
+    },
+    {
+      "type": "sync_started",
+      "transport": "wifi_mqtt",
+      "tls": false
+    },
+    {
+      "type": "radio_stage",
+      "operation": "wifi_begin",
+      "phase": "begin",
+      "uptime_ms": 285284
+    },
+    {
+      "type": "radio_stage",
+      "operation": "wifi_begin",
+      "phase": "end",
+      "uptime_ms": 288839
+    },
+    {
+      "type": "wifi_connect",
+      "status": 3,
+      "connected": true,
+      "local_ip": "192.168.137.8",
+      "gateway_ip": "192.168.137.1"
+    },
+    {
+      "type": "radio_stage",
+      "operation": "mqtt_connect",
+      "phase": "begin",
+      "uptime_ms": 288844
+    },
+    {
+      "type": "radio_stage",
+      "operation": "mqtt_connect",
+      "phase": "end",
+      "uptime_ms": 289073
+    },
+    {
+      "type": "mqtt_connect",
+      "connected": 1,
+      "error": 0,
+      "tls": false
+    },
+    {
+      "type": "mqtt_subscribe",
+      "subscribed": 1,
+      "granted_qos": 1
+    },
+    {
+      "type": "mqtt_publish",
+      "seq": 3,
+      "qos": 1,
+      "retain": false,
+      "puback_ok": true
+    },
+    {
+      "type": "application_ack",
+      "ack_origin": "wifi_mqtt",
+      "matched": true,
+      "expected_seq": 3
+    },
+    {
+      "type": "queue_removed_after_application_ack",
+      "ack_origin": "wifi_mqtt",
+      "seq": 3,
+      "queued": 0
+    },
+    {
+      "type": "radio_stage",
+      "operation": "mqtt_stop",
+      "phase": "begin",
+      "uptime_ms": 289385
+    },
+    {
+      "type": "radio_stage",
+      "operation": "mqtt_stop",
+      "phase": "end",
+      "uptime_ms": 289389
+    },
+    {
+      "type": "radio_stage",
+      "operation": "wifi_disconnect",
+      "phase": "begin",
+      "uptime_ms": 289390
+    },
+    {
+      "type": "radio_stage",
+      "operation": "wifi_disconnect",
+      "phase": "end",
+      "uptime_ms": 289923
+    },
+    {
+      "type": "radio_stage",
+      "operation": "wifi_end",
+      "phase": "begin",
+      "uptime_ms": 289923
+    },
+    {
+      "type": "radio_stage",
+      "operation": "wifi_end",
+      "phase": "end",
+      "uptime_ms": 289923
+    },
+    {
+      "type": "radio_stage",
+      "operation": "nina_driver_reset",
+      "phase": "begin",
+      "uptime_ms": 289924
+    },
+    {
+      "type": "radio_stage",
+      "operation": "nina_driver_reset",
+      "phase": "end",
+      "uptime_ms": 289925
+    },
+    {
+      "type": "sync_complete",
+      "delivered": 1,
+      "queued": 0,
+      "elapsed_ms": 4644,
+      "queue_storage": "ram",
+      "tls": false
+    }
+  ],
+  "final_status": {
+    "type": "status",
+    "firmware": "BumpSingleBoardMotionMqtt",
+    "firmware_version": 2,
+    "uptime_ms": 289929,
+    "state": "IDLE",
+    "nina_mode": "NONE",
+    "ble_advertising": false,
+    "window_started_ms": 225267,
+    "window_deadline_ms": 0,
+    "window_remaining_ms": 0,
+    "queued": 0,
+    "overflow": 0,
+    "source": "hardware",
+    "imu_ready": true,
+    "samples": 29244,
+    "span_ms": 288261,
+    "max_gap_ms": 6069,
+    "trigger_count": 2,
+    "accepted_hardware_triggers": 0,
+    "injected_trigger_count": 3,
+    "last_sample_uptime_ms": 289926,
+    "boot_id_set": true,
+    "transport": "wifi_mqtt",
+    "mqtt_tls": false,
+    "accel_g": [
+      0.02747,
+      -0.01453,
+      1.01221
+    ]
+  },
+  "final_dump": [
+    {
+      "type": "queue_dump_complete",
+      "queued": 0
+    }
+  ],
+  "payload_stored_exactly": true,
+  "success": true,
+  "finished_utc": "2026-11-15T14:01:53.969026+00:00"
+}

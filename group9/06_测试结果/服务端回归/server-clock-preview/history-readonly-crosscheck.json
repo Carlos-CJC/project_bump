@@ -1,0 +1,55 @@
+{
+  "backfill": {
+    "serial_samples_paired": 221,
+    "new_anchors": 216,
+    "new_event_payloads_verified": 56,
+    "projected_events_total": 56,
+    "invalid_wire_samples_skipped": 0
+  },
+  "source_log_count": 9,
+  "ordinary_tables_unchanged": true,
+  "prior_states": {
+    "confirmed": 32,
+    "review": 20,
+    "single": 4
+  },
+  "new_states": {
+    "confirmed": 52,
+    "single": 4
+  },
+  "round_20": {
+    "A": {
+      "before": "review",
+      "after": "confirmed",
+      "linked_to_other_selected_event": true,
+      "clock": {
+        "seen_at": 1795027666.8635,
+        "discovery_start_at": 1795027637.6275,
+        "raw_seen": 1795027667.411351,
+        "raw_start": 1795027638.175351,
+        "clock_uncertainty_s": 0.1244361400604248,
+        "time_quality": "anchored",
+        "event_suffix": "00000003"
+      }
+    },
+    "B": {
+      "before": "review",
+      "after": "confirmed",
+      "linked_to_other_selected_event": true,
+      "clock": {
+        "seen_at": 1795027697.3304906,
+        "discovery_start_at": 1795027637.6334906,
+        "raw_seen": 1795027712.5630138,
+        "raw_start": 1795027652.8660138,
+        "clock_uncertainty_s": 0.2861737012863159,
+        "time_quality": "anchored",
+        "event_suffix": "00000014"
+      }
+    }
+  },
+  "newly_confirmed_directions": 20,
+  "new_confirmations_with_independent_recorded_pair": 20,
+  "conflicting_new_confirmations": [],
+  "newly_confirmed_without_series_annotation": [],
+  "steady_confirmed_directions": 32
+}

@@ -1,0 +1,364 @@
+{
+  "started_utc": "2026-11-15T13:57:05.675346+00:00",
+  "program": "BumpSingleBoardMotionMqtt",
+  "physical_motion_controlled": false,
+  "external_modules_tested": false,
+  "two_badges_tested": false,
+  "mqtt_transport": "private_lan_tcp_without_tls",
+  "boot_id": "b7c6074b-abfa-4971-91f9-e893473ff880",
+  "port": "COM12",
+  "initial_status": {
+    "type": "status",
+    "firmware": "BumpSingleBoardMotionMqtt",
+    "firmware_version": 2,
+    "uptime_ms": 2769,
+    "state": "IDLE",
+    "nina_mode": "NONE",
+    "ble_advertising": false,
+    "window_started_ms": 0,
+    "window_deadline_ms": 0,
+    "window_remaining_ms": 0,
+    "queued": 0,
+    "overflow": 0,
+    "source": "hardware",
+    "imu_ready": true,
+    "samples": 121,
+    "span_ms": 1096,
+    "max_gap_ms": 10,
+    "trigger_count": 0,
+    "accepted_hardware_triggers": 0,
+    "injected_trigger_count": 0,
+    "last_sample_uptime_ms": 2761,
+    "boot_id_set": false,
+    "transport": "wifi_mqtt",
+    "mqtt_tls": false,
+    "accel_g": [
+      0.02759,
+      -0.01465,
+      1.01172
+    ]
+  },
+  "wifi_configuration": {
+    "available": true,
+    "authentication": "WPA2PSK",
+    "source": "temporary_2_4ghz_hotspot",
+    "saved_to_board_flash": false,
+    "values_logged": false
+  },
+  "wifi_visibility": [
+    {
+      "type": "wifi_scan",
+      "network_count": 7,
+      "configured_ssid_set": true,
+      "configured_matches": 1,
+      "matches": [
+        {
+          "rssi_dbm": -41,
+          "encryption_type": 4
+        }
+      ],
+      "identifiers_logged": false,
+      "connected": false
+    }
+  ],
+  "stage": "Waiting for the discovery window and automatic MQTT synchronization",
+  "real_imu_observation": {
+    "samples": 2186,
+    "sample_time_span_ms": 26076,
+    "observed_samples_per_s": 83.8318760546096,
+    "status_records": 20,
+    "observed_values_finite": true,
+    "max_gap_ms_at_end": 6069,
+    "hardware_triggers": 0,
+    "accepted_hardware_triggers": 0,
+    "physical_motion_controlled": false
+  },
+  "snapshot_events": [
+    {
+      "v": 1,
+      "device_id": "badge-a",
+      "boot_id": "b7c6074b-abfa-4971-91f9-e893473ff880",
+      "seq": 1,
+      "event": "imu_sample",
+      "source": "hardware",
+      "transport": "wifi_mqtt",
+      "uptime_ms": 28882,
+      "accel_g": [
+        0.02771,
+        -0.01538,
+        1.01282
+      ],
+      "state": "IDLE",
+      "window_ms": 60000
+    }
+  ],
+  "first_sync": {
+    "wifi_connect": [
+      {
+        "type": "wifi_connect",
+        "status": 3,
+        "connected": true,
+        "local_ip": "192.168.137.8",
+        "gateway_ip": "192.168.137.1"
+      }
+    ],
+    "mqtt_connect": [
+      {
+        "type": "mqtt_connect",
+        "connected": 1,
+        "error": 0,
+        "tls": false
+      }
+    ],
+    "mqtt_subscribe": [
+      {
+        "type": "mqtt_subscribe",
+        "subscribed": 1,
+        "granted_qos": 1
+      }
+    ],
+    "mqtt_publish": [
+      {
+        "type": "mqtt_publish",
+        "seq": 1,
+        "qos": 1,
+        "retain": false,
+        "puback_ok": true
+      }
+    ],
+    "application_ack": [
+      {
+        "type": "application_ack",
+        "ack_origin": "wifi_mqtt",
+        "matched": true,
+        "expected_seq": 1
+      }
+    ],
+    "sync_complete": [
+      {
+        "type": "sync_complete",
+        "delivered": 1,
+        "queued": 0,
+        "elapsed_ms": 4175,
+        "queue_storage": "ram",
+        "tls": false
+      }
+    ],
+    "error": []
+  },
+  "stored_after_first_sync": [
+    {
+      "accel_g": [
+        0.02771,
+        -0.01538,
+        1.01282
+      ],
+      "boot_id": "b7c6074b-abfa-4971-91f9-e893473ff880",
+      "device_id": "badge-a",
+      "event": "imu_sample",
+      "seq": 1,
+      "source": "hardware",
+      "state": "IDLE",
+      "transport": "wifi_mqtt",
+      "uptime_ms": 28882,
+      "v": 1,
+      "window_ms": 60000
+    }
+  ],
+  "injected_events": [
+    {
+      "v": 1,
+      "device_id": "badge-a",
+      "boot_id": "b7c6074b-abfa-4971-91f9-e893473ff880",
+      "seq": 2,
+      "event": "motion_trigger",
+      "source": "injected_test",
+      "transport": "wifi_mqtt",
+      "uptime_ms": 33485,
+      "accel_g": [
+        0.0,
+        0.0,
+        2.2
+      ],
+      "state": "DISCOVERY",
+      "window_ms": 60000
+    }
+  ],
+  "discovery_status": {
+    "type": "status",
+    "firmware": "BumpSingleBoardMotionMqtt",
+    "firmware_version": 2,
+    "uptime_ms": 34682,
+    "state": "DISCOVERY",
+    "nina_mode": "BLE",
+    "ble_advertising": true,
+    "window_started_ms": 33485,
+    "window_deadline_ms": 93485,
+    "window_remaining_ms": 58803,
+    "queued": 1,
+    "overflow": 0,
+    "source": "hardware",
+    "imu_ready": true,
+    "samples": 2386,
+    "span_ms": 33014,
+    "max_gap_ms": 6069,
+    "trigger_count": 0,
+    "accepted_hardware_triggers": 0,
+    "injected_trigger_count": 1,
+    "last_sample_uptime_ms": 34679,
+    "boot_id_set": true,
+    "transport": "wifi_mqtt",
+    "mqtt_tls": false,
+    "accel_g": [
+      0.02673,
+      -0.01575,
+      1.01147
+    ]
+  },
+  "motion_ble_reception": {
+    "not_performed": true,
+    "reason": "Concurrent PC BLE monitoring omitted for isolation"
+  },
+  "repeated_motion": {
+    "ignored_messages": [
+      {
+        "type": "motion_ignored",
+        "source": "injected_test",
+        "state": "DISCOVERY"
+      }
+    ],
+    "window_not_extended": true,
+    "first_deadline_ms": 93485,
+    "after_repeat_deadline_ms": 93485
+  },
+  "automatic_sync": {
+    "discovery_complete": [
+      {
+        "type": "discovery_complete",
+        "state": "IDLE"
+      }
+    ],
+    "sync_started": [
+      {
+        "type": "sync_started",
+        "transport": "wifi_mqtt",
+        "tls": false
+      }
+    ],
+    "wifi_connect": [
+      {
+        "type": "wifi_connect",
+        "status": 3,
+        "connected": true,
+        "local_ip": "192.168.137.8",
+        "gateway_ip": "192.168.137.1"
+      }
+    ],
+    "mqtt_connect": [
+      {
+        "type": "mqtt_connect",
+        "connected": 1,
+        "error": 0,
+        "tls": false
+      }
+    ],
+    "mqtt_publish": [
+      {
+        "type": "mqtt_publish",
+        "seq": 2,
+        "qos": 1,
+        "retain": false,
+        "puback_ok": true
+      }
+    ],
+    "application_ack": [
+      {
+        "type": "application_ack",
+        "ack_origin": "wifi_mqtt",
+        "matched": true,
+        "expected_seq": 2
+      }
+    ],
+    "sync_complete": [
+      {
+        "type": "sync_complete",
+        "delivered": 1,
+        "queued": 0,
+        "elapsed_ms": 4324,
+        "queue_storage": "ram",
+        "tls": false
+      }
+    ],
+    "error": []
+  },
+  "final_status": {
+    "type": "status",
+    "firmware": "BumpSingleBoardMotionMqtt",
+    "firmware_version": 2,
+    "uptime_ms": 97835,
+    "state": "IDLE",
+    "nina_mode": "NONE",
+    "ble_advertising": false,
+    "window_started_ms": 33485,
+    "window_deadline_ms": 0,
+    "window_remaining_ms": 0,
+    "queued": 0,
+    "overflow": 0,
+    "source": "hardware",
+    "imu_ready": true,
+    "samples": 8841,
+    "span_ms": 96167,
+    "max_gap_ms": 6069,
+    "trigger_count": 0,
+    "accepted_hardware_triggers": 0,
+    "injected_trigger_count": 2,
+    "last_sample_uptime_ms": 97832,
+    "boot_id_set": true,
+    "transport": "wifi_mqtt",
+    "mqtt_tls": false,
+    "accel_g": [
+      0.02795,
+      -0.01489,
+      1.01184
+    ]
+  },
+  "undelivered_queue": [],
+  "stored_rows": [
+    {
+      "accel_g": [
+        0.02771,
+        -0.01538,
+        1.01282
+      ],
+      "boot_id": "b7c6074b-abfa-4971-91f9-e893473ff880",
+      "device_id": "badge-a",
+      "event": "imu_sample",
+      "seq": 1,
+      "source": "hardware",
+      "state": "IDLE",
+      "transport": "wifi_mqtt",
+      "uptime_ms": 28882,
+      "v": 1,
+      "window_ms": 60000
+    },
+    {
+      "accel_g": [
+        0.0,
+        0.0,
+        2.2
+      ],
+      "boot_id": "b7c6074b-abfa-4971-91f9-e893473ff880",
+      "device_id": "badge-a",
+      "event": "motion_trigger",
+      "seq": 2,
+      "source": "injected_test",
+      "state": "DISCOVERY",
+      "transport": "wifi_mqtt",
+      "uptime_ms": 33485,
+      "v": 1,
+      "window_ms": 60000
+    }
+  ],
+  "expected_events_stored_exactly": true,
+  "finished_utc": "2026-11-15T13:58:41.880933+00:00"
+}

@@ -1,0 +1,655 @@
+{
+  "firmware": "0.5.6-dual",
+  "row_trace": "hardware/logs/ble_056_delivery_verified.json",
+  "requested_rounds": 20,
+  "completed_rounds": 20,
+  "original_passes": 12,
+  "endpoint": "http://127.0.0.1:8875",
+  "projection_evidence": "server-clock-preview/evidence/live-056-readonly-clock-projection.json",
+  "browser": "Chrome, three independent sessions",
+  "roles": [
+    {
+      "role": "Alice",
+      "station": "挂件 A",
+      "screenshot": "Alice_0.5.6_第20轮对时后网页.png",
+      "before_screenshot": "Alice_0.5.6_第20轮网页.png",
+      "series_counts": {
+        "mutual": 19,
+        "single": 0,
+        "review": 0,
+        "not_recorded": 1
+      },
+      "series": [
+        {
+          "round": 1,
+          "event_suffix": "00000001",
+          "original_round_passed": true,
+          "estimate": "2026/11/19 01:54:05 · 经同次启动对时估算",
+          "metrics": [
+            "相遇 27.0 秒",
+            "平均信号 -67 dBm",
+            "52 次采样"
+          ],
+          "displayed_matching": "mutual",
+          "source": "挂件 MQTT 直传"
+        },
+        {
+          "round": 2,
+          "event_suffix": "00000002",
+          "original_round_passed": true,
+          "estimate": "2026/11/19 01:56:15 · 经同次启动对时估算",
+          "metrics": [
+            "相遇 27.0 秒",
+            "平均信号 -66 dBm",
+            "51 次采样"
+          ],
+          "displayed_matching": "mutual",
+          "source": "挂件 MQTT 直传"
+        },
+        {
+          "round": 3,
+          "event_suffix": "00000003",
+          "original_round_passed": false,
+          "estimate": "2026/11/19 01:58:01 · 经同次启动对时估算",
+          "metrics": [
+            "相遇 27.0 秒",
+            "平均信号 -66 dBm",
+            "54 次采样"
+          ],
+          "displayed_matching": "mutual",
+          "source": "挂件 MQTT 直传"
+        },
+        {
+          "round": 4,
+          "event_suffix": "00000004",
+          "original_round_passed": false,
+          "estimate": "2026/11/19 02:00:30 · 经同次启动对时估算",
+          "metrics": [
+            "相遇 27.0 秒",
+            "平均信号 -66 dBm",
+            "51 次采样"
+          ],
+          "displayed_matching": "mutual",
+          "source": "挂件 MQTT 直传"
+        },
+        {
+          "round": 5,
+          "event_suffix": "00000005",
+          "original_round_passed": true,
+          "estimate": "2026/11/19 02:03:05 · 经同次启动对时估算",
+          "metrics": [
+            "相遇 27.0 秒",
+            "平均信号 -66 dBm",
+            "54 次采样"
+          ],
+          "displayed_matching": "mutual",
+          "source": "挂件 MQTT 直传"
+        },
+        {
+          "round": 6,
+          "event_suffix": "00000006",
+          "original_round_passed": true,
+          "estimate": "2026/11/19 02:16:29 · 经同次启动对时估算",
+          "metrics": [
+            "相遇 27.0 秒",
+            "平均信号 -67 dBm",
+            "52 次采样"
+          ],
+          "displayed_matching": "mutual",
+          "source": "挂件 MQTT 直传"
+        },
+        {
+          "round": 7,
+          "event_suffix": "00000007",
+          "original_round_passed": false,
+          "estimate": "2026/11/19 02:17:48 · 经同次启动对时估算",
+          "metrics": [
+            "相遇 27.0 秒",
+            "平均信号 -67 dBm",
+            "51 次采样"
+          ],
+          "displayed_matching": "mutual",
+          "source": "挂件 MQTT 直传"
+        },
+        {
+          "round": 8,
+          "event_suffix": "00000008",
+          "original_round_passed": false,
+          "estimate": "2026/11/19 02:21:24 · 经同次启动对时估算",
+          "metrics": [
+            "相遇 27.0 秒",
+            "平均信号 -67 dBm",
+            "52 次采样"
+          ],
+          "displayed_matching": "mutual",
+          "source": "挂件 MQTT 直传"
+        },
+        {
+          "round": 9,
+          "event_suffix": "00000009",
+          "original_round_passed": false,
+          "estimate": "2026/11/19 02:27:12 · 经同次启动对时估算",
+          "metrics": [
+            "相遇 27.0 秒",
+            "平均信号 -67 dBm",
+            "52 次采样"
+          ],
+          "displayed_matching": "mutual",
+          "source": "挂件 MQTT 直传"
+        },
+        {
+          "round": 10,
+          "event_suffix": "0000000a",
+          "original_round_passed": true,
+          "estimate": "2026/11/19 02:29:34 · 经同次启动对时估算",
+          "metrics": [
+            "相遇 27.0 秒",
+            "平均信号 -67 dBm",
+            "51 次采样"
+          ],
+          "displayed_matching": "mutual",
+          "source": "挂件 MQTT 直传"
+        },
+        {
+          "round": 11,
+          "event_suffix": "0000000b",
+          "original_round_passed": true,
+          "estimate": "2026/11/19 02:31:20 · 经同次启动对时估算",
+          "metrics": [
+            "相遇 27.0 秒",
+            "平均信号 -67 dBm",
+            "52 次采样"
+          ],
+          "displayed_matching": "mutual",
+          "source": "挂件 MQTT 直传"
+        },
+        {
+          "round": 12,
+          "event_suffix": "0000000c",
+          "original_round_passed": true,
+          "estimate": "2026/11/19 02:33:17 · 经同次启动对时估算",
+          "metrics": [
+            "相遇 27.0 秒",
+            "平均信号 -67 dBm",
+            "51 次采样"
+          ],
+          "displayed_matching": "mutual",
+          "source": "挂件 MQTT 直传"
+        },
+        {
+          "round": 13,
+          "event_suffix": "0000000d",
+          "original_round_passed": true,
+          "estimate": "2026/11/19 02:34:49 · 经同次启动对时估算",
+          "metrics": [
+            "相遇 27.0 秒",
+            "平均信号 -67 dBm",
+            "49 次采样"
+          ],
+          "displayed_matching": "mutual",
+          "source": "挂件 MQTT 直传"
+        },
+        {
+          "round": 14,
+          "event_suffix": "0000000e",
+          "original_round_passed": true,
+          "estimate": "2026/11/19 02:36:14 · 经同次启动对时估算",
+          "metrics": [
+            "相遇 26.0 秒",
+            "平均信号 -67 dBm",
+            "48 次采样"
+          ],
+          "displayed_matching": "mutual",
+          "source": "挂件 MQTT 直传"
+        },
+        {
+          "round": 15,
+          "event_suffix": "0000000f",
+          "original_round_passed": true,
+          "estimate": "2026/11/19 02:37:40 · 经同次启动对时估算",
+          "metrics": [
+            "相遇 27.0 秒",
+            "平均信号 -66 dBm",
+            "53 次采样"
+          ],
+          "displayed_matching": "mutual",
+          "source": "挂件 MQTT 直传"
+        },
+        {
+          "round": 16,
+          "event_suffix": "00000010",
+          "original_round_passed": true,
+          "estimate": "2026/11/19 02:39:44 · 经同次启动对时估算",
+          "metrics": [
+            "相遇 27.0 秒",
+            "平均信号 -66 dBm",
+            "53 次采样"
+          ],
+          "displayed_matching": "mutual",
+          "source": "挂件 MQTT 直传"
+        },
+        {
+          "round": 17,
+          "displayed_matching": "not_recorded"
+        },
+        {
+          "round": 18,
+          "event_suffix": "00000001",
+          "original_round_passed": true,
+          "estimate": "2026/11/19 02:43:57 · 经同次启动对时估算",
+          "metrics": [
+            "相遇 27.0 秒",
+            "平均信号 -66 dBm",
+            "52 次采样"
+          ],
+          "displayed_matching": "mutual",
+          "source": "挂件 MQTT 直传"
+        },
+        {
+          "round": 19,
+          "event_suffix": "00000002",
+          "original_round_passed": false,
+          "estimate": "2026/11/19 02:45:35 · 经同次启动对时估算",
+          "metrics": [
+            "相遇 27.0 秒",
+            "平均信号 -66 dBm",
+            "52 次采样"
+          ],
+          "displayed_matching": "mutual",
+          "source": "挂件 MQTT 直传"
+        },
+        {
+          "round": 20,
+          "event_suffix": "00000003",
+          "original_round_passed": false,
+          "estimate": "2026/11/19 02:47:46 · 经同次启动对时估算",
+          "metrics": [
+            "相遇 27.0 秒",
+            "平均信号 -66 dBm",
+            "51 次采样"
+          ],
+          "displayed_matching": "mutual",
+          "source": "挂件 MQTT 直传"
+        }
+      ],
+      "captured_utc": "2026-11-18T19:15:23.186Z",
+      "targeted_event": {
+        "round": 20,
+        "event_suffix": "00000003",
+        "original_round_passed": false,
+        "estimate": "2026/11/19 02:47:46 · 经同次启动对时估算",
+        "metrics": [
+          "相遇 27.0 秒",
+          "平均信号 -66 dBm",
+          "51 次采样"
+        ],
+        "displayed_matching": "mutual",
+        "source": "挂件 MQTT 直传"
+      },
+      "most_recent_card": {
+        "index": 0,
+        "peer_alias": "挂件 B",
+        "source": "挂件 MQTT 直传",
+        "matching": "mutual",
+        "estimate": "2026/11/19 02:57:56 · 经同次启动对时估算",
+        "metrics": [
+          "相遇 27.0 秒",
+          "平均信号 -67 dBm",
+          "53 次采样"
+        ]
+      },
+      "visible_cards": 28,
+      "mutual_cards": 26,
+      "requests": [
+        {
+          "state": "等待回应",
+          "ir": true
+        },
+        {
+          "state": "联系已撤销",
+          "ir": true
+        }
+      ],
+      "profiles_masked": 0,
+      "page_errors": 0,
+      "business_actions": 0
+    },
+    {
+      "role": "Bob",
+      "station": "挂件 B",
+      "screenshot": "Bob_0.5.6_第20轮对时后网页.png",
+      "before_screenshot": "Bob_0.5.6_第20轮网页.png",
+      "series_counts": {
+        "mutual": 19,
+        "single": 1,
+        "review": 0,
+        "not_recorded": 0
+      },
+      "series": [
+        {
+          "round": 1,
+          "event_suffix": "00000001",
+          "original_round_passed": true,
+          "estimate": "2026/11/19 01:54:36 · 经同次启动对时估算",
+          "metrics": [
+            "相遇 28.0 秒",
+            "平均信号 -67 dBm",
+            "55 次采样"
+          ],
+          "displayed_matching": "mutual",
+          "source": "挂件 MQTT 直传"
+        },
+        {
+          "round": 2,
+          "event_suffix": "00000002",
+          "original_round_passed": true,
+          "estimate": "2026/11/19 01:56:45 · 经同次启动对时估算",
+          "metrics": [
+            "相遇 28.0 秒",
+            "平均信号 -67 dBm",
+            "56 次采样"
+          ],
+          "displayed_matching": "mutual",
+          "source": "挂件 MQTT 直传"
+        },
+        {
+          "round": 3,
+          "event_suffix": "00000003",
+          "original_round_passed": false,
+          "estimate": "2026/11/19 01:58:32 · 经同次启动对时估算",
+          "metrics": [
+            "相遇 28.0 秒",
+            "平均信号 -67 dBm",
+            "55 次采样"
+          ],
+          "displayed_matching": "mutual",
+          "source": "挂件 MQTT 直传"
+        },
+        {
+          "round": 4,
+          "event_suffix": "00000004",
+          "original_round_passed": false,
+          "estimate": "2026/11/19 02:01:01 · 经同次启动对时估算",
+          "metrics": [
+            "相遇 28.0 秒",
+            "平均信号 -67 dBm",
+            "55 次采样"
+          ],
+          "displayed_matching": "mutual",
+          "source": "挂件 MQTT 直传"
+        },
+        {
+          "round": 5,
+          "event_suffix": "00000005",
+          "original_round_passed": true,
+          "estimate": "2026/11/19 02:03:35 · 经同次启动对时估算",
+          "metrics": [
+            "相遇 28.0 秒",
+            "平均信号 -67 dBm",
+            "56 次采样"
+          ],
+          "displayed_matching": "mutual",
+          "source": "挂件 MQTT 直传"
+        },
+        {
+          "round": 6,
+          "event_suffix": "00000006",
+          "original_round_passed": true,
+          "estimate": "2026/11/19 02:17:00 · 经同次启动对时估算",
+          "metrics": [
+            "相遇 28.0 秒",
+            "平均信号 -67 dBm",
+            "54 次采样"
+          ],
+          "displayed_matching": "mutual",
+          "source": "挂件 MQTT 直传"
+        },
+        {
+          "round": 7,
+          "event_suffix": "00000007",
+          "original_round_passed": false,
+          "estimate": "2026/11/19 02:18:19 · 经同次启动对时估算",
+          "metrics": [
+            "相遇 28.0 秒",
+            "平均信号 -66 dBm",
+            "59 次采样"
+          ],
+          "displayed_matching": "mutual",
+          "source": "挂件 MQTT 直传"
+        },
+        {
+          "round": 8,
+          "event_suffix": "00000008",
+          "original_round_passed": false,
+          "estimate": "2026/11/19 02:21:54 · 经同次启动对时估算",
+          "metrics": [
+            "相遇 28.0 秒",
+            "平均信号 -67 dBm",
+            "54 次采样"
+          ],
+          "displayed_matching": "mutual",
+          "source": "挂件 MQTT 直传"
+        },
+        {
+          "round": 9,
+          "event_suffix": "00000009",
+          "original_round_passed": false,
+          "estimate": "2026/11/19 02:27:43 · 经同次启动对时估算",
+          "metrics": [
+            "相遇 28.0 秒",
+            "平均信号 -67 dBm",
+            "57 次采样"
+          ],
+          "displayed_matching": "mutual",
+          "source": "挂件 MQTT 直传"
+        },
+        {
+          "round": 10,
+          "event_suffix": "0000000a",
+          "original_round_passed": true,
+          "estimate": "2026/11/19 02:30:04 · 经同次启动对时估算",
+          "metrics": [
+            "相遇 28.0 秒",
+            "平均信号 -67 dBm",
+            "55 次采样"
+          ],
+          "displayed_matching": "mutual",
+          "source": "挂件 MQTT 直传"
+        },
+        {
+          "round": 11,
+          "event_suffix": "0000000b",
+          "original_round_passed": true,
+          "estimate": "2026/11/19 02:31:50 · 经同次启动对时估算",
+          "metrics": [
+            "相遇 28.0 秒",
+            "平均信号 -67 dBm",
+            "56 次采样"
+          ],
+          "displayed_matching": "mutual",
+          "source": "挂件 MQTT 直传"
+        },
+        {
+          "round": 12,
+          "event_suffix": "0000000c",
+          "original_round_passed": true,
+          "estimate": "2026/11/19 02:33:48 · 经同次启动对时估算",
+          "metrics": [
+            "相遇 28.0 秒",
+            "平均信号 -67 dBm",
+            "56 次采样"
+          ],
+          "displayed_matching": "mutual",
+          "source": "挂件 MQTT 直传"
+        },
+        {
+          "round": 13,
+          "event_suffix": "0000000d",
+          "original_round_passed": true,
+          "estimate": "2026/11/19 02:35:19 · 经同次启动对时估算",
+          "metrics": [
+            "相遇 28.0 秒",
+            "平均信号 -67 dBm",
+            "57 次采样"
+          ],
+          "displayed_matching": "mutual",
+          "source": "挂件 MQTT 直传"
+        },
+        {
+          "round": 14,
+          "event_suffix": "0000000e",
+          "original_round_passed": true,
+          "estimate": "2026/11/19 02:36:46 · 经同次启动对时估算",
+          "metrics": [
+            "相遇 28.0 秒",
+            "平均信号 -66 dBm",
+            "58 次采样"
+          ],
+          "displayed_matching": "mutual",
+          "source": "挂件 MQTT 直传"
+        },
+        {
+          "round": 15,
+          "event_suffix": "0000000f",
+          "original_round_passed": true,
+          "estimate": "2026/11/19 02:38:11 · 经同次启动对时估算",
+          "metrics": [
+            "相遇 28.0 秒",
+            "平均信号 -66 dBm",
+            "56 次采样"
+          ],
+          "displayed_matching": "mutual",
+          "source": "挂件 MQTT 直传"
+        },
+        {
+          "round": 16,
+          "event_suffix": "00000010",
+          "original_round_passed": true,
+          "estimate": "2026/11/19 02:40:14 · 经同次启动对时估算",
+          "metrics": [
+            "相遇 28.0 秒",
+            "平均信号 -66 dBm",
+            "56 次采样"
+          ],
+          "displayed_matching": "mutual",
+          "source": "挂件 MQTT 直传"
+        },
+        {
+          "round": 17,
+          "event_suffix": "00000011",
+          "original_round_passed": false,
+          "estimate": "2026/11/19 02:41:35 · 经同次启动对时估算",
+          "metrics": [
+            "相遇 10.0 秒",
+            "平均信号 -66 dBm",
+            "23 次采样"
+          ],
+          "displayed_matching": "single",
+          "source": "挂件 MQTT 直传"
+        },
+        {
+          "round": 18,
+          "event_suffix": "00000012",
+          "original_round_passed": true,
+          "estimate": "2026/11/19 02:44:28 · 经同次启动对时估算",
+          "metrics": [
+            "相遇 28.0 秒",
+            "平均信号 -66 dBm",
+            "56 次采样"
+          ],
+          "displayed_matching": "mutual",
+          "source": "挂件 MQTT 直传"
+        },
+        {
+          "round": 19,
+          "event_suffix": "00000013",
+          "original_round_passed": false,
+          "estimate": "2026/11/19 02:46:06 · 经同次启动对时估算",
+          "metrics": [
+            "相遇 28.0 秒",
+            "平均信号 -66 dBm",
+            "57 次采样"
+          ],
+          "displayed_matching": "mutual",
+          "source": "挂件 MQTT 直传"
+        },
+        {
+          "round": 20,
+          "event_suffix": "00000014",
+          "original_round_passed": false,
+          "estimate": "2026/11/19 02:48:17 · 经同次启动对时估算",
+          "metrics": [
+            "相遇 28.0 秒",
+            "平均信号 -66 dBm",
+            "55 次采样"
+          ],
+          "displayed_matching": "mutual",
+          "source": "挂件 MQTT 直传"
+        }
+      ],
+      "captured_utc": "2026-11-18T19:15:23.745Z",
+      "targeted_event": {
+        "round": 20,
+        "event_suffix": "00000014",
+        "original_round_passed": false,
+        "estimate": "2026/11/19 02:48:17 · 经同次启动对时估算",
+        "metrics": [
+          "相遇 28.0 秒",
+          "平均信号 -66 dBm",
+          "55 次采样"
+        ],
+        "displayed_matching": "mutual",
+        "source": "挂件 MQTT 直传"
+      },
+      "most_recent_card": {
+        "index": 0,
+        "peer_alias": "挂件 A",
+        "source": "挂件 MQTT 直传",
+        "matching": "mutual",
+        "estimate": "2026/11/19 02:58:26 · 经同次启动对时估算",
+        "metrics": [
+          "相遇 28.0 秒",
+          "平均信号 -66 dBm",
+          "56 次采样"
+        ]
+      },
+      "visible_cards": 28,
+      "mutual_cards": 26,
+      "requests": [
+        {
+          "state": "等待回应",
+          "ir": true
+        },
+        {
+          "state": "联系已撤销",
+          "ir": true
+        }
+      ],
+      "profiles_masked": 0,
+      "page_errors": 0,
+      "business_actions": 0
+    },
+    {
+      "role": "Charlie",
+      "station": "未绑定挂件",
+      "screenshot": "Charlie_0.5.6_对时后第三方隔离网页.png",
+      "before_screenshot": "Charlie_0.5.6_第三方隔离网页.png",
+      "series_counts": {
+        "mutual": 0,
+        "single": 0,
+        "review": 0,
+        "not_recorded": 0
+      },
+      "series": [],
+      "captured_utc": "2026-11-18T19:15:24.282Z",
+      "targeted_event": null,
+      "most_recent_card": null,
+      "visible_cards": 0,
+      "mutual_cards": 0,
+      "requests": [],
+      "profiles_masked": 0,
+      "page_errors": 0,
+      "business_actions": 0
+    }
+  ]
+}

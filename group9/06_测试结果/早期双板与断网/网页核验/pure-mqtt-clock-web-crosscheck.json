@@ -1,0 +1,100 @@
+{
+  "firmware": "0.5.6-dual",
+  "row_trace": "server/evidence/pure-mqtt-clock-runtime.json",
+  "endpoint": "http://127.0.0.1:8875",
+  "mqtt_clock_only": true,
+  "browser": "Chrome, two independent sessions",
+  "roles": [
+    {
+      "role": "Alice",
+      "station": "挂件 A",
+      "screenshot": "Alice_新启动纯MQTT错位网页.png",
+      "captured_utc": "2026-11-18T19:23:05.547Z",
+      "targeted_event": {
+        "event_suffix": "00000001",
+        "displayed_matching": "mutual",
+        "clock_quality": "anchored",
+        "estimate": "2026/11/19 03:18:27 · 经同次启动对时估算",
+        "metrics": [
+          "相遇 15.0 秒",
+          "平均信号 -66 dBm",
+          "29 次采样"
+        ],
+        "source": "挂件 MQTT 直传"
+      },
+      "most_recent_card": {
+        "index": 0,
+        "peer_alias": "挂件 B",
+        "source": "挂件 MQTT 直传",
+        "matching": "mutual",
+        "estimate": "2026/11/19 03:18:27 · 经同次启动对时估算",
+        "metrics": [
+          "相遇 15.0 秒",
+          "平均信号 -66 dBm",
+          "29 次采样"
+        ]
+      },
+      "visible_cards": 29,
+      "mutual_cards": 27,
+      "requests": [
+        {
+          "state": "等待回应",
+          "ir": true
+        },
+        {
+          "state": "联系已撤销",
+          "ir": true
+        }
+      ],
+      "profiles_masked": 0,
+      "page_errors": 0,
+      "business_actions": 0
+    },
+    {
+      "role": "Bob",
+      "station": "挂件 B",
+      "screenshot": "Bob_新启动纯MQTT错位网页.png",
+      "captured_utc": "2026-11-18T19:23:06.086Z",
+      "targeted_event": {
+        "event_suffix": "00000001",
+        "displayed_matching": "mutual",
+        "clock_quality": "anchored",
+        "estimate": "2026/11/19 03:18:58 · 经同次启动对时估算",
+        "metrics": [
+          "相遇 16.0 秒",
+          "平均信号 -66 dBm",
+          "34 次采样"
+        ],
+        "source": "挂件 MQTT 直传"
+      },
+      "most_recent_card": {
+        "index": 0,
+        "peer_alias": "挂件 A",
+        "source": "挂件 MQTT 直传",
+        "matching": "mutual",
+        "estimate": "2026/11/19 03:18:58 · 经同次启动对时估算",
+        "metrics": [
+          "相遇 16.0 秒",
+          "平均信号 -66 dBm",
+          "34 次采样"
+        ]
+      },
+      "visible_cards": 29,
+      "mutual_cards": 27,
+      "requests": [
+        {
+          "state": "等待回应",
+          "ir": true
+        },
+        {
+          "state": "联系已撤销",
+          "ir": true
+        }
+      ],
+      "profiles_masked": 0,
+      "page_errors": 0,
+      "business_actions": 0
+    }
+  ]
+}
+

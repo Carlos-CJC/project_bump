@@ -1,0 +1,350 @@
+{
+  "schema_version": 1,
+  "audited_utc": "2026-11-15T14:07:50.167670+00:00",
+  "status": "verified_successes_with_explicit_failure_boundaries",
+  "method": {
+    "serial_or_network_ports_opened": false,
+    "raw_evidence_modified": false,
+    "database_connections": "Fresh SQLite URI mode=ro",
+    "comparison": "Complete (device_id, boot_id, seq) keys and exact canonical_json using sorted keys, compact separators and allow_nan=False.",
+    "source_hashes_sha256": {
+      "evidence\\motion_mqtt\\direct\\summary.json": "472168a303b622e5f6e6463aa375907b2588e65b0a3d6cdb41c2449d15d541e3",
+      "evidence\\motion_mqtt\\direct\\serial_records.jsonl": "ac7ba1da7da40d2e868245c3604a58b39473f6c718cc2b03762987239494d202",
+      "evidence\\motion_mqtt\\direct_hotspot\\summary.json": "2dc6f5a19bad61a17a41ff3d220be57ecb930e3afbd788c0603d07c5bce67be1",
+      "evidence\\motion_mqtt\\direct_hotspot\\serial_records.jsonl": "9edb767d670e8140a825fee3b0dba4e44cd081546db12cd6e14889de7e96d4e8",
+      "evidence\\motion_mqtt\\serial_bridge\\20261115T135352Z_107aae79\\summary.json": "0364bbd7e59050ef2ff9e1a8dab18e7dc4d16627be71dea8d42ea2b8ee92e91e",
+      "evidence\\motion_mqtt\\serial_bridge\\20261115T135352Z_107aae79\\serial_records.jsonl": "bb3291352d708a551bc2c73e4eb2b96fea62964422f832dc812087e49caec3d9",
+      "evidence\\motion_mqtt\\direct_instrumented\\summary.json": "50726eee8c7eb0d4e3b1e33996155a185e41fd2220aba4f2074997a0a2bc3bd5",
+      "evidence\\motion_mqtt\\direct_instrumented\\serial_records.jsonl": "dce1a0bf0073ff818de9946ffa23bb802d7fcbc11a2990974642af0ebec7c8ad",
+      "evidence\\motion_mqtt\\direct_quiet_followup\\summary.json": "b4e33436124d55a6764d0cf2a839552b8f06807b118445794632c6fc13c60706",
+      "evidence\\motion_mqtt\\direct_quiet_followup\\serial_records.jsonl": "686a93303ccbcd77dd9bdb4228fcd3ae8c20c4248d08d224cea9ca4ecbd35cb6",
+      "evidence\\motion_mqtt\\serial_bridge\\20261115T135352Z_107aae79\\mqtt_traces.jsonl": "fa3f25f81db132daaae37afb0c63700a79b88af06feb782adbe95b17999d970d"
+    }
+  },
+  "verified_totals": {
+    "direct_wifi_rows": 3,
+    "serial_bridge_rows": 2,
+    "hardware_imu_snapshot_rows": 2,
+    "injected_motion_rows": 3,
+    "accepted_hardware_motion_event_rows": 0
+  },
+  "database_verification": {
+    "serial_bridge": {
+      "database": "private\\motion_mqtt_runtime\\telemetry.sqlite3",
+      "open_mode": "ro",
+      "total_rows": 2,
+      "only_expected_keys": true,
+      "events": [
+        {
+          "key": [
+            "badge-a",
+            "433550fd-42ac-448a-a6b6-5589fcc62811",
+            1
+          ],
+          "event": "imu_sample",
+          "source": "hardware",
+          "transport": "serial_bridge",
+          "matching_rows": 1,
+          "canonical_json_exact": true,
+          "canonical_json_sha256": "f5091f6f95202810101f2adcb05c9f2e6615ec825d8284bd5d853dd77c853db2"
+        },
+        {
+          "key": [
+            "badge-a",
+            "433550fd-42ac-448a-a6b6-5589fcc62811",
+            2
+          ],
+          "event": "motion_trigger",
+          "source": "injected_test",
+          "transport": "serial_bridge",
+          "matching_rows": 1,
+          "canonical_json_exact": true,
+          "canonical_json_sha256": "af69417bc8bbf1e45f73bb93ad9bdbdc9e3a6a9944a1df97f7830e278c9177cc"
+        }
+      ]
+    },
+    "direct_wifi": {
+      "database": "private\\motion_hotspot_runtime\\telemetry.sqlite3",
+      "open_mode": "ro",
+      "total_rows": 3,
+      "only_expected_keys": true,
+      "events": [
+        {
+          "key": [
+            "badge-a",
+            "b7c6074b-abfa-4971-91f9-e893473ff880",
+            1
+          ],
+          "event": "imu_sample",
+          "source": "hardware",
+          "transport": "wifi_mqtt",
+          "matching_rows": 1,
+          "canonical_json_exact": true,
+          "canonical_json_sha256": "12a54df5300a0991efc5deb1ff4bd83a9e7cbdc49d8fa494e851654b4229e561"
+        },
+        {
+          "key": [
+            "badge-a",
+            "b7c6074b-abfa-4971-91f9-e893473ff880",
+            2
+          ],
+          "event": "motion_trigger",
+          "source": "injected_test",
+          "transport": "wifi_mqtt",
+          "matching_rows": 1,
+          "canonical_json_exact": true,
+          "canonical_json_sha256": "40e87c2958e80e5aa5968eda3eb340744be48194990b4f26251fa7b4ddbd2004"
+        },
+        {
+          "key": [
+            "badge-a",
+            "b7c6074b-abfa-4971-91f9-e893473ff880",
+            3
+          ],
+          "event": "motion_trigger",
+          "source": "injected_test",
+          "transport": "wifi_mqtt",
+          "matching_rows": 1,
+          "canonical_json_exact": true,
+          "canonical_json_sha256": "c42c1c980b5073e47cf19213363d0ffbfef1730c7d003fea45be47d23ba3d2ed"
+        }
+      ]
+    }
+  },
+  "serial_bridge": {
+    "status": "pass",
+    "source": "evidence\\motion_mqtt\\serial_bridge\\20261115T135352Z_107aae79\\serial_records.jsonl",
+    "natural_window": {
+      "trigger_uptime_ms": 6506,
+      "deadline_uptime_ms": 66507,
+      "elapsed_ms": 60001,
+      "deadline_line": 78
+    },
+    "pc_mqtt_tls": true,
+    "board_wifi_attempted": false,
+    "wrong_boot_ack": {
+      "rejected": true,
+      "queue_payloads_unchanged": true,
+      "queue_count_after": 2,
+      "rejection_line": 95,
+      "evidence_boundary": "Wrong-boot command identity is established by the test script; serial records preserve its rejection and unchanged queue dumps."
+    },
+    "duplicate_check": {
+      "seq": 1,
+      "ack": "duplicate",
+      "database_rows_before": 1,
+      "database_rows_after": 1
+    },
+    "application_ack_fields_exact": true,
+    "application_acks_nonretained": true,
+    "database_verified_before_board_release": true,
+    "queue_removed_lines": [
+      100,
+      102
+    ],
+    "final_queue": 0,
+    "final_state": "IDLE",
+    "uncontrolled_hardware_triggers": {
+      "ignored_count": 1,
+      "state": "DISCOVERY",
+      "lines": [
+        74
+      ],
+      "final_trigger_count": 1,
+      "final_accepted_hardware_triggers": 0,
+      "physical_motion_controlled": false
+    }
+  },
+  "direct_wifi": {
+    "status": "pass",
+    "transport": "Private-LAN TCP MQTT; board TLS false",
+    "events": [
+      {
+        "run": "direct_instrumented",
+        "seq": 1,
+        "wifi_connected": true,
+        "mqtt_connected": true,
+        "suback_qos": 1,
+        "publish_qos": 1,
+        "publish_retained": false,
+        "puback": true,
+        "matching_application_ack": true,
+        "publish_line": 54,
+        "application_ack_line": 55,
+        "queue_removed_line": 56
+      },
+      {
+        "run": "direct_instrumented",
+        "seq": 2,
+        "wifi_connected": true,
+        "mqtt_connected": true,
+        "suback_qos": 1,
+        "publish_qos": 1,
+        "publish_retained": false,
+        "puback": true,
+        "matching_application_ack": true,
+        "publish_line": 156,
+        "application_ack_line": 157,
+        "queue_removed_line": 158
+      },
+      {
+        "run": "direct_quiet_followup",
+        "seq": 3,
+        "wifi_connected": true,
+        "mqtt_connected": true,
+        "suback_qos": 1,
+        "publish_qos": 1,
+        "publish_retained": false,
+        "puback": true,
+        "matching_application_ack": true,
+        "publish_line": 29,
+        "application_ack_line": 30,
+        "queue_removed_line": 31
+      }
+    ],
+    "instrumented_natural_window": {
+      "trigger_uptime_ms": 33485,
+      "deadline_uptime_ms": 93486,
+      "elapsed_ms": 60001,
+      "deadline_line": 140
+    },
+    "instrumented_repeat_injection": {
+      "ignored_messages": [
+        {
+          "type": "motion_ignored",
+          "source": "injected_test",
+          "state": "DISCOVERY"
+        }
+      ],
+      "window_not_extended": true,
+      "first_deadline_ms": 93485,
+      "after_repeat_deadline_ms": 93485
+    },
+    "quiet_followup": {
+      "status": "pass",
+      "source": "evidence\\motion_mqtt\\direct_quiet_followup\\serial_records.jsonl",
+      "periodic_output": false,
+      "telemetry_disabled_confirmed": true,
+      "status_records": 2,
+      "status_record_boundary": "Only initial and final status records; no periodic heartbeat during the natural window.",
+      "pc_ble_scanner": false,
+      "scanner_evidence": "Recorded test configuration; host processes were not inspected by this audit.",
+      "natural_window": {
+        "trigger_uptime_ms": 225267,
+        "deadline_uptime_ms": 285267,
+        "elapsed_ms": 60000,
+        "deadline_line": 13
+      },
+      "final_queue": 0,
+      "final_state": "IDLE",
+      "uncontrolled_hardware_triggers": {
+        "ignored_count": 2,
+        "state": "DISCOVERY",
+        "lines": [
+          11,
+          12
+        ],
+        "final_trigger_count": 2,
+        "final_accepted_hardware_triggers": 0,
+        "physical_motion_controlled": false
+      }
+    },
+    "ack_evidence_boundary": "Direct serial logs preserve matched=true and expected_seq, not the original five-field ACK payload. Exact SQLite storage was independently verified."
+  },
+  "failed_attempts": [
+    {
+      "run": "direct",
+      "source": "evidence\\motion_mqtt\\direct\\serial_records.jsonl",
+      "boot_id": "006fcf43-8983-4c81-8776-f6280e4321e4",
+      "firmware_version": 1,
+      "finished_utc": "2026-11-15T13:31:04.696883+00:00",
+      "error": "final_status: no status received",
+      "wifi_connected": false,
+      "mqtt_publish_records": 0,
+      "application_ack_records": 0,
+      "database_rows_for_failed_boot": 0,
+      "last_observed_state": "DISCOVERY",
+      "last_observed_queued": 2,
+      "last_status_line": 88,
+      "natural_completion_observed": false,
+      "target_hotspot_scan_matches": null,
+      "boundary": "No successful upload or final queue state observed. Last visible queue count does not prove later RAM preservation. Subsequent no-response cause remains undetermined."
+    },
+    {
+      "run": "direct_hotspot",
+      "source": "evidence\\motion_mqtt\\direct_hotspot\\serial_records.jsonl",
+      "boot_id": "7d73f331-3dcc-4ebc-b6f8-7088a9967ffb",
+      "firmware_version": 2,
+      "finished_utc": "2026-11-15T13:51:27.284537+00:00",
+      "error": "final_status: no status received",
+      "wifi_connected": false,
+      "mqtt_publish_records": 0,
+      "application_ack_records": 0,
+      "database_rows_for_failed_boot": 0,
+      "last_observed_state": "DISCOVERY",
+      "last_observed_queued": 2,
+      "last_status_line": 71,
+      "natural_completion_observed": false,
+      "target_hotspot_scan_matches": 0,
+      "boundary": "No successful upload or final queue state observed. Last visible queue count does not prove later RAM preservation. Subsequent no-response cause remains undetermined."
+    }
+  ],
+  "baseline_sampling_audit": [
+    {
+      "run": "direct",
+      "source": "evidence\\motion_mqtt\\direct\\serial_records.jsonl",
+      "exported_finite_status_vectors": 60,
+      "vector_dimensions": 3,
+      "summary_counter_delta": 6553,
+      "summary_sample_time_delta_ms": 60020,
+      "summary_rate_per_s": 109.18027324225258,
+      "baseline_start_last_sample_age_ms": 0,
+      "summary_rate_includes_preobservation_scan_gap": false,
+      "recommended_first_to_last_status_counter_delta": 6443,
+      "recommended_first_to_last_sample_span_ms": 59011,
+      "recommended_first_to_last_rate_per_s": 109.18303367168834,
+      "lifetime_max_sample_gap_ms_at_baseline_end": 13,
+      "measurement_boundary": "Finite values verified for exported vectors; internal sample counters do not imply every raw sample was exported or independently inspected."
+    },
+    {
+      "run": "direct_hotspot",
+      "source": "evidence\\motion_mqtt\\direct_hotspot\\serial_records.jsonl",
+      "exported_finite_status_vectors": 20,
+      "vector_dimensions": 3,
+      "summary_counter_delta": 2186,
+      "summary_sample_time_delta_ms": 26074,
+      "summary_rate_per_s": 83.83830635882488,
+      "baseline_start_last_sample_age_ms": 6062,
+      "summary_rate_includes_preobservation_scan_gap": true,
+      "recommended_first_to_last_status_counter_delta": 2075,
+      "recommended_first_to_last_sample_span_ms": 18996,
+      "recommended_first_to_last_rate_per_s": 109.23352284691514,
+      "lifetime_max_sample_gap_ms_at_baseline_end": 6068,
+      "measurement_boundary": "Finite values verified for exported vectors; internal sample counters do not imply every raw sample was exported or independently inspected."
+    },
+    {
+      "run": "direct_instrumented",
+      "source": "evidence\\motion_mqtt\\direct_instrumented\\serial_records.jsonl",
+      "exported_finite_status_vectors": 20,
+      "vector_dimensions": 3,
+      "summary_counter_delta": 2186,
+      "summary_sample_time_delta_ms": 26076,
+      "summary_rate_per_s": 83.83187605460961,
+      "baseline_start_last_sample_age_ms": 6063,
+      "summary_rate_includes_preobservation_scan_gap": true,
+      "recommended_first_to_last_status_counter_delta": 2075,
+      "recommended_first_to_last_sample_span_ms": 18997,
+      "recommended_first_to_last_rate_per_s": 109.22777280623257,
+      "lifetime_max_sample_gap_ms_at_baseline_end": 6069,
+      "measurement_boundary": "Finite values verified for exported vectors; internal sample counters do not imply every raw sample was exported or independently inspected."
+    }
+  ],
+  "interpretation_boundaries": [
+    "The original 60-second direct baseline summary rate is supported by its counter interval. Hotspot summary rates around 83.83-83.84/s include a stale pre-scan sample timestamp and should not be called the clean 20-second observation rate; net first/last status rates are about 109.23/s.",
+    "Quiet follow-up succeeded without periodic status output. Earlier no-response failures remain unexplained; these runs do not establish a sole causal role for PC BLE scanning.",
+    "Every stored motion_trigger was injected_test. Physical shaking was not controlled or independently validated; incidental hardware detections were ignored in DISCOVERY and accepted_hardware_triggers remained zero.",
+    "Bridge success verifies serial-to-PC TLS MQTT and SQLite. Separate direct runs verify board Wi-Fi delivery over temporary private-LAN TCP MQTT without TLS.",
+    "Single-board scope: infrared operation, two-badge interaction, gesture accuracy, prolonged reliability, and RAM queue survival across power loss were not established."
+  ],
+  "raw_source_hashes_unchanged_during_audit": true
+}

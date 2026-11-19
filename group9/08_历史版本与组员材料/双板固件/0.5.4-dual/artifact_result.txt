@@ -1,0 +1,3 @@
+PASS: 0.5.4 exact sketch, selected local HCI, preserved packet contract, 647 RP2040 UF2 blocks
+stock result report fields ('at_utc', 'image_identity', 'begin', 'outcome', 'A_before', 'B_before', 'A_best', 'A_max_reports', 'A_last_status', 'B_last_status', 'B_advertise_ready_utc', 'usb_events', 'probe_complete')
+batch result report fields ('at_utc', 'image_identity', 'begin', 'outcome', 'A_before', 'B_before', 'A_best', 'A_max_reports', 'A_last_status', 'B_last_status', 'B_advertise_ready_utc', 'usb_events', 'probe_complete')

@@ -1,0 +1,103 @@
+{
+  "captured_utc": "2026-11-18T19:22:49.119+00:00",
+  "firmware": "0.5.6-dual",
+  "clock_samples_at_fresh_boot_before_network": 0,
+  "initial_anchor_count_source": "separate board control agent's pre-network read-only database inspection",
+  "serial_clock_import_for_these_boots": false,
+  "physical_trial": {
+    "trigger": "serial diagnostic",
+    "radio": "physical BLE",
+    "actual_B_lead_s": 12.258,
+    "original_65s_delivery_verdict": "pass",
+    "raw_log": "firmware/verification/live-056-mqtt-clock-offset.jsonl",
+    "source_line": 3
+  },
+  "boards": {
+    "A": {
+      "new_boot": "4c68e8e8",
+      "clock_samples": [
+        {
+          "source": "mqtt_connack",
+          "uptime_ms": 58000,
+          "low": "2026-11-18T19:16:19.928+00:00",
+          "high": "2026-11-18T19:16:21.230+00:00",
+          "interval_width_s": 1.302451
+        },
+        {
+          "source": "mqtt_connack",
+          "uptime_ms": 64000,
+          "low": "2026-11-18T19:16:25.836+00:00",
+          "high": "2026-11-18T19:16:26.928+00:00",
+          "interval_width_s": 1.091773
+        },
+        {
+          "source": "mqtt_connack",
+          "uptime_ms": 232000,
+          "low": "2026-11-18T19:19:13.867+00:00",
+          "high": "2026-11-18T19:19:15.268+00:00",
+          "interval_width_s": 1.401266
+        }
+      ],
+      "selected_event": {
+        "time_quality": "anchored",
+        "match_state": "confirmed",
+        "transport": "mqtt",
+        "clock_uncertainty_s": 0.6141560077667236,
+        "samples": 29,
+        "duration_s": 15.0,
+        "rssi_avg": -66.0,
+        "raw_seen": "2026-11-18T19:18:27.418+00:00",
+        "estimated_seen": "2026-11-18T19:18:27.244+00:00",
+        "received_utc": "2026-11-18T19:19:15.406+00:00",
+        "estimated_window_start": "2026-11-18T19:18:10.397+00:00",
+        "estimated_window_end": "2026-11-18T19:19:10.397+00:00",
+        "event_suffix": "00000001",
+        "reciprocal_same_trial_event_verified": true
+      },
+      "queue_depth": 0
+    },
+    "B": {
+      "new_boot": "a01735c2",
+      "clock_samples": [
+        {
+          "source": "mqtt_connack",
+          "uptime_ms": 62000,
+          "low": "2026-11-18T19:16:26.375+00:00",
+          "high": "2026-11-18T19:16:27.476+00:00",
+          "interval_width_s": 1.100897
+        },
+        {
+          "source": "mqtt_connack",
+          "uptime_ms": 67000,
+          "low": "2026-11-18T19:16:31.484+00:00",
+          "high": "2026-11-18T19:16:32.599+00:00",
+          "interval_width_s": 1.115348
+        },
+        {
+          "source": "mqtt_connack",
+          "uptime_ms": 218000,
+          "low": "2026-11-18T19:19:02.533+00:00",
+          "high": "2026-11-18T19:19:03.726+00:00",
+          "interval_width_s": 1.193047
+        }
+      ],
+      "selected_event": {
+        "time_quality": "anchored",
+        "match_state": "confirmed",
+        "transport": "mqtt",
+        "clock_uncertainty_s": 0.5492055416107178,
+        "samples": 34,
+        "duration_s": 16.0,
+        "rssi_avg": -66.0,
+        "raw_seen": "2026-11-18T19:18:58.432+00:00",
+        "estimated_seen": "2026-11-18T19:18:58.235+00:00",
+        "received_utc": "2026-11-18T19:19:04.035+00:00",
+        "estimated_window_start": "2026-11-18T19:17:58.287+00:00",
+        "estimated_window_end": "2026-11-18T19:18:58.287+00:00",
+        "event_suffix": "00000001",
+        "reciprocal_same_trial_event_verified": true
+      },
+      "queue_depth": 0
+    }
+  }
+}

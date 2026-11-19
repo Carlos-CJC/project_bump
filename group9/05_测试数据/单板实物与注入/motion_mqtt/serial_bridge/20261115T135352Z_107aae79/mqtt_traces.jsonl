@@ -1,0 +1,14 @@
+{"host_utc": "2026-11-15T13:53:54.221186+00:00", "type": "connect", "connected": true, "tls": true, "host": "localhost", "port": 18885}
+{"host_utc": "2026-11-15T13:53:54.222185+00:00", "type": "subscribe", "granted_qos": [1]}
+{"host_utc": "2026-11-15T13:54:55.254359+00:00", "type": "publish", "payload": {"v": 1, "device_id": "badge-a", "boot_id": "433550fd-42ac-448a-a6b6-5589fcc62811", "seq": 1, "event": "imu_sample", "source": "hardware", "transport": "serial_bridge", "uptime_ms": 6091, "accel_g": [0.02747, -0.01587, 1.01233], "state": "IDLE", "window_ms": 60000}, "qos": 1, "retain": false, "transport": "serial_bridge"}
+{"host_utc": "2026-11-15T13:54:55.258859+00:00", "type": "puback", "seq": 1}
+{"host_utc": "2026-11-15T13:54:55.268432+00:00", "type": "application_ack", "payload": {"v": 1, "device_id": "badge-a", "boot_id": "433550fd-42ac-448a-a6b6-5589fcc62811", "seq": 1, "status": "stored"}, "retain": false}
+{"host_utc": "2026-11-15T13:54:55.271425+00:00", "type": "database_verified", "seq": 1, "boot_rows": 1, "exact_payload": true}
+{"host_utc": "2026-11-15T13:54:55.274426+00:00", "type": "publish", "payload": {"v": 1, "device_id": "badge-a", "boot_id": "433550fd-42ac-448a-a6b6-5589fcc62811", "seq": 1, "event": "imu_sample", "source": "hardware", "transport": "serial_bridge", "uptime_ms": 6091, "accel_g": [0.02747, -0.01587, 1.01233], "state": "IDLE", "window_ms": 60000}, "qos": 1, "retain": false, "transport": "serial_bridge"}
+{"host_utc": "2026-11-15T13:54:55.278190+00:00", "type": "puback", "seq": 1}
+{"host_utc": "2026-11-15T13:54:55.282711+00:00", "type": "application_ack", "payload": {"v": 1, "device_id": "badge-a", "boot_id": "433550fd-42ac-448a-a6b6-5589fcc62811", "seq": 1, "status": "duplicate"}, "retain": false}
+{"host_utc": "2026-11-15T13:54:55.285707+00:00", "type": "database_verified", "seq": 1, "boot_rows": 1, "exact_payload": true}
+{"host_utc": "2026-11-15T13:54:55.290706+00:00", "type": "publish", "payload": {"v": 1, "device_id": "badge-a", "boot_id": "433550fd-42ac-448a-a6b6-5589fcc62811", "seq": 2, "event": "motion_trigger", "source": "injected_test", "transport": "serial_bridge", "uptime_ms": 6506, "accel_g": [0.0, 0.0, 2.2], "state": "DISCOVERY", "window_ms": 60000}, "qos": 1, "retain": false, "transport": "serial_bridge"}
+{"host_utc": "2026-11-15T13:54:55.291709+00:00", "type": "puback", "seq": 2}
+{"host_utc": "2026-11-15T13:54:55.300715+00:00", "type": "application_ack", "payload": {"v": 1, "device_id": "badge-a", "boot_id": "433550fd-42ac-448a-a6b6-5589fcc62811", "seq": 2, "status": "stored"}, "retain": false}
+{"host_utc": "2026-11-15T13:54:55.302714+00:00", "type": "database_verified", "seq": 2, "boot_rows": 2, "exact_payload": true}

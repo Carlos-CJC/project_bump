@@ -1,0 +1,2 @@
+sample=456 ms=919577 READ_ERROR: DHT11 returned NaN; comfort score not calculated
+sample=457 ms=921581 READ_ERROR: DHT11 returned NaN; comfort score not calculated

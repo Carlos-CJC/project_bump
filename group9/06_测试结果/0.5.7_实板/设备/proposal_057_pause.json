@@ -1,0 +1,324 @@
+{
+  "trigger": "serial w uses the physical D2 handler; no manual press in this run",
+  "initial_status": {
+    "A": {
+      "type": "status",
+      "firmware": "BumpDualBadge",
+      "fw": "0.5.7-dual",
+      "device_id": "bump-349454276354",
+      "boot_id": "cdc3936c",
+      "self_short_id": "99e3f77c947a",
+      "self_code16": "a30f",
+      "peer_code16": "0000",
+      "ir_paired": false,
+      "uptime_ms": 60213,
+      "paused": false,
+      "discovery": false,
+      "ble_phase": "idle",
+      "window_remaining_ms": 0,
+      "queued": 0,
+      "dropped": 0,
+      "imu_ready": true,
+      "imu_samples": 6194,
+      "motion_triggers": 0,
+      "network_configured": false,
+      "transport": "wifi_mqtt_tcp",
+      "nina_version": "3.0.2",
+      "last_watchdog_stage": "none",
+      "pre_reset_ram_queued": 0,
+      "accel_g": [
+        0.02942,
+        -0.00769,
+        1.01636
+      ]
+    },
+    "B": {
+      "type": "status",
+      "firmware": "BumpDualBadge",
+      "fw": "0.5.7-dual",
+      "device_id": "bump-c8c9a3e65ba4",
+      "boot_id": "b94fdaef",
+      "self_short_id": "01054d8ff96b",
+      "self_code16": "c371",
+      "peer_code16": "0000",
+      "ir_paired": false,
+      "uptime_ms": 52442,
+      "paused": false,
+      "discovery": false,
+      "ble_phase": "idle",
+      "window_remaining_ms": 0,
+      "queued": 0,
+      "dropped": 0,
+      "imu_ready": true,
+      "imu_samples": 5459,
+      "motion_triggers": 0,
+      "network_configured": false,
+      "transport": "wifi_mqtt_tcp",
+      "nina_version": "3.0.2",
+      "last_watchdog_stage": "none",
+      "pre_reset_ram_queued": 0,
+      "accel_g": [
+        -0.10547,
+        0.01428,
+        0.99011
+      ]
+    }
+  },
+  "active_roles": {
+    "A": {
+      "type": "radio",
+      "detail": "ble_scan_ready",
+      "uptime_ms": 62223
+    },
+    "B": {
+      "type": "radio",
+      "detail": "ble_advertise_ready",
+      "uptime_ms": 54474
+    }
+  },
+  "cancelled": {
+    "A": {
+      "type": "discovery_end",
+      "source": "serial_diagnostic",
+      "complete": false,
+      "observed_peers": 1,
+      "uptime_ms": 63282
+    },
+    "B": {
+      "type": "discovery_end",
+      "source": "serial_diagnostic",
+      "complete": false,
+      "observed_peers": 0,
+      "uptime_ms": 55489
+    }
+  },
+  "pause_events": {
+    "A": {
+      "type": "privacy",
+      "detail": "discovery_paused",
+      "uptime_ms": 63282
+    },
+    "B": {
+      "type": "privacy",
+      "detail": "discovery_paused",
+      "uptime_ms": 55490
+    }
+  },
+  "paused_status": {
+    "A": {
+      "type": "status",
+      "firmware": "BumpDualBadge",
+      "fw": "0.5.7-dual",
+      "device_id": "bump-349454276354",
+      "boot_id": "cdc3936c",
+      "self_short_id": "99e3f77c947a",
+      "self_code16": "a30f",
+      "peer_code16": "0000",
+      "ir_paired": false,
+      "uptime_ms": 63677,
+      "paused": true,
+      "discovery": false,
+      "ble_phase": "idle",
+      "window_remaining_ms": 0,
+      "queued": 0,
+      "dropped": 0,
+      "imu_ready": true,
+      "imu_samples": 6261,
+      "motion_triggers": 0,
+      "network_configured": false,
+      "transport": "wifi_mqtt_tcp",
+      "nina_version": "3.0.2",
+      "last_watchdog_stage": "none",
+      "pre_reset_ram_queued": 0,
+      "accel_g": [
+        0.02966,
+        -0.00806,
+        1.01575
+      ]
+    },
+    "B": {
+      "type": "status",
+      "firmware": "BumpDualBadge",
+      "fw": "0.5.7-dual",
+      "device_id": "bump-c8c9a3e65ba4",
+      "boot_id": "b94fdaef",
+      "self_short_id": "01054d8ff96b",
+      "self_code16": "c371",
+      "peer_code16": "0000",
+      "ir_paired": false,
+      "uptime_ms": 55885,
+      "paused": true,
+      "discovery": false,
+      "ble_phase": "idle",
+      "window_remaining_ms": 0,
+      "queued": 0,
+      "dropped": 0,
+      "imu_ready": true,
+      "imu_samples": 5540,
+      "motion_triggers": 0,
+      "network_configured": false,
+      "transport": "wifi_mqtt_tcp",
+      "nina_version": "3.0.2",
+      "last_watchdog_stage": "none",
+      "pre_reset_ram_queued": 0,
+      "accel_g": [
+        -0.10486,
+        0.01501,
+        0.98804
+      ]
+    }
+  },
+  "ignored_discovery": {
+    "A": {
+      "type": "discovery_ignored",
+      "detail": "paused",
+      "uptime_ms": 63945
+    },
+    "B": {
+      "type": "discovery_ignored",
+      "detail": "paused",
+      "uptime_ms": 56170
+    }
+  },
+  "privacy_after_local_ir_cancel": {
+    "B": {
+      "type": "status",
+      "firmware": "BumpDualBadge",
+      "fw": "0.5.7-dual",
+      "device_id": "bump-c8c9a3e65ba4",
+      "boot_id": "b94fdaef",
+      "self_short_id": "01054d8ff96b",
+      "self_code16": "c371",
+      "peer_code16": "0000",
+      "ir_paired": false,
+      "uptime_ms": 56879,
+      "paused": true,
+      "discovery": false,
+      "ble_phase": "idle",
+      "window_remaining_ms": 0,
+      "queued": 0,
+      "dropped": 0,
+      "imu_ready": true,
+      "imu_samples": 5646,
+      "motion_triggers": 0,
+      "network_configured": false,
+      "transport": "wifi_mqtt_tcp",
+      "nina_version": "3.0.2",
+      "last_watchdog_stage": "none",
+      "pre_reset_ram_queued": 0,
+      "accel_g": [
+        -0.10522,
+        0.01379,
+        0.98779
+      ]
+    },
+    "A": {
+      "type": "status",
+      "firmware": "BumpDualBadge",
+      "fw": "0.5.7-dual",
+      "device_id": "bump-349454276354",
+      "boot_id": "cdc3936c",
+      "self_short_id": "99e3f77c947a",
+      "self_code16": "a30f",
+      "peer_code16": "0000",
+      "ir_paired": false,
+      "uptime_ms": 64936,
+      "paused": true,
+      "discovery": false,
+      "ble_phase": "idle",
+      "window_remaining_ms": 0,
+      "queued": 0,
+      "dropped": 0,
+      "imu_ready": true,
+      "imu_samples": 6338,
+      "motion_triggers": 0,
+      "network_configured": false,
+      "transport": "wifi_mqtt_tcp",
+      "nina_version": "3.0.2",
+      "last_watchdog_stage": "none",
+      "pre_reset_ram_queued": 0,
+      "accel_g": [
+        0.02917,
+        -0.00757,
+        1.01611
+      ]
+    }
+  },
+  "resumed": {
+    "A": {
+      "type": "privacy",
+      "detail": "discovery_resumed",
+      "uptime_ms": 65194
+    },
+    "B": {
+      "type": "privacy",
+      "detail": "discovery_resumed",
+      "uptime_ms": 57420
+    }
+  },
+  "final": {
+    "A": {
+      "type": "status",
+      "firmware": "BumpDualBadge",
+      "fw": "0.5.7-dual",
+      "device_id": "bump-349454276354",
+      "boot_id": "cdc3936c",
+      "self_short_id": "99e3f77c947a",
+      "self_code16": "a30f",
+      "peer_code16": "0000",
+      "ir_paired": false,
+      "uptime_ms": 65588,
+      "paused": false,
+      "discovery": false,
+      "ble_phase": "idle",
+      "window_remaining_ms": 0,
+      "queued": 0,
+      "dropped": 0,
+      "imu_ready": true,
+      "imu_samples": 6365,
+      "motion_triggers": 0,
+      "network_configured": false,
+      "transport": "wifi_mqtt_tcp",
+      "nina_version": "3.0.2",
+      "last_watchdog_stage": "none",
+      "pre_reset_ram_queued": 0,
+      "accel_g": [
+        0.02979,
+        -0.00769,
+        1.01575
+      ]
+    },
+    "B": {
+      "type": "status",
+      "firmware": "BumpDualBadge",
+      "fw": "0.5.7-dual",
+      "device_id": "bump-c8c9a3e65ba4",
+      "boot_id": "b94fdaef",
+      "self_short_id": "01054d8ff96b",
+      "self_code16": "c371",
+      "peer_code16": "0000",
+      "ir_paired": false,
+      "uptime_ms": 57815,
+      "paused": false,
+      "discovery": false,
+      "ble_phase": "idle",
+      "window_remaining_ms": 0,
+      "queued": 0,
+      "dropped": 0,
+      "imu_ready": true,
+      "imu_samples": 5704,
+      "motion_triggers": 0,
+      "network_configured": false,
+      "transport": "wifi_mqtt_tcp",
+      "nina_version": "3.0.2",
+      "last_watchdog_stage": "none",
+      "pre_reset_ram_queued": 0,
+      "accel_g": [
+        -0.10486,
+        0.01453,
+        0.98816
+      ]
+    }
+  },
+  "no_encounter_rgb_after_cancel": true
+}

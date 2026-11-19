@@ -1,0 +1,303 @@
+{
+  "started_utc": "2026-11-15T13:53:52.162907+00:00",
+  "boot_id": "433550fd-42ac-448a-a6b6-5589fcc62811",
+  "program": "BumpSingleBoardMotionMqtt",
+  "expected_firmware_version": 2,
+  "transport": "serial_bridge",
+  "mqtt_transport": "pc_loopback_tls",
+  "board_wifi_upload_tested": false,
+  "physical_motion_controlled": false,
+  "external_modules_tested": false,
+  "two_badges_tested": false,
+  "stage": "Uploading immutable events through PC TLS MQTT and checking durable storage",
+  "mqtt_connected": true,
+  "mqtt_suback_qos": 1,
+  "initial_status": {
+    "type": "status",
+    "firmware": "BumpSingleBoardMotionMqtt",
+    "firmware_version": 2,
+    "uptime_ms": 6077,
+    "state": "IDLE",
+    "nina_mode": "NONE",
+    "ble_advertising": false,
+    "window_started_ms": 0,
+    "window_deadline_ms": 0,
+    "window_remaining_ms": 0,
+    "queued": 0,
+    "overflow": 0,
+    "source": "hardware",
+    "imu_ready": true,
+    "samples": 60,
+    "span_ms": 534,
+    "max_gap_ms": 10,
+    "trigger_count": 0,
+    "accepted_hardware_triggers": 0,
+    "injected_trigger_count": 0,
+    "last_sample_uptime_ms": 6072,
+    "boot_id_set": false,
+    "transport": "wifi_mqtt",
+    "mqtt_tls": false,
+    "accel_g": [
+      0.02673,
+      -0.01501,
+      1.01331
+    ]
+  },
+  "port": "COM12",
+  "configured_status": {
+    "type": "status",
+    "firmware": "BumpSingleBoardMotionMqtt",
+    "firmware_version": 2,
+    "uptime_ms": 6091,
+    "state": "IDLE",
+    "nina_mode": "NONE",
+    "ble_advertising": false,
+    "window_started_ms": 0,
+    "window_deadline_ms": 0,
+    "window_remaining_ms": 0,
+    "queued": 0,
+    "overflow": 0,
+    "source": "hardware",
+    "imu_ready": true,
+    "samples": 62,
+    "span_ms": 553,
+    "max_gap_ms": 11,
+    "trigger_count": 0,
+    "accepted_hardware_triggers": 0,
+    "injected_trigger_count": 0,
+    "last_sample_uptime_ms": 6091,
+    "boot_id_set": true,
+    "transport": "serial_bridge",
+    "mqtt_tls": false,
+    "accel_g": [
+      0.02747,
+      -0.01587,
+      1.01233
+    ]
+  },
+  "real_sensor_event": {
+    "v": 1,
+    "device_id": "badge-a",
+    "boot_id": "433550fd-42ac-448a-a6b6-5589fcc62811",
+    "seq": 1,
+    "event": "imu_sample",
+    "source": "hardware",
+    "transport": "serial_bridge",
+    "uptime_ms": 6091,
+    "accel_g": [
+      0.02747,
+      -0.01587,
+      1.01233
+    ],
+    "state": "IDLE",
+    "window_ms": 60000
+  },
+  "injected_event": {
+    "v": 1,
+    "device_id": "badge-a",
+    "boot_id": "433550fd-42ac-448a-a6b6-5589fcc62811",
+    "seq": 2,
+    "event": "motion_trigger",
+    "source": "injected_test",
+    "transport": "serial_bridge",
+    "uptime_ms": 6506,
+    "accel_g": [
+      0.0,
+      0.0,
+      2.2
+    ],
+    "state": "DISCOVERY",
+    "window_ms": 60000
+  },
+  "discovery_start": {
+    "type": "status",
+    "firmware": "BumpSingleBoardMotionMqtt",
+    "firmware_version": 2,
+    "uptime_ms": 7670,
+    "state": "DISCOVERY",
+    "nina_mode": "BLE",
+    "ble_advertising": true,
+    "window_started_ms": 6506,
+    "window_deadline_ms": 66506,
+    "window_remaining_ms": 58836,
+    "queued": 2,
+    "overflow": 0,
+    "source": "hardware",
+    "imu_ready": true,
+    "samples": 108,
+    "span_ms": 2129,
+    "max_gap_ms": 1164,
+    "trigger_count": 0,
+    "accepted_hardware_triggers": 0,
+    "injected_trigger_count": 1,
+    "last_sample_uptime_ms": 7667,
+    "boot_id_set": true,
+    "transport": "serial_bridge",
+    "mqtt_tls": false,
+    "accel_g": [
+      0.02734,
+      -0.01709,
+      1.01318
+    ]
+  },
+  "natural_expiry": [
+    {
+      "type": "discovery_complete",
+      "state": "IDLE"
+    },
+    {
+      "type": "sync_started",
+      "transport": "serial_bridge",
+      "tls": false
+    },
+    {
+      "type": "serial_bridge_waiting",
+      "instructions": "dump_then_matching_ACK",
+      "wifi_attempted": false
+    },
+    {
+      "type": "sync_complete",
+      "delivered": 0,
+      "queued": 2,
+      "elapsed_ms": 3,
+      "queue_storage": "ram",
+      "tls": false
+    }
+  ],
+  "dumped_events": [
+    {
+      "v": 1,
+      "device_id": "badge-a",
+      "boot_id": "433550fd-42ac-448a-a6b6-5589fcc62811",
+      "seq": 1,
+      "event": "imu_sample",
+      "source": "hardware",
+      "transport": "serial_bridge",
+      "uptime_ms": 6091,
+      "accel_g": [
+        0.02747,
+        -0.01587,
+        1.01233
+      ],
+      "state": "IDLE",
+      "window_ms": 60000
+    },
+    {
+      "v": 1,
+      "device_id": "badge-a",
+      "boot_id": "433550fd-42ac-448a-a6b6-5589fcc62811",
+      "seq": 2,
+      "event": "motion_trigger",
+      "source": "injected_test",
+      "transport": "serial_bridge",
+      "uptime_ms": 6506,
+      "accel_g": [
+        0.0,
+        0.0,
+        2.2
+      ],
+      "state": "DISCOVERY",
+      "window_ms": 60000
+    }
+  ],
+  "wrong_ack_rejected_queue_unchanged": true,
+  "duplicate_check": {
+    "ack": {
+      "v": 1,
+      "device_id": "badge-a",
+      "boot_id": "433550fd-42ac-448a-a6b6-5589fcc62811",
+      "seq": 1,
+      "status": "duplicate"
+    },
+    "rows_before": 1,
+    "rows_after": 1,
+    "unchanged": true
+  },
+  "storage_acks": [
+    {
+      "v": 1,
+      "device_id": "badge-a",
+      "boot_id": "433550fd-42ac-448a-a6b6-5589fcc62811",
+      "seq": 1,
+      "status": "stored"
+    },
+    {
+      "v": 1,
+      "device_id": "badge-a",
+      "boot_id": "433550fd-42ac-448a-a6b6-5589fcc62811",
+      "seq": 2,
+      "status": "stored"
+    }
+  ],
+  "stored_rows": [
+    {
+      "accel_g": [
+        0.02747,
+        -0.01587,
+        1.01233
+      ],
+      "boot_id": "433550fd-42ac-448a-a6b6-5589fcc62811",
+      "device_id": "badge-a",
+      "event": "imu_sample",
+      "seq": 1,
+      "source": "hardware",
+      "state": "IDLE",
+      "transport": "serial_bridge",
+      "uptime_ms": 6091,
+      "v": 1,
+      "window_ms": 60000
+    },
+    {
+      "accel_g": [
+        0.0,
+        0.0,
+        2.2
+      ],
+      "boot_id": "433550fd-42ac-448a-a6b6-5589fcc62811",
+      "device_id": "badge-a",
+      "event": "motion_trigger",
+      "seq": 2,
+      "source": "injected_test",
+      "state": "DISCOVERY",
+      "transport": "serial_bridge",
+      "uptime_ms": 6506,
+      "v": 1,
+      "window_ms": 60000
+    }
+  ],
+  "final_queue": [],
+  "final_status": {
+    "type": "status",
+    "firmware": "BumpSingleBoardMotionMqtt",
+    "firmware_version": 2,
+    "uptime_ms": 66601,
+    "state": "IDLE",
+    "nina_mode": "NONE",
+    "ble_advertising": false,
+    "window_started_ms": 6506,
+    "window_deadline_ms": 0,
+    "window_remaining_ms": 0,
+    "queued": 0,
+    "overflow": 0,
+    "source": "hardware",
+    "imu_ready": true,
+    "samples": 6580,
+    "span_ms": 61055,
+    "max_gap_ms": 1164,
+    "trigger_count": 1,
+    "accepted_hardware_triggers": 0,
+    "injected_trigger_count": 1,
+    "last_sample_uptime_ms": 66593,
+    "boot_id_set": true,
+    "transport": "serial_bridge",
+    "mqtt_tls": false,
+    "accel_g": [
+      0.02661,
+      -0.01599,
+      1.01343
+    ]
+  },
+  "payloads_stored_exactly": true,
+  "success": true,
+  "finished_utc": "2026-11-15T13:54:55.317708+00:00"
+}

@@ -1,0 +1,134 @@
+{
+  "firmware": "0.5.6-dual",
+  "row_trace": "hardware/logs/ble_056_delivery_verified.json",
+  "requested_rounds": 20,
+  "completed_rounds": 20,
+  "original_passes": 12,
+  "endpoint": "http://127.0.0.1:8875",
+  "browser": "Chrome, three independent sessions",
+  "roles": [
+    {
+      "role": "Alice",
+      "station": "挂件 A",
+      "screenshot": "Alice_0.5.6_第20轮网页.png",
+      "captured_utc": "2026-11-18T18:50:10.944Z",
+      "targeted_event": {
+        "round": 20,
+        "event_suffix": "00000003",
+        "original_round_passed": false,
+        "estimate": "2026/11/19 02:47:47 · 由设备运行时间估算",
+        "metrics": [
+          "相遇 27.0 秒",
+          "平均信号 -66 dBm",
+          "51 次采样"
+        ],
+        "displayed_matching": "review",
+        "source": "挂件 MQTT 直传"
+      },
+      "most_recent_card": {
+        "index": 0,
+        "peer_alias": "挂件 B",
+        "source": "挂件 MQTT 直传",
+        "matching": "review",
+        "estimate": "2026/11/19 02:47:47 · 由设备运行时间估算",
+        "metrics": [
+          "相遇 27.0 秒",
+          "平均信号 -66 dBm",
+          "51 次采样"
+        ]
+      },
+      "visible_cards": 27,
+      "mutual_cards": 15,
+      "requests": [
+        {
+          "state": "等待回应",
+          "ir": true
+        },
+        {
+          "state": "联系已撤销",
+          "ir": true
+        }
+      ],
+      "profiles_masked": 0,
+      "page_errors": 0,
+      "business_actions": 0
+    },
+    {
+      "role": "Bob",
+      "station": "挂件 B",
+      "screenshot": "Bob_0.5.6_第20轮网页.png",
+      "captured_utc": "2026-11-18T18:50:11.493Z",
+      "targeted_event": {
+        "round": 20,
+        "event_suffix": "00000014",
+        "original_round_passed": false,
+        "estimate": "2026/11/19 02:48:32 · 由设备运行时间估算",
+        "metrics": [
+          "相遇 28.0 秒",
+          "平均信号 -66 dBm",
+          "55 次采样"
+        ],
+        "displayed_matching": "review",
+        "source": "挂件 MQTT 直传"
+      },
+      "most_recent_card": {
+        "index": 0,
+        "peer_alias": "挂件 A",
+        "source": "挂件 MQTT 直传",
+        "matching": "review",
+        "estimate": "2026/11/19 02:48:32 · 由设备运行时间估算",
+        "metrics": [
+          "相遇 28.0 秒",
+          "平均信号 -66 dBm",
+          "55 次采样"
+        ]
+      },
+      "visible_cards": 27,
+      "mutual_cards": 15,
+      "requests": [
+        {
+          "state": "等待回应",
+          "ir": true
+        },
+        {
+          "state": "联系已撤销",
+          "ir": true
+        }
+      ],
+      "profiles_masked": 0,
+      "page_errors": 0,
+      "business_actions": 0
+    },
+    {
+      "role": "Charlie",
+      "station": "未绑定挂件",
+      "screenshot": "Charlie_0.5.6_第三方隔离网页.png",
+      "captured_utc": "2026-11-18T18:50:12.010Z",
+      "targeted_event": null,
+      "most_recent_card": null,
+      "visible_cards": 0,
+      "mutual_cards": 0,
+      "requests": [],
+      "profiles_masked": 0,
+      "page_errors": 0,
+      "business_actions": 0
+    }
+  ],
+  "round_20_matching_explanation": {
+    "actual_serial_start_utc": {
+      "A": "2026-11-18T18:47:17.716+00:00",
+      "B": "2026-11-18T18:47:17.717+00:00"
+    },
+    "difference_between_serial_starts_s": 0.001,
+    "estimated_common_window_start_utc": "2026-11-18T18:47:32.866+00:00",
+    "estimated_common_window_end_utc": "2026-11-18T18:48:18.175+00:00",
+    "difference_between_estimated_starts_s": 14.691,
+    "A_earliest_estimated_observation_precedes_intersection_s": 12.455,
+    "B_latest_estimated_observation_follows_intersection_s": 14.388,
+    "configured_edge_tolerance_s": 2,
+    "B_serial_transmit_to_database_receive_s": 15.218,
+    "B_estimated_discovery_start_minus_serial_start_s": 15.149,
+    "scope": "The observed delayed receipt shifts the uptime-derived server estimate; the two physical windows opened together in the serial record. This association does not identify where in the network or transport stack the delay arose."
+  },
+  "timeline_counts_scope": "Account-wide counts include earlier real firmware trials too; they are separate from the 0.5.6 series totals."
+}

@@ -1,0 +1,17 @@
+{
+  "ready": true,
+  "pid": 10552,
+  "updated_utc": "2026-11-15T14:03:32.740229+00:00",
+  "bind_ip": "192.168.137.1",
+  "port": 18886,
+  "tls_port": 18887,
+  "stats": {
+    "received": 3,
+    "stored": 3,
+    "duplicates": 0,
+    "rejected": 0,
+    "store_failures": 0,
+    "acks_dropped": 0,
+    "acks_published": 3
+  }
+}

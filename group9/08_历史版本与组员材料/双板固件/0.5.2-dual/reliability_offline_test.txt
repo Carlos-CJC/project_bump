@@ -1,0 +1,16 @@
+round 1: FAIL; both observed False; timeout None
+round 2: FAIL; both observed False; timeout None
+0/2 rounds verified (20 requested). no_verified_dual_direction_in_first_two_rounds
+test_bounded_stop_after_first_two_failures (test_dual_reliability.Reliability.test_bounded_stop_after_first_two_failures) ... ok
+test_buffers_positive_ack_before_database_poll (test_dual_reliability.Reliability.test_buffers_positive_ack_before_database_poll) ... ok
+test_command_allowlist_without_accessing_a_live_session (test_dual_reliability.Reliability.test_command_allowlist_without_accessing_a_live_session) ... ok
+test_distinguishes_simultaneous_rounds_from_time_shifted_windows (test_dual_reliability.Reliability.test_distinguishes_simultaneous_rounds_from_time_shifted_windows) ... ok
+test_does_not_pass_a_round_with_an_observed_reset (test_dual_reliability.Reliability.test_does_not_pass_a_round_with_an_observed_reset) ... ok
+test_missing_ack_rejects_even_when_both_rows_stored (test_dual_reliability.Reliability.test_missing_ack_rejects_even_when_both_rows_stored) ... ok
+test_rejects_middle_offload_and_wrong_peer (test_dual_reliability.Reliability.test_rejects_middle_offload_and_wrong_peer) ... ok
+test_reused_id_rejects_replayed_round (test_dual_reliability.Reliability.test_reused_id_rejects_replayed_round) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.067s
+
+OK

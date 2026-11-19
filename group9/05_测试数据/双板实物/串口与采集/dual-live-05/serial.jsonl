@@ -1,0 +1,758 @@
+{"utc": "2026-11-18T16:53:32.484+00:00", "board": "A", "kind": "open", "data": "COM13"}
+{"utc": "2026-11-18T16:53:32.495+00:00", "board": "B", "kind": "open", "data": "COM14"}
+{"utc": "2026-11-18T16:53:32.675+00:00", "board": "A", "kind": "tx", "data": "status"}
+{"utc": "2026-11-18T16:53:32.701+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.4-dual\",\"device_id\":\"bump-349454276354\",\"boot_id\":\"04c98126\",\"self_short_id\":\"92c4f512ed31\",\"self_code16\":\"a30f\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":105196,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":10919,\"motion_triggers\":0,\"network_configured\":false,\"transport\":\"wifi_mqtt_tcp\",\"nina_version\":\"3.0.2\",\"last_watchdog_stage\":\"none\",\"pre_reset_ram_queued\":0,\"accel_g\":[0.02905,-0.00452,1.01770]}"}
+{"utc": "2026-11-18T16:53:32.702+00:00", "board": "A", "kind": "first_status", "data": {"type": "status", "firmware": "BumpDualBadge", "fw": "0.5.4-dual", "device_id": "bump-349454276354", "boot_id": "04c98126", "self_short_id": "92c4f512ed31", "self_code16": "a30f", "peer_code16": "0000", "ir_paired": false, "uptime_ms": 105196, "paused": false, "discovery": false, "ble_phase": "idle", "window_remaining_ms": 0, "queued": 0, "dropped": 0, "imu_ready": true, "imu_samples": 10919, "motion_triggers": 0, "network_configured": false, "transport": "wifi_mqtt_tcp", "nina_version": "3.0.2", "last_watchdog_stage": "none", "pre_reset_ram_queued": 0, "accel_g": [0.02905, -0.00452, 1.0177]}}
+{"utc": "2026-11-18T16:53:32.702+00:00", "board": "A", "kind": "rx", "data": "STATUS state=IDLE my=0xA30F"}
+{"utc": "2026-11-18T16:53:32.702+00:00", "board": "B", "kind": "tx", "data": "status"}
+{"utc": "2026-11-18T16:53:32.728+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.4-dual\",\"device_id\":\"bump-c8c9a3e65ba4\",\"boot_id\":\"82042fa5\",\"self_short_id\":\"44aa60828132\",\"self_code16\":\"c371\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":97461,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":10260,\"motion_triggers\":0,\"network_configured\":false,\"transport\":\"wifi_mqtt_tcp\",\"nina_version\":\"3.0.2\",\"last_watchdog_stage\":\"none\",\"pre_reset_ram_queued\":0,\"accel_g\":[-0.10583,0.01465,0.98889]}"}
+{"utc": "2026-11-18T16:53:32.728+00:00", "board": "B", "kind": "first_status", "data": {"type": "status", "firmware": "BumpDualBadge", "fw": "0.5.4-dual", "device_id": "bump-c8c9a3e65ba4", "boot_id": "82042fa5", "self_short_id": "44aa60828132", "self_code16": "c371", "peer_code16": "0000", "ir_paired": false, "uptime_ms": 97461, "paused": false, "discovery": false, "ble_phase": "idle", "window_remaining_ms": 0, "queued": 0, "dropped": 0, "imu_ready": true, "imu_samples": 10260, "motion_triggers": 0, "network_configured": false, "transport": "wifi_mqtt_tcp", "nina_version": "3.0.2", "last_watchdog_stage": "none", "pre_reset_ram_queued": 0, "accel_g": [-0.10583, 0.01465, 0.98889]}}
+{"utc": "2026-11-18T16:53:32.728+00:00", "board": "B", "kind": "rx", "data": "STATUS state=IDLE my=0xC371"}
+{"utc": "2026-11-18T16:53:35.249+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:53:37.490+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T16:53:40.250+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:53:42.498+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T16:53:45.265+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:53:47.504+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T16:53:48.158+00:00", "board": "A", "kind": "tx", "data": "SET ssid [private]"}
+{"utc": "2026-11-18T16:53:48.209+00:00", "board": "A", "kind": "tx", "data": "SET wifi_password [private]"}
+{"utc": "2026-11-18T16:53:48.259+00:00", "board": "A", "kind": "tx", "data": "SET broker_host [private]"}
+{"utc": "2026-11-18T16:53:48.310+00:00", "board": "A", "kind": "tx", "data": "SET broker_port [private]"}
+{"utc": "2026-11-18T16:53:48.361+00:00", "board": "A", "kind": "tx", "data": "SET mqtt_password [private]"}
+{"utc": "2026-11-18T16:53:48.413+00:00", "board": "B", "kind": "tx", "data": "SET ssid [private]"}
+{"utc": "2026-11-18T16:53:48.464+00:00", "board": "B", "kind": "tx", "data": "SET wifi_password [private]"}
+{"utc": "2026-11-18T16:53:48.514+00:00", "board": "B", "kind": "tx", "data": "SET broker_host [private]"}
+{"utc": "2026-11-18T16:53:48.564+00:00", "board": "B", "kind": "tx", "data": "SET broker_port [private]"}
+{"utc": "2026-11-18T16:53:48.615+00:00", "board": "B", "kind": "tx", "data": "SET mqtt_password [private]"}
+{"utc": "2026-11-18T16:53:48.692+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"configuration_set\",\"detail\":\"ssid\",\"uptime_ms\":120680}"}
+{"utc": "2026-11-18T16:53:48.692+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"configuration_set\",\"detail\":\"wifi_password\",\"uptime_ms\":120731}"}
+{"utc": "2026-11-18T16:53:48.692+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"configuration_set\",\"detail\":\"broker_host\",\"uptime_ms\":120781}"}
+{"utc": "2026-11-18T16:53:48.692+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"configuration_set\",\"detail\":\"broker_port\",\"uptime_ms\":120832}"}
+{"utc": "2026-11-18T16:53:48.692+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"configuration_set\",\"detail\":\"mqtt_password\",\"uptime_ms\":120883}"}
+{"utc": "2026-11-18T16:53:48.692+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_begin\",\"uptime_ms\":120887}"}
+{"utc": "2026-11-18T16:53:48.692+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"configuration_set\",\"detail\":\"ssid\",\"uptime_ms\":113172}"}
+{"utc": "2026-11-18T16:53:48.692+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"configuration_set\",\"detail\":\"wifi_password\",\"uptime_ms\":113223}"}
+{"utc": "2026-11-18T16:53:48.692+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"configuration_set\",\"detail\":\"broker_host\",\"uptime_ms\":113273}"}
+{"utc": "2026-11-18T16:53:48.692+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"configuration_set\",\"detail\":\"broker_port\",\"uptime_ms\":113324}"}
+{"utc": "2026-11-18T16:53:48.692+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"configuration_set\",\"detail\":\"mqtt_password\",\"uptime_ms\":113374}"}
+{"utc": "2026-11-18T16:53:48.692+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_begin\",\"uptime_ms\":113377}"}
+{"utc": "2026-11-18T16:53:51.949+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_connected\",\"uptime_ms\":124445}"}
+{"utc": "2026-11-18T16:53:52.026+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync\",\"detail\":\"broker_connected\",\"uptime_ms\":124536}"}
+{"utc": "2026-11-18T16:53:52.051+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync\",\"detail\":\"ack_subscribed\",\"uptime_ms\":124567}"}
+{"utc": "2026-11-18T16:53:52.051+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"wire\",\"phase\":\"transmit\",\"source\":\"presence\",\"topic\":\"bump/v1/device/bump-349454276354/status\",\"payload\":{\"schema\":1,\"device_id\":\"bump-349454276354\",\"boot_id\":\"04c98126\",\"fw\":\"0.5.4-dual\",\"self_short_id\":\"92c4f512ed31\",\"state\":\"online\",\"uptime_s\":124,\"queue_depth\":0,\"events_dropped\":0}}"}
+{"utc": "2026-11-18T16:53:52.102+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_connected\",\"uptime_ms\":116837}"}
+{"utc": "2026-11-18T16:53:52.129+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"wire\",\"phase\":\"transmit\",\"source\":\"presence\",\"topic\":\"bump/v1/device/bump-349454276354/status\",\"payload\":{\"schema\":1,\"device_id\":\"bump-349454276354\",\"boot_id\":\"04c98126\",\"fw\":\"0.5.4-dual\",\"self_short_id\":\"92c4f512ed31\",\"state\":\"offline\",\"uptime_s\":124,\"queue_depth\":0,\"events_dropped\":0}}"}
+{"utc": "2026-11-18T16:53:52.155+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"sync\",\"detail\":\"broker_connected\",\"uptime_ms\":116888}"}
+{"utc": "2026-11-18T16:53:52.155+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"sync\",\"detail\":\"ack_subscribed\",\"uptime_ms\":116907}"}
+{"utc": "2026-11-18T16:53:52.155+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"wire\",\"phase\":\"transmit\",\"source\":\"presence\",\"topic\":\"bump/v1/device/bump-c8c9a3e65ba4/status\",\"payload\":{\"schema\":1,\"device_id\":\"bump-c8c9a3e65ba4\",\"boot_id\":\"82042fa5\",\"fw\":\"0.5.4-dual\",\"self_short_id\":\"44aa60828132\",\"state\":\"online\",\"uptime_s\":116,\"queue_depth\":0,\"events_dropped\":0}}"}
+{"utc": "2026-11-18T16:53:52.233+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"wire\",\"phase\":\"transmit\",\"source\":\"presence\",\"topic\":\"bump/v1/device/bump-c8c9a3e65ba4/status\",\"payload\":{\"schema\":1,\"device_id\":\"bump-c8c9a3e65ba4\",\"boot_id\":\"82042fa5\",\"fw\":\"0.5.4-dual\",\"self_short_id\":\"44aa60828132\",\"state\":\"offline\",\"uptime_s\":116,\"queue_depth\":0,\"events_dropped\":0}}"}
+{"utc": "2026-11-18T16:53:53.425+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync_complete\",\"transport\":\"wifi_mqtt_tcp\",\"queued\":0}"}
+{"utc": "2026-11-18T16:53:53.425+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T16:53:53.709+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"sync_complete\",\"transport\":\"wifi_mqtt_tcp\",\"queued\":0}"}
+{"utc": "2026-11-18T16:53:53.709+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:53:55.451+00:00", "board": "A", "kind": "tx", "data": "status"}
+{"utc": "2026-11-18T16:53:55.502+00:00", "board": "B", "kind": "tx", "data": "status"}
+{"utc": "2026-11-18T16:53:55.578+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.4-dual\",\"device_id\":\"bump-349454276354\",\"boot_id\":\"04c98126\",\"self_short_id\":\"92c4f512ed31\",\"self_code16\":\"a30f\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":127971,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":12781,\"motion_triggers\":0,\"network_configured\":true,\"transport\":\"wifi_mqtt_tcp\",\"nina_version\":\"3.0.2\",\"last_watchdog_stage\":\"none\",\"pre_reset_ram_queued\":0,\"accel_g\":[0.02844,-0.00500,1.01770]}"}
+{"utc": "2026-11-18T16:53:55.578+00:00", "board": "A", "kind": "rx", "data": "STATUS state=IDLE my=0xA30F"}
+{"utc": "2026-11-18T16:53:55.579+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.4-dual\",\"device_id\":\"bump-c8c9a3e65ba4\",\"boot_id\":\"82042fa5\",\"self_short_id\":\"44aa60828132\",\"self_code16\":\"c371\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":120260,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":12150,\"motion_triggers\":0,\"network_configured\":true,\"transport\":\"wifi_mqtt_tcp\",\"nina_version\":\"3.0.2\",\"last_watchdog_stage\":\"none\",\"pre_reset_ram_queued\":0,\"accel_g\":[-0.10535,0.01379,0.98816]}"}
+{"utc": "2026-11-18T16:53:55.579+00:00", "board": "B", "kind": "rx", "data": "STATUS state=IDLE my=0xC371"}
+{"utc": "2026-11-18T16:53:55.768+00:00", "board": "A", "kind": "tx", "data": "discover"}
+{"utc": "2026-11-18T16:53:55.819+00:00", "board": "B", "kind": "tx", "data": "discover"}
+{"utc": "2026-11-18T16:53:55.896+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"discovery_start\",\"source\":\"serial_diagnostic\",\"self_short_id\":\"92c4f512ed31\",\"first_phase\":\"scan\",\"window_ms\":60000,\"uptime_ms\":128289}"}
+{"utc": "2026-11-18T16:53:55.896+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"discovery_start\",\"source\":\"serial_diagnostic\",\"self_short_id\":\"44aa60828132\",\"first_phase\":\"advertise\",\"window_ms\":60000,\"uptime_ms\":120578}"}
+{"utc": "2026-11-18T16:53:56.130+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_scan_begin\",\"uptime_ms\":128643}"}
+{"utc": "2026-11-18T16:53:56.181+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_advertise_begin\",\"uptime_ms\":120933}"}
+{"utc": "2026-11-18T16:53:57.292+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_scan_ready\",\"uptime_ms\":129791}"}
+{"utc": "2026-11-18T16:53:57.370+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_advertise_ready\",\"uptime_ms\":122103}"}
+{"utc": "2026-11-18T16:53:57.397+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"ble_observation\",\"peer_short_id\":\"44aa60828132\",\"rssi\":-65,\"samples\":1,\"uptime_ms\":129910}"}
+{"utc": "2026-11-18T16:53:57.835+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"ble_observation\",\"peer_short_id\":\"44aa60828132\",\"rssi\":-65,\"samples\":2,\"uptime_ms\":130344}"}
+{"utc": "2026-11-18T16:53:58.428+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T16:53:58.712+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:54:03.457+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T16:54:03.716+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:54:08.467+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T16:54:08.701+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:54:13.481+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T16:54:13.714+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:54:18.499+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T16:54:18.705+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:54:23.504+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T16:54:23.712+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:54:25.345+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_end_begin\",\"uptime_ms\":150102}"}
+{"utc": "2026-11-18T16:54:25.371+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_end_done\",\"uptime_ms\":150108}"}
+{"utc": "2026-11-18T16:54:25.708+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_scan_begin\",\"uptime_ms\":150458}"}
+{"utc": "2026-11-18T16:54:26.380+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_end_begin\",\"uptime_ms\":158891}"}
+{"utc": "2026-11-18T16:54:26.380+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_end_done\",\"uptime_ms\":158894}"}
+{"utc": "2026-11-18T16:54:26.742+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_advertise_begin\",\"uptime_ms\":159244}"}
+{"utc": "2026-11-18T16:54:26.870+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_scan_ready\",\"uptime_ms\":151609}"}
+{"utc": "2026-11-18T16:54:27.904+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_advertise_ready\",\"uptime_ms\":160412}"}
+{"utc": "2026-11-18T16:54:27.955+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"ble_observation\",\"peer_short_id\":\"92c4f512ed31\",\"rssi\":-65,\"samples\":1,\"uptime_ms\":152702}"}
+{"utc": "2026-11-18T16:54:28.395+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"ble_observation\",\"peer_short_id\":\"92c4f512ed31\",\"rssi\":-66,\"samples\":2,\"uptime_ms\":153148}"}
+{"utc": "2026-11-18T16:54:28.524+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T16:54:28.730+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:54:33.516+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T16:54:33.748+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:54:38.505+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T16:54:38.762+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:54:43.510+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T16:54:43.768+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:54:48.513+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T16:54:48.795+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:54:53.512+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T16:54:53.796+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:54:55.789+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_end_begin\",\"uptime_ms\":188289}"}
+{"utc": "2026-11-18T16:54:55.789+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_end_done\",\"uptime_ms\":188295}"}
+{"utc": "2026-11-18T16:54:55.789+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"wire\",\"phase\":\"queued\",\"source\":\"serial_diagnostic\",\"topic\":\"bump/v1/device/bump-349454276354/encounters\",\"payload\":{\"schema\":1,\"device_id\":\"bump-349454276354\",\"boot_id\":\"04c98126\",\"fw\":\"0.5.4-dual\",\"batch_id\":\"bt_349454276354_04c98126_00000001_0001\",\"self_short_id\":\"92c4f512ed31\",\"uptime_ms\":188296,\"time_source\":\"uptime\",\"events\":[{\"event_id\":\"ev_349454276354_04c98126_00000001\",\"peer_short_id\":\"44aa60828132\",\"rssi_avg\":-65,\"rssi_last\":-65,\"duration_s\":27,\"samples\":48,\"flags\":1,\"peer_tx_power\":-4,\"occurred_uptime_ms\":157288,\"discovery_started_uptime_ms\":128289,\"discovery_ended_uptime_ms\":188289}]}}"}
+{"utc": "2026-11-18T16:54:55.840+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_end_begin\",\"uptime_ms\":180582}"}
+{"utc": "2026-11-18T16:54:55.841+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_end_done\",\"uptime_ms\":180586}"}
+{"utc": "2026-11-18T16:54:55.841+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"wire\",\"phase\":\"queued\",\"source\":\"serial_diagnostic\",\"topic\":\"bump/v1/device/bump-c8c9a3e65ba4/encounters\",\"payload\":{\"schema\":1,\"device_id\":\"bump-c8c9a3e65ba4\",\"boot_id\":\"82042fa5\",\"fw\":\"0.5.4-dual\",\"batch_id\":\"bt_c8c9a3e65ba4_82042fa5_00000001_0001\",\"self_short_id\":\"44aa60828132\",\"uptime_ms\":180587,\"time_source\":\"uptime\",\"events\":[{\"event_id\":\"ev_c8c9a3e65ba4_82042fa5_00000001\",\"peer_short_id\":\"92c4f512ed31\",\"rssi_avg\":-65,\"rssi_last\":-66,\"duration_s\":27,\"samples\":52,\"flags\":1,\"peer_tx_power\":-4,\"occurred_uptime_ms\":180291,\"discovery_started_uptime_ms\":120578,\"discovery_ended_uptime_ms\":180578}]}}"}
+{"utc": "2026-11-18T16:54:56.565+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"discovery_end\",\"source\":\"serial_diagnostic\",\"complete\":true,\"observed_peers\":1,\"uptime_ms\":189064}"}
+{"utc": "2026-11-18T16:54:56.565+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_begin\",\"uptime_ms\":189067}"}
+{"utc": "2026-11-18T16:54:56.617+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"discovery_end\",\"source\":\"serial_diagnostic\",\"complete\":true,\"observed_peers\":1,\"uptime_ms\":181355}"}
+{"utc": "2026-11-18T16:54:56.617+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_begin\",\"uptime_ms\":181358}"}
+{"utc": "2026-11-18T16:55:00.072+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_connected\",\"uptime_ms\":184812}"}
+{"utc": "2026-11-18T16:55:00.124+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_connected\",\"uptime_ms\":192626}"}
+{"utc": "2026-11-18T16:55:00.125+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"sync\",\"detail\":\"broker_connected\",\"uptime_ms\":184878}"}
+{"utc": "2026-11-18T16:55:00.151+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync\",\"detail\":\"broker_connected\",\"uptime_ms\":192666}"}
+{"utc": "2026-11-18T16:55:00.151+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"sync\",\"detail\":\"ack_subscribed\",\"uptime_ms\":184889}"}
+{"utc": "2026-11-18T16:55:00.151+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"wire\",\"phase\":\"transmit\",\"source\":\"presence\",\"topic\":\"bump/v1/device/bump-c8c9a3e65ba4/status\",\"payload\":{\"schema\":1,\"device_id\":\"bump-c8c9a3e65ba4\",\"boot_id\":\"82042fa5\",\"fw\":\"0.5.4-dual\",\"self_short_id\":\"44aa60828132\",\"state\":\"online\",\"uptime_s\":184,\"queue_depth\":1,\"events_dropped\":0}}"}
+{"utc": "2026-11-18T16:55:00.228+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync\",\"detail\":\"ack_subscribed\",\"uptime_ms\":192737}"}
+{"utc": "2026-11-18T16:55:00.228+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"wire\",\"phase\":\"transmit\",\"source\":\"presence\",\"topic\":\"bump/v1/device/bump-349454276354/status\",\"payload\":{\"schema\":1,\"device_id\":\"bump-349454276354\",\"boot_id\":\"04c98126\",\"fw\":\"0.5.4-dual\",\"self_short_id\":\"92c4f512ed31\",\"state\":\"online\",\"uptime_s\":192,\"queue_depth\":1,\"events_dropped\":0}}"}
+{"utc": "2026-11-18T16:55:00.228+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"wire\",\"phase\":\"transmit\",\"source\":\"serial_diagnostic\",\"topic\":\"bump/v1/device/bump-c8c9a3e65ba4/encounters\",\"payload\":{\"schema\":1,\"device_id\":\"bump-c8c9a3e65ba4\",\"boot_id\":\"82042fa5\",\"fw\":\"0.5.4-dual\",\"batch_id\":\"bt_c8c9a3e65ba4_82042fa5_00000001_0001\",\"self_short_id\":\"44aa60828132\",\"uptime_ms\":184968,\"time_source\":\"uptime\",\"events\":[{\"event_id\":\"ev_c8c9a3e65ba4_82042fa5_00000001\",\"peer_short_id\":\"92c4f512ed31\",\"rssi_avg\":-65,\"rssi_last\":-66,\"duration_s\":27,\"samples\":52,\"flags\":1,\"peer_tx_power\":-4,\"occurred_uptime_ms\":180291,\"discovery_started_uptime_ms\":120578,\"discovery_ended_uptime_ms\":180578}]}}"}
+{"utc": "2026-11-18T16:55:00.331+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"wire\",\"phase\":\"transmit\",\"source\":\"serial_diagnostic\",\"topic\":\"bump/v1/device/bump-349454276354/encounters\",\"payload\":{\"schema\":1,\"device_id\":\"bump-349454276354\",\"boot_id\":\"04c98126\",\"fw\":\"0.5.4-dual\",\"batch_id\":\"bt_349454276354_04c98126_00000001_0001\",\"self_short_id\":\"92c4f512ed31\",\"uptime_ms\":192838,\"time_source\":\"uptime\",\"events\":[{\"event_id\":\"ev_349454276354_04c98126_00000001\",\"peer_short_id\":\"44aa60828132\",\"rssi_avg\":-65,\"rssi_last\":-65,\"duration_s\":27,\"samples\":48,\"flags\":1,\"peer_tx_power\":-4,\"occurred_uptime_ms\":157288,\"discovery_started_uptime_ms\":128289,\"discovery_ended_uptime_ms\":188289}]}}"}
+{"utc": "2026-11-18T16:55:00.434+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"mqtt_puback\",\"detail\":\"received\",\"uptime_ms\":192946}"}
+{"utc": "2026-11-18T16:55:00.460+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"mqtt_puback\",\"detail\":\"received\",\"uptime_ms\":185207}"}
+{"utc": "2026-11-18T16:55:00.640+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"application_ack\",\"detail\":\"matched\",\"uptime_ms\":185386}"}
+{"utc": "2026-11-18T16:55:00.640+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"queue_removed_after_application_ack\",\"origin\":\"wifi_mqtt\",\"event_id\":\"ev_c8c9a3e65ba4_82042fa5_00000001\",\"queued\":0}"}
+{"utc": "2026-11-18T16:55:00.640+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"wire\",\"phase\":\"transmit\",\"source\":\"presence\",\"topic\":\"bump/v1/device/bump-c8c9a3e65ba4/status\",\"payload\":{\"schema\":1,\"device_id\":\"bump-c8c9a3e65ba4\",\"boot_id\":\"82042fa5\",\"fw\":\"0.5.4-dual\",\"self_short_id\":\"44aa60828132\",\"state\":\"offline\",\"uptime_s\":185,\"queue_depth\":0,\"events_dropped\":0}}"}
+{"utc": "2026-11-18T16:55:00.665+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"application_ack\",\"detail\":\"matched\",\"uptime_ms\":193175}"}
+{"utc": "2026-11-18T16:55:00.665+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"queue_removed_after_application_ack\",\"origin\":\"wifi_mqtt\",\"event_id\":\"ev_349454276354_04c98126_00000001\",\"queued\":0}"}
+{"utc": "2026-11-18T16:55:00.665+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"wire\",\"phase\":\"transmit\",\"source\":\"presence\",\"topic\":\"bump/v1/device/bump-349454276354/status\",\"payload\":{\"schema\":1,\"device_id\":\"bump-349454276354\",\"boot_id\":\"04c98126\",\"fw\":\"0.5.4-dual\",\"self_short_id\":\"92c4f512ed31\",\"state\":\"offline\",\"uptime_s\":193,\"queue_depth\":0,\"events_dropped\":0}}"}
+{"utc": "2026-11-18T16:55:00.770+00:00", "board": "A", "kind": "tx", "data": "status"}
+{"utc": "2026-11-18T16:55:00.820+00:00", "board": "B", "kind": "tx", "data": "status"}
+{"utc": "2026-11-18T16:55:01.929+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"sync_complete\",\"transport\":\"wifi_mqtt_tcp\",\"queued\":0}"}
+{"utc": "2026-11-18T16:55:01.955+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.4-dual\",\"device_id\":\"bump-c8c9a3e65ba4\",\"boot_id\":\"82042fa5\",\"self_short_id\":\"44aa60828132\",\"self_code16\":\"c371\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":186682,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":16560,\"motion_triggers\":0,\"network_configured\":true,\"transport\":\"wifi_mqtt_tcp\",\"nina_version\":\"3.0.2\",\"last_watchdog_stage\":\"none\",\"pre_reset_ram_queued\":0,\"accel_g\":[-0.10583,0.01416,0.99121]}"}
+{"utc": "2026-11-18T16:55:01.955+00:00", "board": "B", "kind": "rx", "data": "STATUS state=IDLE my=0xC371"}
+{"utc": "2026-11-18T16:55:01.955+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:55:02.059+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync_complete\",\"transport\":\"wifi_mqtt_tcp\",\"queued\":0}"}
+{"utc": "2026-11-18T16:55:02.059+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.4-dual\",\"device_id\":\"bump-349454276354\",\"boot_id\":\"04c98126\",\"self_short_id\":\"92c4f512ed31\",\"self_code16\":\"a30f\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":194571,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":16960,\"motion_triggers\":0,\"network_configured\":true,\"transport\":\"wifi_mqtt_tcp\",\"nina_version\":\"3.0.2\",\"last_watchdog_stage\":\"none\",\"pre_reset_ram_queued\":0,\"accel_g\":[0.02820,-0.00464,1.01770]}"}
+{"utc": "2026-11-18T16:55:02.059+00:00", "board": "A", "kind": "rx", "data": "STATUS state=IDLE my=0xA30F"}
+{"utc": "2026-11-18T16:55:02.059+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T16:55:02.139+00:00", "board": "A", "kind": "tx", "data": "discover"}
+{"utc": "2026-11-18T16:55:02.190+00:00", "board": "B", "kind": "tx", "data": "discover"}
+{"utc": "2026-11-18T16:55:02.266+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"discovery_start\",\"source\":\"serial_diagnostic\",\"self_short_id\":\"92c4f512ed31\",\"first_phase\":\"scan\",\"window_ms\":60000,\"uptime_ms\":194660}"}
+{"utc": "2026-11-18T16:55:02.266+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"discovery_start\",\"source\":\"serial_diagnostic\",\"self_short_id\":\"44aa60828132\",\"first_phase\":\"advertise\",\"window_ms\":60000,\"uptime_ms\":186948}"}
+{"utc": "2026-11-18T16:55:02.500+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_scan_begin\",\"uptime_ms\":195015}"}
+{"utc": "2026-11-18T16:55:02.552+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_advertise_begin\",\"uptime_ms\":187303}"}
+{"utc": "2026-11-18T16:55:03.661+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_scan_ready\",\"uptime_ms\":196164}"}
+{"utc": "2026-11-18T16:55:03.738+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_advertise_ready\",\"uptime_ms\":188473}"}
+{"utc": "2026-11-18T16:55:03.790+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"ble_observation\",\"peer_short_id\":\"44aa60828132\",\"rssi\":-66,\"samples\":1,\"uptime_ms\":196289}"}
+{"utc": "2026-11-18T16:55:04.283+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"ble_observation\",\"peer_short_id\":\"44aa60828132\",\"rssi\":-65,\"samples\":2,\"uptime_ms\":196802}"}
+{"utc": "2026-11-18T16:55:06.951+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:55:07.081+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T16:55:11.943+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:55:12.098+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T16:55:16.957+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:55:17.112+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T16:55:21.945+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:55:22.126+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T16:55:26.955+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:55:27.135+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T16:55:31.683+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_end_begin\",\"uptime_ms\":224181}"}
+{"utc": "2026-11-18T16:55:31.709+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_end_done\",\"uptime_ms\":224205}"}
+{"utc": "2026-11-18T16:55:31.735+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_end_begin\",\"uptime_ms\":216472}"}
+{"utc": "2026-11-18T16:55:31.735+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_end_done\",\"uptime_ms\":216478}"}
+{"utc": "2026-11-18T16:55:32.044+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_advertise_begin\",\"uptime_ms\":224555}"}
+{"utc": "2026-11-18T16:55:32.096+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_scan_begin\",\"uptime_ms\":216828}"}
+{"utc": "2026-11-18T16:55:33.229+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_advertise_ready\",\"uptime_ms\":225724}"}
+{"utc": "2026-11-18T16:55:33.229+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T16:55:33.229+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_scan_ready\",\"uptime_ms\":217983}"}
+{"utc": "2026-11-18T16:55:33.229+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:55:33.641+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"ble_observation\",\"peer_short_id\":\"92c4f512ed31\",\"rssi\":-66,\"samples\":1,\"uptime_ms\":218387}"}
+{"utc": "2026-11-18T16:55:34.312+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"ble_observation\",\"peer_short_id\":\"92c4f512ed31\",\"rssi\":-65,\"samples\":2,\"uptime_ms\":219044}"}
+{"utc": "2026-11-18T16:55:38.215+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T16:55:38.266+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:55:43.228+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T16:55:43.280+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:55:48.215+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T16:55:48.292+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:55:53.227+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T16:55:53.305+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:55:58.219+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T16:55:58.322+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:56:02.149+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_end_begin\",\"uptime_ms\":254660}"}
+{"utc": "2026-11-18T16:56:02.149+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_end_done\",\"uptime_ms\":254666}"}
+{"utc": "2026-11-18T16:56:02.175+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"wire\",\"phase\":\"queued\",\"source\":\"serial_diagnostic\",\"topic\":\"bump/v1/device/bump-349454276354/encounters\",\"payload\":{\"schema\":1,\"device_id\":\"bump-349454276354\",\"boot_id\":\"04c98126\",\"fw\":\"0.5.4-dual\",\"batch_id\":\"bt_349454276354_04c98126_00000002_0001\",\"self_short_id\":\"92c4f512ed31\",\"uptime_ms\":254667,\"time_source\":\"uptime\",\"events\":[{\"event_id\":\"ev_349454276354_04c98126_00000002\",\"peer_short_id\":\"44aa60828132\",\"rssi_avg\":-65,\"rssi_last\":-65,\"duration_s\":21,\"samples\":40,\"flags\":1,\"peer_tx_power\":-4,\"occurred_uptime_ms\":218004,\"discovery_started_uptime_ms\":194660,\"discovery_ended_uptime_ms\":254660}]}}"}
+{"utc": "2026-11-18T16:56:02.227+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_end_begin\",\"uptime_ms\":246963}"}
+{"utc": "2026-11-18T16:56:02.227+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_end_done\",\"uptime_ms\":246967}"}
+{"utc": "2026-11-18T16:56:02.227+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"wire\",\"phase\":\"queued\",\"source\":\"serial_diagnostic\",\"topic\":\"bump/v1/device/bump-c8c9a3e65ba4/encounters\",\"payload\":{\"schema\":1,\"device_id\":\"bump-c8c9a3e65ba4\",\"boot_id\":\"82042fa5\",\"fw\":\"0.5.4-dual\",\"batch_id\":\"bt_c8c9a3e65ba4_82042fa5_00000002_0001\",\"self_short_id\":\"44aa60828132\",\"uptime_ms\":246968,\"time_source\":\"uptime\",\"events\":[{\"event_id\":\"ev_c8c9a3e65ba4_82042fa5_00000002\",\"peer_short_id\":\"92c4f512ed31\",\"rssi_avg\":-65,\"rssi_last\":-66,\"duration_s\":27,\"samples\":54,\"flags\":1,\"peer_tx_power\":-4,\"occurred_uptime_ms\":246368,\"discovery_started_uptime_ms\":186948,\"discovery_ended_uptime_ms\":246948}]}}"}
+{"utc": "2026-11-18T16:56:02.923+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"discovery_end\",\"source\":\"serial_diagnostic\",\"complete\":true,\"observed_peers\":1,\"uptime_ms\":255435}"}
+{"utc": "2026-11-18T16:56:02.923+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_begin\",\"uptime_ms\":255438}"}
+{"utc": "2026-11-18T16:56:03.000+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"discovery_end\",\"source\":\"serial_diagnostic\",\"complete\":true,\"observed_peers\":1,\"uptime_ms\":247736}"}
+{"utc": "2026-11-18T16:56:03.000+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_begin\",\"uptime_ms\":247739}"}
+{"utc": "2026-11-18T16:56:06.490+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_connected\",\"uptime_ms\":258998}"}
+{"utc": "2026-11-18T16:56:06.516+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync\",\"detail\":\"broker_connected\",\"uptime_ms\":259027}"}
+{"utc": "2026-11-18T16:56:06.542+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_connected\",\"uptime_ms\":251293}"}
+{"utc": "2026-11-18T16:56:06.568+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync\",\"detail\":\"ack_subscribed\",\"uptime_ms\":259088}"}
+{"utc": "2026-11-18T16:56:06.594+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"wire\",\"phase\":\"transmit\",\"source\":\"presence\",\"topic\":\"bump/v1/device/bump-349454276354/status\",\"payload\":{\"schema\":1,\"device_id\":\"bump-349454276354\",\"boot_id\":\"04c98126\",\"fw\":\"0.5.4-dual\",\"self_short_id\":\"92c4f512ed31\",\"state\":\"online\",\"uptime_s\":259,\"queue_depth\":1,\"events_dropped\":0}}"}
+{"utc": "2026-11-18T16:56:06.594+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"sync\",\"detail\":\"broker_connected\",\"uptime_ms\":251329}"}
+{"utc": "2026-11-18T16:56:06.594+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"sync\",\"detail\":\"ack_subscribed\",\"uptime_ms\":251338}"}
+{"utc": "2026-11-18T16:56:06.594+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"wire\",\"phase\":\"transmit\",\"source\":\"presence\",\"topic\":\"bump/v1/device/bump-c8c9a3e65ba4/status\",\"payload\":{\"schema\":1,\"device_id\":\"bump-c8c9a3e65ba4\",\"boot_id\":\"82042fa5\",\"fw\":\"0.5.4-dual\",\"self_short_id\":\"44aa60828132\",\"state\":\"online\",\"uptime_s\":251,\"queue_depth\":1,\"events_dropped\":0}}"}
+{"utc": "2026-11-18T16:56:06.698+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"wire\",\"phase\":\"transmit\",\"source\":\"serial_diagnostic\",\"topic\":\"bump/v1/device/bump-c8c9a3e65ba4/encounters\",\"payload\":{\"schema\":1,\"device_id\":\"bump-c8c9a3e65ba4\",\"boot_id\":\"82042fa5\",\"fw\":\"0.5.4-dual\",\"batch_id\":\"bt_c8c9a3e65ba4_82042fa5_00000002_0001\",\"self_short_id\":\"44aa60828132\",\"uptime_ms\":251429,\"time_source\":\"uptime\",\"events\":[{\"event_id\":\"ev_c8c9a3e65ba4_82042fa5_00000002\",\"peer_short_id\":\"92c4f512ed31\",\"rssi_avg\":-65,\"rssi_last\":-66,\"duration_s\":27,\"samples\":54,\"flags\":1,\"peer_tx_power\":-4,\"occurred_uptime_ms\":246368,\"discovery_started_uptime_ms\":186948,\"discovery_ended_uptime_ms\":246948}]}}"}
+{"utc": "2026-11-18T16:56:06.775+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"mqtt_puback\",\"detail\":\"received\",\"uptime_ms\":251528}"}
+{"utc": "2026-11-18T16:56:06.800+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"application_ack\",\"detail\":\"matched\",\"uptime_ms\":251557}"}
+{"utc": "2026-11-18T16:56:06.826+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"wire\",\"phase\":\"transmit\",\"source\":\"serial_diagnostic\",\"topic\":\"bump/v1/device/bump-349454276354/encounters\",\"payload\":{\"schema\":1,\"device_id\":\"bump-349454276354\",\"boot_id\":\"04c98126\",\"fw\":\"0.5.4-dual\",\"batch_id\":\"bt_349454276354_04c98126_00000002_0001\",\"self_short_id\":\"92c4f512ed31\",\"uptime_ms\":259328,\"time_source\":\"uptime\",\"events\":[{\"event_id\":\"ev_349454276354_04c98126_00000002\",\"peer_short_id\":\"44aa60828132\",\"rssi_avg\":-65,\"rssi_last\":-65,\"duration_s\":21,\"samples\":40,\"flags\":1,\"peer_tx_power\":-4,\"occurred_uptime_ms\":218004,\"discovery_started_uptime_ms\":194660,\"discovery_ended_uptime_ms\":254660}]}}"}
+{"utc": "2026-11-18T16:56:06.826+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"queue_removed_after_application_ack\",\"origin\":\"wifi_mqtt\",\"event_id\":\"ev_c8c9a3e65ba4_82042fa5_00000002\",\"queued\":0}"}
+{"utc": "2026-11-18T16:56:06.826+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"wire\",\"phase\":\"transmit\",\"source\":\"presence\",\"topic\":\"bump/v1/device/bump-c8c9a3e65ba4/status\",\"payload\":{\"schema\":1,\"device_id\":\"bump-c8c9a3e65ba4\",\"boot_id\":\"82042fa5\",\"fw\":\"0.5.4-dual\",\"self_short_id\":\"44aa60828132\",\"state\":\"offline\",\"uptime_s\":251,\"queue_depth\":0,\"events_dropped\":0}}"}
+{"utc": "2026-11-18T16:56:06.878+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"mqtt_puback\",\"detail\":\"received\",\"uptime_ms\":259398}"}
+{"utc": "2026-11-18T16:56:07.008+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"application_ack\",\"detail\":\"matched\",\"uptime_ms\":259516}"}
+{"utc": "2026-11-18T16:56:07.008+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"queue_removed_after_application_ack\",\"origin\":\"wifi_mqtt\",\"event_id\":\"ev_349454276354_04c98126_00000002\",\"queued\":0}"}
+{"utc": "2026-11-18T16:56:07.008+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"wire\",\"phase\":\"transmit\",\"source\":\"presence\",\"topic\":\"bump/v1/device/bump-349454276354/status\",\"payload\":{\"schema\":1,\"device_id\":\"bump-349454276354\",\"boot_id\":\"04c98126\",\"fw\":\"0.5.4-dual\",\"self_short_id\":\"92c4f512ed31\",\"state\":\"offline\",\"uptime_s\":259,\"queue_depth\":0,\"events_dropped\":0}}"}
+{"utc": "2026-11-18T16:56:07.113+00:00", "board": "A", "kind": "tx", "data": "status"}
+{"utc": "2026-11-18T16:56:07.164+00:00", "board": "B", "kind": "tx", "data": "status"}
+{"utc": "2026-11-18T16:56:08.249+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync_complete\",\"transport\":\"wifi_mqtt_tcp\",\"queued\":0}"}
+{"utc": "2026-11-18T16:56:08.249+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.4-dual\",\"device_id\":\"bump-349454276354\",\"boot_id\":\"04c98126\",\"self_short_id\":\"92c4f512ed31\",\"self_code16\":\"a30f\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":260761,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":21171,\"motion_triggers\":0,\"network_configured\":true,\"transport\":\"wifi_mqtt_tcp\",\"nina_version\":\"3.0.2\",\"last_watchdog_stage\":\"none\",\"pre_reset_ram_queued\":0,\"accel_g\":[0.02905,-0.00378,1.01746]}"}
+{"utc": "2026-11-18T16:56:08.249+00:00", "board": "A", "kind": "rx", "data": "STATUS state=IDLE my=0xA30F"}
+{"utc": "2026-11-18T16:56:08.249+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T16:56:08.353+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"sync_complete\",\"transport\":\"wifi_mqtt_tcp\",\"queued\":0}"}
+{"utc": "2026-11-18T16:56:08.353+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.4-dual\",\"device_id\":\"bump-c8c9a3e65ba4\",\"boot_id\":\"82042fa5\",\"self_short_id\":\"44aa60828132\",\"self_code16\":\"c371\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":253102,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":20878,\"motion_triggers\":0,\"network_configured\":true,\"transport\":\"wifi_mqtt_tcp\",\"nina_version\":\"3.0.2\",\"last_watchdog_stage\":\"none\",\"pre_reset_ram_queued\":0,\"accel_g\":[-0.10535,0.01318,0.99036]}"}
+{"utc": "2026-11-18T16:56:08.353+00:00", "board": "B", "kind": "rx", "data": "STATUS state=IDLE my=0xC371"}
+{"utc": "2026-11-18T16:56:08.353+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:56:08.483+00:00", "board": "A", "kind": "tx", "data": "discover"}
+{"utc": "2026-11-18T16:56:08.534+00:00", "board": "B", "kind": "tx", "data": "discover"}
+{"utc": "2026-11-18T16:56:08.611+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"discovery_start\",\"source\":\"serial_diagnostic\",\"self_short_id\":\"92c4f512ed31\",\"first_phase\":\"scan\",\"window_ms\":60000,\"uptime_ms\":261004}"}
+{"utc": "2026-11-18T16:56:08.611+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"discovery_start\",\"source\":\"serial_diagnostic\",\"self_short_id\":\"44aa60828132\",\"first_phase\":\"advertise\",\"window_ms\":60000,\"uptime_ms\":253292}"}
+{"utc": "2026-11-18T16:56:08.844+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_scan_begin\",\"uptime_ms\":261359}"}
+{"utc": "2026-11-18T16:56:08.896+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_advertise_begin\",\"uptime_ms\":253646}"}
+{"utc": "2026-11-18T16:56:10.009+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_scan_ready\",\"uptime_ms\":262518}"}
+{"utc": "2026-11-18T16:56:10.060+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_advertise_ready\",\"uptime_ms\":254804}"}
+{"utc": "2026-11-18T16:56:10.344+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"ble_observation\",\"peer_short_id\":\"44aa60828132\",\"rssi\":-65,\"samples\":1,\"uptime_ms\":262861}"}
+{"utc": "2026-11-18T16:56:10.759+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"ble_observation\",\"peer_short_id\":\"44aa60828132\",\"rssi\":-65,\"samples\":2,\"uptime_ms\":263276}"}
+{"utc": "2026-11-18T16:56:13.264+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T16:56:13.368+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:56:18.277+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T16:56:18.354+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:56:23.315+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T16:56:23.367+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:56:28.330+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T16:56:28.356+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:56:33.344+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T16:56:33.370+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:56:38.041+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_end_begin\",\"uptime_ms\":290536}"}
+{"utc": "2026-11-18T16:56:38.067+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_end_begin\",\"uptime_ms\":282803}"}
+{"utc": "2026-11-18T16:56:38.067+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_end_done\",\"uptime_ms\":282809}"}
+{"utc": "2026-11-18T16:56:38.428+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_scan_begin\",\"uptime_ms\":283159}"}
+{"utc": "2026-11-18T16:56:39.566+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_scan_ready\",\"uptime_ms\":284311}"}
+{"utc": "2026-11-18T16:56:39.566+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:56:44.575+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:56:46.022+00:00", "board": "A", "kind": "lost", "data": {"port": "COM13", "reason": "ClearCommError failed (PermissionError(13, '设备不识别此命令。', None, 22))"}}
+{"utc": "2026-11-18T16:56:47.048+00:00", "board": "A", "kind": "reopen", "data": "COM13"}
+{"utc": "2026-11-18T16:56:47.256+00:00", "board": "A", "kind": "tx", "data": "status"}
+{"utc": "2026-11-18T16:56:47.825+00:00", "board": "A", "kind": "rx", "data": ""}
+{"utc": "2026-11-18T16:56:47.825+00:00", "board": "A", "kind": "rx", "data": "=== IR Near-Field Pairing ==="}
+{"utc": "2026-11-18T16:56:47.825+00:00", "board": "A", "kind": "rx", "data": "Chip UID: 50351706825E8318"}
+{"utc": "2026-11-18T16:56:47.825+00:00", "board": "A", "kind": "rx", "data": "My machine code: 0xA30F"}
+{"utc": "2026-11-18T16:56:47.825+00:00", "board": "A", "kind": "rx", "data": "Blue = start pairing, White = stop/unpair"}
+{"utc": "2026-11-18T16:56:47.851+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"boot\",\"detail\":\"BumpDualBadge\",\"uptime_ms\":1271}"}
+{"utc": "2026-11-18T16:56:47.852+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"watchdog_recovery\",\"stage\":\"ble_stop\",\"pre_reset_ram_queued\":0,\"ram_queue_lost\":true,\"network_configuration_lost\":true}"}
+{"utc": "2026-11-18T16:56:47.852+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.4-dual\",\"device_id\":\"bump-349454276354\",\"boot_id\":\"26ba16a5\",\"self_short_id\":\"78fe2e725995\",\"self_code16\":\"a30f\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":1272,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":0,\"motion_triggers\":0,\"network_configured\":false,\"transport\":\"wifi_mqtt_tcp\",\"nina_version\":\"\",\"last_watchdog_stage\":\"ble_stop\",\"pre_reset_ram_queued\":0}"}
+{"utc": "2026-11-18T16:56:47.852+00:00", "board": "A", "kind": "first_status", "data": {"type": "status", "firmware": "BumpDualBadge", "fw": "0.5.4-dual", "device_id": "bump-349454276354", "boot_id": "26ba16a5", "self_short_id": "78fe2e725995", "self_code16": "a30f", "peer_code16": "0000", "ir_paired": false, "uptime_ms": 1272, "paused": false, "discovery": false, "ble_phase": "idle", "window_remaining_ms": 0, "queued": 0, "dropped": 0, "imu_ready": true, "imu_samples": 0, "motion_triggers": 0, "network_configured": false, "transport": "wifi_mqtt_tcp", "nina_version": "", "last_watchdog_stage": "ble_stop", "pre_reset_ram_queued": 0}}
+{"utc": "2026-11-18T16:56:47.852+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.4-dual\",\"device_id\":\"bump-349454276354\",\"boot_id\":\"26ba16a5\",\"self_short_id\":\"78fe2e725995\",\"self_code16\":\"a30f\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":1274,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":0,\"motion_triggers\":0,\"network_configured\":false,\"transport\":\"wifi_mqtt_tcp\",\"nina_version\":\"\",\"last_watchdog_stage\":\"ble_stop\",\"pre_reset_ram_queued\":0}"}
+{"utc": "2026-11-18T16:56:47.852+00:00", "board": "A", "kind": "rx", "data": "STATUS state=IDLE my=0xA30F"}
+{"utc": "2026-11-18T16:56:49.586+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:56:51.579+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T16:56:54.574+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:56:56.568+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T16:56:59.594+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:57:01.559+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T16:57:04.584+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:57:06.575+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T16:57:08.568+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_end_begin\",\"uptime_ms\":313309}"}
+{"utc": "2026-11-18T16:57:08.568+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_end_done\",\"uptime_ms\":313313}"}
+{"utc": "2026-11-18T16:57:09.344+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"discovery_end\",\"source\":\"serial_diagnostic\",\"complete\":true,\"observed_peers\":0,\"uptime_ms\":314078}"}
+{"utc": "2026-11-18T16:57:09.601+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:57:11.562+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T16:57:14.589+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:57:16.576+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T16:57:19.606+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:57:21.570+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T16:57:24.590+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:57:26.581+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T16:57:29.602+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:57:30.720+00:00", "board": "A", "kind": "tx", "data": "status"}
+{"utc": "2026-11-18T16:57:30.770+00:00", "board": "B", "kind": "tx", "data": "status"}
+{"utc": "2026-11-18T16:57:30.847+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.4-dual\",\"device_id\":\"bump-349454276354\",\"boot_id\":\"26ba16a5\",\"self_short_id\":\"78fe2e725995\",\"self_code16\":\"a30f\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":44166,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":4506,\"motion_triggers\":0,\"network_configured\":false,\"transport\":\"wifi_mqtt_tcp\",\"nina_version\":\"3.0.2\",\"last_watchdog_stage\":\"ble_stop\",\"pre_reset_ram_queued\":0,\"accel_g\":[0.02893,-0.00488,1.01624]}"}
+{"utc": "2026-11-18T16:57:30.847+00:00", "board": "A", "kind": "rx", "data": "STATUS state=IDLE my=0xA30F"}
+{"utc": "2026-11-18T16:57:30.847+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.4-dual\",\"device_id\":\"bump-c8c9a3e65ba4\",\"boot_id\":\"82042fa5\",\"self_short_id\":\"44aa60828132\",\"self_code16\":\"c371\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":335528,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":28149,\"motion_triggers\":0,\"network_configured\":true,\"transport\":\"wifi_mqtt_tcp\",\"nina_version\":\"3.0.2\",\"last_watchdog_stage\":\"none\",\"pre_reset_ram_queued\":0,\"accel_g\":[-0.10608,0.01379,0.99207]}"}
+{"utc": "2026-11-18T16:57:30.847+00:00", "board": "B", "kind": "rx", "data": "STATUS state=IDLE my=0xC371"}
+{"utc": "2026-11-18T16:57:31.573+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T16:57:34.602+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:57:36.567+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T16:57:38.764+00:00", "board": "A", "kind": "tx", "data": "status"}
+{"utc": "2026-11-18T16:57:38.815+00:00", "board": "B", "kind": "tx", "data": "status"}
+{"utc": "2026-11-18T16:57:38.891+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.4-dual\",\"device_id\":\"bump-349454276354\",\"boot_id\":\"26ba16a5\",\"self_short_id\":\"78fe2e725995\",\"self_code16\":\"a30f\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":52209,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":5350,\"motion_triggers\":0,\"network_configured\":false,\"transport\":\"wifi_mqtt_tcp\",\"nina_version\":\"3.0.2\",\"last_watchdog_stage\":\"ble_stop\",\"pre_reset_ram_queued\":0,\"accel_g\":[0.02856,-0.00476,1.01709]}"}
+{"utc": "2026-11-18T16:57:38.891+00:00", "board": "A", "kind": "rx", "data": "STATUS state=IDLE my=0xA30F"}
+{"utc": "2026-11-18T16:57:38.891+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.4-dual\",\"device_id\":\"bump-c8c9a3e65ba4\",\"boot_id\":\"82042fa5\",\"self_short_id\":\"44aa60828132\",\"self_code16\":\"c371\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":343572,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":29007,\"motion_triggers\":0,\"network_configured\":true,\"transport\":\"wifi_mqtt_tcp\",\"nina_version\":\"3.0.2\",\"last_watchdog_stage\":\"none\",\"pre_reset_ram_queued\":0,\"accel_g\":[-0.10449,0.01343,0.98755]}"}
+{"utc": "2026-11-18T16:57:38.891+00:00", "board": "B", "kind": "rx", "data": "STATUS state=IDLE my=0xC371"}
+{"utc": "2026-11-18T16:57:39.592+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:57:41.582+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T16:57:44.606+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:57:46.572+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T16:57:46.781+00:00", "board": "A", "kind": "tx", "data": "status"}
+{"utc": "2026-11-18T16:57:46.832+00:00", "board": "B", "kind": "tx", "data": "status"}
+{"utc": "2026-11-18T16:57:46.909+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.4-dual\",\"device_id\":\"bump-349454276354\",\"boot_id\":\"26ba16a5\",\"self_short_id\":\"78fe2e725995\",\"self_code16\":\"a30f\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":60227,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":6193,\"motion_triggers\":0,\"network_configured\":false,\"transport\":\"wifi_mqtt_tcp\",\"nina_version\":\"3.0.2\",\"last_watchdog_stage\":\"ble_stop\",\"pre_reset_ram_queued\":0,\"accel_g\":[0.02820,-0.00452,1.01758]}"}
+{"utc": "2026-11-18T16:57:46.909+00:00", "board": "A", "kind": "rx", "data": "STATUS state=IDLE my=0xA30F"}
+{"utc": "2026-11-18T16:57:46.909+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.4-dual\",\"device_id\":\"bump-c8c9a3e65ba4\",\"boot_id\":\"82042fa5\",\"self_short_id\":\"44aa60828132\",\"self_code16\":\"c371\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":351589,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":29862,\"motion_triggers\":0,\"network_configured\":true,\"transport\":\"wifi_mqtt_tcp\",\"nina_version\":\"3.0.2\",\"last_watchdog_stage\":\"none\",\"pre_reset_ram_queued\":0,\"accel_g\":[-0.10486,0.01318,0.99133]}"}
+{"utc": "2026-11-18T16:57:46.909+00:00", "board": "B", "kind": "rx", "data": "STATUS state=IDLE my=0xC371"}
+{"utc": "2026-11-18T16:57:49.600+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:57:51.565+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T16:57:54.589+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:57:54.800+00:00", "board": "A", "kind": "tx", "data": "status"}
+{"utc": "2026-11-18T16:57:54.851+00:00", "board": "B", "kind": "tx", "data": "status"}
+{"utc": "2026-11-18T16:57:54.928+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.4-dual\",\"device_id\":\"bump-349454276354\",\"boot_id\":\"26ba16a5\",\"self_short_id\":\"78fe2e725995\",\"self_code16\":\"a30f\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":68245,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":7035,\"motion_triggers\":0,\"network_configured\":false,\"transport\":\"wifi_mqtt_tcp\",\"nina_version\":\"3.0.2\",\"last_watchdog_stage\":\"ble_stop\",\"pre_reset_ram_queued\":0,\"accel_g\":[0.02869,-0.00452,1.01587]}"}
+{"utc": "2026-11-18T16:57:54.928+00:00", "board": "A", "kind": "rx", "data": "STATUS state=IDLE my=0xA30F"}
+{"utc": "2026-11-18T16:57:54.928+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.4-dual\",\"device_id\":\"bump-c8c9a3e65ba4\",\"boot_id\":\"82042fa5\",\"self_short_id\":\"44aa60828132\",\"self_code16\":\"c371\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":359608,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":30717,\"motion_triggers\":0,\"network_configured\":true,\"transport\":\"wifi_mqtt_tcp\",\"nina_version\":\"3.0.2\",\"last_watchdog_stage\":\"none\",\"pre_reset_ram_queued\":0,\"accel_g\":[-0.10535,0.01404,0.98926]}"}
+{"utc": "2026-11-18T16:57:54.928+00:00", "board": "B", "kind": "rx", "data": "STATUS state=IDLE my=0xC371"}
+{"utc": "2026-11-18T16:57:56.581+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T16:57:59.603+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:58:01.567+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T16:58:02.836+00:00", "board": "A", "kind": "tx", "data": "status"}
+{"utc": "2026-11-18T16:58:02.887+00:00", "board": "B", "kind": "tx", "data": "status"}
+{"utc": "2026-11-18T16:58:02.964+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.4-dual\",\"device_id\":\"bump-349454276354\",\"boot_id\":\"26ba16a5\",\"self_short_id\":\"78fe2e725995\",\"self_code16\":\"a30f\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":76281,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":7879,\"motion_triggers\":0,\"network_configured\":false,\"transport\":\"wifi_mqtt_tcp\",\"nina_version\":\"3.0.2\",\"last_watchdog_stage\":\"ble_stop\",\"pre_reset_ram_queued\":0,\"accel_g\":[0.02869,-0.00439,1.01685]}"}
+{"utc": "2026-11-18T16:58:02.964+00:00", "board": "A", "kind": "rx", "data": "STATUS state=IDLE my=0xA30F"}
+{"utc": "2026-11-18T16:58:02.964+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.4-dual\",\"device_id\":\"bump-c8c9a3e65ba4\",\"boot_id\":\"82042fa5\",\"self_short_id\":\"44aa60828132\",\"self_code16\":\"c371\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":367644,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":31574,\"motion_triggers\":0,\"network_configured\":true,\"transport\":\"wifi_mqtt_tcp\",\"nina_version\":\"3.0.2\",\"last_watchdog_stage\":\"none\",\"pre_reset_ram_queued\":0,\"accel_g\":[-0.10620,0.01306,0.98962]}"}
+{"utc": "2026-11-18T16:58:02.964+00:00", "board": "B", "kind": "rx", "data": "STATUS state=IDLE my=0xC371"}
+{"utc": "2026-11-18T16:58:04.589+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:58:06.575+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T16:58:09.586+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:58:10.856+00:00", "board": "A", "kind": "tx", "data": "status"}
+{"utc": "2026-11-18T16:58:10.908+00:00", "board": "B", "kind": "tx", "data": "status"}
+{"utc": "2026-11-18T16:58:10.984+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.4-dual\",\"device_id\":\"bump-349454276354\",\"boot_id\":\"26ba16a5\",\"self_short_id\":\"78fe2e725995\",\"self_code16\":\"a30f\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":84302,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":8722,\"motion_triggers\":0,\"network_configured\":false,\"transport\":\"wifi_mqtt_tcp\",\"nina_version\":\"3.0.2\",\"last_watchdog_stage\":\"ble_stop\",\"pre_reset_ram_queued\":0,\"accel_g\":[0.02905,-0.00513,1.01648]}"}
+{"utc": "2026-11-18T16:58:10.984+00:00", "board": "A", "kind": "rx", "data": "STATUS state=IDLE my=0xA30F"}
+{"utc": "2026-11-18T16:58:10.984+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.4-dual\",\"device_id\":\"bump-c8c9a3e65ba4\",\"boot_id\":\"82042fa5\",\"self_short_id\":\"44aa60828132\",\"self_code16\":\"c371\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":375666,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":32430,\"motion_triggers\":0,\"network_configured\":true,\"transport\":\"wifi_mqtt_tcp\",\"nina_version\":\"3.0.2\",\"last_watchdog_stage\":\"none\",\"pre_reset_ram_queued\":0,\"accel_g\":[-0.10461,0.01404,0.99011]}"}
+{"utc": "2026-11-18T16:58:10.984+00:00", "board": "B", "kind": "rx", "data": "STATUS state=IDLE my=0xC371"}
+{"utc": "2026-11-18T16:58:11.579+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T16:58:14.600+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:58:16.584+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T16:58:18.870+00:00", "board": "A", "kind": "tx", "data": "status"}
+{"utc": "2026-11-18T16:58:18.920+00:00", "board": "B", "kind": "tx", "data": "status"}
+{"utc": "2026-11-18T16:58:18.997+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.4-dual\",\"device_id\":\"bump-349454276354\",\"boot_id\":\"26ba16a5\",\"self_short_id\":\"78fe2e725995\",\"self_code16\":\"a30f\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":92315,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":9563,\"motion_triggers\":0,\"network_configured\":false,\"transport\":\"wifi_mqtt_tcp\",\"nina_version\":\"3.0.2\",\"last_watchdog_stage\":\"ble_stop\",\"pre_reset_ram_queued\":0,\"accel_g\":[0.02942,-0.00525,1.01782]}"}
+{"utc": "2026-11-18T16:58:18.997+00:00", "board": "A", "kind": "rx", "data": "STATUS state=IDLE my=0xA30F"}
+{"utc": "2026-11-18T16:58:18.997+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.4-dual\",\"device_id\":\"bump-c8c9a3e65ba4\",\"boot_id\":\"82042fa5\",\"self_short_id\":\"44aa60828132\",\"self_code16\":\"c371\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":383677,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":33284,\"motion_triggers\":0,\"network_configured\":true,\"transport\":\"wifi_mqtt_tcp\",\"nina_version\":\"3.0.2\",\"last_watchdog_stage\":\"none\",\"pre_reset_ram_queued\":0,\"accel_g\":[-0.10498,0.01367,0.98853]}"}
+{"utc": "2026-11-18T16:58:18.997+00:00", "board": "B", "kind": "rx", "data": "STATUS state=IDLE my=0xC371"}
+{"utc": "2026-11-18T16:58:19.590+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:58:21.581+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T16:58:24.585+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:58:26.572+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T16:58:26.884+00:00", "board": "A", "kind": "tx", "data": "status"}
+{"utc": "2026-11-18T16:58:26.935+00:00", "board": "B", "kind": "tx", "data": "status"}
+{"utc": "2026-11-18T16:58:27.012+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.4-dual\",\"device_id\":\"bump-349454276354\",\"boot_id\":\"26ba16a5\",\"self_short_id\":\"78fe2e725995\",\"self_code16\":\"a30f\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":100330,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":10405,\"motion_triggers\":0,\"network_configured\":false,\"transport\":\"wifi_mqtt_tcp\",\"nina_version\":\"3.0.2\",\"last_watchdog_stage\":\"ble_stop\",\"pre_reset_ram_queued\":0,\"accel_g\":[0.02783,-0.00427,1.01648]}"}
+{"utc": "2026-11-18T16:58:27.012+00:00", "board": "A", "kind": "rx", "data": "STATUS state=IDLE my=0xA30F"}
+{"utc": "2026-11-18T16:58:27.012+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.4-dual\",\"device_id\":\"bump-c8c9a3e65ba4\",\"boot_id\":\"82042fa5\",\"self_short_id\":\"44aa60828132\",\"self_code16\":\"c371\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":391693,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":34139,\"motion_triggers\":0,\"network_configured\":true,\"transport\":\"wifi_mqtt_tcp\",\"nina_version\":\"3.0.2\",\"last_watchdog_stage\":\"none\",\"pre_reset_ram_queued\":0,\"accel_g\":[-0.10498,0.01306,0.98682]}"}
+{"utc": "2026-11-18T16:58:27.012+00:00", "board": "B", "kind": "rx", "data": "STATUS state=IDLE my=0xC371"}
+{"utc": "2026-11-18T16:58:29.600+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:58:31.565+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T16:58:34.595+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:58:34.905+00:00", "board": "A", "kind": "tx", "data": "status"}
+{"utc": "2026-11-18T16:58:34.957+00:00", "board": "B", "kind": "tx", "data": "status"}
+{"utc": "2026-11-18T16:58:35.033+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.4-dual\",\"device_id\":\"bump-349454276354\",\"boot_id\":\"26ba16a5\",\"self_short_id\":\"78fe2e725995\",\"self_code16\":\"a30f\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":108351,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":11248,\"motion_triggers\":0,\"network_configured\":false,\"transport\":\"wifi_mqtt_tcp\",\"nina_version\":\"3.0.2\",\"last_watchdog_stage\":\"ble_stop\",\"pre_reset_ram_queued\":0,\"accel_g\":[0.02832,-0.00452,1.01660]}"}
+{"utc": "2026-11-18T16:58:35.033+00:00", "board": "A", "kind": "rx", "data": "STATUS state=IDLE my=0xA30F"}
+{"utc": "2026-11-18T16:58:35.033+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.4-dual\",\"device_id\":\"bump-c8c9a3e65ba4\",\"boot_id\":\"82042fa5\",\"self_short_id\":\"44aa60828132\",\"self_code16\":\"c371\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":399714,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":34994,\"motion_triggers\":0,\"network_configured\":true,\"transport\":\"wifi_mqtt_tcp\",\"nina_version\":\"3.0.2\",\"last_watchdog_stage\":\"none\",\"pre_reset_ram_queued\":0,\"accel_g\":[-0.10522,0.01318,0.98840]}"}
+{"utc": "2026-11-18T16:58:35.033+00:00", "board": "B", "kind": "rx", "data": "STATUS state=IDLE my=0xC371"}
+{"utc": "2026-11-18T16:58:36.585+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T16:58:39.608+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:58:41.577+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T16:58:42.948+00:00", "board": "A", "kind": "tx", "data": "status"}
+{"utc": "2026-11-18T16:58:42.998+00:00", "board": "B", "kind": "tx", "data": "status"}
+{"utc": "2026-11-18T16:58:43.074+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.4-dual\",\"device_id\":\"bump-349454276354\",\"boot_id\":\"26ba16a5\",\"self_short_id\":\"78fe2e725995\",\"self_code16\":\"a30f\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":116393,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":12093,\"motion_triggers\":0,\"network_configured\":false,\"transport\":\"wifi_mqtt_tcp\",\"nina_version\":\"3.0.2\",\"last_watchdog_stage\":\"ble_stop\",\"pre_reset_ram_queued\":0,\"accel_g\":[0.02917,-0.00452,1.01624]}"}
+{"utc": "2026-11-18T16:58:43.074+00:00", "board": "A", "kind": "rx", "data": "STATUS state=IDLE my=0xA30F"}
+{"utc": "2026-11-18T16:58:43.074+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.4-dual\",\"device_id\":\"bump-c8c9a3e65ba4\",\"boot_id\":\"82042fa5\",\"self_short_id\":\"44aa60828132\",\"self_code16\":\"c371\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":407755,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":35852,\"motion_triggers\":0,\"network_configured\":true,\"transport\":\"wifi_mqtt_tcp\",\"nina_version\":\"3.0.2\",\"last_watchdog_stage\":\"none\",\"pre_reset_ram_queued\":0,\"accel_g\":[-0.10474,0.01367,0.98962]}"}
+{"utc": "2026-11-18T16:58:43.074+00:00", "board": "B", "kind": "rx", "data": "STATUS state=IDLE my=0xC371"}
+{"utc": "2026-11-18T16:58:44.599+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:58:46.586+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T16:58:49.588+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:58:50.963+00:00", "board": "A", "kind": "tx", "data": "status"}
+{"utc": "2026-11-18T16:58:51.014+00:00", "board": "B", "kind": "tx", "data": "status"}
+{"utc": "2026-11-18T16:58:51.090+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.4-dual\",\"device_id\":\"bump-349454276354\",\"boot_id\":\"26ba16a5\",\"self_short_id\":\"78fe2e725995\",\"self_code16\":\"a30f\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":124409,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":12935,\"motion_triggers\":0,\"network_configured\":false,\"transport\":\"wifi_mqtt_tcp\",\"nina_version\":\"3.0.2\",\"last_watchdog_stage\":\"ble_stop\",\"pre_reset_ram_queued\":0,\"accel_g\":[0.02905,-0.00500,1.01660]}"}
+{"utc": "2026-11-18T16:58:51.090+00:00", "board": "A", "kind": "rx", "data": "STATUS state=IDLE my=0xA30F"}
+{"utc": "2026-11-18T16:58:51.090+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.4-dual\",\"device_id\":\"bump-c8c9a3e65ba4\",\"boot_id\":\"82042fa5\",\"self_short_id\":\"44aa60828132\",\"self_code16\":\"c371\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":415772,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":36707,\"motion_triggers\":0,\"network_configured\":true,\"transport\":\"wifi_mqtt_tcp\",\"nina_version\":\"3.0.2\",\"last_watchdog_stage\":\"none\",\"pre_reset_ram_queued\":0,\"accel_g\":[-0.10571,0.01526,0.98950]}"}
+{"utc": "2026-11-18T16:58:51.090+00:00", "board": "B", "kind": "rx", "data": "STATUS state=IDLE my=0xC371"}
+{"utc": "2026-11-18T16:58:51.580+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T16:58:54.605+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:58:56.570+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T16:58:58.984+00:00", "board": "A", "kind": "tx", "data": "status"}
+{"utc": "2026-11-18T16:58:59.034+00:00", "board": "B", "kind": "tx", "data": "status"}
+{"utc": "2026-11-18T16:58:59.111+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.4-dual\",\"device_id\":\"bump-349454276354\",\"boot_id\":\"26ba16a5\",\"self_short_id\":\"78fe2e725995\",\"self_code16\":\"a30f\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":132429,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":13777,\"motion_triggers\":0,\"network_configured\":false,\"transport\":\"wifi_mqtt_tcp\",\"nina_version\":\"3.0.2\",\"last_watchdog_stage\":\"ble_stop\",\"pre_reset_ram_queued\":0,\"accel_g\":[0.02893,-0.00427,1.01624]}"}
+{"utc": "2026-11-18T16:58:59.111+00:00", "board": "A", "kind": "rx", "data": "STATUS state=IDLE my=0xA30F"}
+{"utc": "2026-11-18T16:58:59.111+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.4-dual\",\"device_id\":\"bump-c8c9a3e65ba4\",\"boot_id\":\"82042fa5\",\"self_short_id\":\"44aa60828132\",\"self_code16\":\"c371\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":423791,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":37562,\"motion_triggers\":0,\"network_configured\":true,\"transport\":\"wifi_mqtt_tcp\",\"nina_version\":\"3.0.2\",\"last_watchdog_stage\":\"none\",\"pre_reset_ram_queued\":0,\"accel_g\":[-0.10559,0.01331,0.98706]}"}
+{"utc": "2026-11-18T16:58:59.111+00:00", "board": "B", "kind": "rx", "data": "STATUS state=IDLE my=0xC371"}
+{"utc": "2026-11-18T16:58:59.601+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:59:01.564+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T16:59:04.585+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:59:06.570+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T16:59:07.009+00:00", "board": "A", "kind": "tx", "data": "status"}
+{"utc": "2026-11-18T16:59:07.060+00:00", "board": "B", "kind": "tx", "data": "status"}
+{"utc": "2026-11-18T16:59:07.137+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.4-dual\",\"device_id\":\"bump-349454276354\",\"boot_id\":\"26ba16a5\",\"self_short_id\":\"78fe2e725995\",\"self_code16\":\"a30f\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":140455,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":14620,\"motion_triggers\":0,\"network_configured\":false,\"transport\":\"wifi_mqtt_tcp\",\"nina_version\":\"3.0.2\",\"last_watchdog_stage\":\"ble_stop\",\"pre_reset_ram_queued\":0,\"accel_g\":[0.02869,-0.00415,1.01660]}"}
+{"utc": "2026-11-18T16:59:07.137+00:00", "board": "A", "kind": "rx", "data": "STATUS state=IDLE my=0xA30F"}
+{"utc": "2026-11-18T16:59:07.137+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.4-dual\",\"device_id\":\"bump-c8c9a3e65ba4\",\"boot_id\":\"82042fa5\",\"self_short_id\":\"44aa60828132\",\"self_code16\":\"c371\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":431817,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":38418,\"motion_triggers\":0,\"network_configured\":true,\"transport\":\"wifi_mqtt_tcp\",\"nina_version\":\"3.0.2\",\"last_watchdog_stage\":\"none\",\"pre_reset_ram_queued\":0,\"accel_g\":[-0.10620,0.01453,0.98914]}"}
+{"utc": "2026-11-18T16:59:07.137+00:00", "board": "B", "kind": "rx", "data": "STATUS state=IDLE my=0xC371"}
+{"utc": "2026-11-18T16:59:09.589+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:59:11.581+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T16:59:14.610+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:59:16.576+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T16:59:19.601+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:59:21.567+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T16:59:24.593+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:59:26.583+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T16:59:29.589+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:59:31.585+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T16:59:34.592+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:59:36.577+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T16:59:39.602+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:59:41.571+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T16:59:44.593+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:59:46.587+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T16:59:49.591+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:59:51.579+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T16:59:54.606+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T16:59:56.565+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T16:59:59.589+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:00:01.579+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:00:04.603+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:00:06.563+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:00:09.589+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:00:11.577+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:00:14.596+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:00:16.586+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:00:19.328+00:00", "board": "A", "kind": "tx", "data": "SET ssid [private]"}
+{"utc": "2026-11-18T17:00:19.378+00:00", "board": "A", "kind": "tx", "data": "SET wifi_password [private]"}
+{"utc": "2026-11-18T17:00:19.429+00:00", "board": "A", "kind": "tx", "data": "SET broker_host [private]"}
+{"utc": "2026-11-18T17:00:19.479+00:00", "board": "A", "kind": "tx", "data": "SET broker_port [private]"}
+{"utc": "2026-11-18T17:00:19.530+00:00", "board": "A", "kind": "tx", "data": "SET mqtt_password [private]"}
+{"utc": "2026-11-18T17:00:19.607+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"configuration_set\",\"detail\":\"ssid\",\"uptime_ms\":212774}"}
+{"utc": "2026-11-18T17:00:19.607+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"configuration_set\",\"detail\":\"wifi_password\",\"uptime_ms\":212825}"}
+{"utc": "2026-11-18T17:00:19.607+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"configuration_set\",\"detail\":\"broker_host\",\"uptime_ms\":212875}"}
+{"utc": "2026-11-18T17:00:19.607+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"configuration_set\",\"detail\":\"broker_port\",\"uptime_ms\":212926}"}
+{"utc": "2026-11-18T17:00:19.607+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"configuration_set\",\"detail\":\"mqtt_password\",\"uptime_ms\":212977}"}
+{"utc": "2026-11-18T17:00:19.607+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_begin\",\"uptime_ms\":212981}"}
+{"utc": "2026-11-18T17:00:19.607+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:00:23.114+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_connected\",\"uptime_ms\":216539}"}
+{"utc": "2026-11-18T17:00:23.191+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync\",\"detail\":\"broker_connected\",\"uptime_ms\":216631}"}
+{"utc": "2026-11-18T17:00:23.629+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync\",\"detail\":\"ack_subscribed\",\"uptime_ms\":217061}"}
+{"utc": "2026-11-18T17:00:23.629+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"wire\",\"phase\":\"transmit\",\"source\":\"presence\",\"topic\":\"bump/v1/device/bump-349454276354/status\",\"payload\":{\"schema\":1,\"device_id\":\"bump-349454276354\",\"boot_id\":\"26ba16a5\",\"fw\":\"0.5.4-dual\",\"self_short_id\":\"78fe2e725995\",\"state\":\"online\",\"uptime_s\":217,\"queue_depth\":0,\"events_dropped\":0}}"}
+{"utc": "2026-11-18T17:00:23.941+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"wire\",\"phase\":\"transmit\",\"source\":\"presence\",\"topic\":\"bump/v1/device/bump-349454276354/status\",\"payload\":{\"schema\":1,\"device_id\":\"bump-349454276354\",\"boot_id\":\"26ba16a5\",\"fw\":\"0.5.4-dual\",\"self_short_id\":\"78fe2e725995\",\"state\":\"offline\",\"uptime_s\":217,\"queue_depth\":0,\"events_dropped\":0}}"}
+{"utc": "2026-11-18T17:00:24.586+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:00:25.464+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync_complete\",\"transport\":\"wifi_mqtt_tcp\",\"queued\":0}"}
+{"utc": "2026-11-18T17:00:25.464+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:00:29.602+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:00:30.455+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:00:34.597+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:00:35.452+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:00:39.592+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:00:40.446+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:00:44.611+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:00:45.465+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:00:49.607+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:00:50.464+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:00:54.593+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:00:55.446+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:00:59.610+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:01:00.465+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:01:04.587+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:01:05.467+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:01:09.600+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:01:10.451+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:01:14.588+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:01:15.468+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:01:19.607+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:01:20.461+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:01:24.595+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:01:25.449+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:01:29.610+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:01:30.463+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:01:34.602+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:01:35.453+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:01:39.593+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:01:40.447+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:01:44.595+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:01:45.446+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:01:49.610+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:01:50.462+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:01:54.593+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:01:55.467+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:01:59.602+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:02:00.453+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:02:04.594+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:02:05.449+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:02:09.613+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:02:10.464+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:02:14.604+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:02:15.455+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:02:19.599+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:02:20.451+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:02:24.612+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:02:25.465+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:02:25.519+00:00", "board": "A", "kind": "tx", "data": "status"}
+{"utc": "2026-11-18T17:02:25.570+00:00", "board": "B", "kind": "tx", "data": "status"}
+{"utc": "2026-11-18T17:02:25.647+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.4-dual\",\"device_id\":\"bump-349454276354\",\"boot_id\":\"26ba16a5\",\"self_short_id\":\"78fe2e725995\",\"self_code16\":\"a30f\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":338964,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":34853,\"motion_triggers\":0,\"network_configured\":true,\"transport\":\"wifi_mqtt_tcp\",\"nina_version\":\"3.0.2\",\"last_watchdog_stage\":\"ble_stop\",\"pre_reset_ram_queued\":0,\"accel_g\":[0.02954,-0.00488,1.01575]}"}
+{"utc": "2026-11-18T17:02:25.647+00:00", "board": "A", "kind": "rx", "data": "STATUS state=IDLE my=0xA30F"}
+{"utc": "2026-11-18T17:02:25.647+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.4-dual\",\"device_id\":\"bump-c8c9a3e65ba4\",\"boot_id\":\"82042fa5\",\"self_short_id\":\"44aa60828132\",\"self_code16\":\"c371\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":630326,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":59587,\"motion_triggers\":0,\"network_configured\":true,\"transport\":\"wifi_mqtt_tcp\",\"nina_version\":\"3.0.2\",\"last_watchdog_stage\":\"none\",\"pre_reset_ram_queued\":0,\"accel_g\":[-0.10547,0.01440,0.98755]}"}
+{"utc": "2026-11-18T17:02:25.647+00:00", "board": "B", "kind": "rx", "data": "STATUS state=IDLE my=0xC371"}
+{"utc": "2026-11-18T17:02:25.674+00:00", "board": "A", "kind": "tx", "data": "discover"}
+{"utc": "2026-11-18T17:02:25.725+00:00", "board": "B", "kind": "tx", "data": "discover"}
+{"utc": "2026-11-18T17:02:25.803+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"discovery_start\",\"source\":\"serial_diagnostic\",\"self_short_id\":\"78fe2e725995\",\"first_phase\":\"scan\",\"window_ms\":60000,\"uptime_ms\":339120}"}
+{"utc": "2026-11-18T17:02:25.803+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"discovery_start\",\"source\":\"serial_diagnostic\",\"self_short_id\":\"44aa60828132\",\"first_phase\":\"advertise\",\"window_ms\":60000,\"uptime_ms\":630482}"}
+{"utc": "2026-11-18T17:02:26.034+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_scan_begin\",\"uptime_ms\":339474}"}
+{"utc": "2026-11-18T17:02:26.085+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_advertise_begin\",\"uptime_ms\":630836}"}
+{"utc": "2026-11-18T17:02:27.194+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_scan_ready\",\"uptime_ms\":340623}"}
+{"utc": "2026-11-18T17:02:27.272+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_advertise_ready\",\"uptime_ms\":632007}"}
+{"utc": "2026-11-18T17:02:27.298+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"ble_observation\",\"peer_short_id\":\"44aa60828132\",\"rssi\":-66,\"samples\":1,\"uptime_ms\":340737}"}
+{"utc": "2026-11-18T17:02:27.814+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"ble_observation\",\"peer_short_id\":\"44aa60828132\",\"rssi\":-66,\"samples\":2,\"uptime_ms\":341250}"}
+{"utc": "2026-11-18T17:02:29.603+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:02:30.485+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:02:34.598+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:02:35.482+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:02:39.598+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:02:40.504+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:02:44.591+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:02:45.521+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:02:49.602+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:02:50.534+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:02:54.597+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:02:55.215+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_end_begin\",\"uptime_ms\":368641}"}
+{"utc": "2026-11-18T17:02:55.241+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_end_done\",\"uptime_ms\":368665}"}
+{"utc": "2026-11-18T17:02:55.266+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_end_begin\",\"uptime_ms\":660007}"}
+{"utc": "2026-11-18T17:02:55.266+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_end_done\",\"uptime_ms\":660013}"}
+{"utc": "2026-11-18T17:02:55.576+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_advertise_begin\",\"uptime_ms\":369016}"}
+{"utc": "2026-11-18T17:02:55.628+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_scan_begin\",\"uptime_ms\":660363}"}
+{"utc": "2026-11-18T17:02:56.761+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_advertise_ready\",\"uptime_ms\":370192}"}
+{"utc": "2026-11-18T17:02:56.761+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:02:56.761+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_scan_ready\",\"uptime_ms\":661506}"}
+{"utc": "2026-11-18T17:02:56.892+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"ble_observation\",\"peer_short_id\":\"78fe2e725995\",\"rssi\":-66,\"samples\":1,\"uptime_ms\":661620}"}
+{"utc": "2026-11-18T17:02:57.487+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"ble_observation\",\"peer_short_id\":\"78fe2e725995\",\"rssi\":-65,\"samples\":2,\"uptime_ms\":662232}"}
+{"utc": "2026-11-18T17:02:59.616+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:03:01.769+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:03:04.638+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:03:06.760+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:03:09.662+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:03:11.756+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:03:14.670+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:03:16.768+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:03:19.688+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:03:21.762+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:03:24.686+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:03:25.691+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_end_begin\",\"uptime_ms\":399121}"}
+{"utc": "2026-11-18T17:03:25.691+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_end_done\",\"uptime_ms\":399127}"}
+{"utc": "2026-11-18T17:03:25.691+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"wire\",\"phase\":\"queued\",\"source\":\"serial_diagnostic\",\"topic\":\"bump/v1/device/bump-349454276354/encounters\",\"payload\":{\"schema\":1,\"device_id\":\"bump-349454276354\",\"boot_id\":\"26ba16a5\",\"fw\":\"0.5.4-dual\",\"batch_id\":\"bt_349454276354_26ba16a5_00000001_0001\",\"self_short_id\":\"78fe2e725995\",\"uptime_ms\":399128,\"time_source\":\"uptime\",\"events\":[{\"event_id\":\"ev_349454276354_26ba16a5_00000001\",\"peer_short_id\":\"44aa60828132\",\"rssi_avg\":-65,\"rssi_last\":-65,\"duration_s\":15,\"samples\":28,\"flags\":1,\"peer_tx_power\":-4,\"occurred_uptime_ms\":355863,\"discovery_started_uptime_ms\":339120,\"discovery_ended_uptime_ms\":399120}]}}"}
+{"utc": "2026-11-18T17:03:25.768+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_end_begin\",\"uptime_ms\":690499}"}
+{"utc": "2026-11-18T17:03:26.467+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"discovery_end\",\"source\":\"serial_diagnostic\",\"complete\":true,\"observed_peers\":1,\"uptime_ms\":399896}"}
+{"utc": "2026-11-18T17:03:26.468+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_begin\",\"uptime_ms\":399899}"}
+{"utc": "2026-11-18T17:03:29.931+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_connected\",\"uptime_ms\":403360}"}
+{"utc": "2026-11-18T17:03:30.008+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync\",\"detail\":\"broker_connected\",\"uptime_ms\":403449}"}
+{"utc": "2026-11-18T17:03:30.113+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync\",\"detail\":\"ack_subscribed\",\"uptime_ms\":403539}"}
+{"utc": "2026-11-18T17:03:30.113+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"wire\",\"phase\":\"transmit\",\"source\":\"presence\",\"topic\":\"bump/v1/device/bump-349454276354/status\",\"payload\":{\"schema\":1,\"device_id\":\"bump-349454276354\",\"boot_id\":\"26ba16a5\",\"fw\":\"0.5.4-dual\",\"self_short_id\":\"78fe2e725995\",\"state\":\"online\",\"uptime_s\":403,\"queue_depth\":1,\"events_dropped\":0}}"}
+{"utc": "2026-11-18T17:03:30.449+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"wire\",\"phase\":\"transmit\",\"source\":\"serial_diagnostic\",\"topic\":\"bump/v1/device/bump-349454276354/encounters\",\"payload\":{\"schema\":1,\"device_id\":\"bump-349454276354\",\"boot_id\":\"26ba16a5\",\"fw\":\"0.5.4-dual\",\"batch_id\":\"bt_349454276354_26ba16a5_00000001_0001\",\"self_short_id\":\"78fe2e725995\",\"uptime_ms\":403869,\"time_source\":\"uptime\",\"events\":[{\"event_id\":\"ev_349454276354_26ba16a5_00000001\",\"peer_short_id\":\"44aa60828132\",\"rssi_avg\":-65,\"rssi_last\":-65,\"duration_s\":15,\"samples\":28,\"flags\":1,\"peer_tx_power\":-4,\"occurred_uptime_ms\":355863,\"discovery_started_uptime_ms\":339120,\"discovery_ended_uptime_ms\":399120}]}}"}
+{"utc": "2026-11-18T17:03:30.605+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"mqtt_puback\",\"detail\":\"received\",\"uptime_ms\":404039}"}
+{"utc": "2026-11-18T17:03:30.708+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"application_ack\",\"detail\":\"matched\",\"uptime_ms\":404147}"}
+{"utc": "2026-11-18T17:03:30.708+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"queue_removed_after_application_ack\",\"origin\":\"wifi_mqtt\",\"event_id\":\"ev_349454276354_26ba16a5_00000001\",\"queued\":0}"}
+{"utc": "2026-11-18T17:03:30.708+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"wire\",\"phase\":\"transmit\",\"source\":\"presence\",\"topic\":\"bump/v1/device/bump-349454276354/status\",\"payload\":{\"schema\":1,\"device_id\":\"bump-349454276354\",\"boot_id\":\"26ba16a5\",\"fw\":\"0.5.4-dual\",\"self_short_id\":\"78fe2e725995\",\"state\":\"offline\",\"uptime_s\":404,\"queue_depth\":0,\"events_dropped\":0}}"}
+{"utc": "2026-11-18T17:03:32.188+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync_complete\",\"transport\":\"wifi_mqtt_tcp\",\"queued\":0}"}
+{"utc": "2026-11-18T17:03:32.213+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:03:33.768+00:00", "board": "B", "kind": "lost", "data": {"port": "COM14", "reason": "ClearCommError failed (PermissionError(13, '设备不识别此命令。', None, 22))"}}
+{"utc": "2026-11-18T17:03:34.796+00:00", "board": "B", "kind": "reopen", "data": "COM14"}
+{"utc": "2026-11-18T17:03:35.003+00:00", "board": "B", "kind": "tx", "data": "status"}
+{"utc": "2026-11-18T17:03:35.572+00:00", "board": "B", "kind": "rx", "data": ""}
+{"utc": "2026-11-18T17:03:35.572+00:00", "board": "B", "kind": "rx", "data": "=== IR Near-Field Pairing ==="}
+{"utc": "2026-11-18T17:03:35.572+00:00", "board": "B", "kind": "rx", "data": "Chip UID: 50236541C8965F1C"}
+{"utc": "2026-11-18T17:03:35.572+00:00", "board": "B", "kind": "rx", "data": "My machine code: 0xC371"}
+{"utc": "2026-11-18T17:03:35.572+00:00", "board": "B", "kind": "rx", "data": "Blue = start pairing, White = stop/unpair"}
+{"utc": "2026-11-18T17:03:35.598+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"boot\",\"detail\":\"BumpDualBadge\",\"uptime_ms\":1293}"}
+{"utc": "2026-11-18T17:03:35.598+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"watchdog_recovery\",\"stage\":\"ble_stop\",\"pre_reset_ram_queued\":0,\"ram_queue_lost\":true,\"network_configuration_lost\":true}"}
+{"utc": "2026-11-18T17:03:35.598+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.4-dual\",\"device_id\":\"bump-c8c9a3e65ba4\",\"boot_id\":\"8bf8e0ec\",\"self_short_id\":\"b646fb4a51f5\",\"self_code16\":\"c371\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":1294,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":0,\"motion_triggers\":0,\"network_configured\":false,\"transport\":\"wifi_mqtt_tcp\",\"nina_version\":\"\",\"last_watchdog_stage\":\"ble_stop\",\"pre_reset_ram_queued\":0}"}
+{"utc": "2026-11-18T17:03:35.598+00:00", "board": "B", "kind": "first_status", "data": {"type": "status", "firmware": "BumpDualBadge", "fw": "0.5.4-dual", "device_id": "bump-c8c9a3e65ba4", "boot_id": "8bf8e0ec", "self_short_id": "b646fb4a51f5", "self_code16": "c371", "peer_code16": "0000", "ir_paired": false, "uptime_ms": 1294, "paused": false, "discovery": false, "ble_phase": "idle", "window_remaining_ms": 0, "queued": 0, "dropped": 0, "imu_ready": true, "imu_samples": 0, "motion_triggers": 0, "network_configured": false, "transport": "wifi_mqtt_tcp", "nina_version": "", "last_watchdog_stage": "ble_stop", "pre_reset_ram_queued": 0}}
+{"utc": "2026-11-18T17:03:35.598+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.4-dual\",\"device_id\":\"bump-c8c9a3e65ba4\",\"boot_id\":\"8bf8e0ec\",\"self_short_id\":\"b646fb4a51f5\",\"self_code16\":\"c371\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":1296,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":0,\"motion_triggers\":0,\"network_configured\":false,\"transport\":\"wifi_mqtt_tcp\",\"nina_version\":\"\",\"last_watchdog_stage\":\"ble_stop\",\"pre_reset_ram_queued\":0}"}
+{"utc": "2026-11-18T17:03:35.598+00:00", "board": "B", "kind": "rx", "data": "STATUS state=IDLE my=0xC371"}
+{"utc": "2026-11-18T17:03:37.199+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:03:39.296+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:03:42.212+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:03:44.306+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:03:47.204+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:03:47.956+00:00", "board": "A", "kind": "tx", "data": "status"}
+{"utc": "2026-11-18T17:03:48.006+00:00", "board": "B", "kind": "tx", "data": "status"}
+{"utc": "2026-11-18T17:03:48.084+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.4-dual\",\"device_id\":\"bump-349454276354\",\"boot_id\":\"26ba16a5\",\"self_short_id\":\"78fe2e725995\",\"self_code16\":\"a30f\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":421402,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":40717,\"motion_triggers\":0,\"network_configured\":true,\"transport\":\"wifi_mqtt_tcp\",\"nina_version\":\"3.0.2\",\"last_watchdog_stage\":\"ble_stop\",\"pre_reset_ram_queued\":0,\"accel_g\":[0.02856,-0.00525,1.01636]}"}
+{"utc": "2026-11-18T17:03:48.084+00:00", "board": "A", "kind": "rx", "data": "STATUS state=IDLE my=0xA30F"}
+{"utc": "2026-11-18T17:03:48.084+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.4-dual\",\"device_id\":\"bump-c8c9a3e65ba4\",\"boot_id\":\"8bf8e0ec\",\"self_short_id\":\"b646fb4a51f5\",\"self_code16\":\"c371\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":13723,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":1325,\"motion_triggers\":0,\"network_configured\":false,\"transport\":\"wifi_mqtt_tcp\",\"nina_version\":\"3.0.2\",\"last_watchdog_stage\":\"ble_stop\",\"pre_reset_ram_queued\":0,\"accel_g\":[-0.10571,0.01270,0.99243]}"}
+{"utc": "2026-11-18T17:03:48.084+00:00", "board": "B", "kind": "rx", "data": "STATUS state=IDLE my=0xC371"}
+{"utc": "2026-11-18T17:03:48.297+00:00", "board": "B", "kind": "tx", "data": "SET ssid [private]"}
+{"utc": "2026-11-18T17:03:48.348+00:00", "board": "B", "kind": "tx", "data": "SET wifi_password [private]"}
+{"utc": "2026-11-18T17:03:48.399+00:00", "board": "B", "kind": "tx", "data": "SET broker_host [private]"}
+{"utc": "2026-11-18T17:03:48.449+00:00", "board": "B", "kind": "tx", "data": "SET broker_port [private]"}
+{"utc": "2026-11-18T17:03:48.500+00:00", "board": "B", "kind": "tx", "data": "SET mqtt_password [private]"}
+{"utc": "2026-11-18T17:03:48.577+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"configuration_set\",\"detail\":\"ssid\",\"uptime_ms\":14014}"}
+{"utc": "2026-11-18T17:03:48.577+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"configuration_set\",\"detail\":\"wifi_password\",\"uptime_ms\":14066}"}
+{"utc": "2026-11-18T17:03:48.577+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"configuration_set\",\"detail\":\"broker_host\",\"uptime_ms\":14116}"}
+{"utc": "2026-11-18T17:03:48.577+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"configuration_set\",\"detail\":\"broker_port\",\"uptime_ms\":14168}"}
+{"utc": "2026-11-18T17:03:48.577+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"configuration_set\",\"detail\":\"mqtt_password\",\"uptime_ms\":14217}"}
+{"utc": "2026-11-18T17:03:48.577+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_begin\",\"uptime_ms\":14220}"}
+{"utc": "2026-11-18T17:03:52.071+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_connected\",\"uptime_ms\":17784}"}
+{"utc": "2026-11-18T17:03:52.123+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"sync\",\"detail\":\"broker_connected\",\"uptime_ms\":17821}"}
+{"utc": "2026-11-18T17:03:52.123+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"sync\",\"detail\":\"ack_subscribed\",\"uptime_ms\":17828}"}
+{"utc": "2026-11-18T17:03:52.123+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"wire\",\"phase\":\"transmit\",\"source\":\"presence\",\"topic\":\"bump/v1/device/bump-c8c9a3e65ba4/status\",\"payload\":{\"schema\":1,\"device_id\":\"bump-c8c9a3e65ba4\",\"boot_id\":\"8bf8e0ec\",\"fw\":\"0.5.4-dual\",\"self_short_id\":\"b646fb4a51f5\",\"state\":\"online\",\"uptime_s\":17,\"queue_depth\":0,\"events_dropped\":0}}"}
+{"utc": "2026-11-18T17:03:52.200+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:03:52.251+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"wire\",\"phase\":\"transmit\",\"source\":\"presence\",\"topic\":\"bump/v1/device/bump-c8c9a3e65ba4/status\",\"payload\":{\"schema\":1,\"device_id\":\"bump-c8c9a3e65ba4\",\"boot_id\":\"8bf8e0ec\",\"fw\":\"0.5.4-dual\",\"self_short_id\":\"b646fb4a51f5\",\"state\":\"offline\",\"uptime_s\":17,\"queue_depth\":0,\"events_dropped\":0}}"}
+{"utc": "2026-11-18T17:03:53.669+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"sync_complete\",\"transport\":\"wifi_mqtt_tcp\",\"queued\":0}"}
+{"utc": "2026-11-18T17:03:53.669+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:03:56.044+00:00", "board": "A", "kind": "tx", "data": "status"}
+{"utc": "2026-11-18T17:03:56.095+00:00", "board": "B", "kind": "tx", "data": "status"}
+{"utc": "2026-11-18T17:03:56.172+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.4-dual\",\"device_id\":\"bump-349454276354\",\"boot_id\":\"26ba16a5\",\"self_short_id\":\"78fe2e725995\",\"self_code16\":\"a30f\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":429489,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":41567,\"motion_triggers\":0,\"network_configured\":true,\"transport\":\"wifi_mqtt_tcp\",\"nina_version\":\"3.0.2\",\"last_watchdog_stage\":\"ble_stop\",\"pre_reset_ram_queued\":0,\"accel_g\":[0.02856,-0.00574,1.01697]}"}
+{"utc": "2026-11-18T17:03:56.172+00:00", "board": "A", "kind": "rx", "data": "STATUS state=IDLE my=0xA30F"}
+{"utc": "2026-11-18T17:03:56.172+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.4-dual\",\"device_id\":\"bump-c8c9a3e65ba4\",\"boot_id\":\"8bf8e0ec\",\"self_short_id\":\"b646fb4a51f5\",\"self_code16\":\"c371\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":21811,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":1639,\"motion_triggers\":0,\"network_configured\":true,\"transport\":\"wifi_mqtt_tcp\",\"nina_version\":\"3.0.2\",\"last_watchdog_stage\":\"ble_stop\",\"pre_reset_ram_queued\":0,\"accel_g\":[-0.10510,0.01367,0.99060]}"}
+{"utc": "2026-11-18T17:03:56.172+00:00", "board": "B", "kind": "rx", "data": "STATUS state=IDLE my=0xC371"}
+{"utc": "2026-11-18T17:03:56.200+00:00", "board": "A", "kind": "tx", "data": "discover"}
+{"utc": "2026-11-18T17:03:56.250+00:00", "board": "B", "kind": "tx", "data": "discover"}
+{"utc": "2026-11-18T17:03:56.327+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"discovery_start\",\"source\":\"serial_diagnostic\",\"self_short_id\":\"78fe2e725995\",\"first_phase\":\"scan\",\"window_ms\":60000,\"uptime_ms\":429645}"}
+{"utc": "2026-11-18T17:03:56.328+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"discovery_start\",\"source\":\"serial_diagnostic\",\"self_short_id\":\"b646fb4a51f5\",\"first_phase\":\"advertise\",\"window_ms\":60000,\"uptime_ms\":21967}"}
+{"utc": "2026-11-18T17:03:56.561+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_scan_begin\",\"uptime_ms\":430000}"}
+{"utc": "2026-11-18T17:03:56.612+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_advertise_begin\",\"uptime_ms\":22323}"}
+{"utc": "2026-11-18T17:03:57.724+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_scan_ready\",\"uptime_ms\":431156}"}
+{"utc": "2026-11-18T17:03:57.724+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:03:57.801+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_advertise_ready\",\"uptime_ms\":23491}"}
+{"utc": "2026-11-18T17:03:57.853+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"ble_observation\",\"peer_short_id\":\"b646fb4a51f5\",\"rssi\":-66,\"samples\":1,\"uptime_ms\":431288}"}
+{"utc": "2026-11-18T17:03:58.476+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"ble_observation\",\"peer_short_id\":\"b646fb4a51f5\",\"rssi\":-66,\"samples\":2,\"uptime_ms\":431906}"}
+{"utc": "2026-11-18T17:03:58.682+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:04:02.735+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:04:03.669+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:04:07.747+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:04:08.679+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:04:12.786+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:04:13.667+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:04:17.779+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:04:18.683+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:04:22.797+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:04:23.674+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:04:25.746+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_end_begin\",\"uptime_ms\":459172}"}
+{"utc": "2026-11-18T17:04:25.772+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_end_done\",\"uptime_ms\":459196}"}
+{"utc": "2026-11-18T17:04:25.798+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_end_begin\",\"uptime_ms\":51490}"}
+{"utc": "2026-11-18T17:04:25.798+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_end_done\",\"uptime_ms\":51496}"}
+{"utc": "2026-11-18T17:04:26.107+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_advertise_begin\",\"uptime_ms\":459545}"}
+{"utc": "2026-11-18T17:04:26.133+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_scan_begin\",\"uptime_ms\":51846}"}
+{"utc": "2026-11-18T17:04:27.271+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_advertise_ready\",\"uptime_ms\":460711}"}
+{"utc": "2026-11-18T17:04:27.297+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_scan_ready\",\"uptime_ms\":52988}"}
+{"utc": "2026-11-18T17:04:27.477+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"ble_observation\",\"peer_short_id\":\"78fe2e725995\",\"rssi\":-66,\"samples\":1,\"uptime_ms\":53187}"}
+{"utc": "2026-11-18T17:04:27.814+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:04:27.970+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"ble_observation\",\"peer_short_id\":\"78fe2e725995\",\"rssi\":-66,\"samples\":2,\"uptime_ms\":53684}"}
+{"utc": "2026-11-18T17:04:28.696+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:04:32.812+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:04:33.690+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:04:37.808+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:04:38.714+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:04:42.802+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:04:43.732+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:04:47.798+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:04:48.729+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:04:52.817+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:04:53.746+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:04:56.205+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_end_begin\",\"uptime_ms\":489645}"}
+{"utc": "2026-11-18T17:04:56.231+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_end_done\",\"uptime_ms\":489652}"}
+{"utc": "2026-11-18T17:04:56.231+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"wire\",\"phase\":\"queued\",\"source\":\"serial_diagnostic\",\"topic\":\"bump/v1/device/bump-349454276354/encounters\",\"payload\":{\"schema\":1,\"device_id\":\"bump-349454276354\",\"boot_id\":\"26ba16a5\",\"fw\":\"0.5.4-dual\",\"batch_id\":\"bt_349454276354_26ba16a5_00000002_0001\",\"self_short_id\":\"78fe2e725995\",\"uptime_ms\":489652,\"time_source\":\"uptime\",\"events\":[{\"event_id\":\"ev_349454276354_26ba16a5_00000002\",\"peer_short_id\":\"b646fb4a51f5\",\"rssi_avg\":-65,\"rssi_last\":-66,\"duration_s\":16,\"samples\":29,\"flags\":1,\"peer_tx_power\":-4,\"occurred_uptime_ms\":447802,\"discovery_started_uptime_ms\":429645,\"discovery_ended_uptime_ms\":489645}]}}"}
+{"utc": "2026-11-18T17:04:56.283+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_end_begin\",\"uptime_ms\":81981}"}
+{"utc": "2026-11-18T17:04:56.982+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"discovery_end\",\"source\":\"serial_diagnostic\",\"complete\":true,\"observed_peers\":1,\"uptime_ms\":490420}"}
+{"utc": "2026-11-18T17:04:56.982+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_begin\",\"uptime_ms\":490423}"}
+{"utc": "2026-11-18T17:05:00.450+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_connected\",\"uptime_ms\":493887}"}
+{"utc": "2026-11-18T17:05:00.632+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync\",\"detail\":\"broker_connected\",\"uptime_ms\":494073}"}
+{"utc": "2026-11-18T17:05:00.736+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync\",\"detail\":\"ack_subscribed\",\"uptime_ms\":494163}"}
+{"utc": "2026-11-18T17:05:00.736+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"wire\",\"phase\":\"transmit\",\"source\":\"presence\",\"topic\":\"bump/v1/device/bump-349454276354/status\",\"payload\":{\"schema\":1,\"device_id\":\"bump-349454276354\",\"boot_id\":\"26ba16a5\",\"fw\":\"0.5.4-dual\",\"self_short_id\":\"78fe2e725995\",\"state\":\"online\",\"uptime_s\":494,\"queue_depth\":1,\"events_dropped\":0}}"}
+{"utc": "2026-11-18T17:05:01.047+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"wire\",\"phase\":\"transmit\",\"source\":\"serial_diagnostic\",\"topic\":\"bump/v1/device/bump-349454276354/encounters\",\"payload\":{\"schema\":1,\"device_id\":\"bump-349454276354\",\"boot_id\":\"26ba16a5\",\"fw\":\"0.5.4-dual\",\"batch_id\":\"bt_349454276354_26ba16a5_00000002_0001\",\"self_short_id\":\"78fe2e725995\",\"uptime_ms\":494484,\"time_source\":\"uptime\",\"events\":[{\"event_id\":\"ev_349454276354_26ba16a5_00000002\",\"peer_short_id\":\"b646fb4a51f5\",\"rssi_avg\":-65,\"rssi_last\":-66,\"duration_s\":16,\"samples\":29,\"flags\":1,\"peer_tx_power\":-4,\"occurred_uptime_ms\":447802,\"discovery_started_uptime_ms\":429645,\"discovery_ended_uptime_ms\":489645}]}}"}
+{"utc": "2026-11-18T17:05:01.228+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"mqtt_puback\",\"detail\":\"received\",\"uptime_ms\":494652}"}
+{"utc": "2026-11-18T17:05:01.461+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"application_ack\",\"detail\":\"matched\",\"uptime_ms\":494901}"}
+{"utc": "2026-11-18T17:05:01.461+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"queue_removed_after_application_ack\",\"origin\":\"wifi_mqtt\",\"event_id\":\"ev_349454276354_26ba16a5_00000002\",\"queued\":0}"}
+{"utc": "2026-11-18T17:05:01.487+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"wire\",\"phase\":\"transmit\",\"source\":\"presence\",\"topic\":\"bump/v1/device/bump-349454276354/status\",\"payload\":{\"schema\":1,\"device_id\":\"bump-349454276354\",\"boot_id\":\"26ba16a5\",\"fw\":\"0.5.4-dual\",\"self_short_id\":\"78fe2e725995\",\"state\":\"offline\",\"uptime_s\":494,\"queue_depth\":0,\"events_dropped\":0}}"}
+{"utc": "2026-11-18T17:05:02.828+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync_complete\",\"transport\":\"wifi_mqtt_tcp\",\"queued\":0}"}
+{"utc": "2026-11-18T17:05:02.828+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:05:04.278+00:00", "board": "B", "kind": "lost", "data": {"port": "COM14", "reason": "ClearCommError failed (PermissionError(13, '设备不识别此命令。', None, 22))"}}
+{"utc": "2026-11-18T17:05:05.307+00:00", "board": "B", "kind": "reopen", "data": "COM14"}
+{"utc": "2026-11-18T17:05:05.515+00:00", "board": "B", "kind": "tx", "data": "status"}
+{"utc": "2026-11-18T17:05:06.083+00:00", "board": "B", "kind": "rx", "data": ""}
+{"utc": "2026-11-18T17:05:06.083+00:00", "board": "B", "kind": "rx", "data": "=== IR Near-Field Pairing ==="}
+{"utc": "2026-11-18T17:05:06.083+00:00", "board": "B", "kind": "rx", "data": "Chip UID: 50236541C8965F1C"}
+{"utc": "2026-11-18T17:05:06.083+00:00", "board": "B", "kind": "rx", "data": "My machine code: 0xC371"}
+{"utc": "2026-11-18T17:05:06.083+00:00", "board": "B", "kind": "rx", "data": "Blue = start pairing, White = stop/unpair"}
+{"utc": "2026-11-18T17:05:06.109+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"boot\",\"detail\":\"BumpDualBadge\",\"uptime_ms\":1282}"}
+{"utc": "2026-11-18T17:05:06.109+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"watchdog_recovery\",\"stage\":\"ble_stop\",\"pre_reset_ram_queued\":0,\"ram_queue_lost\":true,\"network_configuration_lost\":true}"}
+{"utc": "2026-11-18T17:05:06.109+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.4-dual\",\"device_id\":\"bump-c8c9a3e65ba4\",\"boot_id\":\"b3d32344\",\"self_short_id\":\"eae17abe9ac0\",\"self_code16\":\"c371\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":1283,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":0,\"motion_triggers\":0,\"network_configured\":false,\"transport\":\"wifi_mqtt_tcp\",\"nina_version\":\"\",\"last_watchdog_stage\":\"ble_stop\",\"pre_reset_ram_queued\":0}"}
+{"utc": "2026-11-18T17:05:06.109+00:00", "board": "B", "kind": "first_status", "data": {"type": "status", "firmware": "BumpDualBadge", "fw": "0.5.4-dual", "device_id": "bump-c8c9a3e65ba4", "boot_id": "b3d32344", "self_short_id": "eae17abe9ac0", "self_code16": "c371", "peer_code16": "0000", "ir_paired": false, "uptime_ms": 1283, "paused": false, "discovery": false, "ble_phase": "idle", "window_remaining_ms": 0, "queued": 0, "dropped": 0, "imu_ready": true, "imu_samples": 0, "motion_triggers": 0, "network_configured": false, "transport": "wifi_mqtt_tcp", "nina_version": "", "last_watchdog_stage": "ble_stop", "pre_reset_ram_queued": 0}}
+{"utc": "2026-11-18T17:05:06.109+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.4-dual\",\"device_id\":\"bump-c8c9a3e65ba4\",\"boot_id\":\"b3d32344\",\"self_short_id\":\"eae17abe9ac0\",\"self_code16\":\"c371\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":1284,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":0,\"motion_triggers\":0,\"network_configured\":false,\"transport\":\"wifi_mqtt_tcp\",\"nina_version\":\"\",\"last_watchdog_stage\":\"ble_stop\",\"pre_reset_ram_queued\":0}"}
+{"utc": "2026-11-18T17:05:06.109+00:00", "board": "B", "kind": "rx", "data": "STATUS state=IDLE my=0xC371"}
+{"utc": "2026-11-18T17:05:07.816+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:05:09.809+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:05:12.830+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:05:14.823+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:05:17.827+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:05:19.818+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:05:22.816+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:05:24.831+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:05:27.834+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:05:29.823+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:05:32.818+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:05:34.812+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:05:37.819+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:05:39.814+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:05:42.815+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:05:44.834+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:05:47.830+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:05:49.821+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:05:52.832+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:05:54.821+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:05:57.824+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:05:59.818+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:06:02.815+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:06:04.810+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:06:07.837+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:06:09.827+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:06:12.831+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:06:14.823+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:06:17.822+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:06:19.812+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:06:22.830+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:06:24.818+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:06:27.816+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:06:29.833+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:06:32.834+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:06:34.831+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:06:37.831+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:06:39.820+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:06:42.823+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:06:44.812+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:06:47.833+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:06:49.822+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:06:52.821+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:06:54.811+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:06:57.831+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:06:59.821+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:07:02.820+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:07:04.815+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:07:07.822+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:07:09.818+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:07:12.818+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:07:14.812+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:07:17.819+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:07:19.817+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:07:22.837+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:07:24.810+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:07:27.839+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:07:29.823+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:07:32.834+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:07:34.813+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:07:37.834+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:07:39.818+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:07:42.830+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:07:44.821+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:07:47.825+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T17:07:49.821+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T17:07:50.805+00:00", "board": "A", "kind": "tx", "data": "status"}
+{"utc": "2026-11-18T17:07:50.855+00:00", "board": "B", "kind": "tx", "data": "status"}
+{"utc": "2026-11-18T17:07:50.932+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.4-dual\",\"device_id\":\"bump-349454276354\",\"boot_id\":\"26ba16a5\",\"self_short_id\":\"78fe2e725995\",\"self_code16\":\"a30f\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":664250,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":63420,\"motion_triggers\":0,\"network_configured\":true,\"transport\":\"wifi_mqtt_tcp\",\"nina_version\":\"3.0.2\",\"last_watchdog_stage\":\"ble_stop\",\"pre_reset_ram_queued\":0,\"accel_g\":[0.02917,-0.00513,1.01636]}"}
+{"utc": "2026-11-18T17:07:50.932+00:00", "board": "A", "kind": "rx", "data": "STATUS state=IDLE my=0xA30F"}
+{"utc": "2026-11-18T17:07:50.932+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.4-dual\",\"device_id\":\"bump-c8c9a3e65ba4\",\"boot_id\":\"b3d32344\",\"self_short_id\":\"eae17abe9ac0\",\"self_code16\":\"c371\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":166050,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":17571,\"motion_triggers\":0,\"network_configured\":false,\"transport\":\"wifi_mqtt_tcp\",\"nina_version\":\"3.0.2\",\"last_watchdog_stage\":\"ble_stop\",\"pre_reset_ram_queued\":0,\"accel_g\":[-0.10571,0.01453,0.98926]}"}
+{"utc": "2026-11-18T17:07:50.932+00:00", "board": "B", "kind": "rx", "data": "STATUS state=IDLE my=0xC371"}
+{"utc": "2026-11-18T17:07:51.561+00:00", "board": "both", "kind": "stop", "data": "1795021671549906400-a67a251"}

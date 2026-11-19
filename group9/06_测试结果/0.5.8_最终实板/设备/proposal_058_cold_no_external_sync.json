@@ -1,0 +1,94 @@
+{
+  "firmware": "0.5.8-dual",
+  "entering": {
+    "record": "fresh_boot",
+    "at": "2026-11-19T01:34:22.547+00:00",
+    "boots": [
+      "5d54a08a",
+      "d4b80a4f"
+    ],
+    "network_configured": false,
+    "prior_mqtt_clock_samples": 0,
+    "prior_events": 0
+  },
+  "initial_65s_pass": true,
+  "initial_timeout": null,
+  "boards": {
+    "A": {
+      "event": "ev_349454276354_5d54a08a_00000001",
+      "samples": 39,
+      "duration_s": 20,
+      "seconds_from_own_end_to_clear": 6.785,
+      "raw_anchors": [
+        {
+          "raw_uptime_ms": 95000,
+          "utc_low": 1795052140.522396,
+          "utc_high": 1795052141.7190804,
+          "source": "mqtt_connack"
+        }
+      ],
+      "puback": {
+        "at": "2026-11-19T01:35:42.280+00:00",
+        "type": "mqtt_puback",
+        "detail": "received",
+        "uptime_ms": 96481
+      },
+      "cleared": {
+        "at": "2026-11-19T01:35:42.486+00:00",
+        "type": "queue_removed_after_application_ack",
+        "origin": "wifi_mqtt",
+        "event_id": "ev_349454276354_5d54a08a_00000001",
+        "queued": 0
+      },
+      "database": [
+        {
+          "event_id": "ev_349454276354_5d54a08a_00000001",
+          "boot": "5d54a08a",
+          "transport": "mqtt",
+          "time_quality": "anchored",
+          "clock_uncertainty_s": 0.6421182155609131
+        }
+      ],
+      "clock_probes": []
+    },
+    "B": {
+      "event": "ev_c8c9a3e65ba4_d4b80a4f_00000001",
+      "samples": 18,
+      "duration_s": 12,
+      "seconds_from_own_end_to_clear": 26.207,
+      "raw_anchors": [
+        {
+          "raw_uptime_ms": 103000,
+          "utc_low": 1795052148.7113051,
+          "utc_high": 1795052149.887462,
+          "source": "mqtt_connack"
+        }
+      ],
+      "puback": {
+        "at": "2026-11-19T01:35:50.438+00:00",
+        "type": "mqtt_puback",
+        "detail": "received",
+        "uptime_ms": 104605
+      },
+      "cleared": {
+        "at": "2026-11-19T01:35:50.646+00:00",
+        "type": "queue_removed_after_application_ack",
+        "origin": "wifi_mqtt",
+        "event_id": "ev_c8c9a3e65ba4_d4b80a4f_00000001",
+        "queued": 0
+      },
+      "database": [
+        {
+          "event_id": "ev_c8c9a3e65ba4_d4b80a4f_00000001",
+          "boot": "d4b80a4f",
+          "transport": "mqtt",
+          "time_quality": "anchored",
+          "clock_uncertainty_s": 0.6175552606582642
+        }
+      ],
+      "clock_probes": []
+    }
+  },
+  "external_sync_through_delivery": [],
+  "any_external_sync_in_capture": false
+}

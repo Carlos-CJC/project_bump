@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#173e36">
+  <title>Bump · 双板联调</title>
+  <link rel="icon" type="image/svg+xml" href="/mark.svg">
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">跳至主要内容</a>
+  <header class="masthead"><div class="shell masthead-inner">
+    <a class="brand" href="/" aria-label="Bump 首页"><img src="/mark.svg" width="38" height="38" alt=""><b>Bump</b></a>
+    <span class="brand-sub">智能社交挂件</span>
+    <div class="local-badge" id="service-box"><i aria-hidden="true"></i><span id="service" role="status">正在连接本机服务</span></div>
+  </div></header>
+  <main id="main" class="shell">
+    <noscript><p class="warning">本机联调需要 JavaScript。请在浏览器中启用后刷新。</p></noscript>
+    <div id="login-view">
+      <section class="entry" aria-labelledby="entry-title">
+        <div class="cover">
+          <div class="cover-top"><span class="tag tag-outline">实体挂件联调</span></div>
+          <h1 id="entry-title">一次摇动，<br>遇见彼此。</h1>
+          <p class="cover-deck">用两枚实体挂件记录蓝牙相遇。留不留联系方式，由相遇的两个人决定。</p>
+          <figure class="cover-figure"><img src="/pendants.svg" width="580" height="224" alt="两枚挂件的无线发现原理示意"><figcaption><span>挂件蓝牙发现示意</span></figcaption></figure>
+        </div>
+        <form id="login-form" class="entry-form">
+          <h2>登录联调账号</h2>
+          <p class="muted form-deck">选择一个角色，查看属于它的挂件和相遇记录。</p>
+          <label for="username">角色</label>
+          <select id="username" name="username" autocomplete="username"><option value="alice">Alice · 挂件 A</option><option value="bob">Bob · 挂件 B</option><option value="charlie">Charlie · 无挂件的第三人</option></select>
+          <label for="password">本机联调密码</label>
+          <input id="password" name="password" type="password" autocomplete="current-password" required aria-describedby="password-hint" placeholder="输入此角色的密码">
+          <p id="password-hint" class="field-hint">使用本次联调目录 <code>credentials.txt</code> 中的独立密码。</p>
+          <p class="form-error" id="login-error" role="alert" hidden></p>
+          <button class="button primary login-submit" type="submit">登录<span aria-hidden="true">↗</span></button>
+          <div class="auth-foot"><span class="tag">本机运行</span> 仅使用虚构账号和资料。</div>
+        </form>
+      </section>
+      <section class="entry-steps" aria-label="实物联调流程">
+        <div><h3>挂件发现</h3><p>摇动挂件开启发现窗口，等待对方进入蓝牙范围。</p></div>
+        <div><h3>在本机留下一条记录</h3><p>挂件经 MQTT 上报观察，本机保存后更新个人时间线。</p></div>
+        <div><h3>双方同意后再联系</h3><p>先用化名发邀请。对方接受后，双方才能查看资料。</p></div>
+      </section>
+    </div>
+    <div id="dashboard" hidden>
+      <div class="work-heading"><div><div class="module-code"><i></i> DISCOVERY DESK <span class="code-divider">/</span> <span id="greeting">我的空间</span></div><h1>双板联调工作台</h1><p class="muted">查看属于你的蓝牙相遇与红外配对邀请。</p></div>
+        <div class="toolbar"><button class="button subtle" id="refresh" type="button">刷新数据</button><button class="button linklike" id="logout" type="button">退出登录</button></div>
+      </div>
+      <div>
+        <section class="device panel" aria-labelledby="device-title">
+          <div class="panel-header"><div class="module-code"><i></i> MY DEVICE</div><span class="tag paper">账号绑定</span></div>
+          <h2 id="device-title">我的挂件</h2><strong class="device-alias" id="device-alias">读取中…</strong>
+          <dl class="facts"><div><dt>最近收到数据</dt><dd id="device-time">读取中…</dd></div><div><dt>最近记录来源</dt><dd id="device-source">读取中…</dd></div><div><dt>最近 MQTT 状态</dt><dd id="device-state">读取中…</dd></div></dl>
+          <p class="minor device-note">状态随板端的短连接更新。</p>
+        </section>
+      </div>
+      <section class="social" aria-labelledby="social-title">
+        <div class="section-bar heading-row"><div><div class="module-code"><i></i> ENCOUNTER LOG</div><h2 id="social-title">相遇与联系</h2></div><span class="minor" id="updated">尚未读取</span></div>
+        <div class="stats" aria-label="当前账号的数据摘要">
+          <div><strong id="stat-total">–</strong><span>可见相遇</span></div><div><strong id="stat-mutual">–</strong><span>双方记录匹配</span></div><div><strong id="stat-pending">–</strong><span>待我回应</span></div>
+        </div>
+        <div class="social-grid">
+          <section aria-labelledby="timeline-title"><div class="list-head"><h3 id="timeline-title">相遇时间线</h3></div><div class="stack" id="encounters"></div></section>
+          <aside aria-labelledby="requests-title"><div class="list-head"><h3 id="requests-title">联系邀请</h3></div><div class="stack" id="requests"></div>
+            <div class="privacy"><span class="module-code">CONSENT / 双方同意</span><h4>资料由你决定何时分享。</h4><p>只有邀请被接受，双方才可看到对方的虚构资料。撤销联系会重新隐藏资料，但不能收回对方已保存的内容。</p></div>
+          </aside>
+        </div>
+      </section>
+    </div>
+  </main>
+  <div id="notice" class="notice" role="status" aria-live="polite" hidden></div>
+  <dialog id="confirm-dialog" aria-labelledby="confirm-title"><form method="dialog"><div class="module-code"><i></i> CONFIRM</div><h2 id="confirm-title">确认操作</h2><p id="confirm-message"></p><div class="actions"><button class="button" value="cancel" autofocus>取消</button><button class="button primary" value="confirm">确认</button></div></form></dialog>
+  <footer class="shell"><b>Bump <span>/</span> 佩戴式社交实验</b><span>EIE568 · GROUP 09 <i></i> 实体挂件联调</span></footer>
+</body></html>

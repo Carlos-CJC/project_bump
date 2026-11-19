@@ -1,0 +1,25 @@
+* text=auto
+
+# 仓库自有脚本按各自习惯换行。
+*.sh    text eol=lf
+*.py    text eol=lf
+*.cjs   text eol=lf
+*.js    text eol=lf
+*.ps1   text eol=crlf
+*.cmd   text eol=crlf
+*.bat   text eol=crlf
+*.ini   text eol=lf
+*.json  text eol=lf
+*.md    text eol=lf
+
+# 二进制制品不做换行转换。
+*.uf2 binary
+*.bin binary
+*.elf binary
+*.png binary
+*.jpg binary
+*.pdf binary
+
+# group9 保留交付时的原始字节，确保文件清单里的 SHA-256 在两端都能复核。
+# 该规则放在最后，覆盖上面的换行处理。
+group9/** -text

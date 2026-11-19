@@ -1,0 +1,1 @@
+PASS: virtual TCP instrumentation, 12-second failure timing, IP/RSSI allowlist, all code outside the network delta and the 65 s acceptance limit.

@@ -1,0 +1,691 @@
+{
+  "at": "2026-11-18T19:25:41.824659+00:00",
+  "before": {
+    "alice": {
+      "encounters": [
+        {
+          "id": 58,
+          "peer_alias": "挂件 B",
+          "source": "hardware",
+          "simulated": false,
+          "mutual": true,
+          "sample_count": 29,
+          "request_id": 2,
+          "contact_status": "pending",
+          "profile_visible": false
+        },
+        {
+          "id": 55,
+          "peer_alias": "挂件 B",
+          "source": "hardware",
+          "simulated": false,
+          "mutual": true,
+          "sample_count": 53,
+          "request_id": 2,
+          "contact_status": "pending",
+          "profile_visible": false
+        },
+        {
+          "id": 53,
+          "peer_alias": "挂件 B",
+          "source": "hardware",
+          "simulated": false,
+          "mutual": true,
+          "sample_count": 51,
+          "request_id": 2,
+          "contact_status": "pending",
+          "profile_visible": false
+        },
+        {
+          "id": 51,
+          "peer_alias": "挂件 B",
+          "source": "hardware",
+          "simulated": false,
+          "mutual": true,
+          "sample_count": 52,
+          "request_id": 2,
+          "contact_status": "pending",
+          "profile_visible": false
+        },
+        {
+          "id": 49,
+          "peer_alias": "挂件 B",
+          "source": "hardware",
+          "simulated": false,
+          "mutual": true,
+          "sample_count": 52,
+          "request_id": 2,
+          "contact_status": "pending",
+          "profile_visible": false
+        },
+        {
+          "id": 47,
+          "peer_alias": "挂件 B",
+          "source": "hardware",
+          "simulated": false,
+          "mutual": true,
+          "sample_count": 53,
+          "request_id": 2,
+          "contact_status": "pending",
+          "profile_visible": false
+        },
+        {
+          "id": 44,
+          "peer_alias": "挂件 B",
+          "source": "hardware",
+          "simulated": false,
+          "mutual": true,
+          "sample_count": 53,
+          "request_id": 2,
+          "contact_status": "pending",
+          "profile_visible": false
+        },
+        {
+          "id": 42,
+          "peer_alias": "挂件 B",
+          "source": "hardware",
+          "simulated": false,
+          "mutual": true,
+          "sample_count": 48,
+          "request_id": 2,
+          "contact_status": "pending",
+          "profile_visible": false
+        },
+        {
+          "id": 40,
+          "peer_alias": "挂件 B",
+          "source": "hardware",
+          "simulated": false,
+          "mutual": true,
+          "sample_count": 49,
+          "request_id": 2,
+          "contact_status": "pending",
+          "profile_visible": false
+        },
+        {
+          "id": 38,
+          "peer_alias": "挂件 B",
+          "source": "hardware",
+          "simulated": false,
+          "mutual": true,
+          "sample_count": 51,
+          "request_id": 2,
+          "contact_status": "pending",
+          "profile_visible": false
+        },
+        {
+          "id": 36,
+          "peer_alias": "挂件 B",
+          "source": "hardware",
+          "simulated": false,
+          "mutual": true,
+          "sample_count": 52,
+          "request_id": 2,
+          "contact_status": "pending",
+          "profile_visible": false
+        },
+        {
+          "id": 34,
+          "peer_alias": "挂件 B",
+          "source": "hardware",
+          "simulated": false,
+          "mutual": true,
+          "sample_count": 51,
+          "request_id": 2,
+          "contact_status": "pending",
+          "profile_visible": false
+        },
+        {
+          "id": 32,
+          "peer_alias": "挂件 B",
+          "source": "hardware",
+          "simulated": false,
+          "mutual": true,
+          "sample_count": 52,
+          "request_id": 2,
+          "contact_status": "pending",
+          "profile_visible": false
+        },
+        {
+          "id": 30,
+          "peer_alias": "挂件 B",
+          "source": "hardware",
+          "simulated": false,
+          "mutual": true,
+          "sample_count": 52,
+          "request_id": 2,
+          "contact_status": "pending",
+          "profile_visible": false
+        },
+        {
+          "id": 28,
+          "peer_alias": "挂件 B",
+          "source": "hardware",
+          "simulated": false,
+          "mutual": true,
+          "sample_count": 51,
+          "request_id": 2,
+          "contact_status": "pending",
+          "profile_visible": false
+        },
+        {
+          "id": 26,
+          "peer_alias": "挂件 B",
+          "source": "hardware",
+          "simulated": false,
+          "mutual": true,
+          "sample_count": 52,
+          "request_id": 2,
+          "contact_status": "pending",
+          "profile_visible": false
+        },
+        {
+          "id": 24,
+          "peer_alias": "挂件 B",
+          "source": "hardware",
+          "simulated": false,
+          "mutual": true,
+          "sample_count": 54,
+          "request_id": 2,
+          "contact_status": "pending",
+          "profile_visible": false
+        },
+        {
+          "id": 22,
+          "peer_alias": "挂件 B",
+          "source": "hardware",
+          "simulated": false,
+          "mutual": true,
+          "sample_count": 51,
+          "request_id": 2,
+          "contact_status": "pending",
+          "profile_visible": false
+        },
+        {
+          "id": 20,
+          "peer_alias": "挂件 B",
+          "source": "hardware",
+          "simulated": false,
+          "mutual": true,
+          "sample_count": 54,
+          "request_id": 2,
+          "contact_status": "pending",
+          "profile_visible": false
+        },
+        {
+          "id": 18,
+          "peer_alias": "挂件 B",
+          "source": "hardware",
+          "simulated": false,
+          "mutual": true,
+          "sample_count": 51,
+          "request_id": 2,
+          "contact_status": "pending",
+          "profile_visible": false
+        },
+        {
+          "id": 16,
+          "peer_alias": "挂件 B",
+          "source": "hardware",
+          "simulated": false,
+          "mutual": true,
+          "sample_count": 52,
+          "request_id": 2,
+          "contact_status": "pending",
+          "profile_visible": false
+        },
+        {
+          "id": 14,
+          "peer_alias": "挂件 B",
+          "source": "hardware",
+          "simulated": false,
+          "mutual": true,
+          "sample_count": 34,
+          "request_id": 2,
+          "contact_status": "pending",
+          "profile_visible": false
+        },
+        {
+          "id": 12,
+          "peer_alias": "挂件 B",
+          "source": "hardware",
+          "simulated": false,
+          "mutual": true,
+          "sample_count": 35,
+          "request_id": 2,
+          "contact_status": "pending",
+          "profile_visible": false
+        },
+        {
+          "id": 10,
+          "peer_alias": "挂件 B",
+          "source": "hardware",
+          "simulated": false,
+          "mutual": true,
+          "sample_count": 41,
+          "request_id": 2,
+          "contact_status": "pending",
+          "profile_visible": false
+        },
+        {
+          "id": 8,
+          "peer_alias": "挂件 B",
+          "source": "hardware",
+          "simulated": false,
+          "mutual": true,
+          "sample_count": 37,
+          "request_id": 2,
+          "contact_status": "pending",
+          "profile_visible": false
+        },
+        {
+          "id": 7,
+          "peer_alias": "挂件 B",
+          "source": "hardware",
+          "simulated": false,
+          "mutual": false,
+          "sample_count": 29,
+          "request_id": 2,
+          "contact_status": "pending",
+          "profile_visible": false
+        },
+        {
+          "id": 6,
+          "peer_alias": "挂件 B",
+          "source": "hardware",
+          "simulated": false,
+          "mutual": false,
+          "sample_count": 28,
+          "request_id": 2,
+          "contact_status": "pending",
+          "profile_visible": false
+        },
+        {
+          "id": 5,
+          "peer_alias": "挂件 B",
+          "source": "hardware",
+          "simulated": false,
+          "mutual": true,
+          "sample_count": 40,
+          "request_id": 2,
+          "contact_status": "pending",
+          "profile_visible": false
+        },
+        {
+          "id": 2,
+          "peer_alias": "挂件 B",
+          "source": "hardware",
+          "simulated": false,
+          "mutual": true,
+          "sample_count": 48,
+          "request_id": 2,
+          "contact_status": "pending",
+          "profile_visible": false
+        }
+      ],
+      "requests": [
+        {
+          "id": 2,
+          "peer_alias": "挂件 B",
+          "status": "pending",
+          "direction": "outgoing",
+          "method": "ir",
+          "profile_visible": false
+        },
+        {
+          "id": 1,
+          "peer_alias": "挂件 B",
+          "status": "revoked",
+          "direction": "incoming",
+          "method": "ir",
+          "profile_visible": false
+        }
+      ]
+    },
+    "bob": {
+      "encounters": [
+        {
+          "id": 57,
+          "peer_alias": "挂件 A",
+          "source": "hardware",
+          "simulated": false,
+          "mutual": true,
+          "sample_count": 34,
+          "request_id": 2,
+          "contact_status": "pending",
+          "profile_visible": false
+        },
+        {
+          "id": 56,
+          "peer_alias": "挂件 A",
+          "source": "hardware",
+          "simulated": false,
+          "mutual": true,
+          "sample_count": 56,
+          "request_id": 2,
+          "contact_status": "pending",
+          "profile_visible": false
+        },
+        {
+          "id": 54,
+          "peer_alias": "挂件 A",
+          "source": "hardware",
+          "simulated": false,
+          "mutual": true,
+          "sample_count": 55,
+          "request_id": 2,
+          "contact_status": "pending",
+          "profile_visible": false
+        },
+        {
+          "id": 52,
+          "peer_alias": "挂件 A",
+          "source": "hardware",
+          "simulated": false,
+          "mutual": true,
+          "sample_count": 57,
+          "request_id": 2,
+          "contact_status": "pending",
+          "profile_visible": false
+        },
+        {
+          "id": 50,
+          "peer_alias": "挂件 A",
+          "source": "hardware",
+          "simulated": false,
+          "mutual": true,
+          "sample_count": 56,
+          "request_id": 2,
+          "contact_status": "pending",
+          "profile_visible": false
+        },
+        {
+          "id": 48,
+          "peer_alias": "挂件 A",
+          "source": "hardware",
+          "simulated": false,
+          "mutual": false,
+          "sample_count": 23,
+          "request_id": 2,
+          "contact_status": "pending",
+          "profile_visible": false
+        },
+        {
+          "id": 46,
+          "peer_alias": "挂件 A",
+          "source": "hardware",
+          "simulated": false,
+          "mutual": true,
+          "sample_count": 56,
+          "request_id": 2,
+          "contact_status": "pending",
+          "profile_visible": false
+        },
+        {
+          "id": 45,
+          "peer_alias": "挂件 A",
+          "source": "hardware",
+          "simulated": false,
+          "mutual": true,
+          "sample_count": 56,
+          "request_id": 2,
+          "contact_status": "pending",
+          "profile_visible": false
+        },
+        {
+          "id": 43,
+          "peer_alias": "挂件 A",
+          "source": "hardware",
+          "simulated": false,
+          "mutual": true,
+          "sample_count": 58,
+          "request_id": 2,
+          "contact_status": "pending",
+          "profile_visible": false
+        },
+        {
+          "id": 41,
+          "peer_alias": "挂件 A",
+          "source": "hardware",
+          "simulated": false,
+          "mutual": true,
+          "sample_count": 57,
+          "request_id": 2,
+          "contact_status": "pending",
+          "profile_visible": false
+        },
+        {
+          "id": 39,
+          "peer_alias": "挂件 A",
+          "source": "hardware",
+          "simulated": false,
+          "mutual": true,
+          "sample_count": 56,
+          "request_id": 2,
+          "contact_status": "pending",
+          "profile_visible": false
+        },
+        {
+          "id": 37,
+          "peer_alias": "挂件 A",
+          "source": "hardware",
+          "simulated": false,
+          "mutual": true,
+          "sample_count": 56,
+          "request_id": 2,
+          "contact_status": "pending",
+          "profile_visible": false
+        },
+        {
+          "id": 35,
+          "peer_alias": "挂件 A",
+          "source": "hardware",
+          "simulated": false,
+          "mutual": true,
+          "sample_count": 55,
+          "request_id": 2,
+          "contact_status": "pending",
+          "profile_visible": false
+        },
+        {
+          "id": 33,
+          "peer_alias": "挂件 A",
+          "source": "hardware",
+          "simulated": false,
+          "mutual": true,
+          "sample_count": 57,
+          "request_id": 2,
+          "contact_status": "pending",
+          "profile_visible": false
+        },
+        {
+          "id": 31,
+          "peer_alias": "挂件 A",
+          "source": "hardware",
+          "simulated": false,
+          "mutual": true,
+          "sample_count": 54,
+          "request_id": 2,
+          "contact_status": "pending",
+          "profile_visible": false
+        },
+        {
+          "id": 29,
+          "peer_alias": "挂件 A",
+          "source": "hardware",
+          "simulated": false,
+          "mutual": true,
+          "sample_count": 59,
+          "request_id": 2,
+          "contact_status": "pending",
+          "profile_visible": false
+        },
+        {
+          "id": 27,
+          "peer_alias": "挂件 A",
+          "source": "hardware",
+          "simulated": false,
+          "mutual": true,
+          "sample_count": 54,
+          "request_id": 2,
+          "contact_status": "pending",
+          "profile_visible": false
+        },
+        {
+          "id": 25,
+          "peer_alias": "挂件 A",
+          "source": "hardware",
+          "simulated": false,
+          "mutual": true,
+          "sample_count": 56,
+          "request_id": 2,
+          "contact_status": "pending",
+          "profile_visible": false
+        },
+        {
+          "id": 23,
+          "peer_alias": "挂件 A",
+          "source": "hardware",
+          "simulated": false,
+          "mutual": true,
+          "sample_count": 55,
+          "request_id": 2,
+          "contact_status": "pending",
+          "profile_visible": false
+        },
+        {
+          "id": 21,
+          "peer_alias": "挂件 A",
+          "source": "hardware",
+          "simulated": false,
+          "mutual": true,
+          "sample_count": 55,
+          "request_id": 2,
+          "contact_status": "pending",
+          "profile_visible": false
+        },
+        {
+          "id": 19,
+          "peer_alias": "挂件 A",
+          "source": "hardware",
+          "simulated": false,
+          "mutual": true,
+          "sample_count": 56,
+          "request_id": 2,
+          "contact_status": "pending",
+          "profile_visible": false
+        },
+        {
+          "id": 17,
+          "peer_alias": "挂件 A",
+          "source": "hardware",
+          "simulated": false,
+          "mutual": true,
+          "sample_count": 55,
+          "request_id": 2,
+          "contact_status": "pending",
+          "profile_visible": false
+        },
+        {
+          "id": 15,
+          "peer_alias": "挂件 A",
+          "source": "hardware",
+          "simulated": false,
+          "mutual": true,
+          "sample_count": 30,
+          "request_id": 2,
+          "contact_status": "pending",
+          "profile_visible": false
+        },
+        {
+          "id": 13,
+          "peer_alias": "挂件 A",
+          "source": "hardware",
+          "simulated": false,
+          "mutual": true,
+          "sample_count": 57,
+          "request_id": 2,
+          "contact_status": "pending",
+          "profile_visible": false
+        },
+        {
+          "id": 11,
+          "peer_alias": "挂件 A",
+          "source": "hardware",
+          "simulated": false,
+          "mutual": true,
+          "sample_count": 54,
+          "request_id": 2,
+          "contact_status": "pending",
+          "profile_visible": false
+        },
+        {
+          "id": 9,
+          "peer_alias": "挂件 A",
+          "source": "hardware",
+          "simulated": false,
+          "mutual": true,
+          "sample_count": 54,
+          "request_id": 2,
+          "contact_status": "pending",
+          "profile_visible": false
+        },
+        {
+          "id": 4,
+          "peer_alias": "挂件 A",
+          "source": "hardware",
+          "simulated": false,
+          "mutual": true,
+          "sample_count": 54,
+          "request_id": 2,
+          "contact_status": "pending",
+          "profile_visible": false
+        },
+        {
+          "id": 3,
+          "peer_alias": "挂件 A",
+          "source": "hardware",
+          "simulated": false,
+          "mutual": true,
+          "sample_count": 52,
+          "request_id": 2,
+          "contact_status": "pending",
+          "profile_visible": false
+        },
+        {
+          "id": 1,
+          "peer_alias": "挂件 A",
+          "source": "hardware",
+          "simulated": false,
+          "mutual": false,
+          "sample_count": 6,
+          "request_id": 2,
+          "contact_status": "pending",
+          "profile_visible": false
+        }
+      ],
+      "requests": [
+        {
+          "id": 2,
+          "peer_alias": "挂件 A",
+          "status": "pending",
+          "direction": "incoming",
+          "method": "ir",
+          "profile_visible": false
+        },
+        {
+          "id": 1,
+          "peer_alias": "挂件 A",
+          "status": "revoked",
+          "direction": "outgoing",
+          "method": "ir",
+          "profile_visible": false
+        }
+      ]
+    },
+    "charlie": {
+      "encounters": [],
+      "requests": []
+    }
+  }
+}

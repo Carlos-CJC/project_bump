@@ -1,0 +1,94 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.14, pytest-9.1.1, pluggy-1.7.0 -- E:\港理课程\课程文件\eie568\Proposal_智能社交挂件\Bump_Starter\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: E:\港理课程\课程文件\eie568\Proposal_智能社交挂件\Bump_Starter
+configfile: pytest.ini
+testpaths: tests
+plugins: anyio-4.15.1
+collecting ... collected 76 items
+
+tests/test_api.py::test_cookie_csrf_auth_logout_and_generic_health PASSED [  1%]
+tests/test_api.py::test_full_authorization_flow_profiles_hidden_until_recipient_accepts PASSED [  2%]
+tests/test_api.py::test_reject_is_idempotent_and_cannot_be_changed_to_accept PASSED [  3%]
+tests/test_api.py::test_delete_hides_only_own_entry_and_duplicate_cannot_resurrect PASSED [  5%]
+tests/test_api.py::test_mutations_require_session_specific_csrf PASSED   [  6%]
+tests/test_api.py::test_expired_session_fails_and_api_input_is_strict PASSED [  7%]
+tests/test_api.py::test_non_ascii_csrf_is_rejected_without_server_error PASSED [  9%]
+tests/test_api.py::test_no_public_device_injection_endpoint PASSED       [ 10%]
+tests/test_device.py::test_window_expiry_and_manual_pause_require_a_new_gesture PASSED [ 11%]
+tests/test_device.py::test_ram_queue_is_bounded_and_events_are_frozen PASSED [ 13%]
+tests/test_device.py::test_wrong_or_non_success_ack_never_clears_queue[patch0] PASSED [ 14%]
+tests/test_device.py::test_wrong_or_non_success_ack_never_clears_queue[patch1] PASSED [ 15%]
+tests/test_device.py::test_wrong_or_non_success_ack_never_clears_queue[patch2] PASSED [ 17%]
+tests/test_device.py::test_wrong_or_non_success_ack_never_clears_queue[patch3] PASSED [ 18%]
+tests/test_device.py::test_wrong_or_non_success_ack_never_clears_queue[patch4] PASSED [ 19%]
+tests/test_device.py::test_wrong_or_non_success_ack_never_clears_queue[patch5] PASSED [ 21%]
+tests/test_device.py::test_wrong_or_non_success_ack_never_clears_queue[patch6] PASSED [ 22%]
+tests/test_device.py::test_wrong_or_non_success_ack_never_clears_queue[patch7] PASSED [ 23%]
+tests/test_device.py::test_wrong_or_non_success_ack_never_clears_queue[patch8] PASSED [ 25%]
+tests/test_device.py::test_retained_and_malformed_ack_are_ignored PASSED [ 26%]
+tests/test_device.py::test_only_simulated_events_and_new_boot_on_new_instance PASSED [ 27%]
+tests/test_device.py::test_unknown_time_is_explicitly_null PASSED        [ 28%]
+tests/test_device.py::test_connect_is_not_ready_until_matching_suback PASSED [ 30%]
+tests/test_device.py::test_sync_waits_for_subscription_and_keeps_queue_on_timeout PASSED [ 31%]
+tests/test_device.py::test_discovery_does_not_upload_but_paused_backlog_retries PASSED [ 32%]
+tests/test_device.py::test_worker_acks_only_after_store_returns_and_reacks_duplicates PASSED [ 34%]
+tests/test_device.py::test_worker_rejection_never_becomes_success PASSED [ 35%]
+tests/test_firmware_core.py::test_portable_firmware_regressions PASSED   [ 36%]
+tests/test_firmware_core.py::test_firmware_json_matches_backend_contract PASSED [ 38%]
+tests/test_frontend.py::test_browser_session_races PASSED                [ 39%]
+tests/test_integration.py::test_real_mqtt_scenarios_reach_durable_store_and_authorized_api[normal] PASSED [ 40%]
+tests/test_integration.py::test_real_mqtt_scenarios_reach_durable_store_and_authorized_api[offline] PASSED [ 42%]
+tests/test_integration.py::test_real_mqtt_scenarios_reach_durable_store_and_authorized_api[retry] PASSED [ 43%]
+tests/test_integration.py::test_broker_restart_store_failure_and_lost_ack_recover_while_paused PASSED [ 44%]
+tests/test_integration.py::test_real_broker_rejects_invalid_authentication_or_will[wrong_password] PASSED [ 46%]
+tests/test_integration.py::test_real_broker_rejects_invalid_authentication_or_will[wrong_client_id] PASSED [ 47%]
+tests/test_integration.py::test_real_broker_rejects_invalid_authentication_or_will[will] PASSED [ 48%]
+tests/test_integration.py::test_real_broker_rejects_invalid_authentication_or_will[persistent_session] PASSED [ 50%]
+tests/test_integration.py::test_failed_duplicate_id_connection_preserves_the_live_session[wrong_password] PASSED [ 51%]
+tests/test_integration.py::test_failed_duplicate_id_connection_preserves_the_live_session[mismatched_account] PASSED [ 52%]
+tests/test_integration.py::test_legitimate_clean_disconnect_and_new_client_reconnect PASSED [ 53%]
+tests/test_integration.py::test_real_tls_rejects_a_different_runtime_ca PASSED [ 55%]
+tests/test_integration.py::test_device_cannot_subscribe_to_other_accounts_or_event_wildcards[bump/v1/device/badge-b/ack] PASSED [ 56%]
+tests/test_integration.py::test_device_cannot_subscribe_to_other_accounts_or_event_wildcards[bump/v1/device/+/events] PASSED [ 57%]
+tests/test_integration.py::test_device_cannot_subscribe_to_other_accounts_or_event_wildcards[bump/#] PASSED [ 59%]
+tests/test_integration.py::test_forbidden_publications_are_not_delivered_or_stored[other_events] PASSED [ 60%]
+tests/test_integration.py::test_forbidden_publications_are_not_delivered_or_stored[own_ack] PASSED [ 61%]
+tests/test_integration.py::test_forbidden_publications_are_not_delivered_or_stored[other_ack] PASSED [ 63%]
+tests/test_store.py::test_commit_duplicate_timestamp_normalization_and_conflict PASSED [ 64%]
+tests/test_store.py::test_invalid_events_leave_no_rows[change0] PASSED   [ 65%]
+tests/test_store.py::test_invalid_events_leave_no_rows[change1] PASSED   [ 67%]
+tests/test_store.py::test_invalid_events_leave_no_rows[change2] PASSED   [ 68%]
+tests/test_store.py::test_invalid_events_leave_no_rows[change3] PASSED   [ 69%]
+tests/test_store.py::test_invalid_events_leave_no_rows[change4] PASSED   [ 71%]
+tests/test_store.py::test_invalid_events_leave_no_rows[change5] PASSED   [ 72%]
+tests/test_store.py::test_invalid_events_leave_no_rows[change6] PASSED   [ 73%]
+tests/test_store.py::test_invalid_events_leave_no_rows[change7] PASSED   [ 75%]
+tests/test_store.py::test_invalid_events_leave_no_rows[change8] PASSED   [ 76%]
+tests/test_store.py::test_invalid_events_leave_no_rows[change9] PASSED   [ 77%]
+tests/test_store.py::test_invalid_events_leave_no_rows[change10] PASSED  [ 78%]
+tests/test_store.py::test_invalid_events_leave_no_rows[change11] PASSED  [ 80%]
+tests/test_store.py::test_invalid_events_leave_no_rows[change12] PASSED  [ 81%]
+tests/test_store.py::test_invalid_events_leave_no_rows[change13] PASSED  [ 82%]
+tests/test_store.py::test_invalid_events_leave_no_rows[change14] PASSED  [ 84%]
+tests/test_store.py::test_invalid_events_leave_no_rows[change15] PASSED  [ 85%]
+tests/test_store.py::test_invalid_events_leave_no_rows[change16] PASSED  [ 86%]
+tests/test_store.py::test_invalid_events_leave_no_rows[change17] PASSED  [ 88%]
+tests/test_store.py::test_invalid_events_leave_no_rows[change18] PASSED  [ 89%]
+tests/test_store.py::test_invalid_events_leave_no_rows[change19] PASSED  [ 90%]
+tests/test_store.py::test_invalid_events_leave_no_rows[change20] PASSED  [ 92%]
+tests/test_store.py::test_device_must_match_authenticated_topic PASSED   [ 93%]
+tests/test_store.py::test_both_observers_must_be_members_of_session PASSED [ 94%]
+tests/test_store.py::test_simulated_hardware_and_unknown_time_never_form_false_mutual PASSED [ 96%]
+tests/test_store.py::test_soft_hide_keeps_deduplication_and_other_observation PASSED [ 97%]
+tests/test_store.py::test_failed_commit_never_returns_ack_or_persists_event PASSED [ 98%]
+tests/test_store.py::test_concurrent_duplicate_delivery_creates_one_durable_event PASSED [100%]
+
+============================== warnings summary ===============================
+.venv\Lib\site-packages\fastapi\testclient.py:1
+  E:\港理课程\课程文件\eie568\Proposal_智能社交挂件\Bump_Starter\.venv\Lib\site-packages\fastapi\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+- generated xml file: E:\港理课程\课程文件\eie568\Proposal_智能社交挂件\Bump_Starter\evidence\software-tests.xml -
+================== 76 passed, 1 warning in 131.72s (0:02:11) ==================

@@ -1,0 +1,67 @@
+{
+  "utc": "2026-11-18T17:51:29.536587+00:00",
+  "boards": {
+    "A": {
+      "type": "status",
+      "firmware": "BumpDualBadge",
+      "fw": "0.5.5-dual",
+      "device_id": "bump-349454276354",
+      "boot_id": "b5abdc79",
+      "self_short_id": "c301bd8fdd84",
+      "self_code16": "a30f",
+      "peer_code16": "0000",
+      "ir_paired": false,
+      "uptime_ms": 2372619,
+      "paused": false,
+      "discovery": false,
+      "ble_phase": "idle",
+      "window_remaining_ms": 0,
+      "queued": 0,
+      "dropped": 0,
+      "imu_ready": true,
+      "imu_samples": 234218,
+      "motion_triggers": 0,
+      "network_configured": true,
+      "transport": "wifi_mqtt_tcp",
+      "nina_version": "3.0.2",
+      "last_watchdog_stage": "none",
+      "pre_reset_ram_queued": 0,
+      "accel_g": [
+        0.0293,
+        -0.00476,
+        1.01636
+      ]
+    },
+    "B": {
+      "type": "status",
+      "firmware": "BumpDualBadge",
+      "fw": "0.5.5-dual",
+      "device_id": "bump-c8c9a3e65ba4",
+      "boot_id": "f1393eec",
+      "self_short_id": "f2c26cf10326",
+      "self_code16": "c371",
+      "peer_code16": "0000",
+      "ir_paired": false,
+      "uptime_ms": 2364844,
+      "paused": false,
+      "discovery": false,
+      "ble_phase": "idle",
+      "window_remaining_ms": 0,
+      "queued": 0,
+      "dropped": 0,
+      "imu_ready": true,
+      "imu_samples": 208751,
+      "motion_triggers": 0,
+      "network_configured": true,
+      "transport": "wifi_mqtt_tcp",
+      "nina_version": "3.0.2",
+      "last_watchdog_stage": "none",
+      "pre_reset_ram_queued": 0,
+      "accel_g": [
+        -0.10535,
+        0.01428,
+        0.9884
+      ]
+    }
+  }
+}

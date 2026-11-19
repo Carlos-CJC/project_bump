@@ -1,0 +1,100 @@
+{
+  "at": "2026-11-18T15:37:29.123832+00:00",
+  "before": {
+    "alice": {
+      "encounters": [],
+      "requests": [
+        {
+          "id": 1,
+          "peer_alias": "挂件 B",
+          "status": "pending",
+          "direction": "incoming",
+          "method": "ir",
+          "profile_visible": false
+        }
+      ]
+    },
+    "bob": {
+      "encounters": [],
+      "requests": [
+        {
+          "id": 1,
+          "peer_alias": "挂件 A",
+          "status": "pending",
+          "direction": "outgoing",
+          "method": "ir",
+          "profile_visible": false
+        }
+      ]
+    },
+    "charlie": {
+      "encounters": [],
+      "requests": []
+    }
+  },
+  "accepted": {
+    "alice": {
+      "encounters": [],
+      "requests": [
+        {
+          "id": 1,
+          "peer_alias": "挂件 B",
+          "status": "accepted",
+          "direction": "incoming",
+          "method": "ir",
+          "profile_visible": true
+        }
+      ]
+    },
+    "bob": {
+      "encounters": [],
+      "requests": [
+        {
+          "id": 1,
+          "peer_alias": "挂件 A",
+          "status": "accepted",
+          "direction": "outgoing",
+          "method": "ir",
+          "profile_visible": true
+        }
+      ]
+    },
+    "charlie": {
+      "encounters": [],
+      "requests": []
+    }
+  },
+  "revoked": {
+    "alice": {
+      "encounters": [],
+      "requests": [
+        {
+          "id": 1,
+          "peer_alias": "挂件 B",
+          "status": "revoked",
+          "direction": "incoming",
+          "method": "ir",
+          "profile_visible": false
+        }
+      ]
+    },
+    "bob": {
+      "encounters": [],
+      "requests": [
+        {
+          "id": 1,
+          "peer_alias": "挂件 A",
+          "status": "revoked",
+          "direction": "outgoing",
+          "method": "ir",
+          "profile_visible": false
+        }
+      ]
+    },
+    "charlie": {
+      "encounters": [],
+      "requests": []
+    }
+  },
+  "request": 1
+}
