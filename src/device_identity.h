@@ -13,6 +13,10 @@ const char* identityDeviceId();   // "bump-xxxxxxxxxxxx"
 const char* identityBootId();     // 8 位小写 hex
 const char* identityShortIdDev(); // device_id 去掉 "bump-" 前缀，12 位 hex
 
+// 当前 BLE 广播/扫描用的 6 字节匿名短 ID（每次上电随机），12 位 hex。
+// v1 上报的 self_short_id 必须是这个值，服务端才能把 peer_short 解析回设备。
+void bumpSelfShortId(char* out, size_t cap);
+
 uint32_t identityNextEventSeq();
 
 // event_id = ev_<dev12>_<boot8>_<seq8>

@@ -109,6 +109,11 @@ static const uint32_t SAMPLE_WINDOW_MS = 180000;  // 样本计数窗口
 static const uint32_t PEER_RESET_MS = 300000;     // 超过此间隔未见则重置该 peer 的窗口
 static const uint32_t COOLDOWN_MS = 8UL * 3600UL * 1000UL;  // 同一 peer 去重冷却 8 小时
 
+// NINA 复位脚：variant 内部 D24（RP2040 p3）。原版 ArduinoBLE 的 BLE.end()
+// 不会拉这根线，从带硬件复位的固件切换、或 Wi-Fi 用过之后模块偶尔拒绝
+// SPI 初始化，只能靠整板断电恢复；这里主动打一个复位脉冲。
+static const uint8_t NINA_RESET_PIN = 24;
+
 // BLE 协议栈重启的最大重试次数。实测 Wi-Fi 使用后 NINA 偶发长时间拒绝
 // BLE 初始化（数十秒），超过阈值视为模块进入异常状态，主动复位比无限重试更快恢复。
 static const uint16_t BLE_RESTART_MAX = 30;
@@ -182,6 +187,16 @@ static void formatId(const uint8_t* id, char* out) {
   out[12] = '\0';
 }
 
+void bumpSelfShortId(char* out, size_t cap) {
+  if (cap < 13) {
+    if (cap) {
+      out[0] = '\0';
+    }
+    return;
+  }
+  formatId(shortId, out);
+}
+
 /**
  * 生成匿名短 ID。
  * 熵源为 micros() 与两个悬空模拟引脚的噪声，因此每次上电都不同；
@@ -235,9 +250,18 @@ static void configureAdvertising() {
  * 实测 begin() 首次常失败、第二次即可成功，故必须带重试。
  * 阶段长度叠加随机抖动，降低两机长期同相、互相错过的概率。
  */
+static void resetNinaModule() {
+  pinMode(NINA_RESET_PIN, OUTPUT);
+  digitalWrite(NINA_RESET_PIN, LOW);
+  delay(20);
+  digitalWrite(NINA_RESET_PIN, HIGH);
+  delay(600);
+}
+
 static void enterAdvPhase() {
   BLE.end();
-  delay(1500);
+  resetNinaModule();
+  delay(500);
   watchdogKick();
   uint16_t attempts = 0;
   while (!BLE.begin()) {
@@ -247,6 +271,10 @@ static void enterAdvPhase() {
     if (attempts >= BLE_RESTART_MAX) {
       logf("[ble] restart failed %u times, rebooting", (unsigned)attempts);
       NVIC_SystemReset();
+    }
+    if (attempts % 5 == 0) {
+      logf("[ble] begin failed %u times, resetting NINA", (unsigned)attempts);
+      resetNinaModule();
     }
     delay(400);
     watchdogKick();
@@ -268,7 +296,7 @@ static void enterAdvPhase() {
  */
 static void enterScanPhase() {
   BLE.end();
-  delay(500);
+  resetNinaModule();
   watchdogKick();
   uint16_t attempts = 0;
   while (!BLE.begin()) {
@@ -278,6 +306,10 @@ static void enterScanPhase() {
     if (attempts >= BLE_RESTART_MAX) {
       logf("[ble] restart failed %u times, rebooting", (unsigned)attempts);
       NVIC_SystemReset();
+    }
+    if (attempts % 5 == 0) {
+      logf("[ble] begin failed %u times, resetting NINA", (unsigned)attempts);
+      resetNinaModule();
     }
     delay(400);
     watchdogKick();
@@ -536,10 +568,19 @@ void setup() {
   eventQueueInit();
 #endif
 
+  resetNinaModule();
   if (!BLE.begin()) {
-    Serial.println("[fatal] BLE.begin() failed. Check NINA firmware >= 3.0.1.");
-    for (;;) {
-      delay(1000);
+    logf("[boot] BLE.begin() failed, resetting NINA");
+    uint16_t attempts = 0;
+    while (!BLE.begin()) {
+      if (++attempts >= BLE_RESTART_MAX) {
+        Serial.println("[fatal] BLE.begin() failed after NINA reset.");
+        for (;;) {
+          delay(1000);
+        }
+      }
+      resetNinaModule();
+      watchdogKick();
     }
   }
 

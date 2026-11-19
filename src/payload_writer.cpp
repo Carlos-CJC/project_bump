@@ -82,6 +82,10 @@ size_t buildStatus(char* buf, size_t cap, const StatusInfo& info) {
       !app(buf, cap, &len, ",\"wifi_rssi\":%d", info.wifiRssi)) {
     return 0;
   }
+  if (info.selfShortId &&
+      !app(buf, cap, &len, ",\"self_short_id\":\"%s\"", info.selfShortId)) {
+    return 0;
+  }
   if (!app(buf, cap, &len, "}")) {
     return 0;
   }

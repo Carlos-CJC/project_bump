@@ -33,6 +33,7 @@ struct StatusInfo {
   uint8_t queueDepth;
   uint32_t eventsDropped;
   int wifiRssi;             // < 0 时输出，否则视为未知省略
+  const char* selfShortId;  // 12 hex；为空则省略该字段
 };
 
 size_t buildStatus(char* buf, size_t cap, const StatusInfo& info);
