@@ -11,9 +11,8 @@
  *        Service UUID : 0xA5B0（原型用 16-bit，正式版可换 128-bit）
  *        Manufacturer : company(2) | ver(1) | short_id(6) | flags(1) | tx_power(1)
  *   3. 同一 NINA 模块无法可靠地同时广播与扫描，因此采用时分复用：
- *        广播 6s <-> 扫描 5s，并加 ±1.5s 随机抖动，避免两台设备相位锁定。
- *      广播/扫描两个方向切换都要重启 BLE 栈：NINA 上 stopScan 会卡死，
- *      stopAdvertise 后直接扫描则几乎收不到对端广播；周期太短重启会失败。
+ *        广播 15s <-> 扫描 12s。切换必须重启 BLE 栈，短周期会让重启开销
+ *        吃掉大部分射频时间；两台设备用稳定 device_id 分成互补初始角色。
  *   4. 扫描阶段解析厂商数据，用 RSSI + 停留时间判定偶遇，命中后向串口输出
  *      一行 JSON 事件。不依赖库的 UUID 过滤（NINA 3.0.2 上会漏掉对端），
  *      改为扫全部设备、应用层校验 Company ID 与协议版本；接收主要走
@@ -73,6 +72,7 @@ void loop() { connTestLoop(); }
 #include <stdarg.h>
 
 #include "bump_config.h"
+#include "radio.h"
 #include "watchdog.h"
 #if BUMP_MQTT
 #include "device_identity.h"
@@ -101,30 +101,18 @@ static const uint8_t MFG_PAYLOAD_LEN = 9;
 static const int RSSI_THRESHOLD = -70;            // dBm；弱于此值的样本不计入
 static const uint8_t MIN_SAMPLES = 2;
 static const uint32_t DWELL_MS = 3000;            // 最短停留时间
-// NINA 3.0.2 对对端广播的实际上报非常稀疏：双板互测中同一 peer 约 80–90s
-// 才被看到一次（每次扫描会话前都要重启协议栈，会话间隔 10–15s）。因此判定
-// 必须跨会话、跨分钟累积样本：窗口取 180s、未见重置取 300s，两次被看到
-// 即可触发偶遇（停留时间由首次与末次样本的时间差自然满足）。
-static const uint32_t SAMPLE_WINDOW_MS = 180000;  // 样本计数窗口
-static const uint32_t PEER_RESET_MS = 300000;     // 超过此间隔未见则重置该 peer 的窗口
-static const uint32_t COOLDOWN_MS = 8UL * 3600UL * 1000UL;  // 同一 peer 去重冷却 8 小时
+// 扫描会话稀疏，样本必须跨会话累积。
+static const uint32_t SAMPLE_WINDOW_MS = 180000;
+static const uint32_t PEER_RESET_MS = 300000;     // 超过此间隔未见则重置该 peer
+static const uint32_t COOLDOWN_MS = 8UL * 3600UL * 1000UL;
 
-// NINA 复位脚：variant 内部 D24（RP2040 p3）。原版 ArduinoBLE 的 BLE.end()
-// 不会拉这根线，从带硬件复位的固件切换、或 Wi-Fi 用过之后模块偶尔拒绝
-// SPI 初始化，只能靠整板断电恢复；这里主动打一个复位脉冲。
-static const uint8_t NINA_RESET_PIN = 24;
+// BLE 栈重启约 400ms/次；每 5 次补一次 NINA 硬复位，约 35s 仍失败才整板复位。
+static const uint16_t BLE_RESTART_MAX = 60;
 
-// BLE 协议栈重启的最大重试次数。实测 Wi-Fi 使用后 NINA 偶发长时间拒绝
-// BLE 初始化（数十秒），超过阈值视为模块进入异常状态，主动复位比无限重试更快恢复。
-static const uint16_t BLE_RESTART_MAX = 30;
-
-// 时分复用参数：广播/扫描时长与抖动。
-// 扫描->广播必须重启 BLE 栈（见 enterAdvPhase），重启本身约 4–6s 不发射；
-// 周期放长可提高无线电占空比，并降低每次重启对偶遇统计的稀释。
-static const uint16_t ADV_MS = 6000;
-static const uint16_t SCAN_MS = 5000;
-// 抖动必须足够大：两板周期相近时，±100ms 的抖动会让相位长期锁定，
-// 双方广播/扫描始终同相而互相错过；±1.5s 使相对相位持续漂移。
+// 一个发现窗口 = 广播相位 + 扫描相位，每次切换都要重启 BLE 栈。
+static const uint16_t DISCOVERY_WINDOW_MS = 30000;
+static const uint16_t PHASE_MS = DISCOVERY_WINDOW_MS / 2;
+// 两板同角色时靠抖动让相对相位漂移，避免长期同相。
 static const int16_t PHASE_JITTER_MS = 1500;
 
 static const uint8_t MAX_PEERS = 16;              // 固定容量 peer 表，避免动态内存
@@ -152,6 +140,8 @@ struct Peer {
 static Peer peers[MAX_PEERS];
 static Phase phase;                 // 当前时分复用所处阶段
 static uint32_t phaseUntil;         // 当前阶段结束时间（millis）
+static bool s_scanFirst;            // 初始角色：true=先扫描，false=先广播
+static uint8_t windowPart;          // 0=窗口前半段，1=后半段
 static uint8_t shortId[6];          // 本机匿名短 ID
 static uint32_t lastDebugPrint;     // [scan] 调试输出限流
 static uint32_t lastStatusPrint;    // [status] 状态输出限流
@@ -215,12 +205,7 @@ static void makeShortId(uint8_t* id) {
 
 static void onDiscovered(BLEDevice device);  // 事件回调，实现在扫描处理区
 
-/**
- * 填充厂商数据并交给 ArduinoBLE。
- *
- * 关键细节：BLEAdvertisingData 保存的是传入的指针而不是拷贝，因此 payload
- * 必须是 static（生命周期贯穿整个程序），否则广播时读到的是已释放的栈内存。
- */
+// BLEAdvertisingData 只保存指针，payload 必须 static。
 static void applyAdvertisingData() {
   static uint8_t payload[MFG_PAYLOAD_LEN];
   payload[0] = PROTO_VER;
@@ -230,94 +215,83 @@ static void applyAdvertisingData() {
   BLE.setManufacturerData(COMPANY_ID, payload, sizeof(payload));
 }
 
-/**
- * 应用广播配置（本地名、Service UUID、不可连接、广播间隔）。
- * BLE.end()/BLE.begin() 会清空这些设置，所以每次重启栈之后都要重新调用。
- */
 static void configureAdvertising() {
   BLE.setLocalName("Bump");
   BLE.setAdvertisedServiceUuid(SERVICE_UUID);
-  BLE.setConnectable(false);      // 不可连接广播：只广播、不建立连接
+  BLE.setConnectable(false);
   BLE.setAdvertisingInterval(100);
 }
 
-/**
- * 进入广播阶段。
- *
- * NINA 固件在扫描之后直接重新广播会卡死：SPI 传输层的 waitForSlaveReady()
- * 没有超时，控制器始终不回应，整个 loop 永久阻塞（stopScan 本身也可能卡）。
- * 因此这里不做 stopScan，而是直接重启 BLE 栈丢弃扫描状态，再重新配置广播。
- * 实测 begin() 首次常失败、第二次即可成功，故必须带重试。
- * 阶段长度叠加随机抖动，降低两机长期同相、互相错过的概率。
- */
-static void resetNinaModule() {
-  pinMode(NINA_RESET_PIN, OUTPUT);
-  digitalWrite(NINA_RESET_PIN, LOW);
-  delay(20);
-  digitalWrite(NINA_RESET_PIN, HIGH);
-  delay(600);
-}
-
-static void enterAdvPhase() {
+// 切换角色必须丢弃整段协议栈：NINA 上 stopScan() 会卡死，
+// stopAdvertise() 后直接 scan() 又几乎收不到对端广播。
+static void restartBle() {
   BLE.end();
-  resetNinaModule();
+  bumpNinaReset();
   delay(500);
   watchdogKick();
-  uint16_t attempts = 0;
-  while (!BLE.begin()) {
-    if (++attempts == 10) {
-      logf("[ble] restart slow, still retrying");
-    }
+  for (uint16_t attempts = 0; !BLE.begin(); attempts++) {
     if (attempts >= BLE_RESTART_MAX) {
       logf("[ble] restart failed %u times, rebooting", (unsigned)attempts);
       NVIC_SystemReset();
     }
-    if (attempts % 5 == 0) {
+    if (attempts && attempts % 5 == 0) {
       logf("[ble] begin failed %u times, resetting NINA", (unsigned)attempts);
-      resetNinaModule();
+      bumpNinaReset();
     }
     delay(400);
     watchdogKick();
   }
+}
 
+static void enterAdvPhase() {
+  restartBle();
   configureAdvertising();
   applyAdvertisingData();
   BLE.advertise();
   phase = PHASE_ADV;
-  phaseUntil = millis() + ADV_MS + random(-PHASE_JITTER_MS, PHASE_JITTER_MS + 1);
+  phaseUntil = millis() + PHASE_MS + random(-PHASE_JITTER_MS, PHASE_JITTER_MS + 1);
 }
 
-/**
- * 进入扫描阶段：先重启协议栈，再扫描全部设备。
- * 扫描前也必须重启：实测 stopAdvertise() 之后直接 scan() 虽然返回成功，
- * 控制器却极少上报对端广播（自检模式里每次扫描前重启栈后就能发现目标）。
- * 不用 scanForUuid：NINA 3.0.2 上 UUID 过滤同样会漏掉对端，而广播帧本身
- * 已带合法厂商数据，应用层校验即可。
- */
+// 不用 scanForUuid：NINA 3.0.2 上 UUID 过滤会漏掉对端，改在应用层校验厂商数据。
 static void enterScanPhase() {
-  BLE.end();
-  resetNinaModule();
-  watchdogKick();
-  uint16_t attempts = 0;
-  while (!BLE.begin()) {
-    if (++attempts == 10) {
-      logf("[ble] restart slow, still retrying");
-    }
-    if (attempts >= BLE_RESTART_MAX) {
-      logf("[ble] restart failed %u times, rebooting", (unsigned)attempts);
-      NVIC_SystemReset();
-    }
-    if (attempts % 5 == 0) {
-      logf("[ble] begin failed %u times, resetting NINA", (unsigned)attempts);
-      resetNinaModule();
-    }
-    delay(400);
-    watchdogKick();
-  }
+  restartBle();
   BLE.setEventHandler(BLEDiscovered, onDiscovered);
   BLE.scan(false);
   phase = PHASE_SCAN;
-  phaseUntil = millis() + SCAN_MS + random(-PHASE_JITTER_MS, PHASE_JITTER_MS + 1);
+  phaseUntil = millis() + PHASE_MS + random(-PHASE_JITTER_MS, PHASE_JITTER_MS + 1);
+}
+
+static uint32_t fnv1a32(const char* s) {
+  uint32_t h = 2166136261u;
+  while (*s) {
+    h ^= (uint8_t)*s++;
+    h *= 16777619u;
+  }
+  return h;
+}
+
+// 一板先发、一板先扫，避免两板同相后互相错过。
+static void enterStartPhase() {
+  if (s_scanFirst) {
+    enterScanPhase();
+  } else {
+    enterAdvPhase();
+  }
+}
+
+// 每个发现窗口固定包含广播、扫描各一个相位；上传只允许发生在窗口边界。
+static void startDiscoveryWindow() {
+  windowPart = 0;
+  enterStartPhase();
+}
+
+static void enterNextPhase() {
+  windowPart = 1;
+  if (phase == PHASE_ADV) {
+    enterScanPhase();
+  } else {
+    enterAdvPhase();
+  }
 }
 
 // ---------------------------------------------------------------------------
@@ -563,52 +537,28 @@ void setup() {
   makeShortId(shortId);
 
 #if BUMP_MQTT
-  // 读取 Wi-Fi MAC 派生稳定的 device_id；boot_id 每次上电随机。
   identityInit();
   eventQueueInit();
+  s_scanFirst = ((fnv1a32(identityDeviceId()) >> 2) & 1) != 0;
+#else
+  s_scanFirst = random(0, 2) != 0;
 #endif
-
-  resetNinaModule();
-  if (!BLE.begin()) {
-    logf("[boot] BLE.begin() failed, resetting NINA");
-    uint16_t attempts = 0;
-    while (!BLE.begin()) {
-      if (++attempts >= BLE_RESTART_MAX) {
-        Serial.println("[fatal] BLE.begin() failed after NINA reset.");
-        for (;;) {
-          delay(1000);
-        }
-      }
-      resetNinaModule();
-      watchdogKick();
-    }
-  }
-
-  configureAdvertising();
 
   char id[13];
   formatId(shortId, id);
   logf("[boot] Bump BLE MVP: self=%s uuid=%s rssi_thr=%d min_samples=%u "
-       "dwell=%ums adv=%ums scan=%ums",
+       "dwell=%ums window=%ums first=%s",
        id, SERVICE_UUID, RSSI_THRESHOLD, MIN_SAMPLES,
-       (unsigned)DWELL_MS, (unsigned)ADV_MS, (unsigned)SCAN_MS);
+       (unsigned)DWELL_MS, (unsigned)DISCOVERY_WINDOW_MS,
+       s_scanFirst ? "scan" : "adv");
 
 #if BUMP_MQTT
   logf("[boot] mqtt dev=%s boot=%s fw=%s", identityDeviceId(),
        identityBootId(), BUMP_FW_VERSION);
-  uploaderBegin(enterAdvPhase);
+  uploaderBegin();
 #endif
 
-  // 随机错开初始相位：两块板同时上电且周期相近时，广播/扫描会一直同相，
-  // 双方永远听不到对方。offset 覆盖一个完整周期，保证至少一端错开。
-  // 等待期间要喂狗（最长 19s 已超过超时时间）。
-  uint32_t phaseOffsetUntil = millis() + random(0, ADV_MS + SCAN_MS + 4000);
-  while ((int32_t)(millis() - phaseOffsetUntil) < 0) {
-    watchdogKick();
-    delay(100);
-  }
-
-  enterAdvPhase();
+  startDiscoveryWindow();
 }
 
 void loop() {
@@ -617,19 +567,16 @@ void loop() {
 
   uint32_t now = millis();
 
-  // 时分复用：阶段到期后切换角色（无符号差值转有符号，兼容 millis() 回绕）。
-  // MQTT 模式下先在边界尝试上传；上传窗口内部会恢复广播阶段并更新
-  // phaseUntil，此时跳过常规切换。
+  // 无符号差值转有符号，兼容 millis() 回绕。
   if ((int32_t)(now - phaseUntil) >= 0) {
-#if BUMP_MQTT
-    if (uploaderMaybeUpload(now)) {
-      now = millis();
-    } else
-#endif
-    if (phase == PHASE_ADV) {
-      enterScanPhase();
+    if (windowPart == 0) {
+      enterNextPhase();
     } else {
-      enterAdvPhase();
+#if BUMP_MQTT
+      uploaderMaybeUpload(now);
+      now = millis();
+#endif
+      startDiscoveryWindow();
     }
   }
 

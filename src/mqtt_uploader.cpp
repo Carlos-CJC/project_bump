@@ -18,7 +18,6 @@
 #include "radio.h"
 #include "watchdog.h"
 
-static UploaderResumeFn s_resume;
 static char s_topicEnc[64];
 static char s_topicStatus[64];
 static char s_batchId[40];
@@ -123,7 +122,6 @@ static void failWindow(const char* stage) {
   delay(500);
   watchdogKick();
   scheduleBackoff();
-  s_resume();
 }
 
 static void runWindow() {
@@ -240,11 +238,9 @@ static void runWindow() {
   // 队列未清空（预算用尽）：10 分钟内定时重试；清空则等待下一个新事件。
   s_nextUploadAt = eventQueueCount() > 0 ? s_lastWindowEnd + 600000UL : 0;
   logf("[mqtt] session done queued=%u", (unsigned)eventQueueCount());
-  s_resume();
 }
 
-void uploaderBegin(UploaderResumeFn resume) {
-  s_resume = resume;
+void uploaderBegin() {
   s_uploadDue = false;
   s_started = true;
   s_nextUploadAt = 0;
