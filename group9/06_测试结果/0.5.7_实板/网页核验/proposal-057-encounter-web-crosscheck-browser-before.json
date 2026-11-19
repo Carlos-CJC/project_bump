@@ -1,0 +1,38 @@
+{
+  "captured_utc": "2026-11-19T01:01:39.667Z",
+  "phase": "before",
+  "endpoint": "http://127.0.0.1:8875",
+  "roles": {
+    "alice": {
+      "event_id": "ev_349454276354_cdc3936c_00000001",
+      "timeline_id": 59,
+      "match_state": "review",
+      "time_quality": "anchored",
+      "alias": "挂件 B",
+      "metrics": [
+        "相遇 13.0 秒",
+        "平均信号 -68 dBm",
+        "20 次采样"
+      ],
+      "screenshot": "proposal-057-before-alice-card.png"
+    },
+    "bob": {
+      "event_id": "ev_c8c9a3e65ba4_b94fdaef_00000001",
+      "timeline_id": 60,
+      "match_state": "review",
+      "time_quality": "estimated",
+      "alias": "挂件 A",
+      "metrics": [
+        "相遇 18.0 秒",
+        "平均信号 -68 dBm",
+        "30 次采样"
+      ],
+      "screenshot": "proposal-057-before-bob-card.png"
+    },
+    "charlie": {
+      "device": false,
+      "timeline": 0,
+      "requests": 0
+    }
+  }
+}

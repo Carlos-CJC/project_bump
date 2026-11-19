@@ -1,0 +1,22 @@
+{
+  "started_utc": "2026-11-15T12:55:49.494955+00:00",
+  "flash_rewritten_during_this_check": false,
+  "expected_disconnect": "ClearCommError failed (PermissionError(13, '\u8bbe\u5907\u4e0d\u8bc6\u522b\u6b64\u547d\u4ee4\u3002', None, 22))",
+  "software_bootloader_entry_verified": true,
+  "v2_flash_preserved_and_verified": true,
+  "return_to_application": {
+    "port": "COM12",
+    "observed_boot_version": 2,
+    "imu_samples": 10,
+    "first_uptime_ms": 347,
+    "pass": true
+  },
+  "final_ble": {
+    "duration_s": 10,
+    "matching_callbacks": 34,
+    "matching_uuid_callbacks": 34,
+    "over_air_verified": true
+  },
+  "board_left_in": "v2 diagnostic; serial responsive, BLE advertising, IMU output paused",
+  "finished_utc": "2026-11-15T12:56:05.709898+00:00"
+}

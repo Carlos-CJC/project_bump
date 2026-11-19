@@ -1,0 +1,12 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.14, pytest-9.1.1, pluggy-1.7.0 -- E:\港理课程\课程文件\eie568\Proposal_智能社交挂件\Bump_Starter\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: E:\港理课程\课程文件\eie568\Proposal_智能社交挂件\Bump_Starter
+configfile: pytest.ini
+plugins: anyio-4.15.1
+collecting ... collected 2 items
+
+tests/test_firmware_core.py::test_portable_firmware_regressions PASSED   [ 50%]
+tests/test_firmware_core.py::test_firmware_json_matches_backend_contract PASSED [100%]
+
+============================== 2 passed in 1.11s ==============================

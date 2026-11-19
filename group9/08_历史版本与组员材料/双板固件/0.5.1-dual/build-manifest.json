@@ -1,0 +1,44 @@
+{
+  "firmware": "BumpDualBadge 0.5.1-dual",
+  "compiled_utc": "2026-11-18T15:39:09.666115+00:00",
+  "fqbn": "arduino:mbed_nano:nanorp2040connect",
+  "core_version": "4.6.0",
+  "libraries": {
+    "ArduinoBLE": "2.1.0",
+    "WiFiNINA": "2.1.1",
+    "Arduino_SpiNINA": "0.0.2",
+    "ArduinoMqttClient": "0.1.8",
+    "Arduino_LSM6DSOX": "1.1.2",
+    "IRremote": "4.7.1"
+  },
+  "flash_bytes": 163345,
+  "static_ram_bytes": 50152,
+  "uf2_blocks": 641,
+  "uf2_target_address": "0x10000000",
+  "ble_gate": {
+    "rssi_min_dbm": -70,
+    "samples_min": 2,
+    "span_min_ms": 3000,
+    "window_ms": 60000
+  },
+  "offline_validation": "Verified source delta, archived hashes, version bytes, ARM ELF, and UF2/BIN block parity. Protocol and motion behavior are covered by the unchanged 0.5.0 offline checks.",
+  "files": {
+    "BumpDualBadge/BadgeApp.cpp": "450d10b8aa465ae70efd81c2603eb86ac4202c3cea15600e08e366b7c94448ff",
+    "BumpDualBadge/BadgeApp.h": "abac674adc4269ebed412b87ad8aa5572be975b1e383f32bd9121273cfccbc05",
+    "BumpDualBadge/BumpDualBadge.ino": "56bffc54daeb2dc6df77f0faac6ebcdd7f0e8ecfc197f7997bb7ad665e7c8b2e",
+    "BumpDualBadge/MotionDetector.h": "7eaad6b70f964aa528086f26b3dbff1ca45d3bdae3cc38a5e4767a55ee5463da",
+    "BumpDualBadge/Nearfield.cpp": "8568ade31c63760d079b42c3bf5c463fcd14058743a410705bb1c209da24bb86",
+    "BumpDualBadge/Nearfield.h": "7564323c948fa43ec0dfbfc59d35918d4e2825dd3a72a6bc5f43f938f9a6f832",
+    "BumpDualBadge/WireAck.h": "1bcb42899fa2917c5cc3fd044022b9464146e6d82b962945ebf76ad99b9aa011",
+    "build/BumpDualBadge.ino.uf2": "7d16eeae793c8a0f9d51f5d70fc042053aa090d4ef70c84f42433da55081091a",
+    "build/BumpDualBadge.ino.bin": "0ce0bbc49061474b5c7a13c882c9be86beb94832996d41070fd7dfaf47cea820",
+    "build/BumpDualBadge.ino.elf": "a7d8e8cade67dbbce98dbab634acfe4de7f85a1ff02b7fc430022224aa86e86d",
+    "vendor/IRremote-4.7.1.zip": "33d7630e883cc60088b8d81f4fd1129b72bf14894edd56ec3ddbed998b3d4ce1",
+    "vendor/firmware/nearfield_pairing/nearfield_pairing.ino": "5628e4a69a7869342866656ec9a13c29aaa21fff91f72abcf05bfc8ddbf75a8b",
+    "baseline-build/nearfield_pairing.ino.uf2": "ed8b40f5d03e7816f1af414ccf09a22cfd13c720093357bc33090947278a5aae"
+  },
+  "changes": [
+    "Enable repeated scan reports with BLE.scan(true)",
+    "Update firmware version"
+  ]
+}

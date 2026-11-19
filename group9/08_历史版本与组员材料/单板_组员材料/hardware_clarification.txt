@@ -1,0 +1,5 @@
+User-provided hardware clarification, 15 November 2026:
+The team described the external infrared component as a transmitter/receiver (not an established reflective proximity sensor).
+The conversation also mentioned one RFID module with an access card.
+Exact component models, pin connections and the final application role were not supplied.
+The attached image is a serial-console capture, not a photograph of the connected hardware.

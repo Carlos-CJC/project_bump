@@ -1,0 +1,115 @@
+{
+  "captured_utc": "2026-11-19T01:00:50.833+00:00",
+  "firmware": "0.5.7-dual",
+  "endpoint": "http://127.0.0.1:8875",
+  "method": "Authenticated timeline API with separate cookie jars; SQLite snapshot connection mode=ro and query_only",
+  "hardware_evidence": "hardware/logs/proposal_057_encounter_led.json",
+  "hardware_evidence_sha256": "2f1ebb019a18c586a7a56857390fe5f6c2b880054451f79b6403bac219df8879",
+  "business_actions": 0,
+  "manual_match_or_clock_import": false,
+  "boards": {
+    "A": {
+      "event_id": "ev_349454276354_cdc3936c_00000001",
+      "boot_id": "cdc3936c",
+      "timeline_id": 59,
+      "stored_rows": 1,
+      "source_input": "real BLE; serial diagnostic opening",
+      "transport": "mqtt",
+      "sample_count": 20,
+      "duration_s": 13.0,
+      "rssi_avg_dbm": -68.0,
+      "received_utc": "2026-11-19T00:50:36.863+00:00",
+      "raw_time_quality": "estimated",
+      "projected_time_quality": "anchored",
+      "clock_samples_for_this_boot": {
+        "mqtt_connack": 1
+      },
+      "clock_uncertainty_s": 0.62715744972229,
+      "observation_start_utc": "2026-11-19T00:49:32.787+00:00",
+      "observation_end_utc": "2026-11-19T00:49:45.787+00:00",
+      "window_start_utc": "2026-11-19T00:49:30.491+00:00",
+      "window_end_utc": "2026-11-19T00:50:30.491+00:00",
+      "store_mutual": false,
+      "store_match_state": "review",
+      "counterpart_event_id": null
+    },
+    "B": {
+      "event_id": "ev_c8c9a3e65ba4_b94fdaef_00000001",
+      "boot_id": "b94fdaef",
+      "timeline_id": 60,
+      "stored_rows": 1,
+      "source_input": "real BLE; serial diagnostic opening",
+      "transport": "mqtt",
+      "sample_count": 30,
+      "duration_s": 18.0,
+      "rssi_avg_dbm": -68.0,
+      "received_utc": "2026-11-19T00:50:48.634+00:00",
+      "raw_time_quality": "estimated",
+      "projected_time_quality": "estimated",
+      "clock_samples_for_this_boot": {},
+      "clock_uncertainty_s": null,
+      "observation_start_utc": "2026-11-19T00:50:03.079+00:00",
+      "observation_end_utc": "2026-11-19T00:50:21.079+00:00",
+      "window_start_utc": "2026-11-19T00:49:31.539+00:00",
+      "window_end_utc": "2026-11-19T00:50:31.539+00:00",
+      "store_mutual": false,
+      "store_match_state": "review",
+      "counterpart_event_id": null
+    }
+  },
+  "roles": {
+    "Alice": {
+      "total_timeline": 30,
+      "mutual_timeline": 27,
+      "request_count": 2,
+      "device_bound": true,
+      "trial_cards_visible": 1,
+      "card": {
+        "peer_alias": "挂件 B",
+        "match_state": "review",
+        "mutual": false,
+        "time_quality": "anchored",
+        "source": "hardware",
+        "transport": "mqtt",
+        "simulated": false,
+        "sample_count": 20,
+        "duration_ms": 13000,
+        "rssi_median": -68.0,
+        "start_utc": "2026-11-19T00:49:32.787Z",
+        "end_utc": "2026-11-19T00:49:45.787Z",
+        "received_at": "2026-11-19T00:50:36.863Z",
+        "profile_visible": false
+      }
+    },
+    "Bob": {
+      "total_timeline": 30,
+      "mutual_timeline": 27,
+      "request_count": 2,
+      "device_bound": true,
+      "trial_cards_visible": 1,
+      "card": {
+        "peer_alias": "挂件 A",
+        "match_state": "review",
+        "mutual": false,
+        "time_quality": "estimated",
+        "source": "hardware",
+        "transport": "mqtt",
+        "simulated": false,
+        "sample_count": 30,
+        "duration_ms": 18000,
+        "rssi_median": -68.0,
+        "start_utc": "2026-11-19T00:50:03.079Z",
+        "end_utc": "2026-11-19T00:50:21.079Z",
+        "received_at": "2026-11-19T00:50:48.634Z",
+        "profile_visible": false
+      }
+    },
+    "Charlie": {
+      "total_timeline": 0,
+      "mutual_timeline": 0,
+      "request_count": 0,
+      "device_bound": false,
+      "trial_cards_visible": 0
+    }
+  }
+}

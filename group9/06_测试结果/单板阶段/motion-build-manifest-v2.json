@@ -1,0 +1,35 @@
+{
+  "firmware": "BumpSingleBoardMotionMqtt",
+  "firmware_version": 2,
+  "validation_stage": "compiled_not_hardware_tested",
+  "hardware_access_by_this_agent": false,
+  "fqbn": "arduino:mbed_nano:nanorp2040connect",
+  "core_version": "4.6.0",
+  "flash_bytes": 156145,
+  "ram_bytes": 55780,
+  "motion_and_ack_algorithms_unchanged": true,
+  "previous_version_archive": "firmware\\motion-bin-v1",
+  "created_utc": "2026-11-15T13:47:44.2127015Z",
+  "files": [
+    {
+      "path": "firmware\\BumpSingleBoardMotionMqtt\\BumpSingleBoardMotionMqtt.ino",
+      "sha256": "A2F1B6A015E0A04621637EA863850FA3718263E4CD14F9F0EA30B0F9F4764E4A"
+    },
+    {
+      "path": "firmware\\BumpSingleBoardMotionMqtt\\BumpCore.h",
+      "sha256": "4A0026E111FFFD127C5A385316F3D3C1550C87B0D60384B4BDE872A58D63378A"
+    },
+    {
+      "path": "firmware\\BumpSingleBoardMotionMqtt\\MotionAck.h",
+      "sha256": "7DB184726F1A597F8283816957A2C449B6D44A798A581698BE06E5B4999D255B"
+    },
+    {
+      "path": "firmware\\motion-bin-v2\\BumpSingleBoardMotionMqtt.ino.elf",
+      "sha256": "C4392DFDF812DBC94B2CC2C28641A47C500EE62C13CDBD4606FA51678C47BCD4"
+    },
+    {
+      "path": "firmware\\motion-bin-v2\\BumpSingleBoardMotionMqtt.ino.uf2",
+      "sha256": "E46FBCD85CB4EC9F76DEDB1F45F2C6CFAA00AB5E5B032BE3BF6001E9206E5078"
+    }
+  ]
+}

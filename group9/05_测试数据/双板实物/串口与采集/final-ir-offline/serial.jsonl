@@ -1,0 +1,1574 @@
+{"utc": "2026-11-18T18:52:29.781+00:00", "board": "A", "kind": "open", "data": "COM13"}
+{"utc": "2026-11-18T18:52:29.792+00:00", "board": "B", "kind": "open", "data": "COM14"}
+{"utc": "2026-11-18T18:52:29.973+00:00", "board": "A", "kind": "tx", "data": "status"}
+{"utc": "2026-11-18T18:52:29.999+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.6-dual\",\"device_id\":\"bump-349454276354\",\"boot_id\":\"8d439bdf\",\"self_short_id\":\"05bb0923c5ff\",\"self_code16\":\"a30f\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":653694,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":59050,\"motion_triggers\":0,\"network_configured\":true,\"transport\":\"wifi_mqtt_tcp\",\"nina_version\":\"3.0.2\",\"last_watchdog_stage\":\"imu\",\"pre_reset_ram_queued\":0,\"accel_g\":[0.02905,-0.00427,1.01672]}"}
+{"utc": "2026-11-18T18:52:30.001+00:00", "board": "A", "kind": "first_status", "data": {"type": "status", "firmware": "BumpDualBadge", "fw": "0.5.6-dual", "device_id": "bump-349454276354", "boot_id": "8d439bdf", "self_short_id": "05bb0923c5ff", "self_code16": "a30f", "peer_code16": "0000", "ir_paired": false, "uptime_ms": 653694, "paused": false, "discovery": false, "ble_phase": "idle", "window_remaining_ms": 0, "queued": 0, "dropped": 0, "imu_ready": true, "imu_samples": 59050, "motion_triggers": 0, "network_configured": true, "transport": "wifi_mqtt_tcp", "nina_version": "3.0.2", "last_watchdog_stage": "imu", "pre_reset_ram_queued": 0, "accel_g": [0.02905, -0.00427, 1.01672]}}
+{"utc": "2026-11-18T18:52:30.001+00:00", "board": "A", "kind": "rx", "data": "STATUS state=IDLE my=0xA30F"}
+{"utc": "2026-11-18T18:52:30.001+00:00", "board": "B", "kind": "tx", "data": "status"}
+{"utc": "2026-11-18T18:52:30.026+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.6-dual\",\"device_id\":\"bump-c8c9a3e65ba4\",\"boot_id\":\"00cfd824\",\"self_short_id\":\"0ca161061eec\",\"self_code16\":\"c371\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":3646178,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":235129,\"motion_triggers\":0,\"network_configured\":true,\"transport\":\"wifi_mqtt_tcp\",\"nina_version\":\"3.0.2\",\"last_watchdog_stage\":\"none\",\"pre_reset_ram_queued\":0,\"accel_g\":[-0.10669,0.01575,0.98901]}"}
+{"utc": "2026-11-18T18:52:30.027+00:00", "board": "B", "kind": "first_status", "data": {"type": "status", "firmware": "BumpDualBadge", "fw": "0.5.6-dual", "device_id": "bump-c8c9a3e65ba4", "boot_id": "00cfd824", "self_short_id": "0ca161061eec", "self_code16": "c371", "peer_code16": "0000", "ir_paired": false, "uptime_ms": 3646178, "paused": false, "discovery": false, "ble_phase": "idle", "window_remaining_ms": 0, "queued": 0, "dropped": 0, "imu_ready": true, "imu_samples": 235129, "motion_triggers": 0, "network_configured": true, "transport": "wifi_mqtt_tcp", "nina_version": "3.0.2", "last_watchdog_stage": "none", "pre_reset_ram_queued": 0, "accel_g": [-0.10669, 0.01575, 0.98901]}}
+{"utc": "2026-11-18T18:52:30.027+00:00", "board": "B", "kind": "rx", "data": "STATUS state=IDLE my=0xC371"}
+{"utc": "2026-11-18T18:52:31.709+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T18:52:31.838+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T18:52:36.718+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T18:52:36.823+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T18:52:41.708+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T18:52:41.837+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T18:52:46.725+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T18:52:46.828+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T18:52:51.713+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T18:52:51.817+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T18:52:56.706+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T18:52:56.834+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T18:53:01.718+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T18:53:01.821+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T18:53:06.726+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T18:53:06.829+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T18:53:11.718+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T18:53:11.822+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T18:53:16.718+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T18:53:16.820+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T18:53:21.730+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T18:53:21.833+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T18:53:26.716+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T18:53:26.819+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T18:53:31.721+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T18:53:31.825+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T18:53:36.717+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T18:53:36.821+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T18:53:41.708+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T18:53:41.837+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T18:53:46.721+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T18:53:46.824+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T18:53:50.004+00:00", "board": "A", "kind": "tx", "data": "b"}
+{"utc": "2026-11-18T18:53:50.055+00:00", "board": "B", "kind": "tx", "data": "b"}
+{"utc": "2026-11-18T18:53:50.105+00:00", "board": "both", "kind": "command_result", "data": {"request": "1795028029986413700-022bddf", "marker": ".done"}}
+{"utc": "2026-11-18T18:53:50.131+00:00", "board": "A", "kind": "rx", "data": "Blue: start pairing"}
+{"utc": "2026-11-18T18:53:50.131+00:00", "board": "B", "kind": "rx", "data": "Blue: start pairing"}
+{"utc": "2026-11-18T18:53:50.313+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:53:50.544+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:53:50.726+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:53:50.934+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:53:51.219+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:53:51.556+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:53:51.711+00:00", "board": "B", "kind": "rx", "data": "[state=SEARCH my=0xC371]"}
+{"utc": "2026-11-18T18:53:51.789+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:53:51.841+00:00", "board": "A", "kind": "rx", "data": "[state=SEARCH my=0xA30F]"}
+{"utc": "2026-11-18T18:53:52.125+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:53:52.382+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:53:52.642+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:53:53.004+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:53:53.159+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:53:53.445+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:53:53.731+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:53:53.808+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:53:54.017+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:53:54.301+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:53:54.714+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:53:54.792+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:53:55.206+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:53:55.466+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:53:55.749+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:53:55.827+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:53:56.138+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:53:56.268+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:53:56.603+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:53:56.654+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:53:56.732+00:00", "board": "B", "kind": "rx", "data": "[state=SEARCH my=0xC371]"}
+{"utc": "2026-11-18T18:53:56.836+00:00", "board": "A", "kind": "rx", "data": "[state=SEARCH my=0xA30F]"}
+{"utc": "2026-11-18T18:53:57.093+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:53:57.273+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:53:57.611+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:53:57.611+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:53:58.179+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:53:58.256+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:53:58.461+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:53:58.773+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:53:58.799+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:53:59.370+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:53:59.370+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:53:59.704+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:53:59.782+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:00.273+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:00.376+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:00.634+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:00.815+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:01.126+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:01.152+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:01.744+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:01.745+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:01.745+00:00", "board": "B", "kind": "rx", "data": "[state=SEARCH my=0xC371]"}
+{"utc": "2026-11-18T18:54:01.822+00:00", "board": "A", "kind": "rx", "data": "[state=SEARCH my=0xA30F]"}
+{"utc": "2026-11-18T18:54:02.133+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:02.262+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:02.494+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:02.728+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:02.958+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:03.294+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:03.553+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:03.733+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:04.017+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:04.094+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:04.665+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:04.769+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:05.135+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:05.443+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:05.651+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:05.806+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:06.323+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:06.350+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:06.660+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:06.840+00:00", "board": "A", "kind": "rx", "data": "[state=SEARCH my=0xA30F]"}
+{"utc": "2026-11-18T18:54:06.891+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:06.891+00:00", "board": "B", "kind": "rx", "data": "[state=SEARCH my=0xC371]"}
+{"utc": "2026-11-18T18:54:06.993+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:07.327+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:07.456+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:07.738+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:07.893+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:08.254+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:08.280+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:08.640+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:08.821+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:09.181+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:09.233+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:09.517+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:09.802+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:09.982+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:10.111+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:10.343+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:10.603+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:10.681+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:11.043+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:11.095+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:11.560+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:11.690+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:11.819+00:00", "board": "A", "kind": "rx", "data": "[state=SEARCH my=0xA30F]"}
+{"utc": "2026-11-18T18:54:11.897+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:11.897+00:00", "board": "B", "kind": "rx", "data": "[state=SEARCH my=0xC371]"}
+{"utc": "2026-11-18T18:54:12.179+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:12.258+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:12.773+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:12.928+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:13.031+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:13.237+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:13.442+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:13.751+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:13.777+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:14.139+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:14.243+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:14.450+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:14.758+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:15.094+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:15.354+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:15.740+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:15.869+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:16.205+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:16.308+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:16.805+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:16.831+00:00", "board": "A", "kind": "rx", "data": "[state=SEARCH my=0xA30F]"}
+{"utc": "2026-11-18T18:54:16.934+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:16.934+00:00", "board": "B", "kind": "rx", "data": "[state=SEARCH my=0xC371]"}
+{"utc": "2026-11-18T18:54:17.270+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:17.296+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:17.708+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:17.913+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:18.173+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:18.405+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:18.586+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:18.974+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:19.154+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:19.257+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:19.647+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:19.724+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:19.930+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:20.161+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:20.291+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:20.806+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:20.806+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:21.117+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:21.375+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:21.765+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:21.921+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:21.922+00:00", "board": "A", "kind": "rx", "data": "[state=SEARCH my=0xA30F]"}
+{"utc": "2026-11-18T18:54:21.922+00:00", "board": "B", "kind": "rx", "data": "[state=SEARCH my=0xC371]"}
+{"utc": "2026-11-18T18:54:22.415+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:22.441+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:22.854+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:23.088+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:23.346+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:23.553+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:23.785+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:24.042+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:24.299+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:24.660+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:24.918+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:25.305+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:25.485+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:25.641+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:25.975+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:26.079+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:26.415+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:26.467+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:26.930+00:00", "board": "B", "kind": "rx", "data": "[state=SEARCH my=0xC371]"}
+{"utc": "2026-11-18T18:54:27.009+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:27.009+00:00", "board": "A", "kind": "rx", "data": "[state=SEARCH my=0xA30F]"}
+{"utc": "2026-11-18T18:54:27.062+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:27.396+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:27.707+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:27.888+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:28.200+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:28.409+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:28.512+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:28.874+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:29.083+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:29.548+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:29.574+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:30.014+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:30.144+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:30.635+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:30.738+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:30.996+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:31.048+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:31.410+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:31.565+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:31.977+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:31.977+00:00", "board": "B", "kind": "rx", "data": "[state=SEARCH my=0xC371]"}
+{"utc": "2026-11-18T18:54:32.029+00:00", "board": "A", "kind": "rx", "data": "[state=SEARCH my=0xA30F]"}
+{"utc": "2026-11-18T18:54:32.184+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:32.522+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:32.808+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:33.118+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:33.118+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:33.453+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:33.711+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:34.122+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:34.200+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:34.511+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:34.614+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:35.000+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:35.260+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:35.364+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:35.621+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:35.983+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:36.190+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:36.268+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:36.837+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:36.940+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:36.992+00:00", "board": "B", "kind": "rx", "data": "[state=SEARCH my=0xC371]"}
+{"utc": "2026-11-18T18:54:37.018+00:00", "board": "A", "kind": "rx", "data": "[state=SEARCH my=0xA30F]"}
+{"utc": "2026-11-18T18:54:37.303+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:37.380+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:37.766+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:37.921+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:38.075+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:38.462+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:38.746+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:38.980+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:39.186+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:39.418+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:39.520+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:39.933+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:40.037+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:40.321+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:40.655+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:40.733+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:41.146+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:41.379+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:41.714+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:41.791+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:41.972+00:00", "board": "B", "kind": "rx", "data": "[state=SEARCH my=0xC371]"}
+{"utc": "2026-11-18T18:54:42.024+00:00", "board": "A", "kind": "rx", "data": "[state=SEARCH my=0xA30F]"}
+{"utc": "2026-11-18T18:54:42.230+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:42.307+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:42.590+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:42.719+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:43.004+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:43.029+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:43.467+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:43.493+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:43.831+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:43.883+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:44.220+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:44.298+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:44.609+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:44.972+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:45.154+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:45.570+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:45.648+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:45.881+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:46.140+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:46.243+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:46.475+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:46.784+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:46.861+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:46.990+00:00", "board": "B", "kind": "rx", "data": "[state=SEARCH my=0xC371]"}
+{"utc": "2026-11-18T18:54:47.016+00:00", "board": "A", "kind": "rx", "data": "[state=SEARCH my=0xA30F]"}
+{"utc": "2026-11-18T18:54:47.172+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:47.249+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:47.534+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:47.768+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:48.027+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:48.416+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:48.467+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:48.881+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:48.906+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:49.190+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:49.449+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:49.761+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:49.968+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:50.123+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:50.406+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:50.457+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:50.848+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:51.056+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:51.315+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:51.498+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:51.732+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:51.991+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:51.991+00:00", "board": "B", "kind": "rx", "data": "[state=SEARCH my=0xC371]"}
+{"utc": "2026-11-18T18:54:52.017+00:00", "board": "A", "kind": "rx", "data": "[state=SEARCH my=0xA30F]"}
+{"utc": "2026-11-18T18:54:52.275+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:52.611+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:52.793+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:53.209+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:53.391+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:53.702+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:53.806+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:54.347+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:54.398+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:54.710+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:55.072+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:55.202+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:55.514+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:55.696+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:55.825+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:56.212+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:56.315+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:56.649+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:56.856+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:56.934+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:56.985+00:00", "board": "B", "kind": "rx", "data": "[state=SEARCH my=0xC371]"}
+{"utc": "2026-11-18T18:54:57.011+00:00", "board": "A", "kind": "rx", "data": "[state=SEARCH my=0xA30F]"}
+{"utc": "2026-11-18T18:54:57.322+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:57.503+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:57.892+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:58.047+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:58.254+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:58.332+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:58.772+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:58.901+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:59.366+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:59.366+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:59.830+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:54:59.856+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:00.396+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:00.422+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:00.810+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:00.913+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:01.353+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:01.405+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:01.715+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:01.818+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:01.974+00:00", "board": "B", "kind": "rx", "data": "[state=SEARCH my=0xC371]"}
+{"utc": "2026-11-18T18:55:02.077+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:02.077+00:00", "board": "A", "kind": "rx", "data": "[state=SEARCH my=0xA30F]"}
+{"utc": "2026-11-18T18:55:02.155+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:02.465+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:02.568+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:02.982+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:03.034+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:03.269+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:03.606+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:03.916+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:04.276+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:04.379+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:04.946+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:05.025+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:05.258+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:05.440+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:05.879+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:06.034+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:06.396+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:06.448+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:06.889+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:06.993+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:06.993+00:00", "board": "B", "kind": "rx", "data": "[state=SEARCH my=0xC371]"}
+{"utc": "2026-11-18T18:55:07.070+00:00", "board": "A", "kind": "rx", "data": "[state=SEARCH my=0xA30F]"}
+{"utc": "2026-11-18T18:55:07.356+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:07.433+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:07.796+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:07.925+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:08.107+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:08.314+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:08.545+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:08.881+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:09.140+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:09.530+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:09.685+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:09.994+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:10.072+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:10.280+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:10.512+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:10.666+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:10.974+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:11.105+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:11.648+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:11.648+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:12.034+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:12.034+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:12.060+00:00", "board": "B", "kind": "rx", "data": "[state=SEARCH my=0xC371]"}
+{"utc": "2026-11-18T18:55:12.086+00:00", "board": "A", "kind": "rx", "data": "[state=SEARCH my=0xA30F]"}
+{"utc": "2026-11-18T18:55:12.576+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:12.654+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:13.121+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:13.251+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:13.716+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:13.742+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:14.103+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:14.310+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:14.465+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:14.646+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:15.035+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:15.293+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:15.577+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:15.705+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:16.018+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:16.234+00:00", "board": "A", "kind": "tx", "data": "w"}
+{"utc": "2026-11-18T18:55:16.284+00:00", "board": "B", "kind": "tx", "data": "w"}
+{"utc": "2026-11-18T18:55:16.335+00:00", "board": "both", "kind": "command_result", "data": {"request": "1795028116218492800-6a842cc", "marker": ".done"}}
+{"utc": "2026-11-18T18:55:16.360+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:16.360+00:00", "board": "A", "kind": "rx", "data": "White: stop pairing"}
+{"utc": "2026-11-18T18:55:16.360+00:00", "board": "B", "kind": "rx", "data": "White: stop pairing"}
+{"utc": "2026-11-18T18:55:16.439+00:00", "board": "A", "kind": "rx", "data": "TX BYE -> BCAST"}
+{"utc": "2026-11-18T18:55:16.439+00:00", "board": "B", "kind": "rx", "data": "TX BYE -> BCAST"}
+{"utc": "2026-11-18T18:55:16.645+00:00", "board": "A", "kind": "rx", "data": "TX BYE -> BCAST"}
+{"utc": "2026-11-18T18:55:16.645+00:00", "board": "B", "kind": "rx", "data": "TX BYE -> BCAST"}
+{"utc": "2026-11-18T18:55:17.056+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T18:55:17.082+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T18:55:17.296+00:00", "board": "A", "kind": "tx", "data": "b"}
+{"utc": "2026-11-18T18:55:17.346+00:00", "board": "both", "kind": "command_result", "data": {"request": "1795028117271826400-b60bd27", "marker": ".done"}}
+{"utc": "2026-11-18T18:55:17.372+00:00", "board": "A", "kind": "rx", "data": "Blue: start pairing"}
+{"utc": "2026-11-18T18:55:17.783+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:18.196+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:18.230+00:00", "board": "B", "kind": "tx", "data": "b"}
+{"utc": "2026-11-18T18:55:18.281+00:00", "board": "both", "kind": "command_result", "data": {"request": "1795028118207456200-21c4e6a", "marker": ".done"}}
+{"utc": "2026-11-18T18:55:18.307+00:00", "board": "B", "kind": "rx", "data": "Blue: start pairing"}
+{"utc": "2026-11-18T18:55:18.387+00:00", "board": "A", "kind": "tx", "data": "status"}
+{"utc": "2026-11-18T18:55:18.438+00:00", "board": "B", "kind": "tx", "data": "status"}
+{"utc": "2026-11-18T18:55:18.489+00:00", "board": "both", "kind": "command_result", "data": {"request": "1795028118373073900-ef97c8f", "marker": ".done"}}
+{"utc": "2026-11-18T18:55:18.515+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.6-dual\",\"device_id\":\"bump-349454276354\",\"boot_id\":\"8d439bdf\",\"self_short_id\":\"05bb0923c5ff\",\"self_code16\":\"a30f\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":822108,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":74203,\"motion_triggers\":0,\"network_configured\":true,\"transport\":\"wifi_mqtt_tcp\",\"nina_version\":\"3.0.2\",\"last_watchdog_stage\":\"imu\",\"pre_reset_ram_queued\":0,\"accel_g\":[0.02905,-0.00488,1.01660]}"}
+{"utc": "2026-11-18T18:55:18.515+00:00", "board": "A", "kind": "rx", "data": "STATUS state=SEARCH my=0xA30F"}
+{"utc": "2026-11-18T18:55:18.515+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.6-dual\",\"device_id\":\"bump-c8c9a3e65ba4\",\"boot_id\":\"00cfd824\",\"self_short_id\":\"0ca161061eec\",\"self_code16\":\"c371\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":3814613,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":250630,\"motion_triggers\":0,\"network_configured\":true,\"transport\":\"wifi_mqtt_tcp\",\"nina_version\":\"3.0.2\",\"last_watchdog_stage\":\"none\",\"pre_reset_ram_queued\":0,\"accel_g\":[-0.10522,0.01501,0.99048]}"}
+{"utc": "2026-11-18T18:55:18.515+00:00", "board": "B", "kind": "rx", "data": "STATUS state=SEARCH my=0xC371"}
+{"utc": "2026-11-18T18:55:18.594+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:18.879+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:18.904+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:19.267+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:19.422+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:19.784+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:19.810+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:20.095+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:20.096+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:20.641+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:20.667+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:21.057+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:21.342+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:21.550+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:21.732+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:22.045+00:00", "board": "B", "kind": "rx", "data": "[state=SEARCH my=0xC371]"}
+{"utc": "2026-11-18T18:55:22.071+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:22.071+00:00", "board": "A", "kind": "rx", "data": "[state=SEARCH my=0xA30F]"}
+{"utc": "2026-11-18T18:55:22.409+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:22.745+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:22.874+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:23.417+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:23.468+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:23.908+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:24.012+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:24.321+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:24.604+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:24.913+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:25.147+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:25.432+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:25.718+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:25.821+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:26.235+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:26.287+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:26.832+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:26.962+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:27.040+00:00", "board": "B", "kind": "rx", "data": "[state=SEARCH my=0xC371]"}
+{"utc": "2026-11-18T18:55:27.092+00:00", "board": "A", "kind": "rx", "data": "[state=SEARCH my=0xA30F]"}
+{"utc": "2026-11-18T18:55:27.429+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:27.558+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:27.816+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:27.919+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:28.203+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:28.511+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:28.640+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:28.950+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:29.052+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:29.233+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:29.569+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:29.905+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:30.087+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:30.474+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:30.500+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:30.941+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:31.095+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:31.404+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:31.559+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:31.689+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:32.000+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:32.000+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:32.052+00:00", "board": "B", "kind": "rx", "data": "[state=SEARCH my=0xC371]"}
+{"utc": "2026-11-18T18:55:32.078+00:00", "board": "A", "kind": "rx", "data": "[state=SEARCH my=0xA30F]"}
+{"utc": "2026-11-18T18:55:32.517+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:32.673+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:33.138+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:33.165+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:33.500+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:33.812+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:33.943+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:34.097+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:34.613+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:34.768+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:35.077+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:35.156+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:35.774+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:35.826+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:36.058+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:36.472+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:36.472+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:37.066+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:37.092+00:00", "board": "A", "kind": "rx", "data": "[state=SEARCH my=0xA30F]"}
+{"utc": "2026-11-18T18:55:37.169+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:37.169+00:00", "board": "B", "kind": "rx", "data": "[state=SEARCH my=0xC371]"}
+{"utc": "2026-11-18T18:55:37.556+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:37.609+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:37.970+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:38.073+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:38.356+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:38.487+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:38.826+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:38.904+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:39.241+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:39.396+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:39.655+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:39.783+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:40.092+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:40.401+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:40.740+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:40.765+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:41.154+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:41.206+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:41.465+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:41.877+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:42.007+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:42.085+00:00", "board": "A", "kind": "rx", "data": "[state=SEARCH my=0xA30F]"}
+{"utc": "2026-11-18T18:55:42.162+00:00", "board": "B", "kind": "rx", "data": "[state=SEARCH my=0xC371]"}
+{"utc": "2026-11-18T18:55:42.317+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:42.343+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:42.859+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:42.936+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:43.117+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:43.274+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:43.634+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:43.738+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:44.049+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:44.359+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:44.515+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:44.904+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:45.214+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:45.240+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:45.576+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:45.756+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:46.094+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:46.353+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:46.610+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:46.740+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:47.154+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:47.154+00:00", "board": "A", "kind": "rx", "data": "[state=SEARCH my=0xA30F]"}
+{"utc": "2026-11-18T18:55:47.231+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:47.231+00:00", "board": "B", "kind": "rx", "data": "[state=SEARCH my=0xC371]"}
+{"utc": "2026-11-18T18:55:47.774+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:47.774+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:48.264+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:48.290+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:48.573+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:48.882+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:48.908+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:49.219+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:49.425+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:49.658+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:49.863+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:50.018+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:50.278+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:50.330+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:50.848+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:50.950+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:51.495+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:51.599+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:52.063+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:52.063+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:52.166+00:00", "board": "A", "kind": "rx", "data": "[state=SEARCH my=0xA30F]"}
+{"utc": "2026-11-18T18:55:52.242+00:00", "board": "B", "kind": "rx", "data": "[state=SEARCH my=0xC371]"}
+{"utc": "2026-11-18T18:55:52.707+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:52.733+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:53.068+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:53.068+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:53.404+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:53.456+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:53.817+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:54.075+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:54.512+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:54.641+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:55.132+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:55.184+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:55.416+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:55.544+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:55.751+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:55.959+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:56.140+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:56.398+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:56.606+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:56.761+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:56.941+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:57.020+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:57.149+00:00", "board": "A", "kind": "rx", "data": "[state=SEARCH my=0xA30F]"}
+{"utc": "2026-11-18T18:55:57.226+00:00", "board": "B", "kind": "rx", "data": "[state=SEARCH my=0xC371]"}
+{"utc": "2026-11-18T18:55:57.355+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:57.512+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:57.925+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:57.977+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:58.387+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:58.591+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:58.953+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:59.057+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:59.469+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:55:59.574+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:00.013+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:00.193+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:00.606+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:00.657+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:00.994+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:01.331+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:01.640+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:01.718+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:02.053+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:02.157+00:00", "board": "A", "kind": "rx", "data": "[state=SEARCH my=0xA30F]"}
+{"utc": "2026-11-18T18:56:02.235+00:00", "board": "B", "kind": "rx", "data": "[state=SEARCH my=0xC371]"}
+{"utc": "2026-11-18T18:56:02.390+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:02.649+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:02.753+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:03.189+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:03.396+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:03.654+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:04.016+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:04.042+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:04.479+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:04.582+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:04.866+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:04.943+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:05.538+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:05.564+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:05.873+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:06.055+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:06.391+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:06.701+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:06.959+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:07.244+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:07.244+00:00", "board": "A", "kind": "rx", "data": "[state=SEARCH my=0xA30F]"}
+{"utc": "2026-11-18T18:56:07.373+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:07.373+00:00", "board": "B", "kind": "rx", "data": "[state=SEARCH my=0xC371]"}
+{"utc": "2026-11-18T18:56:07.608+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:07.712+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:08.176+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:08.408+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:08.590+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:08.720+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:09.237+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:09.416+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:09.624+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:09.806+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:09.909+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:10.168+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:10.504+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:10.711+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:11.048+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:11.177+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:11.462+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:11.566+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:11.748+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:12.085+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:12.085+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:12.241+00:00", "board": "A", "kind": "rx", "data": "[state=SEARCH my=0xA30F]"}
+{"utc": "2026-11-18T18:56:12.472+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:12.498+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:12.498+00:00", "board": "B", "kind": "rx", "data": "[state=SEARCH my=0xC371]"}
+{"utc": "2026-11-18T18:56:12.963+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:13.196+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:13.403+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:13.768+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:13.948+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:14.412+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:14.515+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:14.749+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:14.852+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:15.293+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:15.526+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:15.681+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:16.199+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:16.354+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:16.689+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:16.844+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:16.998+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:17.179+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:17.257+00:00", "board": "A", "kind": "rx", "data": "[state=SEARCH my=0xA30F]"}
+{"utc": "2026-11-18T18:56:17.591+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:17.591+00:00", "board": "B", "kind": "rx", "data": "[state=SEARCH my=0xC371]"}
+{"utc": "2026-11-18T18:56:17.823+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:18.056+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:18.444+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:18.547+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:18.857+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:18.908+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:19.400+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:19.609+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:19.737+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:19.968+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:20.330+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:20.639+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:20.949+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:21.052+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:21.362+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:21.493+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:21.983+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:22.162+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:22.240+00:00", "board": "A", "kind": "rx", "data": "[state=SEARCH my=0xA30F]"}
+{"utc": "2026-11-18T18:56:22.598+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:22.599+00:00", "board": "B", "kind": "rx", "data": "[state=SEARCH my=0xC371]"}
+{"utc": "2026-11-18T18:56:22.832+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:23.247+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:23.350+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:23.788+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:23.890+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:24.072+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:24.357+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:24.562+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:24.950+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:25.028+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:25.210+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:25.520+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:25.727+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:26.037+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:26.269+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:26.502+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:26.553+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:26.785+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:27.044+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:27.250+00:00", "board": "A", "kind": "rx", "data": "[state=SEARCH my=0xA30F]"}
+{"utc": "2026-11-18T18:56:27.482+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:27.482+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:27.611+00:00", "board": "B", "kind": "rx", "data": "[state=SEARCH my=0xC371]"}
+{"utc": "2026-11-18T18:56:27.819+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:27.948+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:28.207+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:28.259+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:28.286+00:00", "board": "A", "kind": "tx", "data": "w"}
+{"utc": "2026-11-18T18:56:28.337+00:00", "board": "B", "kind": "tx", "data": "w"}
+{"utc": "2026-11-18T18:56:28.387+00:00", "board": "both", "kind": "command_result", "data": {"request": "1795028188271354500-de28341", "marker": ".done"}}
+{"utc": "2026-11-18T18:56:28.414+00:00", "board": "A", "kind": "rx", "data": "White: stop pairing"}
+{"utc": "2026-11-18T18:56:28.414+00:00", "board": "B", "kind": "rx", "data": "White: stop pairing"}
+{"utc": "2026-11-18T18:56:28.440+00:00", "board": "A", "kind": "rx", "data": "TX BYE -> BCAST"}
+{"utc": "2026-11-18T18:56:28.492+00:00", "board": "B", "kind": "rx", "data": "TX BYE -> BCAST"}
+{"utc": "2026-11-18T18:56:28.646+00:00", "board": "A", "kind": "rx", "data": "TX BYE -> BCAST"}
+{"utc": "2026-11-18T18:56:28.698+00:00", "board": "B", "kind": "rx", "data": "TX BYE -> BCAST"}
+{"utc": "2026-11-18T18:56:29.478+00:00", "board": "B", "kind": "tx", "data": "b"}
+{"utc": "2026-11-18T18:56:29.528+00:00", "board": "both", "kind": "command_result", "data": {"request": "1795028189453838700-88c1407", "marker": ".done"}}
+{"utc": "2026-11-18T18:56:29.554+00:00", "board": "B", "kind": "rx", "data": "Blue: start pairing"}
+{"utc": "2026-11-18T18:56:29.892+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:30.385+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:30.981+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:31.017+00:00", "board": "A", "kind": "tx", "data": "b"}
+{"utc": "2026-11-18T18:56:31.067+00:00", "board": "both", "kind": "command_result", "data": {"request": "1795028190996127200-060394a", "marker": ".done"}}
+{"utc": "2026-11-18T18:56:31.093+00:00", "board": "A", "kind": "rx", "data": "Blue: start pairing"}
+{"utc": "2026-11-18T18:56:31.250+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:31.405+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:31.663+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:31.792+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:32.282+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:32.282+00:00", "board": "A", "kind": "rx", "data": "[state=SEARCH my=0xA30F]"}
+{"utc": "2026-11-18T18:56:32.282+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:32.566+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:32.592+00:00", "board": "B", "kind": "rx", "data": "[state=SEARCH my=0xC371]"}
+{"utc": "2026-11-18T18:56:32.773+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:32.824+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:33.056+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:33.289+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:33.731+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:33.990+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:34.403+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:34.482+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:34.843+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:34.946+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:35.412+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:35.515+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:35.876+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:36.058+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:36.342+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:36.419+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:36.885+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:37.120+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:37.276+00:00", "board": "A", "kind": "rx", "data": "[state=SEARCH my=0xA30F]"}
+{"utc": "2026-11-18T18:56:37.406+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:37.665+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:37.665+00:00", "board": "B", "kind": "rx", "data": "[state=SEARCH my=0xC371]"}
+{"utc": "2026-11-18T18:56:37.976+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:38.002+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:38.492+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:38.544+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:38.985+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:39.193+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:39.452+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:39.686+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:39.764+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:40.046+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:40.072+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:40.355+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:40.642+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:40.902+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:41.213+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:41.576+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:41.862+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:41.889+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:42.122+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:42.278+00:00", "board": "A", "kind": "rx", "data": "[state=SEARCH my=0xA30F]"}
+{"utc": "2026-11-18T18:56:42.329+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:42.485+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:42.641+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:42.667+00:00", "board": "B", "kind": "rx", "data": "[state=SEARCH my=0xC371]"}
+{"utc": "2026-11-18T18:56:42.979+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:43.083+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:43.394+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:43.447+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:43.964+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:44.094+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:44.405+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:44.533+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:44.714+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:44.843+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:45.101+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:45.178+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:45.411+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:45.774+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:45.957+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:46.474+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:46.603+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:46.938+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:47.222+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:47.248+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:47.273+00:00", "board": "A", "kind": "rx", "data": "[state=SEARCH my=0xA30F]"}
+{"utc": "2026-11-18T18:56:47.660+00:00", "board": "B", "kind": "rx", "data": "[state=SEARCH my=0xC371]"}
+{"utc": "2026-11-18T18:56:47.814+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:47.840+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:48.202+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:48.228+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:48.540+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:48.617+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:48.851+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:49.085+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:49.111+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:49.422+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:49.422+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:49.963+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:50.120+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:50.429+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:50.636+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:50.739+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:51.024+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:51.310+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:51.387+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:51.828+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:51.984+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:52.114+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:52.269+00:00", "board": "A", "kind": "rx", "data": "[state=SEARCH my=0xA30F]"}
+{"utc": "2026-11-18T18:56:52.476+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:52.656+00:00", "board": "B", "kind": "rx", "data": "[state=SEARCH my=0xC371]"}
+{"utc": "2026-11-18T18:56:52.758+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:52.861+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:53.355+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:53.458+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:53.691+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:54.026+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:54.232+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:54.493+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:54.599+00:00", "board": "A", "kind": "tx", "data": "status"}
+{"utc": "2026-11-18T18:56:54.650+00:00", "board": "B", "kind": "tx", "data": "status"}
+{"utc": "2026-11-18T18:56:54.701+00:00", "board": "both", "kind": "command_result", "data": {"request": "1795028214591713300-ccae5a7", "marker": ".done"}}
+{"utc": "2026-11-18T18:56:54.727+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.6-dual\",\"device_id\":\"bump-349454276354\",\"boot_id\":\"8d439bdf\",\"self_short_id\":\"05bb0923c5ff\",\"self_code16\":\"a30f\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":918320,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":81602,\"motion_triggers\":0,\"network_configured\":true,\"transport\":\"wifi_mqtt_tcp\",\"nina_version\":\"3.0.2\",\"last_watchdog_stage\":\"imu\",\"pre_reset_ram_queued\":0,\"accel_g\":[0.02795,-0.00513,1.01709]}"}
+{"utc": "2026-11-18T18:56:54.727+00:00", "board": "A", "kind": "rx", "data": "STATUS state=SEARCH my=0xA30F"}
+{"utc": "2026-11-18T18:56:54.727+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.6-dual\",\"device_id\":\"bump-c8c9a3e65ba4\",\"boot_id\":\"00cfd824\",\"self_short_id\":\"0ca161061eec\",\"self_code16\":\"c371\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":3910824,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":258186,\"motion_triggers\":0,\"network_configured\":true,\"transport\":\"wifi_mqtt_tcp\",\"nina_version\":\"3.0.2\",\"last_watchdog_stage\":\"none\",\"pre_reset_ram_queued\":0,\"accel_g\":[-0.10535,0.01355,0.98987]}"}
+{"utc": "2026-11-18T18:56:54.727+00:00", "board": "B", "kind": "rx", "data": "STATUS state=SEARCH my=0xC371"}
+{"utc": "2026-11-18T18:56:54.830+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:54.830+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:55.399+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:55.451+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:55.761+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:56.071+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:56.357+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:56.742+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:56.870+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:57.026+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:57.128+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:57.285+00:00", "board": "A", "kind": "rx", "data": "[state=SEARCH my=0xA30F]"}
+{"utc": "2026-11-18T18:56:57.389+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:57.727+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:57.727+00:00", "board": "B", "kind": "rx", "data": "[state=SEARCH my=0xC371]"}
+{"utc": "2026-11-18T18:56:57.753+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:58.142+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:58.401+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:58.633+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:58.994+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:59.019+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:59.252+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:59.407+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:59.641+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:56:59.771+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:00.212+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:00.213+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:00.756+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:00.782+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:01.351+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:01.351+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:01.659+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:01.762+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:02.151+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:02.203+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:02.281+00:00", "board": "A", "kind": "rx", "data": "[state=SEARCH my=0xA30F]"}
+{"utc": "2026-11-18T18:57:02.489+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:02.645+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:02.723+00:00", "board": "B", "kind": "rx", "data": "[state=SEARCH my=0xC371]"}
+{"utc": "2026-11-18T18:57:03.059+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:03.318+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:03.733+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:03.760+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:04.249+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:04.249+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:04.844+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:04.948+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:05.232+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:05.362+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:05.725+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:05.854+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:06.113+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:06.372+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:06.501+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:06.942+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:07.019+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:07.226+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:07.278+00:00", "board": "A", "kind": "rx", "data": "[state=SEARCH my=0xA30F]"}
+{"utc": "2026-11-18T18:57:07.562+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:07.665+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:07.743+00:00", "board": "B", "kind": "rx", "data": "[state=SEARCH my=0xC371]"}
+{"utc": "2026-11-18T18:57:08.052+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:08.233+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:08.491+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:08.491+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:08.982+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:09.008+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:09.421+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:09.704+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:09.989+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:10.221+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:10.351+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:10.505+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:10.661+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:10.841+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:10.944+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:11.099+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:11.358+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:11.540+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:11.979+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:12.083+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:12.341+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:12.393+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:12.394+00:00", "board": "A", "kind": "rx", "data": "[state=SEARCH my=0xA30F]"}
+{"utc": "2026-11-18T18:57:12.703+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:12.729+00:00", "board": "B", "kind": "rx", "data": "[state=SEARCH my=0xC371]"}
+{"utc": "2026-11-18T18:57:12.986+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:13.012+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:13.528+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:13.528+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:13.966+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:14.172+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:14.353+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:14.663+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:14.766+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:15.257+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:15.335+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:15.775+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:15.930+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:16.111+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:16.293+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:16.756+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:16.989+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:17.220+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:17.531+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:17.531+00:00", "board": "A", "kind": "rx", "data": "[state=SEARCH my=0xA30F]"}
+{"utc": "2026-11-18T18:57:17.531+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:17.738+00:00", "board": "B", "kind": "rx", "data": "[state=SEARCH my=0xC371]"}
+{"utc": "2026-11-18T18:57:17.945+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:18.048+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:18.203+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:18.411+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:18.695+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:18.721+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:19.006+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:19.187+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:19.498+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:19.601+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:20.144+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:20.195+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:20.608+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:20.814+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:21.073+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:21.280+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:21.641+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:21.898+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:21.976+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:22.233+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:22.467+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:22.519+00:00", "board": "A", "kind": "rx", "data": "[state=SEARCH my=0xA30F]"}
+{"utc": "2026-11-18T18:57:22.649+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:22.726+00:00", "board": "B", "kind": "rx", "data": "[state=SEARCH my=0xC371]"}
+{"utc": "2026-11-18T18:57:22.935+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:23.140+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:23.608+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:23.608+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:24.022+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:24.229+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:24.645+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:24.723+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T18:57:24.881+00:00", "board": "A", "kind": "tx", "data": "w"}
+{"utc": "2026-11-18T18:57:24.932+00:00", "board": "B", "kind": "tx", "data": "w"}
+{"utc": "2026-11-18T18:57:24.982+00:00", "board": "both", "kind": "command_result", "data": {"request": "1795028244865166000-6a4ac2b", "marker": ".done"}}
+{"utc": "2026-11-18T18:57:25.008+00:00", "board": "A", "kind": "rx", "data": "White: stop pairing"}
+{"utc": "2026-11-18T18:57:25.008+00:00", "board": "B", "kind": "rx", "data": "White: stop pairing"}
+{"utc": "2026-11-18T18:57:25.035+00:00", "board": "A", "kind": "rx", "data": "TX BYE -> BCAST"}
+{"utc": "2026-11-18T18:57:25.087+00:00", "board": "B", "kind": "rx", "data": "TX BYE -> BCAST"}
+{"utc": "2026-11-18T18:57:25.243+00:00", "board": "A", "kind": "rx", "data": "TX BYE -> BCAST"}
+{"utc": "2026-11-18T18:57:25.268+00:00", "board": "B", "kind": "rx", "data": "TX BYE -> BCAST"}
+{"utc": "2026-11-18T18:57:26.045+00:00", "board": "A", "kind": "tx", "data": "status"}
+{"utc": "2026-11-18T18:57:26.096+00:00", "board": "B", "kind": "tx", "data": "status"}
+{"utc": "2026-11-18T18:57:26.146+00:00", "board": "both", "kind": "command_result", "data": {"request": "1795028246041581300-aa0f52d", "marker": ".done"}}
+{"utc": "2026-11-18T18:57:26.172+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.6-dual\",\"device_id\":\"bump-349454276354\",\"boot_id\":\"8d439bdf\",\"self_short_id\":\"05bb0923c5ff\",\"self_code16\":\"a30f\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":949766,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":83970,\"motion_triggers\":0,\"network_configured\":true,\"transport\":\"wifi_mqtt_tcp\",\"nina_version\":\"3.0.2\",\"last_watchdog_stage\":\"imu\",\"pre_reset_ram_queued\":0,\"accel_g\":[0.02954,-0.00525,1.01770]}"}
+{"utc": "2026-11-18T18:57:26.173+00:00", "board": "A", "kind": "rx", "data": "STATUS state=IDLE my=0xA30F"}
+{"utc": "2026-11-18T18:57:26.173+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.6-dual\",\"device_id\":\"bump-c8c9a3e65ba4\",\"boot_id\":\"00cfd824\",\"self_short_id\":\"0ca161061eec\",\"self_code16\":\"c371\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":3942270,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":260632,\"motion_triggers\":0,\"network_configured\":true,\"transport\":\"wifi_mqtt_tcp\",\"nina_version\":\"3.0.2\",\"last_watchdog_stage\":\"none\",\"pre_reset_ram_queued\":0,\"accel_g\":[-0.10547,0.01355,0.99036]}"}
+{"utc": "2026-11-18T18:57:26.173+00:00", "board": "B", "kind": "rx", "data": "STATUS state=IDLE my=0xC371"}
+{"utc": "2026-11-18T18:57:26.870+00:00", "board": "A", "kind": "tx", "data": "status"}
+{"utc": "2026-11-18T18:57:26.921+00:00", "board": "B", "kind": "tx", "data": "status"}
+{"utc": "2026-11-18T18:57:26.971+00:00", "board": "both", "kind": "command_result", "data": {"request": "1795028246849337800-bbf3d68", "marker": ".done"}}
+{"utc": "2026-11-18T18:57:26.996+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.6-dual\",\"device_id\":\"bump-349454276354\",\"boot_id\":\"8d439bdf\",\"self_short_id\":\"05bb0923c5ff\",\"self_code16\":\"a30f\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":950591,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":84057,\"motion_triggers\":0,\"network_configured\":true,\"transport\":\"wifi_mqtt_tcp\",\"nina_version\":\"3.0.2\",\"last_watchdog_stage\":\"imu\",\"pre_reset_ram_queued\":0,\"accel_g\":[0.02905,-0.00439,1.01709]}"}
+{"utc": "2026-11-18T18:57:26.996+00:00", "board": "A", "kind": "rx", "data": "STATUS state=IDLE my=0xA30F"}
+{"utc": "2026-11-18T18:57:26.996+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.6-dual\",\"device_id\":\"bump-c8c9a3e65ba4\",\"boot_id\":\"00cfd824\",\"self_short_id\":\"0ca161061eec\",\"self_code16\":\"c371\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":3943095,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":260720,\"motion_triggers\":0,\"network_configured\":true,\"transport\":\"wifi_mqtt_tcp\",\"nina_version\":\"3.0.2\",\"last_watchdog_stage\":\"none\",\"pre_reset_ram_queued\":0,\"accel_g\":[-0.10632,0.01392,0.99023]}"}
+{"utc": "2026-11-18T18:57:26.997+00:00", "board": "B", "kind": "rx", "data": "STATUS state=IDLE my=0xC371"}
+{"utc": "2026-11-18T18:57:27.262+00:00", "board": "A", "kind": "tx", "data": "discover"}
+{"utc": "2026-11-18T18:57:27.313+00:00", "board": "B", "kind": "tx", "data": "discover"}
+{"utc": "2026-11-18T18:57:27.364+00:00", "board": "both", "kind": "command_result", "data": {"request": "1795028247238446800-6cc7948", "marker": ".done"}}
+{"utc": "2026-11-18T18:57:27.390+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"discovery_start\",\"source\":\"serial_diagnostic\",\"self_short_id\":\"05bb0923c5ff\",\"first_phase\":\"scan\",\"window_ms\":60000,\"uptime_ms\":950983}"}
+{"utc": "2026-11-18T18:57:27.390+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"discovery_start\",\"source\":\"serial_diagnostic\",\"self_short_id\":\"0ca161061eec\",\"first_phase\":\"advertise\",\"window_ms\":60000,\"uptime_ms\":3943487}"}
+{"utc": "2026-11-18T18:57:27.623+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_scan_begin\",\"uptime_ms\":951338}"}
+{"utc": "2026-11-18T18:57:27.675+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_advertise_begin\",\"uptime_ms\":3943842}"}
+{"utc": "2026-11-18T18:57:28.762+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_scan_ready\",\"uptime_ms\":952479}"}
+{"utc": "2026-11-18T18:57:28.762+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T18:57:28.841+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_advertise_ready\",\"uptime_ms\":3945010}"}
+{"utc": "2026-11-18T18:57:28.841+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T18:57:28.944+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"ble_observation\",\"peer_short_id\":\"0ca161061eec\",\"rssi\":-66,\"samples\":1,\"uptime_ms\":952661}"}
+{"utc": "2026-11-18T18:57:29.436+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"ble_observation\",\"peer_short_id\":\"0ca161061eec\",\"rssi\":-66,\"samples\":2,\"uptime_ms\":953131}"}
+{"utc": "2026-11-18T18:57:33.781+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T18:57:33.858+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T18:57:38.789+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T18:57:38.841+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T18:57:43.804+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T18:57:43.855+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T18:57:48.797+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T18:57:48.849+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T18:57:53.792+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T18:57:53.844+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T18:57:56.767+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_end_begin\",\"uptime_ms\":980478}"}
+{"utc": "2026-11-18T18:57:56.767+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_end_done\",\"uptime_ms\":980480}"}
+{"utc": "2026-11-18T18:57:56.844+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_end_begin\",\"uptime_ms\":3973011}"}
+{"utc": "2026-11-18T18:57:56.844+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_end_done\",\"uptime_ms\":3973013}"}
+{"utc": "2026-11-18T18:57:57.127+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_advertise_begin\",\"uptime_ms\":980831}"}
+{"utc": "2026-11-18T18:57:57.204+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_scan_begin\",\"uptime_ms\":3973363}"}
+{"utc": "2026-11-18T18:57:58.289+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_advertise_ready\",\"uptime_ms\":981998}"}
+{"utc": "2026-11-18T18:57:58.341+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_scan_ready\",\"uptime_ms\":3974507}"}
+{"utc": "2026-11-18T18:57:58.392+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"ble_observation\",\"peer_short_id\":\"05bb0923c5ff\",\"rssi\":-67,\"samples\":1,\"uptime_ms\":3974546}"}
+{"utc": "2026-11-18T18:57:58.807+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T18:57:58.807+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"ble_observation\",\"peer_short_id\":\"05bb0923c5ff\",\"rssi\":-67,\"samples\":2,\"uptime_ms\":3974969}"}
+{"utc": "2026-11-18T18:57:58.859+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T18:58:03.791+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T18:58:03.870+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T18:58:08.809+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T18:58:08.886+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T18:58:13.809+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T18:58:13.885+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T18:58:18.803+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T18:58:18.906+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T18:58:23.794+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T18:58:23.898+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T18:58:27.284+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_end_begin\",\"uptime_ms\":1010983}"}
+{"utc": "2026-11-18T18:58:27.284+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_end_done\",\"uptime_ms\":1010985}"}
+{"utc": "2026-11-18T18:58:27.284+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"wire\",\"phase\":\"queued\",\"source\":\"serial_diagnostic\",\"topic\":\"bump/v1/device/bump-349454276354/encounters\",\"payload\":{\"schema\":1,\"device_id\":\"bump-349454276354\",\"boot_id\":\"8d439bdf\",\"fw\":\"0.5.6-dual\",\"batch_id\":\"bt_349454276354_8d439bdf_00000004_0001\",\"self_short_id\":\"05bb0923c5ff\",\"uptime_ms\":1010986,\"time_source\":\"uptime\",\"events\":[{\"event_id\":\"ev_349454276354_8d439bdf_00000004\",\"peer_short_id\":\"0ca161061eec\",\"rssi_avg\":-67,\"rssi_last\":-68,\"duration_s\":27,\"samples\":53,\"flags\":1,\"peer_tx_power\":-4,\"occurred_uptime_ms\":980113,\"discovery_started_uptime_ms\":950983,\"discovery_ended_uptime_ms\":1010983}]}}"}
+{"utc": "2026-11-18T18:58:27.337+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_end_begin\",\"uptime_ms\":4003500}"}
+{"utc": "2026-11-18T18:58:27.337+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"ble_end_done\",\"uptime_ms\":4003502}"}
+{"utc": "2026-11-18T18:58:27.337+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"wire\",\"phase\":\"queued\",\"source\":\"serial_diagnostic\",\"topic\":\"bump/v1/device/bump-c8c9a3e65ba4/encounters\",\"payload\":{\"schema\":1,\"device_id\":\"bump-c8c9a3e65ba4\",\"boot_id\":\"00cfd824\",\"fw\":\"0.5.6-dual\",\"batch_id\":\"bt_c8c9a3e65ba4_00cfd824_00000015_0001\",\"self_short_id\":\"0ca161061eec\",\"uptime_ms\":4003503,\"time_source\":\"uptime\",\"events\":[{\"event_id\":\"ev_c8c9a3e65ba4_00cfd824_00000015\",\"peer_short_id\":\"05bb0923c5ff\",\"rssi_avg\":-66,\"rssi_last\":-66,\"duration_s\":28,\"samples\":56,\"flags\":1,\"peer_tx_power\":-4,\"occurred_uptime_ms\":4003132,\"discovery_started_uptime_ms\":3943487,\"discovery_ended_uptime_ms\":4003487}]}}"}
+{"utc": "2026-11-18T18:58:28.037+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"discovery_end\",\"source\":\"serial_diagnostic\",\"complete\":true,\"observed_peers\":1,\"uptime_ms\":1011754}"}
+{"utc": "2026-11-18T18:58:28.063+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_begin\",\"uptime_ms\":1011757}"}
+{"utc": "2026-11-18T18:58:28.115+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"discovery_end\",\"source\":\"serial_diagnostic\",\"complete\":true,\"observed_peers\":1,\"uptime_ms\":4004271}"}
+{"utc": "2026-11-18T18:58:28.115+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_begin\",\"uptime_ms\":4004274}"}
+{"utc": "2026-11-18T18:58:31.413+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"wifi_associate\",\"elapsed_ms\":3357,\"result\":4,\"uptime_ms\":1015114}"}
+{"utc": "2026-11-18T18:58:31.413+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_failed\",\"uptime_ms\":1015115}"}
+{"utc": "2026-11-18T18:58:31.465+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"wifi_associate\",\"elapsed_ms\":3356,\"result\":4,\"uptime_ms\":4007630}"}
+{"utc": "2026-11-18T18:58:31.465+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_failed\",\"uptime_ms\":4007631}"}
+{"utc": "2026-11-18T18:58:32.523+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"sync_total\",\"elapsed_ms\":4475,\"result\":1,\"uptime_ms\":1016229}"}
+{"utc": "2026-11-18T18:58:32.523+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync_complete\",\"transport\":\"wifi_mqtt_tcp\",\"queued\":1}"}
+{"utc": "2026-11-18T18:58:32.523+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T18:58:32.574+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"sync_total\",\"elapsed_ms\":4474,\"result\":1,\"uptime_ms\":4008745}"}
+{"utc": "2026-11-18T18:58:32.574+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"sync_complete\",\"transport\":\"wifi_mqtt_tcp\",\"queued\":1}"}
+{"utc": "2026-11-18T18:58:32.600+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T18:58:37.515+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T18:58:37.593+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T18:58:42.517+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T18:58:42.594+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T18:58:47.528+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_begin\",\"uptime_ms\":1031231}"}
+{"utc": "2026-11-18T18:58:47.581+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_begin\",\"uptime_ms\":4023747}"}
+{"utc": "2026-11-18T18:58:50.885+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"wifi_associate\",\"elapsed_ms\":3359,\"result\":4,\"uptime_ms\":1034590}"}
+{"utc": "2026-11-18T18:58:50.885+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_failed\",\"uptime_ms\":1034591}"}
+{"utc": "2026-11-18T18:58:50.938+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"wifi_associate\",\"elapsed_ms\":3356,\"result\":4,\"uptime_ms\":4027103}"}
+{"utc": "2026-11-18T18:58:50.938+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_failed\",\"uptime_ms\":4027105}"}
+{"utc": "2026-11-18T18:58:51.998+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"sync_total\",\"elapsed_ms\":4477,\"result\":1,\"uptime_ms\":1035706}"}
+{"utc": "2026-11-18T18:58:51.998+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync_complete\",\"transport\":\"wifi_mqtt_tcp\",\"queued\":1}"}
+{"utc": "2026-11-18T18:58:51.998+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T18:58:52.049+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"sync_total\",\"elapsed_ms\":4474,\"result\":1,\"uptime_ms\":4028219}"}
+{"utc": "2026-11-18T18:58:52.049+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"sync_complete\",\"transport\":\"wifi_mqtt_tcp\",\"queued\":1}"}
+{"utc": "2026-11-18T18:58:52.075+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T18:58:56.993+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T18:58:57.071+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T18:59:02.013+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T18:59:02.064+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T18:59:07.004+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_begin\",\"uptime_ms\":1050708}"}
+{"utc": "2026-11-18T18:59:07.057+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_begin\",\"uptime_ms\":4043221}"}
+{"utc": "2026-11-18T18:59:10.371+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"wifi_associate\",\"elapsed_ms\":3358,\"result\":4,\"uptime_ms\":1054066}"}
+{"utc": "2026-11-18T18:59:10.371+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_failed\",\"uptime_ms\":1054067}"}
+{"utc": "2026-11-18T18:59:10.423+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"wifi_associate\",\"elapsed_ms\":3355,\"result\":4,\"uptime_ms\":4046576}"}
+{"utc": "2026-11-18T18:59:10.423+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_failed\",\"uptime_ms\":4046577}"}
+{"utc": "2026-11-18T18:59:11.483+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"sync_total\",\"elapsed_ms\":4476,\"result\":1,\"uptime_ms\":1055182}"}
+{"utc": "2026-11-18T18:59:11.483+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync_complete\",\"transport\":\"wifi_mqtt_tcp\",\"queued\":1}"}
+{"utc": "2026-11-18T18:59:11.483+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T18:59:11.535+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"sync_total\",\"elapsed_ms\":4472,\"result\":1,\"uptime_ms\":4047691}"}
+{"utc": "2026-11-18T18:59:11.535+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"sync_complete\",\"transport\":\"wifi_mqtt_tcp\",\"queued\":1}"}
+{"utc": "2026-11-18T18:59:11.535+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T18:59:16.476+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T18:59:16.528+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T18:59:21.478+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T18:59:21.530+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T18:59:26.466+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_begin\",\"uptime_ms\":1070184}"}
+{"utc": "2026-11-18T18:59:26.544+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_begin\",\"uptime_ms\":4062694}"}
+{"utc": "2026-11-18T18:59:29.829+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"wifi_associate\",\"elapsed_ms\":3358,\"result\":4,\"uptime_ms\":1073542}"}
+{"utc": "2026-11-18T18:59:29.829+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_failed\",\"uptime_ms\":1073543}"}
+{"utc": "2026-11-18T18:59:29.882+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"wifi_associate\",\"elapsed_ms\":3356,\"result\":4,\"uptime_ms\":4066051}"}
+{"utc": "2026-11-18T18:59:29.882+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_failed\",\"uptime_ms\":4066053}"}
+{"utc": "2026-11-18T18:59:30.943+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"sync_total\",\"elapsed_ms\":4476,\"result\":1,\"uptime_ms\":1074658}"}
+{"utc": "2026-11-18T18:59:30.943+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync_complete\",\"transport\":\"wifi_mqtt_tcp\",\"queued\":1}"}
+{"utc": "2026-11-18T18:59:30.943+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T18:59:30.996+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"sync_total\",\"elapsed_ms\":4475,\"result\":1,\"uptime_ms\":4067167}"}
+{"utc": "2026-11-18T18:59:30.996+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"sync_complete\",\"transport\":\"wifi_mqtt_tcp\",\"queued\":1}"}
+{"utc": "2026-11-18T18:59:31.021+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T18:59:35.958+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T18:59:36.010+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T18:59:40.949+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T18:59:41.001+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T18:59:45.951+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_begin\",\"uptime_ms\":1089661}"}
+{"utc": "2026-11-18T18:59:46.003+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_begin\",\"uptime_ms\":4082169}"}
+{"utc": "2026-11-18T18:59:49.307+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"wifi_associate\",\"elapsed_ms\":3358,\"result\":4,\"uptime_ms\":1093019}"}
+{"utc": "2026-11-18T18:59:49.307+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_failed\",\"uptime_ms\":1093020}"}
+{"utc": "2026-11-18T18:59:49.358+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"wifi_associate\",\"elapsed_ms\":3355,\"result\":4,\"uptime_ms\":4085524}"}
+{"utc": "2026-11-18T18:59:49.359+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_failed\",\"uptime_ms\":4085525}"}
+{"utc": "2026-11-18T18:59:50.419+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"sync_total\",\"elapsed_ms\":4475,\"result\":1,\"uptime_ms\":1094134}"}
+{"utc": "2026-11-18T18:59:50.419+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync_complete\",\"transport\":\"wifi_mqtt_tcp\",\"queued\":1}"}
+{"utc": "2026-11-18T18:59:50.419+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T18:59:50.472+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"sync_total\",\"elapsed_ms\":4473,\"result\":1,\"uptime_ms\":4086640}"}
+{"utc": "2026-11-18T18:59:50.472+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"sync_complete\",\"transport\":\"wifi_mqtt_tcp\",\"queued\":1}"}
+{"utc": "2026-11-18T18:59:50.472+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T18:59:55.428+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T18:59:55.480+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:00:00.442+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:00:00.494+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:00:05.426+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_begin\",\"uptime_ms\":1109137}"}
+{"utc": "2026-11-18T19:00:05.477+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_begin\",\"uptime_ms\":4101642}"}
+{"utc": "2026-11-18T19:00:08.792+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"wifi_associate\",\"elapsed_ms\":3359,\"result\":4,\"uptime_ms\":1112496}"}
+{"utc": "2026-11-18T19:00:08.792+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_failed\",\"uptime_ms\":1112497}"}
+{"utc": "2026-11-18T19:00:08.843+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"wifi_associate\",\"elapsed_ms\":3356,\"result\":4,\"uptime_ms\":4104998}"}
+{"utc": "2026-11-18T19:00:08.843+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_failed\",\"uptime_ms\":4105000}"}
+{"utc": "2026-11-18T19:00:09.901+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"sync_total\",\"elapsed_ms\":4477,\"result\":1,\"uptime_ms\":1113612}"}
+{"utc": "2026-11-18T19:00:09.901+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync_complete\",\"transport\":\"wifi_mqtt_tcp\",\"queued\":1}"}
+{"utc": "2026-11-18T19:00:09.901+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:00:09.953+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"sync_total\",\"elapsed_ms\":4474,\"result\":1,\"uptime_ms\":4106114}"}
+{"utc": "2026-11-18T19:00:09.953+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"sync_complete\",\"transport\":\"wifi_mqtt_tcp\",\"queued\":1}"}
+{"utc": "2026-11-18T19:00:09.953+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:00:14.912+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:00:14.964+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:00:19.900+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:00:19.951+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:00:24.910+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_begin\",\"uptime_ms\":1128614}"}
+{"utc": "2026-11-18T19:00:24.962+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_begin\",\"uptime_ms\":4121116}"}
+{"utc": "2026-11-18T19:00:28.273+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"wifi_associate\",\"elapsed_ms\":3359,\"result\":4,\"uptime_ms\":1131973}"}
+{"utc": "2026-11-18T19:00:28.273+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_failed\",\"uptime_ms\":1131975}"}
+{"utc": "2026-11-18T19:00:28.324+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"wifi_associate\",\"elapsed_ms\":3356,\"result\":4,\"uptime_ms\":4124472}"}
+{"utc": "2026-11-18T19:00:28.325+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_failed\",\"uptime_ms\":4124473}"}
+{"utc": "2026-11-18T19:00:29.383+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"sync_total\",\"elapsed_ms\":4477,\"result\":1,\"uptime_ms\":1133089}"}
+{"utc": "2026-11-18T19:00:29.383+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync_complete\",\"transport\":\"wifi_mqtt_tcp\",\"queued\":1}"}
+{"utc": "2026-11-18T19:00:29.383+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:00:29.435+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"sync_total\",\"elapsed_ms\":4474,\"result\":1,\"uptime_ms\":4125588}"}
+{"utc": "2026-11-18T19:00:29.435+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"sync_complete\",\"transport\":\"wifi_mqtt_tcp\",\"queued\":1}"}
+{"utc": "2026-11-18T19:00:29.435+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:00:34.385+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:00:34.436+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:00:39.379+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:00:39.431+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:00:44.390+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_begin\",\"uptime_ms\":1148091}"}
+{"utc": "2026-11-18T19:00:44.441+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_begin\",\"uptime_ms\":4140591}"}
+{"utc": "2026-11-18T19:00:47.748+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"wifi_associate\",\"elapsed_ms\":3361,\"result\":4,\"uptime_ms\":1151453}"}
+{"utc": "2026-11-18T19:00:47.748+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_failed\",\"uptime_ms\":1151454}"}
+{"utc": "2026-11-18T19:00:47.799+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"wifi_associate\",\"elapsed_ms\":3357,\"result\":4,\"uptime_ms\":4143948}"}
+{"utc": "2026-11-18T19:00:47.799+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_failed\",\"uptime_ms\":4143949}"}
+{"utc": "2026-11-18T19:00:48.865+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"sync_total\",\"elapsed_ms\":4480,\"result\":1,\"uptime_ms\":1152569}"}
+{"utc": "2026-11-18T19:00:48.865+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync_complete\",\"transport\":\"wifi_mqtt_tcp\",\"queued\":1}"}
+{"utc": "2026-11-18T19:00:48.865+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:00:48.918+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"sync_total\",\"elapsed_ms\":4475,\"result\":1,\"uptime_ms\":4145064}"}
+{"utc": "2026-11-18T19:00:48.918+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"sync_complete\",\"transport\":\"wifi_mqtt_tcp\",\"queued\":1}"}
+{"utc": "2026-11-18T19:00:48.918+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:00:53.859+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:00:53.911+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:00:58.857+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:00:58.909+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:01:03.852+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_begin\",\"uptime_ms\":1167571}"}
+{"utc": "2026-11-18T19:01:03.903+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_begin\",\"uptime_ms\":4160067}"}
+{"utc": "2026-11-18T19:01:07.218+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"wifi_associate\",\"elapsed_ms\":3358,\"result\":4,\"uptime_ms\":1170929}"}
+{"utc": "2026-11-18T19:01:07.218+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_failed\",\"uptime_ms\":1170931}"}
+{"utc": "2026-11-18T19:01:07.269+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"wifi_associate\",\"elapsed_ms\":3355,\"result\":4,\"uptime_ms\":4163422}"}
+{"utc": "2026-11-18T19:01:07.269+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_failed\",\"uptime_ms\":4163423}"}
+{"utc": "2026-11-18T19:01:08.329+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"sync_total\",\"elapsed_ms\":4476,\"result\":1,\"uptime_ms\":1172045}"}
+{"utc": "2026-11-18T19:01:08.329+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync_complete\",\"transport\":\"wifi_mqtt_tcp\",\"queued\":1}"}
+{"utc": "2026-11-18T19:01:08.329+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:01:08.380+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"sync_total\",\"elapsed_ms\":4473,\"result\":1,\"uptime_ms\":4164538}"}
+{"utc": "2026-11-18T19:01:08.381+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"sync_complete\",\"transport\":\"wifi_mqtt_tcp\",\"queued\":1}"}
+{"utc": "2026-11-18T19:01:08.381+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:01:13.348+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:01:13.374+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:01:18.336+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:01:18.388+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:01:23.332+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_begin\",\"uptime_ms\":1187047}"}
+{"utc": "2026-11-18T19:01:23.384+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_begin\",\"uptime_ms\":4179541}"}
+{"utc": "2026-11-18T19:01:26.716+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"wifi_associate\",\"elapsed_ms\":3365,\"result\":4,\"uptime_ms\":1190413}"}
+{"utc": "2026-11-18T19:01:26.716+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_failed\",\"uptime_ms\":1190415}"}
+{"utc": "2026-11-18T19:01:26.742+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"wifi_associate\",\"elapsed_ms\":3356,\"result\":4,\"uptime_ms\":4182897}"}
+{"utc": "2026-11-18T19:01:26.742+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_failed\",\"uptime_ms\":4182899}"}
+{"utc": "2026-11-18T19:01:27.828+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"sync_total\",\"elapsed_ms\":4484,\"result\":1,\"uptime_ms\":1191529}"}
+{"utc": "2026-11-18T19:01:27.828+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync_complete\",\"transport\":\"wifi_mqtt_tcp\",\"queued\":1}"}
+{"utc": "2026-11-18T19:01:27.828+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:01:27.854+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"sync_total\",\"elapsed_ms\":4475,\"result\":1,\"uptime_ms\":4184013}"}
+{"utc": "2026-11-18T19:01:27.854+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"sync_complete\",\"transport\":\"wifi_mqtt_tcp\",\"queued\":1}"}
+{"utc": "2026-11-18T19:01:27.854+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:01:32.820+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:01:32.846+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:01:37.833+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:01:37.859+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:01:42.819+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_begin\",\"uptime_ms\":1206531}"}
+{"utc": "2026-11-18T19:01:42.845+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_begin\",\"uptime_ms\":4199015}"}
+{"utc": "2026-11-18T19:01:46.173+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"wifi_associate\",\"elapsed_ms\":3358,\"result\":4,\"uptime_ms\":1209890}"}
+{"utc": "2026-11-18T19:01:46.173+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_failed\",\"uptime_ms\":1209892}"}
+{"utc": "2026-11-18T19:01:46.225+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"wifi_associate\",\"elapsed_ms\":3357,\"result\":4,\"uptime_ms\":4202372}"}
+{"utc": "2026-11-18T19:01:46.225+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_failed\",\"uptime_ms\":4202373}"}
+{"utc": "2026-11-18T19:01:47.288+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"sync_total\",\"elapsed_ms\":4477,\"result\":1,\"uptime_ms\":1211006}"}
+{"utc": "2026-11-18T19:01:47.288+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync_complete\",\"transport\":\"wifi_mqtt_tcp\",\"queued\":1}"}
+{"utc": "2026-11-18T19:01:47.314+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:01:47.340+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"sync_total\",\"elapsed_ms\":4475,\"result\":1,\"uptime_ms\":4203488}"}
+{"utc": "2026-11-18T19:01:47.340+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"sync_complete\",\"transport\":\"wifi_mqtt_tcp\",\"queued\":1}"}
+{"utc": "2026-11-18T19:01:47.340+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:01:49.878+00:00", "board": "A", "kind": "tx", "data": "status"}
+{"utc": "2026-11-18T19:01:49.929+00:00", "board": "B", "kind": "tx", "data": "status"}
+{"utc": "2026-11-18T19:01:49.980+00:00", "board": "both", "kind": "command_result", "data": {"request": "1795028509852925300-7954784", "marker": ".done"}}
+{"utc": "2026-11-18T19:01:50.005+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.6-dual\",\"device_id\":\"bump-349454276354\",\"boot_id\":\"8d439bdf\",\"self_short_id\":\"05bb0923c5ff\",\"self_code16\":\"a30f\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":1213599,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":1,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":104610,\"motion_triggers\":0,\"network_configured\":true,\"transport\":\"wifi_mqtt_tcp\",\"nina_version\":\"3.0.2\",\"last_watchdog_stage\":\"imu\",\"pre_reset_ram_queued\":0,\"accel_g\":[0.02930,-0.00403,1.01624]}"}
+{"utc": "2026-11-18T19:01:50.005+00:00", "board": "A", "kind": "rx", "data": "STATUS state=IDLE my=0xA30F"}
+{"utc": "2026-11-18T19:01:50.005+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.6-dual\",\"device_id\":\"bump-c8c9a3e65ba4\",\"boot_id\":\"00cfd824\",\"self_short_id\":\"0ca161061eec\",\"self_code16\":\"c371\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":4206102,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":1,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":281568,\"motion_triggers\":0,\"network_configured\":true,\"transport\":\"wifi_mqtt_tcp\",\"nina_version\":\"3.0.2\",\"last_watchdog_stage\":\"none\",\"pre_reset_ram_queued\":0,\"accel_g\":[-0.10608,0.01465,0.98950]}"}
+{"utc": "2026-11-18T19:01:50.005+00:00", "board": "B", "kind": "rx", "data": "STATUS state=IDLE my=0xC371"}
+{"utc": "2026-11-18T19:01:52.304+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:01:52.331+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:01:57.292+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:01:57.344+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:02:02.294+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_begin\",\"uptime_ms\":1226008}"}
+{"utc": "2026-11-18T19:02:02.320+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_begin\",\"uptime_ms\":4218490}"}
+{"utc": "2026-11-18T19:02:05.657+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"wifi_associate\",\"elapsed_ms\":3358,\"result\":4,\"uptime_ms\":1229367}"}
+{"utc": "2026-11-18T19:02:05.657+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_failed\",\"uptime_ms\":1229368}"}
+{"utc": "2026-11-18T19:02:05.683+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"wifi_associate\",\"elapsed_ms\":3356,\"result\":4,\"uptime_ms\":4221846}"}
+{"utc": "2026-11-18T19:02:05.683+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_failed\",\"uptime_ms\":4221847}"}
+{"utc": "2026-11-18T19:02:06.769+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"sync_total\",\"elapsed_ms\":4477,\"result\":1,\"uptime_ms\":1230483}"}
+{"utc": "2026-11-18T19:02:06.769+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync_complete\",\"transport\":\"wifi_mqtt_tcp\",\"queued\":1}"}
+{"utc": "2026-11-18T19:02:06.769+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:02:06.795+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"sync_total\",\"elapsed_ms\":4473,\"result\":1,\"uptime_ms\":4222961}"}
+{"utc": "2026-11-18T19:02:06.795+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"sync_complete\",\"transport\":\"wifi_mqtt_tcp\",\"queued\":1}"}
+{"utc": "2026-11-18T19:02:06.795+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:02:11.791+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:02:11.816+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:02:16.773+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:02:16.799+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:02:21.787+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_begin\",\"uptime_ms\":1245485}"}
+{"utc": "2026-11-18T19:02:21.813+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_begin\",\"uptime_ms\":4237963}"}
+{"utc": "2026-11-18T19:02:25.146+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"wifi_associate\",\"elapsed_ms\":3357,\"result\":4,\"uptime_ms\":1248843}"}
+{"utc": "2026-11-18T19:02:25.147+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_failed\",\"uptime_ms\":1248844}"}
+{"utc": "2026-11-18T19:02:25.172+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"wifi_associate\",\"elapsed_ms\":3357,\"result\":4,\"uptime_ms\":4241320}"}
+{"utc": "2026-11-18T19:02:25.172+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_failed\",\"uptime_ms\":4241321}"}
+{"utc": "2026-11-18T19:02:26.255+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"sync_total\",\"elapsed_ms\":4476,\"result\":1,\"uptime_ms\":1249959}"}
+{"utc": "2026-11-18T19:02:26.255+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync_complete\",\"transport\":\"wifi_mqtt_tcp\",\"queued\":1}"}
+{"utc": "2026-11-18T19:02:26.255+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:02:26.282+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"sync_total\",\"elapsed_ms\":4475,\"result\":1,\"uptime_ms\":4242436}"}
+{"utc": "2026-11-18T19:02:26.282+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"sync_complete\",\"transport\":\"wifi_mqtt_tcp\",\"queued\":1}"}
+{"utc": "2026-11-18T19:02:26.282+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:02:31.253+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:02:31.279+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:02:36.252+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:02:36.279+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:02:41.258+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_begin\",\"uptime_ms\":1264961}"}
+{"utc": "2026-11-18T19:02:41.285+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_begin\",\"uptime_ms\":4257438}"}
+{"utc": "2026-11-18T19:02:44.620+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"wifi_associate\",\"elapsed_ms\":3359,\"result\":4,\"uptime_ms\":1268320}"}
+{"utc": "2026-11-18T19:02:44.620+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_failed\",\"uptime_ms\":1268321}"}
+{"utc": "2026-11-18T19:02:44.646+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"wifi_associate\",\"elapsed_ms\":3357,\"result\":4,\"uptime_ms\":4260795}"}
+{"utc": "2026-11-18T19:02:44.646+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_failed\",\"uptime_ms\":4260797}"}
+{"utc": "2026-11-18T19:02:45.737+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"sync_total\",\"elapsed_ms\":4477,\"result\":1,\"uptime_ms\":1269436}"}
+{"utc": "2026-11-18T19:02:45.738+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync_complete\",\"transport\":\"wifi_mqtt_tcp\",\"queued\":1}"}
+{"utc": "2026-11-18T19:02:45.738+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:02:45.763+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"sync_total\",\"elapsed_ms\":4475,\"result\":1,\"uptime_ms\":4261911}"}
+{"utc": "2026-11-18T19:02:45.763+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"sync_complete\",\"transport\":\"wifi_mqtt_tcp\",\"queued\":1}"}
+{"utc": "2026-11-18T19:02:45.763+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:02:50.745+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:02:50.745+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:02:55.732+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:02:55.757+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:03:00.733+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_begin\",\"uptime_ms\":1284438}"}
+{"utc": "2026-11-18T19:03:00.758+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_begin\",\"uptime_ms\":4276913}"}
+{"utc": "2026-11-18T19:03:04.097+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"wifi_associate\",\"elapsed_ms\":3357,\"result\":4,\"uptime_ms\":1287795}"}
+{"utc": "2026-11-18T19:03:04.097+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_failed\",\"uptime_ms\":1287797}"}
+{"utc": "2026-11-18T19:03:04.123+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"wifi_associate\",\"elapsed_ms\":3356,\"result\":4,\"uptime_ms\":4280269}"}
+{"utc": "2026-11-18T19:03:04.123+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_failed\",\"uptime_ms\":4280270}"}
+{"utc": "2026-11-18T19:03:05.206+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"sync_total\",\"elapsed_ms\":4475,\"result\":1,\"uptime_ms\":1288911}"}
+{"utc": "2026-11-18T19:03:05.207+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync_complete\",\"transport\":\"wifi_mqtt_tcp\",\"queued\":1}"}
+{"utc": "2026-11-18T19:03:05.207+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:03:05.232+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"sync_total\",\"elapsed_ms\":4474,\"result\":1,\"uptime_ms\":4281385}"}
+{"utc": "2026-11-18T19:03:05.232+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"sync_complete\",\"transport\":\"wifi_mqtt_tcp\",\"queued\":1}"}
+{"utc": "2026-11-18T19:03:05.232+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:03:10.213+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:03:10.239+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:03:15.209+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:03:15.234+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:03:20.200+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_begin\",\"uptime_ms\":1303913}"}
+{"utc": "2026-11-18T19:03:20.226+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_begin\",\"uptime_ms\":4296389}"}
+{"utc": "2026-11-18T19:03:23.560+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"wifi_associate\",\"elapsed_ms\":3358,\"result\":4,\"uptime_ms\":1307271}"}
+{"utc": "2026-11-18T19:03:23.560+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_failed\",\"uptime_ms\":1307272}"}
+{"utc": "2026-11-18T19:03:23.586+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"wifi_associate\",\"elapsed_ms\":3356,\"result\":4,\"uptime_ms\":4299745}"}
+{"utc": "2026-11-18T19:03:23.586+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_failed\",\"uptime_ms\":4299746}"}
+{"utc": "2026-11-18T19:03:24.675+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"sync_total\",\"elapsed_ms\":4476,\"result\":1,\"uptime_ms\":1308387}"}
+{"utc": "2026-11-18T19:03:24.675+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync_complete\",\"transport\":\"wifi_mqtt_tcp\",\"queued\":1}"}
+{"utc": "2026-11-18T19:03:24.675+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:03:24.701+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"sync_total\",\"elapsed_ms\":4474,\"result\":1,\"uptime_ms\":4300861}"}
+{"utc": "2026-11-18T19:03:24.701+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"sync_complete\",\"transport\":\"wifi_mqtt_tcp\",\"queued\":1}"}
+{"utc": "2026-11-18T19:03:24.701+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:03:28.670+00:00", "board": "A", "kind": "tx", "data": "status"}
+{"utc": "2026-11-18T19:03:28.721+00:00", "board": "B", "kind": "tx", "data": "status"}
+{"utc": "2026-11-18T19:03:28.773+00:00", "board": "both", "kind": "command_result", "data": {"request": "1795028608654821200-4d218cf", "marker": ".done"}}
+{"utc": "2026-11-18T19:03:28.798+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.6-dual\",\"device_id\":\"bump-349454276354\",\"boot_id\":\"8d439bdf\",\"self_short_id\":\"05bb0923c5ff\",\"self_code16\":\"a30f\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":1312392,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":1,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":112640,\"motion_triggers\":0,\"network_configured\":true,\"transport\":\"wifi_mqtt_tcp\",\"nina_version\":\"3.0.2\",\"last_watchdog_stage\":\"imu\",\"pre_reset_ram_queued\":0,\"accel_g\":[0.02979,-0.00464,1.01624]}"}
+{"utc": "2026-11-18T19:03:28.798+00:00", "board": "A", "kind": "rx", "data": "STATUS state=IDLE my=0xA30F"}
+{"utc": "2026-11-18T19:03:28.798+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.6-dual\",\"device_id\":\"bump-c8c9a3e65ba4\",\"boot_id\":\"00cfd824\",\"self_short_id\":\"0ca161061eec\",\"self_code16\":\"c371\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":4304894,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":1,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":289721,\"motion_triggers\":0,\"network_configured\":true,\"transport\":\"wifi_mqtt_tcp\",\"nina_version\":\"3.0.2\",\"last_watchdog_stage\":\"none\",\"pre_reset_ram_queued\":0,\"accel_g\":[-0.10559,0.01392,0.98853]}"}
+{"utc": "2026-11-18T19:03:28.799+00:00", "board": "B", "kind": "rx", "data": "STATUS state=IDLE my=0xC371"}
+{"utc": "2026-11-18T19:03:28.858+00:00", "board": "A", "kind": "tx", "data": "dump"}
+{"utc": "2026-11-18T19:03:28.909+00:00", "board": "B", "kind": "tx", "data": "dump"}
+{"utc": "2026-11-18T19:03:28.960+00:00", "board": "both", "kind": "command_result", "data": {"request": "1795028608827018900-3370a17", "marker": ".done"}}
+{"utc": "2026-11-18T19:03:28.986+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"wire\",\"phase\":\"dump\",\"source\":\"presence\",\"topic\":\"bump/v1/device/bump-349454276354/status\",\"payload\":{\"schema\":1,\"device_id\":\"bump-349454276354\",\"boot_id\":\"8d439bdf\",\"fw\":\"0.5.6-dual\",\"self_short_id\":\"05bb0923c5ff\",\"state\":\"online\",\"uptime_s\":1312,\"queue_depth\":1,\"events_dropped\":0}}"}
+{"utc": "2026-11-18T19:03:28.986+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"wire\",\"phase\":\"dump\",\"source\":\"serial_diagnostic\",\"topic\":\"bump/v1/device/bump-349454276354/encounters\",\"payload\":{\"schema\":1,\"device_id\":\"bump-349454276354\",\"boot_id\":\"8d439bdf\",\"fw\":\"0.5.6-dual\",\"batch_id\":\"bt_349454276354_8d439bdf_00000004_0001\",\"self_short_id\":\"05bb0923c5ff\",\"uptime_ms\":1312581,\"time_source\":\"uptime\",\"events\":[{\"event_id\":\"ev_349454276354_8d439bdf_00000004\",\"peer_short_id\":\"0ca161061eec\",\"rssi_avg\":-67,\"rssi_last\":-68,\"duration_s\":27,\"samples\":53,\"flags\":1,\"peer_tx_power\":-4,\"occurred_uptime_ms\":980113,\"discovery_started_uptime_ms\":950983,\"discovery_ended_uptime_ms\":1010983}]}}"}
+{"utc": "2026-11-18T19:03:28.986+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"queue_dump_complete\",\"detail\":\"all_pending_events_exported\",\"uptime_ms\":1312584}"}
+{"utc": "2026-11-18T19:03:28.986+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"wire\",\"phase\":\"dump\",\"source\":\"presence\",\"topic\":\"bump/v1/device/bump-c8c9a3e65ba4/status\",\"payload\":{\"schema\":1,\"device_id\":\"bump-c8c9a3e65ba4\",\"boot_id\":\"00cfd824\",\"fw\":\"0.5.6-dual\",\"self_short_id\":\"0ca161061eec\",\"state\":\"online\",\"uptime_s\":4305,\"queue_depth\":1,\"events_dropped\":0}}"}
+{"utc": "2026-11-18T19:03:28.986+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"wire\",\"phase\":\"dump\",\"source\":\"serial_diagnostic\",\"topic\":\"bump/v1/device/bump-c8c9a3e65ba4/encounters\",\"payload\":{\"schema\":1,\"device_id\":\"bump-c8c9a3e65ba4\",\"boot_id\":\"00cfd824\",\"fw\":\"0.5.6-dual\",\"batch_id\":\"bt_c8c9a3e65ba4_00cfd824_00000015_0001\",\"self_short_id\":\"0ca161061eec\",\"uptime_ms\":4305083,\"time_source\":\"uptime\",\"events\":[{\"event_id\":\"ev_c8c9a3e65ba4_00cfd824_00000015\",\"peer_short_id\":\"05bb0923c5ff\",\"rssi_avg\":-66,\"rssi_last\":-66,\"duration_s\":28,\"samples\":56,\"flags\":1,\"peer_tx_power\":-4,\"occurred_uptime_ms\":4003132,\"discovery_started_uptime_ms\":3943487,\"discovery_ended_uptime_ms\":4003487}]}}"}
+{"utc": "2026-11-18T19:03:28.986+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"queue_dump_complete\",\"detail\":\"all_pending_events_exported\",\"uptime_ms\":4305087}"}
+{"utc": "2026-11-18T19:03:29.688+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:03:29.714+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:03:34.679+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:03:34.706+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:03:37.875+00:00", "board": "A", "kind": "tx", "data": "status"}
+{"utc": "2026-11-18T19:03:37.926+00:00", "board": "B", "kind": "tx", "data": "status"}
+{"utc": "2026-11-18T19:03:37.977+00:00", "board": "both", "kind": "command_result", "data": {"request": "1795028617868172000-8c3595f", "marker": ".done"}}
+{"utc": "2026-11-18T19:03:38.003+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.6-dual\",\"device_id\":\"bump-349454276354\",\"boot_id\":\"8d439bdf\",\"self_short_id\":\"05bb0923c5ff\",\"self_code16\":\"a30f\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":1321596,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":1,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":113606,\"motion_triggers\":0,\"network_configured\":true,\"transport\":\"wifi_mqtt_tcp\",\"nina_version\":\"3.0.2\",\"last_watchdog_stage\":\"imu\",\"pre_reset_ram_queued\":0,\"accel_g\":[0.02893,-0.00439,1.01624]}"}
+{"utc": "2026-11-18T19:03:38.003+00:00", "board": "A", "kind": "rx", "data": "STATUS state=IDLE my=0xA30F"}
+{"utc": "2026-11-18T19:03:38.003+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.6-dual\",\"device_id\":\"bump-c8c9a3e65ba4\",\"boot_id\":\"00cfd824\",\"self_short_id\":\"0ca161061eec\",\"self_code16\":\"c371\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":4314100,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":1,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":290703,\"motion_triggers\":0,\"network_configured\":true,\"transport\":\"wifi_mqtt_tcp\",\"nina_version\":\"3.0.2\",\"last_watchdog_stage\":\"none\",\"pre_reset_ram_queued\":0,\"accel_g\":[-0.10547,0.01440,0.99048]}"}
+{"utc": "2026-11-18T19:03:38.003+00:00", "board": "B", "kind": "rx", "data": "STATUS state=IDLE my=0xC371"}
+{"utc": "2026-11-18T19:03:39.685+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_begin\",\"uptime_ms\":1323389}"}
+{"utc": "2026-11-18T19:03:39.712+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_begin\",\"uptime_ms\":4315865}"}
+{"utc": "2026-11-18T19:03:42.637+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"wifi_associate\",\"elapsed_ms\":2962,\"result\":3,\"uptime_ms\":1326352}"}
+{"utc": "2026-11-18T19:03:42.637+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_connected\",\"uptime_ms\":1326353}"}
+{"utc": "2026-11-18T19:03:42.664+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"wifi_associate\",\"elapsed_ms\":2956,\"result\":3,\"uptime_ms\":4318821}"}
+{"utc": "2026-11-18T19:03:42.664+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"radio\",\"detail\":\"wifi_connected\",\"uptime_ms\":4318823}"}
+{"utc": "2026-11-18T19:03:43.178+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"tcp_connect\",\"elapsed_ms\":172,\"result\":1,\"uptime_ms\":1326879}"}
+{"utc": "2026-11-18T19:03:43.178+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"mqtt_connect\",\"elapsed_ms\":353,\"result\":0,\"uptime_ms\":1326879}"}
+{"utc": "2026-11-18T19:03:43.178+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync\",\"detail\":\"broker_connected\",\"uptime_ms\":1326881}"}
+{"utc": "2026-11-18T19:03:43.281+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"mqtt_subscribe\",\"elapsed_ms\":98,\"result\":1,\"uptime_ms\":1326979}"}
+{"utc": "2026-11-18T19:03:43.281+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync\",\"detail\":\"ack_subscribed\",\"uptime_ms\":1326980}"}
+{"utc": "2026-11-18T19:03:43.281+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"wire\",\"phase\":\"transmit\",\"source\":\"presence\",\"topic\":\"bump/v1/device/bump-349454276354/status\",\"payload\":{\"schema\":1,\"device_id\":\"bump-349454276354\",\"boot_id\":\"8d439bdf\",\"fw\":\"0.5.6-dual\",\"self_short_id\":\"05bb0923c5ff\",\"state\":\"online\",\"uptime_s\":1326,\"queue_depth\":1,\"events_dropped\":0}}"}
+{"utc": "2026-11-18T19:03:43.642+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"presence_online\",\"elapsed_ms\":379,\"result\":1,\"uptime_ms\":1327359}"}
+{"utc": "2026-11-18T19:03:43.668+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"wire\",\"phase\":\"transmit\",\"source\":\"serial_diagnostic\",\"topic\":\"bump/v1/device/bump-349454276354/encounters\",\"payload\":{\"schema\":1,\"device_id\":\"bump-349454276354\",\"boot_id\":\"8d439bdf\",\"fw\":\"0.5.6-dual\",\"batch_id\":\"bt_349454276354_8d439bdf_00000004_0001\",\"self_short_id\":\"05bb0923c5ff\",\"uptime_ms\":1327361,\"time_source\":\"uptime\",\"events\":[{\"event_id\":\"ev_349454276354_8d439bdf_00000004\",\"peer_short_id\":\"0ca161061eec\",\"rssi_avg\":-67,\"rssi_last\":-68,\"duration_s\":27,\"samples\":53,\"flags\":1,\"peer_tx_power\":-4,\"occurred_uptime_ms\":980113,\"discovery_started_uptime_ms\":950983,\"discovery_ended_uptime_ms\":1010983}]}}"}
+{"utc": "2026-11-18T19:03:44.389+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"mqtt_puback\",\"elapsed_ms\":735,\"result\":1,\"uptime_ms\":1328099}"}
+{"utc": "2026-11-18T19:03:44.389+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"mqtt_puback\",\"detail\":\"received\",\"uptime_ms\":1328101}"}
+{"utc": "2026-11-18T19:03:44.492+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"application_ack\",\"detail\":\"matched\",\"uptime_ms\":1328196}"}
+{"utc": "2026-11-18T19:03:44.492+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"application_ack_wait\",\"elapsed_ms\":98,\"result\":1,\"uptime_ms\":1328199}"}
+{"utc": "2026-11-18T19:03:44.492+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"queue_removed_after_application_ack\",\"origin\":\"wifi_mqtt\",\"event_id\":\"ev_349454276354_8d439bdf_00000004\",\"queued\":0}"}
+{"utc": "2026-11-18T19:03:44.492+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"wire\",\"phase\":\"transmit\",\"source\":\"presence\",\"topic\":\"bump/v1/device/bump-349454276354/status\",\"payload\":{\"schema\":1,\"device_id\":\"bump-349454276354\",\"boot_id\":\"8d439bdf\",\"fw\":\"0.5.6-dual\",\"self_short_id\":\"05bb0923c5ff\",\"state\":\"offline\",\"uptime_s\":1328,\"queue_depth\":0,\"events_dropped\":0}}"}
+{"utc": "2026-11-18T19:03:45.087+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"presence_offline\",\"elapsed_ms\":598,\"result\":1,\"uptime_ms\":1328799}"}
+{"utc": "2026-11-18T19:03:45.087+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"mqtt_stop\",\"elapsed_ms\":5,\"result\":1,\"uptime_ms\":1328804}"}
+{"utc": "2026-11-18T19:03:45.113+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"wifi_link\",\"local_ip\":\"192.168.137.88\",\"rssi_dbm\":-49,\"elapsed_ms\":2,\"uptime_ms\":1328807}"}
+{"utc": "2026-11-18T19:03:46.374+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"sync_total\",\"elapsed_ms\":6685,\"result\":0,\"uptime_ms\":1330072}"}
+{"utc": "2026-11-18T19:03:46.374+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"sync_complete\",\"transport\":\"wifi_mqtt_tcp\",\"queued\":0}"}
+{"utc": "2026-11-18T19:03:46.374+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:03:47.018+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"tcp_connect\",\"elapsed_ms\":3237,\"result\":1,\"uptime_ms\":4323174}"}
+{"utc": "2026-11-18T19:03:47.018+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"mqtt_connect\",\"elapsed_ms\":1114,\"result\":0,\"uptime_ms\":4323175}"}
+{"utc": "2026-11-18T19:03:47.018+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"sync\",\"detail\":\"broker_connected\",\"uptime_ms\":4323176}"}
+{"utc": "2026-11-18T19:03:47.018+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"mqtt_subscribe\",\"elapsed_ms\":8,\"result\":1,\"uptime_ms\":4323185}"}
+{"utc": "2026-11-18T19:03:47.018+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"sync\",\"detail\":\"ack_subscribed\",\"uptime_ms\":4323187}"}
+{"utc": "2026-11-18T19:03:47.018+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"wire\",\"phase\":\"transmit\",\"source\":\"presence\",\"topic\":\"bump/v1/device/bump-c8c9a3e65ba4/status\",\"payload\":{\"schema\":1,\"device_id\":\"bump-c8c9a3e65ba4\",\"boot_id\":\"00cfd824\",\"fw\":\"0.5.6-dual\",\"self_short_id\":\"0ca161061eec\",\"state\":\"online\",\"uptime_s\":4323,\"queue_depth\":1,\"events_dropped\":0}}"}
+{"utc": "2026-11-18T19:03:47.146+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"presence_online\",\"elapsed_ms\":117,\"result\":1,\"uptime_ms\":4323304}"}
+{"utc": "2026-11-18T19:03:47.147+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"wire\",\"phase\":\"transmit\",\"source\":\"serial_diagnostic\",\"topic\":\"bump/v1/device/bump-c8c9a3e65ba4/encounters\",\"payload\":{\"schema\":1,\"device_id\":\"bump-c8c9a3e65ba4\",\"boot_id\":\"00cfd824\",\"fw\":\"0.5.6-dual\",\"batch_id\":\"bt_c8c9a3e65ba4_00cfd824_00000015_0001\",\"self_short_id\":\"0ca161061eec\",\"uptime_ms\":4323306,\"time_source\":\"uptime\",\"events\":[{\"event_id\":\"ev_c8c9a3e65ba4_00cfd824_00000015\",\"peer_short_id\":\"05bb0923c5ff\",\"rssi_avg\":-66,\"rssi_last\":-66,\"duration_s\":28,\"samples\":56,\"flags\":1,\"peer_tx_power\":-4,\"occurred_uptime_ms\":4003132,\"discovery_started_uptime_ms\":3943487,\"discovery_ended_uptime_ms\":4003487}]}}"}
+{"utc": "2026-11-18T19:03:47.224+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"mqtt_puback\",\"elapsed_ms\":66,\"result\":1,\"uptime_ms\":4323374}"}
+{"utc": "2026-11-18T19:03:47.224+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"mqtt_puback\",\"detail\":\"received\",\"uptime_ms\":4323375}"}
+{"utc": "2026-11-18T19:03:47.457+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"application_ack\",\"detail\":\"matched\",\"uptime_ms\":4323611}"}
+{"utc": "2026-11-18T19:03:47.457+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"application_ack_wait\",\"elapsed_ms\":239,\"result\":1,\"uptime_ms\":4323614}"}
+{"utc": "2026-11-18T19:03:47.457+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"queue_removed_after_application_ack\",\"origin\":\"wifi_mqtt\",\"event_id\":\"ev_c8c9a3e65ba4_00cfd824_00000015\",\"queued\":0}"}
+{"utc": "2026-11-18T19:03:47.457+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"wire\",\"phase\":\"transmit\",\"source\":\"presence\",\"topic\":\"bump/v1/device/bump-c8c9a3e65ba4/status\",\"payload\":{\"schema\":1,\"device_id\":\"bump-c8c9a3e65ba4\",\"boot_id\":\"00cfd824\",\"fw\":\"0.5.6-dual\",\"self_short_id\":\"0ca161061eec\",\"state\":\"offline\",\"uptime_s\":4323,\"queue_depth\":0,\"events_dropped\":0}}"}
+{"utc": "2026-11-18T19:03:48.231+00:00", "board": "A", "kind": "tx", "data": "status"}
+{"utc": "2026-11-18T19:03:48.282+00:00", "board": "B", "kind": "tx", "data": "status"}
+{"utc": "2026-11-18T19:03:48.332+00:00", "board": "both", "kind": "command_result", "data": {"request": "1795028628202381600-c7290e9", "marker": ".done"}}
+{"utc": "2026-11-18T19:03:48.358+00:00", "board": "A", "kind": "rx", "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.6-dual\",\"device_id\":\"bump-349454276354\",\"boot_id\":\"8d439bdf\",\"self_short_id\":\"05bb0923c5ff\",\"self_code16\":\"a30f\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":1331951,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":113992,\"motion_triggers\":0,\"network_configured\":true,\"transport\":\"wifi_mqtt_tcp\",\"nina_version\":\"3.0.2\",\"last_watchdog_stage\":\"imu\",\"pre_reset_ram_queued\":0,\"accel_g\":[0.02893,-0.00500,1.01636]}"}
+{"utc": "2026-11-18T19:03:48.358+00:00", "board": "A", "kind": "rx", "data": "STATUS state=IDLE my=0xA30F"}
+{"utc": "2026-11-18T19:03:48.487+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"presence_offline\",\"elapsed_ms\":1038,\"result\":1,\"uptime_ms\":4324654}"}
+{"utc": "2026-11-18T19:03:48.513+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"mqtt_stop\",\"elapsed_ms\":4,\"result\":1,\"uptime_ms\":4324659}"}
+{"utc": "2026-11-18T19:03:48.513+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"wifi_link\",\"local_ip\":\"192.168.137.209\",\"rssi_dbm\":-38,\"elapsed_ms\":2,\"uptime_ms\":4324662}"}
+{"utc": "2026-11-18T19:03:49.727+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"sync_stage\",\"stage\":\"sync_total\",\"elapsed_ms\":10014,\"result\":0,\"uptime_ms\":4325877}"}
+{"utc": "2026-11-18T19:03:49.727+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"sync_complete\",\"transport\":\"wifi_mqtt_tcp\",\"queued\":0}"}
+{"utc": "2026-11-18T19:03:49.727+00:00", "board": "B", "kind": "rx", "data": "{\"type\":\"status\",\"firmware\":\"BumpDualBadge\",\"fw\":\"0.5.6-dual\",\"device_id\":\"bump-c8c9a3e65ba4\",\"boot_id\":\"00cfd824\",\"self_short_id\":\"0ca161061eec\",\"self_code16\":\"c371\",\"peer_code16\":\"0000\",\"ir_paired\":false,\"uptime_ms\":4325879,\"paused\":false,\"discovery\":false,\"ble_phase\":\"idle\",\"window_remaining_ms\":0,\"queued\":0,\"dropped\":0,\"imu_ready\":true,\"imu_samples\":290891,\"motion_triggers\":0,\"network_configured\":true,\"transport\":\"wifi_mqtt_tcp\",\"nina_version\":\"3.0.2\",\"last_watchdog_stage\":\"none\",\"pre_reset_ram_queued\":0,\"accel_g\":[-0.10596,0.01416,0.99060]}"}
+{"utc": "2026-11-18T19:03:49.727+00:00", "board": "B", "kind": "rx", "data": "STATUS state=IDLE my=0xC371"}
+{"utc": "2026-11-18T19:03:49.727+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:03:51.361+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:03:54.722+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:03:56.377+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:03:59.735+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:04:01.366+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:04:04.728+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:04:06.380+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:04:09.738+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:04:11.363+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:04:14.718+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:04:16.370+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:04:19.724+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:04:21.373+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:04:24.727+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:04:26.379+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:04:29.728+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:04:31.377+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:04:34.741+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:04:36.374+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:04:39.735+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:04:41.374+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:04:44.737+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:04:46.369+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:04:49.726+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:04:51.382+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:04:54.720+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:04:56.376+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:04:59.733+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:05:01.370+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:05:04.733+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:05:06.369+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:05:09.728+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:05:11.359+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:05:14.724+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:05:16.372+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:05:19.720+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:05:21.372+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:05:24.729+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:05:26.360+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:05:29.722+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:05:31.370+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:05:34.747+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:05:36.373+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:05:39.734+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:05:41.363+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:05:44.729+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:05:46.357+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:05:49.744+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:05:51.381+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:05:54.725+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:05:56.376+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:05:59.729+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:06:01.381+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:06:04.737+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:06:06.366+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:06:09.744+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:06:11.377+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:06:14.735+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:06:16.363+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:06:19.727+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:06:21.358+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:06:24.725+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:06:26.382+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:06:29.737+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:06:31.371+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:06:34.729+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:06:36.382+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:06:39.740+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:06:41.370+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:06:44.746+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:06:46.376+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:06:49.741+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:06:51.369+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:06:54.731+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:06:56.361+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:06:59.726+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:07:01.383+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:07:04.738+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:07:06.362+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:07:09.726+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:07:11.377+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:07:14.731+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:07:16.364+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:07:19.731+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:07:21.365+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:07:24.727+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:07:26.362+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:07:29.746+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:07:31.372+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:07:34.752+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:07:36.380+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:07:39.742+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:07:41.363+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:07:44.746+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:07:46.377+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:07:49.738+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:07:51.370+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:07:54.732+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:07:56.383+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:07:59.733+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:08:01.364+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:08:04.747+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:08:06.376+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:08:09.740+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T19:08:11.367+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T19:08:11.862+00:00", "board": "both", "kind": "command_result", "data": {"request": "1795028891836703400-63b399b", "marker": ".done"}}
+{"utc": "2026-11-18T19:08:11.889+00:00", "board": "both", "kind": "stop", "data": "1795028891836703400-63b399b"}

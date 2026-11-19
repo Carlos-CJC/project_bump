@@ -1,0 +1,27 @@
+{
+  "observed_at": "2026-11-18T15:45:32.591Z",
+  "page": "http://127.0.0.1:8875",
+  "browser": "Chrome / Playwright, isolated headless context",
+  "source_page_title": "Bump · 双板联调",
+  "role": "Alice",
+  "device_alias": "挂件 A",
+  "device_source_label": "挂件 MQTT 直传",
+  "cards": [],
+  "invitations": [
+    {
+      "alias": "挂件 B",
+      "label": "联系已撤销",
+      "ir": true,
+      "incoming": true,
+      "profile_visible": false
+    }
+  ],
+  "profiles_to_mask": 0,
+  "device_id_visible": false,
+  "email_visible": false,
+  "login_secret_field_empty": true,
+  "page_errors": 0,
+  "screenshot": "Alice_红外邀请网页.png",
+  "invitation_actions": 0,
+  "scope": "真实红外邀请网页记录；BLE 发现与网页显示留待下一轮复测"
+}

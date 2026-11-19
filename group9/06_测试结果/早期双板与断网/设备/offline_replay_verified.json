@@ -1,0 +1,41 @@
+{
+  "version": "0.5.0-dual",
+  "minimum_offline_retention_s": 301.02486,
+  "offline_database_count": 0,
+  "offline_queue": {
+    "A": 1,
+    "B": 1
+  },
+  "offline_wifi_failures": {
+    "A": 16,
+    "B": 16
+  },
+  "events": {
+    "B": {
+      "id": "ir_c8c9a3e65ba4_ce65941a_00000002",
+      "boot_id": "ce65941a",
+      "paired_with": "a30f",
+      "queued_utc": "2026-11-18T15:40:53.646+00:00",
+      "db_transport": "mqtt",
+      "db_count": 1,
+      "db_matched": true,
+      "application_ack_utc": "2026-11-18T15:46:29.962+00:00",
+      "removed_utc": "2026-11-18T15:46:29.962+00:00",
+      "removed_after_s": 336.316,
+      "queue_depth_after": 0
+    },
+    "A": {
+      "id": "ir_349454276354_a92ede3f_00000002",
+      "boot_id": "a92ede3f",
+      "paired_with": "c371",
+      "queued_utc": "2026-11-18T15:40:54.367+00:00",
+      "db_transport": "mqtt",
+      "db_count": 1,
+      "db_matched": true,
+      "application_ack_utc": "2026-11-18T15:46:11.434+00:00",
+      "removed_utc": "2026-11-18T15:46:11.434+00:00",
+      "removed_after_s": 317.067,
+      "queue_depth_after": 0
+    }
+  }
+}

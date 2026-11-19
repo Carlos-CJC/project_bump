@@ -1,0 +1,86 @@
+{
+  "started_utc": "2026-11-15T12:50:05.605235+00:00",
+  "firmware": "BumpSingleBoardDiag",
+  "independent_diagnostic": true,
+  "expected_firmware_version": 2,
+  "external_modules_tested": false,
+  "gesture_tested": false,
+  "wifi_connected": false,
+  "mqtt_tested": false,
+  "two_badges_tested": false,
+  "port": "COM12",
+  "imu": {
+    "samples": 110,
+    "all_finite": true,
+    "all_real_sensor": true,
+    "first_uptime_ms": 391,
+    "last_uptime_ms": 22190,
+    "accel_norm_mean_g": 1.0135663370578978,
+    "accel_norm_min_g": 1.0113339996756758,
+    "accel_norm_max_g": 1.015464008717197,
+    "max_abs_gyro_dps": 0.36621,
+    "controlled_motion_applied": false
+  },
+  "led": {
+    "commands": 6,
+    "matching_readbacks": 6,
+    "optical_confirmation": false
+  },
+  "wifi_scans": [
+    {
+      "type": "wifi_scan",
+      "network_count": 7,
+      "strongest_rssi_dbm": -48,
+      "weakest_rssi_dbm": -83,
+      "connected": false,
+      "identifiers_logged": false
+    },
+    {
+      "type": "wifi_scan",
+      "network_count": 6,
+      "strongest_rssi_dbm": -48,
+      "weakest_rssi_dbm": -83,
+      "connected": false,
+      "identifiers_logged": false
+    },
+    {
+      "type": "wifi_scan",
+      "network_count": 8,
+      "strongest_rssi_dbm": -45,
+      "weakest_rssi_dbm": -85,
+      "connected": false,
+      "identifiers_logged": false
+    }
+  ],
+  "wifi_firmware_version": "3.0.1",
+  "ble_advertise": {
+    "type": "ble_advertise",
+    "independent_diagnostic": true,
+    "started": 1,
+    "service_uuid": "A5B0",
+    "manufacturer_hex": "FFFF017C9EBD7DE53E01FC",
+    "over_air_verified": false
+  },
+  "ble_pc_receiver": {
+    "duration_s": 20,
+    "matching_callbacks": 54,
+    "matching_manufacturer_hex": "FFFF017C9EBD7DE53E01FC",
+    "matching_service_uuid_callbacks": 54,
+    "rssi_min_dbm": -28,
+    "rssi_max_dbm": -18,
+    "over_air_verified": true
+  },
+  "board_ble_scans": [
+    {
+      "type": "ble_scan",
+      "started": 1,
+      "duration_ms": 5032,
+      "reports": 135,
+      "advertising_resumed": 1,
+      "identifiers_logged": false
+    }
+  ],
+  "imu_during_ble_samples": 25,
+  "board_left_in": "diagnostic BLE advertising, IMU output paused",
+  "finished_utc": "2026-11-15T12:51:19.108992+00:00"
+}

@@ -1,0 +1,38 @@
+{
+  "checked_utc": "2026-11-15T14:09:28.388740+00:00",
+  "pages": 2,
+  "page_size_points": [
+    612,
+    792
+  ],
+  "all_pages_visually_reviewed": true,
+  "changed_package_parts": [
+    "word/document.xml"
+  ],
+  "preserved_package_parts": 24,
+  "template_reference_unchanged": true,
+  "section_unchanged": true,
+  "member_count": 4,
+  "canvas_submitted": false,
+  "motion_firmware_version": 2,
+  "wifi_direct_stored_events": 3,
+  "pc_bridge_stored_events": 2,
+  "physical_controlled_gesture_verified": false,
+  "two_badges_tested": false,
+  "external_modules_tested": false,
+  "temporary_services_stopped": true,
+  "hotspot_original_configuration_restored": true,
+  "independent_audit_sha256": "f12e441f9d49947dffaae3a7017923c7863358b67c5a334a4af339baea3b3ffe",
+  "outputs": [
+    {
+      "path": "E:\\港理课程\\课程文件\\eie568\\Proposal_智能社交挂件\\2026-11-15_单板调试与进度报告\\Grp_9_EIE568Progress.docx",
+      "bytes": 26828,
+      "sha256": "99ed725929697c2e55f0b5511dd6338d05d5342f857f0e5cfe415512c5b677e4"
+    },
+    {
+      "path": "E:\\港理课程\\课程文件\\eie568\\Proposal_智能社交挂件\\2026-11-15_单板调试与进度报告\\Grp_9_EIE568Progress.pdf",
+      "bytes": 143230,
+      "sha256": "cefe467c2745d7a17f90326298a59f71854f6bc8b2172dbad9673f75044bb3c9"
+    }
+  ]
+}

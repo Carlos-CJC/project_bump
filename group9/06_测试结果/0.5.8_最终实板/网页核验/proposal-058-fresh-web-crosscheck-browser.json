@@ -1,0 +1,42 @@
+{
+  "captured_utc": "2026-11-19T01:23:13.517Z",
+  "trial": "proposal-058-fresh",
+  "endpoint": "http://127.0.0.1:8875",
+  "roles": {
+    "alice": {
+      "event_id": "ev_349454276354_1136c725_00000001",
+      "timeline_id": 63,
+      "match_state": "confirmed",
+      "time_quality": "anchored",
+      "invite_button_visible": false,
+      "contact_status": "pending",
+      "alias": "挂件 B",
+      "metrics": [
+        "相遇 14.0 秒",
+        "平均信号 -69 dBm",
+        "22 次采样"
+      ],
+      "screenshot": "proposal-058-fresh-alice-card.png"
+    },
+    "bob": {
+      "event_id": "ev_c8c9a3e65ba4_50005cfb_00000001",
+      "timeline_id": 64,
+      "match_state": "confirmed",
+      "time_quality": "anchored",
+      "invite_button_visible": false,
+      "contact_status": "pending",
+      "alias": "挂件 A",
+      "metrics": [
+        "相遇 19.0 秒",
+        "平均信号 -68 dBm",
+        "27 次采样"
+      ],
+      "screenshot": "proposal-058-fresh-bob-card.png"
+    },
+    "charlie": {
+      "device": false,
+      "timeline": 0,
+      "requests": 0
+    }
+  }
+}

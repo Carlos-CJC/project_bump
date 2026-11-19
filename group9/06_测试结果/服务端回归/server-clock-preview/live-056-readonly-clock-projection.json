@@ -1,0 +1,633 @@
+{
+  "captured_utc": "2026-11-18T19:14:28.262+00:00",
+  "trials": [
+    {
+      "round": 1,
+      "original_passed": true,
+      "events": {
+        "A": [
+          {
+            "event_suffix": "00000001",
+            "seen_utc": "2026-11-18T17:54:05.295+00:00",
+            "samples": 52,
+            "duration_s": 27.0,
+            "rssi_avg": -67.0,
+            "transport": "mqtt",
+            "clock_kind": "anchored",
+            "matching": "confirmed",
+            "paired_to_same_recorded_round": true
+          }
+        ],
+        "B": [
+          {
+            "event_suffix": "00000001",
+            "seen_utc": "2026-11-18T17:54:36.102+00:00",
+            "samples": 55,
+            "duration_s": 28.0,
+            "rssi_avg": -67.0,
+            "transport": "mqtt",
+            "clock_kind": "anchored",
+            "matching": "confirmed",
+            "paired_to_same_recorded_round": true
+          }
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "original_passed": true,
+      "events": {
+        "A": [
+          {
+            "event_suffix": "00000002",
+            "seen_utc": "2026-11-18T17:56:15.082+00:00",
+            "samples": 51,
+            "duration_s": 27.0,
+            "rssi_avg": -66.0,
+            "transport": "mqtt",
+            "clock_kind": "anchored",
+            "matching": "confirmed",
+            "paired_to_same_recorded_round": true
+          }
+        ],
+        "B": [
+          {
+            "event_suffix": "00000002",
+            "seen_utc": "2026-11-18T17:56:45.731+00:00",
+            "samples": 56,
+            "duration_s": 28.0,
+            "rssi_avg": -67.0,
+            "transport": "mqtt",
+            "clock_kind": "anchored",
+            "matching": "confirmed",
+            "paired_to_same_recorded_round": true
+          }
+        ]
+      }
+    },
+    {
+      "round": 3,
+      "original_passed": false,
+      "events": {
+        "A": [
+          {
+            "event_suffix": "00000003",
+            "seen_utc": "2026-11-18T17:58:01.771+00:00",
+            "samples": 54,
+            "duration_s": 27.0,
+            "rssi_avg": -66.0,
+            "transport": "mqtt",
+            "clock_kind": "anchored",
+            "matching": "confirmed",
+            "paired_to_same_recorded_round": true
+          }
+        ],
+        "B": [
+          {
+            "event_suffix": "00000003",
+            "seen_utc": "2026-11-18T17:58:32.426+00:00",
+            "samples": 55,
+            "duration_s": 28.0,
+            "rssi_avg": -67.0,
+            "transport": "mqtt",
+            "clock_kind": "anchored",
+            "matching": "confirmed",
+            "paired_to_same_recorded_round": true
+          }
+        ]
+      }
+    },
+    {
+      "round": 4,
+      "original_passed": false,
+      "events": {
+        "A": [
+          {
+            "event_suffix": "00000004",
+            "seen_utc": "2026-11-18T18:00:30.435+00:00",
+            "samples": 51,
+            "duration_s": 27.0,
+            "rssi_avg": -66.0,
+            "transport": "mqtt",
+            "clock_kind": "anchored",
+            "matching": "confirmed",
+            "paired_to_same_recorded_round": true
+          }
+        ],
+        "B": [
+          {
+            "event_suffix": "00000004",
+            "seen_utc": "2026-11-18T18:01:01.445+00:00",
+            "samples": 55,
+            "duration_s": 28.0,
+            "rssi_avg": -67.0,
+            "transport": "mqtt",
+            "clock_kind": "anchored",
+            "matching": "confirmed",
+            "paired_to_same_recorded_round": true
+          }
+        ]
+      }
+    },
+    {
+      "round": 5,
+      "original_passed": true,
+      "events": {
+        "A": [
+          {
+            "event_suffix": "00000005",
+            "seen_utc": "2026-11-18T18:03:05.310+00:00",
+            "samples": 54,
+            "duration_s": 27.0,
+            "rssi_avg": -66.0,
+            "transport": "mqtt",
+            "clock_kind": "anchored",
+            "matching": "confirmed",
+            "paired_to_same_recorded_round": true
+          }
+        ],
+        "B": [
+          {
+            "event_suffix": "00000005",
+            "seen_utc": "2026-11-18T18:03:35.994+00:00",
+            "samples": 56,
+            "duration_s": 28.0,
+            "rssi_avg": -67.0,
+            "transport": "mqtt",
+            "clock_kind": "anchored",
+            "matching": "confirmed",
+            "paired_to_same_recorded_round": true
+          }
+        ]
+      }
+    },
+    {
+      "round": 6,
+      "original_passed": true,
+      "events": {
+        "A": [
+          {
+            "event_suffix": "00000006",
+            "seen_utc": "2026-11-18T18:16:29.087+00:00",
+            "samples": 52,
+            "duration_s": 27.0,
+            "rssi_avg": -67.0,
+            "transport": "mqtt",
+            "clock_kind": "anchored",
+            "matching": "confirmed",
+            "paired_to_same_recorded_round": true
+          }
+        ],
+        "B": [
+          {
+            "event_suffix": "00000006",
+            "seen_utc": "2026-11-18T18:17:00.207+00:00",
+            "samples": 54,
+            "duration_s": 28.0,
+            "rssi_avg": -67.0,
+            "transport": "mqtt",
+            "clock_kind": "anchored",
+            "matching": "confirmed",
+            "paired_to_same_recorded_round": true
+          }
+        ]
+      }
+    },
+    {
+      "round": 7,
+      "original_passed": false,
+      "events": {
+        "A": [
+          {
+            "event_suffix": "00000007",
+            "seen_utc": "2026-11-18T18:17:48.933+00:00",
+            "samples": 51,
+            "duration_s": 27.0,
+            "rssi_avg": -67.0,
+            "transport": "mqtt",
+            "clock_kind": "anchored",
+            "matching": "confirmed",
+            "paired_to_same_recorded_round": true
+          }
+        ],
+        "B": [
+          {
+            "event_suffix": "00000007",
+            "seen_utc": "2026-11-18T18:18:19.797+00:00",
+            "samples": 59,
+            "duration_s": 28.0,
+            "rssi_avg": -66.0,
+            "transport": "mqtt",
+            "clock_kind": "anchored",
+            "matching": "confirmed",
+            "paired_to_same_recorded_round": true
+          }
+        ]
+      }
+    },
+    {
+      "round": 8,
+      "original_passed": false,
+      "events": {
+        "A": [
+          {
+            "event_suffix": "00000008",
+            "seen_utc": "2026-11-18T18:21:24.249+00:00",
+            "samples": 52,
+            "duration_s": 27.0,
+            "rssi_avg": -67.0,
+            "transport": "mqtt",
+            "clock_kind": "anchored",
+            "matching": "confirmed",
+            "paired_to_same_recorded_round": true
+          }
+        ],
+        "B": [
+          {
+            "event_suffix": "00000008",
+            "seen_utc": "2026-11-18T18:21:54.318+00:00",
+            "samples": 54,
+            "duration_s": 28.0,
+            "rssi_avg": -67.0,
+            "transport": "mqtt",
+            "clock_kind": "anchored",
+            "matching": "confirmed",
+            "paired_to_same_recorded_round": true
+          }
+        ]
+      }
+    },
+    {
+      "round": 9,
+      "original_passed": false,
+      "events": {
+        "A": [
+          {
+            "event_suffix": "00000009",
+            "seen_utc": "2026-11-18T18:27:12.165+00:00",
+            "samples": 52,
+            "duration_s": 27.0,
+            "rssi_avg": -67.0,
+            "transport": "mqtt",
+            "clock_kind": "anchored",
+            "matching": "confirmed",
+            "paired_to_same_recorded_round": true
+          }
+        ],
+        "B": [
+          {
+            "event_suffix": "00000009",
+            "seen_utc": "2026-11-18T18:27:43.000+00:00",
+            "samples": 57,
+            "duration_s": 28.0,
+            "rssi_avg": -67.0,
+            "transport": "mqtt",
+            "clock_kind": "anchored",
+            "matching": "confirmed",
+            "paired_to_same_recorded_round": true
+          }
+        ]
+      }
+    },
+    {
+      "round": 10,
+      "original_passed": true,
+      "events": {
+        "A": [
+          {
+            "event_suffix": "0000000a",
+            "seen_utc": "2026-11-18T18:29:34.021+00:00",
+            "samples": 51,
+            "duration_s": 27.0,
+            "rssi_avg": -67.0,
+            "transport": "mqtt",
+            "clock_kind": "anchored",
+            "matching": "confirmed",
+            "paired_to_same_recorded_round": true
+          }
+        ],
+        "B": [
+          {
+            "event_suffix": "0000000a",
+            "seen_utc": "2026-11-18T18:30:04.512+00:00",
+            "samples": 55,
+            "duration_s": 28.0,
+            "rssi_avg": -67.0,
+            "transport": "mqtt",
+            "clock_kind": "anchored",
+            "matching": "confirmed",
+            "paired_to_same_recorded_round": true
+          }
+        ]
+      }
+    },
+    {
+      "round": 11,
+      "original_passed": true,
+      "events": {
+        "A": [
+          {
+            "event_suffix": "0000000b",
+            "seen_utc": "2026-11-18T18:31:20.432+00:00",
+            "samples": 52,
+            "duration_s": 27.0,
+            "rssi_avg": -67.0,
+            "transport": "mqtt",
+            "clock_kind": "anchored",
+            "matching": "confirmed",
+            "paired_to_same_recorded_round": true
+          }
+        ],
+        "B": [
+          {
+            "event_suffix": "0000000b",
+            "seen_utc": "2026-11-18T18:31:50.925+00:00",
+            "samples": 56,
+            "duration_s": 28.0,
+            "rssi_avg": -67.0,
+            "transport": "mqtt",
+            "clock_kind": "anchored",
+            "matching": "confirmed",
+            "paired_to_same_recorded_round": true
+          }
+        ]
+      }
+    },
+    {
+      "round": 12,
+      "original_passed": true,
+      "events": {
+        "A": [
+          {
+            "event_suffix": "0000000c",
+            "seen_utc": "2026-11-18T18:33:17.724+00:00",
+            "samples": 51,
+            "duration_s": 27.0,
+            "rssi_avg": -67.0,
+            "transport": "mqtt",
+            "clock_kind": "anchored",
+            "matching": "confirmed",
+            "paired_to_same_recorded_round": true
+          }
+        ],
+        "B": [
+          {
+            "event_suffix": "0000000c",
+            "seen_utc": "2026-11-18T18:33:48.646+00:00",
+            "samples": 56,
+            "duration_s": 28.0,
+            "rssi_avg": -67.0,
+            "transport": "mqtt",
+            "clock_kind": "anchored",
+            "matching": "confirmed",
+            "paired_to_same_recorded_round": true
+          }
+        ]
+      }
+    },
+    {
+      "round": 13,
+      "original_passed": true,
+      "events": {
+        "A": [
+          {
+            "event_suffix": "0000000d",
+            "seen_utc": "2026-11-18T18:34:49.058+00:00",
+            "samples": 49,
+            "duration_s": 27.0,
+            "rssi_avg": -67.0,
+            "transport": "mqtt",
+            "clock_kind": "anchored",
+            "matching": "confirmed",
+            "paired_to_same_recorded_round": true
+          }
+        ],
+        "B": [
+          {
+            "event_suffix": "0000000d",
+            "seen_utc": "2026-11-18T18:35:19.711+00:00",
+            "samples": 57,
+            "duration_s": 28.0,
+            "rssi_avg": -67.0,
+            "transport": "mqtt",
+            "clock_kind": "anchored",
+            "matching": "confirmed",
+            "paired_to_same_recorded_round": true
+          }
+        ]
+      }
+    },
+    {
+      "round": 14,
+      "original_passed": true,
+      "events": {
+        "A": [
+          {
+            "event_suffix": "0000000e",
+            "seen_utc": "2026-11-18T18:36:14.368+00:00",
+            "samples": 48,
+            "duration_s": 26.0,
+            "rssi_avg": -67.0,
+            "transport": "mqtt",
+            "clock_kind": "anchored",
+            "matching": "confirmed",
+            "paired_to_same_recorded_round": true
+          }
+        ],
+        "B": [
+          {
+            "event_suffix": "0000000e",
+            "seen_utc": "2026-11-18T18:36:46.271+00:00",
+            "samples": 58,
+            "duration_s": 28.0,
+            "rssi_avg": -66.0,
+            "transport": "mqtt",
+            "clock_kind": "anchored",
+            "matching": "confirmed",
+            "paired_to_same_recorded_round": true
+          }
+        ]
+      }
+    },
+    {
+      "round": 15,
+      "original_passed": true,
+      "events": {
+        "A": [
+          {
+            "event_suffix": "0000000f",
+            "seen_utc": "2026-11-18T18:37:40.681+00:00",
+            "samples": 53,
+            "duration_s": 27.0,
+            "rssi_avg": -66.0,
+            "transport": "mqtt",
+            "clock_kind": "anchored",
+            "matching": "confirmed",
+            "paired_to_same_recorded_round": true
+          }
+        ],
+        "B": [
+          {
+            "event_suffix": "0000000f",
+            "seen_utc": "2026-11-18T18:38:11.022+00:00",
+            "samples": 56,
+            "duration_s": 28.0,
+            "rssi_avg": -66.0,
+            "transport": "mqtt",
+            "clock_kind": "anchored",
+            "matching": "confirmed",
+            "paired_to_same_recorded_round": true
+          }
+        ]
+      }
+    },
+    {
+      "round": 16,
+      "original_passed": true,
+      "events": {
+        "A": [
+          {
+            "event_suffix": "00000010",
+            "seen_utc": "2026-11-18T18:39:44.527+00:00",
+            "samples": 53,
+            "duration_s": 27.0,
+            "rssi_avg": -66.0,
+            "transport": "mqtt",
+            "clock_kind": "anchored",
+            "matching": "confirmed",
+            "paired_to_same_recorded_round": true
+          }
+        ],
+        "B": [
+          {
+            "event_suffix": "00000010",
+            "seen_utc": "2026-11-18T18:40:14.843+00:00",
+            "samples": 56,
+            "duration_s": 28.0,
+            "rssi_avg": -66.0,
+            "transport": "mqtt",
+            "clock_kind": "anchored",
+            "matching": "confirmed",
+            "paired_to_same_recorded_round": true
+          }
+        ]
+      }
+    },
+    {
+      "round": 17,
+      "original_passed": false,
+      "events": {
+        "A": [],
+        "B": [
+          {
+            "event_suffix": "00000011",
+            "seen_utc": "2026-11-18T18:41:35.799+00:00",
+            "samples": 23,
+            "duration_s": 10.0,
+            "rssi_avg": -66.0,
+            "transport": "mqtt",
+            "clock_kind": "anchored",
+            "matching": "single",
+            "paired_to_same_recorded_round": false
+          }
+        ]
+      }
+    },
+    {
+      "round": 18,
+      "original_passed": true,
+      "events": {
+        "A": [
+          {
+            "event_suffix": "00000001",
+            "seen_utc": "2026-11-18T18:43:57.931+00:00",
+            "samples": 52,
+            "duration_s": 27.0,
+            "rssi_avg": -66.0,
+            "transport": "mqtt",
+            "clock_kind": "anchored",
+            "matching": "confirmed",
+            "paired_to_same_recorded_round": true
+          }
+        ],
+        "B": [
+          {
+            "event_suffix": "00000012",
+            "seen_utc": "2026-11-18T18:44:28.362+00:00",
+            "samples": 56,
+            "duration_s": 28.0,
+            "rssi_avg": -66.0,
+            "transport": "mqtt",
+            "clock_kind": "anchored",
+            "matching": "confirmed",
+            "paired_to_same_recorded_round": true
+          }
+        ]
+      }
+    },
+    {
+      "round": 19,
+      "original_passed": false,
+      "events": {
+        "A": [
+          {
+            "event_suffix": "00000002",
+            "seen_utc": "2026-11-18T18:45:35.837+00:00",
+            "samples": 52,
+            "duration_s": 27.0,
+            "rssi_avg": -66.0,
+            "transport": "mqtt",
+            "clock_kind": "anchored",
+            "matching": "confirmed",
+            "paired_to_same_recorded_round": true
+          }
+        ],
+        "B": [
+          {
+            "event_suffix": "00000013",
+            "seen_utc": "2026-11-18T18:46:06.797+00:00",
+            "samples": 57,
+            "duration_s": 28.0,
+            "rssi_avg": -66.0,
+            "transport": "mqtt",
+            "clock_kind": "anchored",
+            "matching": "confirmed",
+            "paired_to_same_recorded_round": true
+          }
+        ]
+      }
+    },
+    {
+      "round": 20,
+      "original_passed": false,
+      "events": {
+        "A": [
+          {
+            "event_suffix": "00000003",
+            "seen_utc": "2026-11-18T18:47:46.863+00:00",
+            "samples": 51,
+            "duration_s": 27.0,
+            "rssi_avg": -66.0,
+            "transport": "mqtt",
+            "clock_kind": "anchored",
+            "matching": "confirmed",
+            "paired_to_same_recorded_round": true
+          }
+        ],
+        "B": [
+          {
+            "event_suffix": "00000014",
+            "seen_utc": "2026-11-18T18:48:17.330+00:00",
+            "samples": 55,
+            "duration_s": 28.0,
+            "rssi_avg": -66.0,
+            "transport": "mqtt",
+            "clock_kind": "anchored",
+            "matching": "confirmed",
+            "paired_to_same_recorded_round": true
+          }
+        ]
+      }
+    }
+  ]
+}

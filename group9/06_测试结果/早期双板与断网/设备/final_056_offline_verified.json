@@ -1,0 +1,267 @@
+{
+  "firmware": "0.5.6-dual",
+  "status": "verified",
+  "begin_offline_host_utc_reported": "2026-11-18T18:53:44.000+00:00",
+  "collector": "hardware/logs/final-ir-offline/serial.jsonl",
+  "gesture": "Both discovery windows were opened with serial discover. BLE advertisements and scans used physical boards. Earlier physical-button tests are separate.",
+  "IR_attempts": [
+    {
+      "A": {
+        "start_utc": "2026-11-18T18:53:50.004+00:00",
+        "stop_utc": "2026-11-18T18:55:16.234+00:00",
+        "tx_hello": 178,
+        "rx_hello": 0,
+        "rx_ack": 0,
+        "rx_done": 0,
+        "paired_confirmation": 0,
+        "invalid_ir_frames": 0
+      },
+      "B": {
+        "start_utc": "2026-11-18T18:53:50.055+00:00",
+        "stop_utc": "2026-11-18T18:55:16.284+00:00",
+        "tx_hello": 177,
+        "rx_hello": 0,
+        "rx_ack": 0,
+        "rx_done": 0,
+        "paired_confirmation": 0,
+        "invalid_ir_frames": 0
+      }
+    },
+    {
+      "A": {
+        "start_utc": "2026-11-18T18:55:17.296+00:00",
+        "stop_utc": "2026-11-18T18:56:28.286+00:00",
+        "tx_hello": 144,
+        "rx_hello": 0,
+        "rx_ack": 0,
+        "rx_done": 0,
+        "paired_confirmation": 0,
+        "invalid_ir_frames": 0
+      },
+      "B": {
+        "start_utc": "2026-11-18T18:55:18.230+00:00",
+        "stop_utc": "2026-11-18T18:56:28.337+00:00",
+        "tx_hello": 144,
+        "rx_hello": 0,
+        "rx_ack": 0,
+        "rx_done": 0,
+        "paired_confirmation": 0,
+        "invalid_ir_frames": 0
+      }
+    },
+    {
+      "A": {
+        "start_utc": "2026-11-18T18:56:31.017+00:00",
+        "stop_utc": "2026-11-18T18:57:24.881+00:00",
+        "tx_hello": 117,
+        "rx_hello": 0,
+        "rx_ack": 0,
+        "rx_done": 0,
+        "paired_confirmation": 0,
+        "invalid_ir_frames": 0
+      },
+      "B": {
+        "start_utc": "2026-11-18T18:56:29.478+00:00",
+        "stop_utc": "2026-11-18T18:57:24.932+00:00",
+        "tx_hello": 114,
+        "rx_hello": 0,
+        "rx_ack": 0,
+        "rx_done": 0,
+        "paired_confirmation": 0,
+        "invalid_ir_frames": 0
+      }
+    }
+  ],
+  "queued": {
+    "ev_349454276354_8d439bdf_00000004": {
+      "utc": "2026-11-18T18:58:27.284+00:00",
+      "board": "A",
+      "source": "serial_diagnostic",
+      "device_id": "bump-349454276354",
+      "boot_id": "8d439bdf",
+      "self_short_id": "05bb0923c5ff",
+      "event": {
+        "event_id": "ev_349454276354_8d439bdf_00000004",
+        "peer_short_id": "0ca161061eec",
+        "rssi_avg": -67,
+        "rssi_last": -68,
+        "duration_s": 27,
+        "samples": 53,
+        "flags": 1,
+        "peer_tx_power": -4,
+        "occurred_uptime_ms": 980113,
+        "discovery_started_uptime_ms": 950983,
+        "discovery_ended_uptime_ms": 1010983
+      }
+    },
+    "ev_c8c9a3e65ba4_00cfd824_00000015": {
+      "utc": "2026-11-18T18:58:27.337+00:00",
+      "board": "B",
+      "source": "serial_diagnostic",
+      "device_id": "bump-c8c9a3e65ba4",
+      "boot_id": "00cfd824",
+      "self_short_id": "0ca161061eec",
+      "event": {
+        "event_id": "ev_c8c9a3e65ba4_00cfd824_00000015",
+        "peer_short_id": "05bb0923c5ff",
+        "rssi_avg": -66,
+        "rssi_last": -66,
+        "duration_s": 28,
+        "samples": 56,
+        "flags": 1,
+        "peer_tx_power": -4,
+        "occurred_uptime_ms": 4003132,
+        "discovery_started_uptime_ms": 3943487,
+        "discovery_ended_uptime_ms": 4003487
+      }
+    }
+  },
+  "later_enqueue_utc": "2026-11-18T18:58:27.337+00:00",
+  "offline_checkpoint": {
+    "utc": "2026-11-18T19:03:32.530+00:00",
+    "minimum_retention_s": 305.193,
+    "board_status": {
+      "A": {
+        "host_utc": "2026-11-18T19:03:28.798+00:00",
+        "fw": "0.5.6-dual",
+        "boot_id": "8d439bdf",
+        "self_short_id": "05bb0923c5ff",
+        "queued": 1,
+        "dropped": 0,
+        "uptime_ms": 1312392,
+        "paused": false,
+        "ir_paired": false,
+        "peer_code16": "0000",
+        "network_configured": true,
+        "last_watchdog_stage": "imu"
+      },
+      "B": {
+        "host_utc": "2026-11-18T19:03:28.798+00:00",
+        "fw": "0.5.6-dual",
+        "boot_id": "00cfd824",
+        "self_short_id": "0ca161061eec",
+        "queued": 1,
+        "dropped": 0,
+        "uptime_ms": 4304894,
+        "paused": false,
+        "ir_paired": false,
+        "peer_code16": "0000",
+        "network_configured": true,
+        "last_watchdog_stage": "none"
+      }
+    },
+    "matching_dump_events": [
+      "ev_349454276354_8d439bdf_00000004",
+      "ev_c8c9a3e65ba4_00cfd824_00000015"
+    ],
+    "database_rows": [],
+    "radio": {
+      "action": "Inspect",
+      "state": "Off",
+      "owner": 43512,
+      "keepers": [],
+      "paused": true,
+      "utc": "2026-11-18T19:03:32.4315896Z"
+    },
+    "owner": 43512,
+    "wifi_failed_by_board": {
+      "A": 16,
+      "B": 16
+    }
+  },
+  "resume": {
+    "action": "Resume",
+    "state": "On",
+    "owner": 43512,
+    "keepers": [
+      40288
+    ],
+    "paused": false,
+    "utc": "2026-11-18T19:03:37.6392719Z"
+  },
+  "completed_utc": "2026-11-18T19:03:49.783+00:00",
+  "automatic_replay": {
+    "A": {
+      "event_id": "ev_349454276354_8d439bdf_00000004",
+      "first_transmit_utc": "2026-11-18T19:03:43.668+00:00",
+      "last_transmit_utc": "2026-11-18T19:03:43.668+00:00",
+      "puback_utc": "2026-11-18T19:03:44.389+00:00",
+      "application_ack_utc": "2026-11-18T19:03:44.492+00:00",
+      "removed_utc": "2026-11-18T19:03:44.492+00:00",
+      "receipt": {
+        "type": "queue_removed_after_application_ack",
+        "origin": "wifi_mqtt",
+        "event_id": "ev_349454276354_8d439bdf_00000004",
+        "queued": 0
+      },
+      "db_count": 1,
+      "database": {
+        "event_id": "ev_349454276354_8d439bdf_00000004",
+        "device": "bump-349454276354",
+        "boot": "8d439bdf",
+        "peer_short": "0ca161061eec",
+        "duration_s": 27.0,
+        "samples": 53,
+        "received_at": 1795028624.3676622,
+        "transport": "mqtt"
+      }
+    },
+    "B": {
+      "event_id": "ev_c8c9a3e65ba4_00cfd824_00000015",
+      "first_transmit_utc": "2026-11-18T19:03:47.147+00:00",
+      "last_transmit_utc": "2026-11-18T19:03:47.147+00:00",
+      "puback_utc": "2026-11-18T19:03:47.224+00:00",
+      "application_ack_utc": "2026-11-18T19:03:47.457+00:00",
+      "removed_utc": "2026-11-18T19:03:47.457+00:00",
+      "receipt": {
+        "type": "queue_removed_after_application_ack",
+        "origin": "wifi_mqtt",
+        "event_id": "ev_c8c9a3e65ba4_00cfd824_00000015",
+        "queued": 0
+      },
+      "db_count": 1,
+      "database": {
+        "event_id": "ev_c8c9a3e65ba4_00cfd824_00000015",
+        "device": "bump-c8c9a3e65ba4",
+        "boot": "00cfd824",
+        "peer_short": "05bb0923c5ff",
+        "duration_s": 28.0,
+        "samples": 56,
+        "received_at": 1795028627.1987276,
+        "transport": "mqtt"
+      }
+    }
+  },
+  "final_status": {
+    "A": {
+      "host_utc": "2026-11-18T19:03:48.358+00:00",
+      "fw": "0.5.6-dual",
+      "boot_id": "8d439bdf",
+      "self_short_id": "05bb0923c5ff",
+      "queued": 0,
+      "dropped": 0,
+      "uptime_ms": 1331951,
+      "paused": false,
+      "ir_paired": false,
+      "peer_code16": "0000",
+      "network_configured": true,
+      "last_watchdog_stage": "imu"
+    },
+    "B": {
+      "host_utc": "2026-11-18T19:03:49.727+00:00",
+      "fw": "0.5.6-dual",
+      "boot_id": "00cfd824",
+      "self_short_id": "0ca161061eec",
+      "queued": 0,
+      "dropped": 0,
+      "uptime_ms": 4325879,
+      "paused": false,
+      "ir_paired": false,
+      "peer_code16": "0000",
+      "network_configured": true,
+      "last_watchdog_stage": "none"
+    }
+  },
+  "configuration_or_forced_sync_commands_after_outage": [],
+  "IR_final_result": "Neither side received IR HELLO/ACK/DONE or paired in three attempts at the unchanged physical placement. Both were confirmed IDLE before serial discover. No paired peer existed for a one-sided IR release test."
+}

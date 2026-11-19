@@ -1,0 +1,228 @@
+{
+  "record": "round",
+  "round": 2,
+  "source": "hardware",
+  "start_skew_s": 2.967,
+  "max_start_skew_s": 20,
+  "timeout": null,
+  "both_saw_peer": true,
+  "both_observed": true,
+  "passed": true,
+  "directions": {
+    "A": {
+      "expected_peer_short_id": "9f9609d028aa",
+      "input_tx_at": null,
+      "start": {
+        "at": "2026-11-19T01:19:56.766+00:00",
+        "type": "discovery_start",
+        "source": "hardware",
+        "self_short_id": "6b83c123a270",
+        "first_phase": "scan",
+        "window_ms": 60000,
+        "uptime_ms": 391660
+      },
+      "end": {
+        "at": "2026-11-19T01:20:57.555+00:00",
+        "type": "discovery_end",
+        "source": "hardware",
+        "complete": true,
+        "observed_peers": 1,
+        "uptime_ms": 452437
+      },
+      "samples_preview": [
+        {
+          "at": "2026-11-19T01:19:58.401+00:00",
+          "type": "ble_observation",
+          "peer_short_id": "9f9609d028aa",
+          "rssi": -50,
+          "samples": 1,
+          "uptime_ms": 393292
+        },
+        {
+          "at": "2026-11-19T01:19:58.814+00:00",
+          "type": "ble_observation",
+          "peer_short_id": "9f9609d028aa",
+          "rssi": -64,
+          "samples": 2,
+          "uptime_ms": 393693
+        }
+      ],
+      "queued_observations": [
+        {
+          "at": "2026-11-19T01:20:56.780+00:00",
+          "event_id": "ev_349454276354_1136c725_00000002",
+          "peer_short_id": "9f9609d028aa",
+          "rssi_avg": -54,
+          "rssi_last": -54,
+          "duration_s": 19,
+          "samples": 42,
+          "flags": 1,
+          "peer_tx_power": -4,
+          "occurred_uptime_ms": 412519,
+          "discovery_started_uptime_ms": 391660,
+          "discovery_ended_uptime_ms": 451660,
+          "device_id": "bump-349454276354",
+          "boot_id": "1136c725",
+          "self_short_id": "6b83c123a270"
+        }
+      ],
+      "transmits": [
+        {
+          "event_id": "ev_349454276354_1136c725_00000002",
+          "at": "2026-11-19T01:21:03.060+00:00"
+        }
+      ],
+      "broker_puback": [
+        {
+          "event_id": "ev_349454276354_1136c725_00000002",
+          "at": "2026-11-19T01:21:03.217+00:00",
+          "received": true
+        }
+      ],
+      "application_ack": [
+        {
+          "event_id": "ev_349454276354_1136c725_00000002",
+          "at": "2026-11-19T01:21:03.319+00:00"
+        }
+      ],
+      "db_rows": [
+        {
+          "event_id": "ev_349454276354_1136c725_00000002",
+          "device": "bump-349454276354",
+          "boot": "1136c725",
+          "peer_short": "9f9609d028aa",
+          "peer_device": "bump-c8c9a3e65ba4",
+          "received_at": 1795051263.1990988,
+          "rssi_avg": -54.0,
+          "samples": 42,
+          "duration_s": 19.0,
+          "transport": "mqtt"
+        }
+      ],
+      "resets": [],
+      "reasons": [],
+      "motion_trigger": {
+        "at": "2026-11-19T01:19:56.766+00:00",
+        "type": "motion_trigger",
+        "detail": "hardware",
+        "uptime_ms": 391659
+      }
+    },
+    "B": {
+      "expected_peer_short_id": "6b83c123a270",
+      "input_tx_at": null,
+      "start": {
+        "at": "2026-11-19T01:19:53.799+00:00",
+        "type": "discovery_start",
+        "source": "hardware",
+        "self_short_id": "9f9609d028aa",
+        "first_phase": "advertise",
+        "window_ms": 60000,
+        "uptime_ms": 380753
+      },
+      "end": {
+        "at": "2026-11-19T01:20:54.581+00:00",
+        "type": "discovery_end",
+        "source": "hardware",
+        "complete": true,
+        "observed_peers": 1,
+        "uptime_ms": 441559
+      },
+      "samples_preview": [
+        {
+          "at": "2026-11-19T01:20:27.933+00:00",
+          "type": "ble_observation",
+          "peer_short_id": "6b83c123a270",
+          "rssi": -56,
+          "samples": 1,
+          "uptime_ms": 414889
+        },
+        {
+          "at": "2026-11-19T01:20:28.374+00:00",
+          "type": "ble_observation",
+          "peer_short_id": "6b83c123a270",
+          "rssi": -49,
+          "samples": 2,
+          "uptime_ms": 415346
+        }
+      ],
+      "queued_observations": [
+        {
+          "at": "2026-11-19T01:20:53.807+00:00",
+          "event_id": "ev_c8c9a3e65ba4_50005cfb_00000002",
+          "peer_short_id": "6b83c123a270",
+          "rssi_avg": -55,
+          "rssi_last": -65,
+          "duration_s": 14,
+          "samples": 31,
+          "flags": 1,
+          "peer_tx_power": -4,
+          "occurred_uptime_ms": 429482,
+          "discovery_started_uptime_ms": 380753,
+          "discovery_ended_uptime_ms": 440753,
+          "device_id": "bump-c8c9a3e65ba4",
+          "boot_id": "50005cfb",
+          "self_short_id": "9f9609d028aa"
+        }
+      ],
+      "transmits": [
+        {
+          "event_id": "ev_c8c9a3e65ba4_50005cfb_00000002",
+          "at": "2026-11-19T01:21:03.008+00:00"
+        }
+      ],
+      "broker_puback": [
+        {
+          "event_id": "ev_c8c9a3e65ba4_50005cfb_00000002",
+          "at": "2026-11-19T01:21:03.217+00:00",
+          "received": true
+        }
+      ],
+      "application_ack": [
+        {
+          "event_id": "ev_c8c9a3e65ba4_50005cfb_00000002",
+          "at": "2026-11-19T01:21:03.345+00:00"
+        }
+      ],
+      "db_rows": [
+        {
+          "event_id": "ev_c8c9a3e65ba4_50005cfb_00000002",
+          "device": "bump-c8c9a3e65ba4",
+          "boot": "50005cfb",
+          "peer_short": "6b83c123a270",
+          "peer_device": "bump-349454276354",
+          "received_at": 1795051263.1836677,
+          "rssi_avg": -55.0,
+          "samples": 31,
+          "duration_s": 14.0,
+          "transport": "mqtt"
+        }
+      ],
+      "resets": [],
+      "reasons": [],
+      "motion_trigger": {
+        "at": "2026-11-19T01:19:53.773+00:00",
+        "type": "motion_trigger",
+        "detail": "hardware",
+        "uptime_ms": 380753
+      }
+    }
+  },
+  "anchored_rows": [
+    {
+      "event_id": "ev_349454276354_1136c725_00000002",
+      "transport": "mqtt",
+      "time_quality": "anchored",
+      "clock_uncertainty_s": 0.6034497022628784
+    },
+    {
+      "event_id": "ev_c8c9a3e65ba4_50005cfb_00000002",
+      "transport": "mqtt",
+      "time_quality": "anchored",
+      "clock_uncertainty_s": 0.7781461477279663
+    }
+  ],
+  "seconds_after_later_end_to_last_ack": 5.79,
+  "evidence_source": "Retrospective replay of uninterrupted raw USB log; waiting driver did not start during the previous round's B upload backlog.",
+  "human_observation_shared_across_0_5_8_visit": "用户现场看到两块 L 橙红色小灯先后亮起，RGB 短暂变黄再回白；观察未强行归属于某个单独窗口。"
+}

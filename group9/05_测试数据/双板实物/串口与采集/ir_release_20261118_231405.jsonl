@@ -1,0 +1,104 @@
+{"utc": "2026-11-18T15:14:05.728245+00:00", "board": "A", "kind": "tx", "data": "s"}
+{"utc": "2026-11-18T15:14:05.728467+00:00", "board": "B", "kind": "tx", "data": "s"}
+{"utc": "2026-11-18T15:14:05.749247+00:00", "board": "A", "kind": "rx", "data": "STATUS state=IDLE my=0xA30F"}
+{"utc": "2026-11-18T15:14:05.749400+00:00", "board": "B", "kind": "rx", "data": "STATUS state=IDLE my=0xC371"}
+{"utc": "2026-11-18T15:14:06.095341+00:00", "board": "A", "kind": "rx", "data": "[state=IDLE my=0xA30F]"}
+{"utc": "2026-11-18T15:14:06.239087+00:00", "board": "A", "kind": "tx", "data": "b"}
+{"utc": "2026-11-18T15:14:06.239339+00:00", "board": "B", "kind": "tx", "data": "b"}
+{"utc": "2026-11-18T15:14:06.259996+00:00", "board": "A", "kind": "rx", "data": "Blue: start pairing"}
+{"utc": "2026-11-18T15:14:06.260207+00:00", "board": "B", "kind": "rx", "data": "Blue: start pairing"}
+{"utc": "2026-11-18T15:14:06.589673+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:06.671380+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:07.099807+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:07.303438+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:07.588641+00:00", "board": "B", "kind": "rx", "data": "[state=SEARCH my=0xC371]"}
+{"utc": "2026-11-18T15:14:07.731889+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:07.772896+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:08.099357+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:08.181447+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:08.366169+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:08.754182+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:08.775125+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:09.102564+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:09.265935+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:09.470409+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:09.778769+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:09.819785+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:10.044060+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:10.207792+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:10.535751+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:10.576991+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:10.943871+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:11.086935+00:00", "board": "A", "kind": "rx", "data": "[state=SEARCH my=0xA30F]"}
+{"utc": "2026-11-18T15:14:11.250681+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:11.250762+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:11.718945+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:11.882418+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:12.127413+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:12.209183+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:12.596954+00:00", "board": "B", "kind": "rx", "data": "[state=SEARCH my=0xC371]"}
+{"utc": "2026-11-18T15:14:12.617255+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:12.882811+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:13.148137+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:13.330938+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:13.800705+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:13.882465+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:14.472127+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:14.554550+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:14.822101+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:14.966635+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:15.455332+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:15.476029+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:15.947319+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:16.028921+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:16.089868+00:00", "board": "A", "kind": "rx", "data": "[state=SEARCH my=0xA30F]"}
+{"utc": "2026-11-18T15:14:16.355259+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:16.497378+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:16.722486+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:16.906959+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:17.159243+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:17.303923+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:17.573023+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:17.593401+00:00", "board": "B", "kind": "rx", "data": "[state=SEARCH my=0xC371]"}
+{"utc": "2026-11-18T15:14:17.715909+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:17.881771+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:18.207921+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:18.392430+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:18.822189+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:18.945179+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:19.455620+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:19.496570+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:19.804331+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:20.091826+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:20.112399+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:20.563017+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:20.665576+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:21.014210+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:21.095524+00:00", "board": "A", "kind": "rx", "data": "[state=SEARCH my=0xA30F]"}
+{"utc": "2026-11-18T15:14:21.178043+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:21.648523+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:21.832704+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:21.956252+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:22.263487+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:22.489351+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:22.592624+00:00", "board": "B", "kind": "rx", "data": "[state=SEARCH my=0xC371]"}
+{"utc": "2026-11-18T15:14:22.777090+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:22.817851+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:23.207659+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:23.432948+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:23.677990+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:23.821191+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:24.087957+00:00", "board": "A", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:24.251808+00:00", "board": "A", "kind": "tx", "data": "w"}
+{"utc": "2026-11-18T15:14:24.252346+00:00", "board": "B", "kind": "tx", "data": "w"}
+{"utc": "2026-11-18T15:14:24.272591+00:00", "board": "A", "kind": "rx", "data": "White: stop pairing"}
+{"utc": "2026-11-18T15:14:24.334915+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:14:24.334976+00:00", "board": "B", "kind": "rx", "data": "White: stop pairing"}
+{"utc": "2026-11-18T15:14:24.396571+00:00", "board": "A", "kind": "rx", "data": "TX BYE -> BCAST"}
+{"utc": "2026-11-18T15:14:24.457969+00:00", "board": "B", "kind": "rx", "data": "TX BYE -> BCAST"}
+{"utc": "2026-11-18T15:14:24.601382+00:00", "board": "A", "kind": "rx", "data": "TX BYE -> BCAST"}
+{"utc": "2026-11-18T15:14:24.663136+00:00", "board": "B", "kind": "rx", "data": "TX BYE -> BCAST"}
+{"utc": "2026-11-18T15:14:25.256574+00:00", "board": "A", "kind": "tx", "data": "s"}
+{"utc": "2026-11-18T15:14:25.256740+00:00", "board": "B", "kind": "tx", "data": "s"}
+{"utc": "2026-11-18T15:14:25.277902+00:00", "board": "A", "kind": "rx", "data": "STATUS state=IDLE my=0xA30F"}
+{"utc": "2026-11-18T15:14:25.278016+00:00", "board": "B", "kind": "rx", "data": "STATUS state=IDLE my=0xC371"}

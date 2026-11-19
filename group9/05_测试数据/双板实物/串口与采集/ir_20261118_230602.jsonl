@@ -1,0 +1,52 @@
+{"utc": "2026-11-18T15:06:02.431849+00:00", "board": "A", "kind": "identity", "data": {"serial": "0617355018835E82", "port": "COM13"}}
+{"utc": "2026-11-18T15:06:02.434810+00:00", "board": "B", "kind": "identity", "data": {"serial": "416523501C5F96C8", "port": "COM14"}}
+{"utc": "2026-11-18T15:06:02.859381+00:00", "board": "A", "kind": "tx", "data": "s"}
+{"utc": "2026-11-18T15:06:02.859602+00:00", "board": "B", "kind": "tx", "data": "s"}
+{"utc": "2026-11-18T15:06:02.895180+00:00", "board": "A", "kind": "rx", "data": "STATUS state=IDLE my=0xA30F"}
+{"utc": "2026-11-18T15:06:02.895369+00:00", "board": "B", "kind": "rx", "data": "STATUS state=IDLE my=0xC371"}
+{"utc": "2026-11-18T15:06:03.179111+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}
+{"utc": "2026-11-18T15:06:03.888110+00:00", "board": "A", "kind": "tx", "data": "b"}
+{"utc": "2026-11-18T15:06:03.888295+00:00", "board": "B", "kind": "tx", "data": "b"}
+{"utc": "2026-11-18T15:06:03.924022+00:00", "board": "A", "kind": "rx", "data": "Blue: start pairing"}
+{"utc": "2026-11-18T15:06:03.924200+00:00", "board": "B", "kind": "rx", "data": "Blue: start pairing"}
+{"utc": "2026-11-18T15:06:04.278014+00:00", "board": "A", "kind": "rx", "data": "RX HELLO from 0xC371"}
+{"utc": "2026-11-18T15:06:04.278080+00:00", "board": "A", "kind": "rx", "data": "HELLO peer=0xC371 state=CONFIRM"}
+{"utc": "2026-11-18T15:06:04.278143+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:06:04.455465+00:00", "board": "A", "kind": "rx", "data": "[state=CONFIRM my=0xA30F peer=0xC371]"}
+{"utc": "2026-11-18T15:06:04.562021+00:00", "board": "B", "kind": "rx", "data": "IR other: proto=2 bits=38 raw=0x0000000371A30F21"}
+{"utc": "2026-11-18T15:06:04.597843+00:00", "board": "A", "kind": "rx", "data": "TX ACK -> 0xC371"}
+{"utc": "2026-11-18T15:06:04.846623+00:00", "board": "A", "kind": "rx", "data": "RX HELLO from 0xC371"}
+{"utc": "2026-11-18T15:06:04.846727+00:00", "board": "B", "kind": "rx", "data": "TX HELLO -> BCAST"}
+{"utc": "2026-11-18T15:06:04.952738+00:00", "board": "B", "kind": "rx", "data": "RX ACK from 0xA30F to 0xC371"}
+{"utc": "2026-11-18T15:06:04.952813+00:00", "board": "B", "kind": "rx", "data": "PAIRED (ACK) peer=0xA30F state=PAIRED"}
+{"utc": "2026-11-18T15:06:04.988265+00:00", "board": "A", "kind": "rx", "data": "TX ACK -> 0xC371"}
+{"utc": "2026-11-18T15:06:05.130274+00:00", "board": "A", "kind": "rx", "data": "RX DONE from 0xC371 to 0xA30F"}
+{"utc": "2026-11-18T15:06:05.130348+00:00", "board": "A", "kind": "rx", "data": "PAIRED (DONE) peer=0xC371 state=PAIRED"}
+{"utc": "2026-11-18T15:06:05.130390+00:00", "board": "B", "kind": "rx", "data": "TX DONE -> 0xA30F"}
+{"utc": "2026-11-18T15:06:05.413067+00:00", "board": "A", "kind": "rx", "data": "RX DONE from 0xC371 to 0xA30F"}
+{"utc": "2026-11-18T15:06:05.413170+00:00", "board": "B", "kind": "rx", "data": "TX DONE -> 0xA30F"}
+{"utc": "2026-11-18T15:06:05.696290+00:00", "board": "A", "kind": "rx", "data": "RX DONE from 0xC371 to 0xA30F"}
+{"utc": "2026-11-18T15:06:05.696392+00:00", "board": "B", "kind": "rx", "data": "TX DONE -> 0xA30F"}
+{"utc": "2026-11-18T15:06:08.177727+00:00", "board": "B", "kind": "rx", "data": "[state=PAIRED my=0xC371 peer=0xA30F]"}
+{"utc": "2026-11-18T15:06:09.455168+00:00", "board": "A", "kind": "rx", "data": "[state=PAIRED my=0xA30F peer=0xC371]"}
+{"utc": "2026-11-18T15:06:13.175096+00:00", "board": "B", "kind": "rx", "data": "[state=PAIRED my=0xC371 peer=0xA30F]"}
+{"utc": "2026-11-18T15:06:13.919565+00:00", "board": "A", "kind": "tx", "data": "s"}
+{"utc": "2026-11-18T15:06:13.919781+00:00", "board": "B", "kind": "tx", "data": "s"}
+{"utc": "2026-11-18T15:06:13.955068+00:00", "board": "A", "kind": "rx", "data": "STATUS state=PAIRED my=0xA30F peer=0xC371"}
+{"utc": "2026-11-18T15:06:13.955172+00:00", "board": "B", "kind": "rx", "data": "STATUS state=PAIRED my=0xC371 peer=0xA30F"}
+{"utc": "2026-11-18T15:06:14.451060+00:00", "board": "A", "kind": "rx", "data": "[state=PAIRED my=0xA30F peer=0xC371]"}
+{"utc": "2026-11-18T15:06:14.521774+00:00", "board": "A", "kind": "tx", "data": "w"}
+{"utc": "2026-11-18T15:06:14.557432+00:00", "board": "A", "kind": "rx", "data": "White: stop pairing"}
+{"utc": "2026-11-18T15:06:14.663765+00:00", "board": "A", "kind": "rx", "data": "TX BYE -> 0xC371"}
+{"utc": "2026-11-18T15:06:14.876414+00:00", "board": "A", "kind": "rx", "data": "TX BYE -> 0xC371"}
+{"utc": "2026-11-18T15:06:17.535266+00:00", "board": "A", "kind": "tx", "data": "s"}
+{"utc": "2026-11-18T15:06:17.535542+00:00", "board": "B", "kind": "tx", "data": "s"}
+{"utc": "2026-11-18T15:06:17.571034+00:00", "board": "A", "kind": "rx", "data": "STATUS state=IDLE my=0xA30F"}
+{"utc": "2026-11-18T15:06:17.571126+00:00", "board": "B", "kind": "rx", "data": "STATUS state=PAIRED my=0xC371 peer=0xA30F"}
+{"utc": "2026-11-18T15:06:18.139242+00:00", "board": "B", "kind": "tx", "data": "w"}
+{"utc": "2026-11-18T15:06:18.174512+00:00", "board": "B", "kind": "rx", "data": "White: stop pairing"}
+{"utc": "2026-11-18T15:06:18.280828+00:00", "board": "A", "kind": "rx", "data": "RX BYE from 0xC371 to 0xA30F"}
+{"utc": "2026-11-18T15:06:18.280926+00:00", "board": "B", "kind": "rx", "data": "TX BYE -> 0xA30F"}
+{"utc": "2026-11-18T15:06:18.458638+00:00", "board": "A", "kind": "rx", "data": "RX BYE from 0xC371 to 0xA30F"}
+{"utc": "2026-11-18T15:06:18.458754+00:00", "board": "B", "kind": "rx", "data": "TX BYE -> 0xA30F"}
+{"utc": "2026-11-18T15:06:18.529587+00:00", "board": "B", "kind": "rx", "data": "[state=IDLE my=0xC371]"}

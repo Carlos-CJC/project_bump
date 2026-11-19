@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-23",
+  "environment": "Codex in-app Chromium browser; actual HTTP loopback server",
+  "passed": [
+    "Alice login and empty state",
+    "Real MQTT simulation appears as one mutual encounter",
+    "Profile hidden before consent",
+    "Alice creates a pending request",
+    "Bob logs in and sees incoming request",
+    "Bob accepts and sees only the authorized synthetic profile",
+    "Narrow layout and full page screenshot inspected"
+  ],
+  "not_completed_in_browser": [
+    "Revocation confirmation, hide confirmation, rejection and Charlie switch"
+  ],
+  "reason": "An original native JavaScript confirmation blocked this in-app browser's interaction tools. The UI was changed to an HTML dialog, but subsequent clicks in the affected browser session could not be verified.",
+  "separate_evidence": "API tests pass for rejection, revocation, soft-hide and third-account object authorization. Node VM tests pass for asynchronous account-switch races. These are not described as browser interaction tests.",
+  "screenshots": [
+    "accepted-profile-full.png",
+    "accepted-profile.png"
+  ],
+  "profiles": "Only example.invalid synthetic identities were used."
+}

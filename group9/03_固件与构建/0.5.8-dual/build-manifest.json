@@ -1,0 +1,68 @@
+{
+  "fqbn": "arduino:mbed_nano:nanorp2040connect",
+  "core_version": "4.6.0",
+  "libraries": {
+    "ArduinoBLE": "2.1.0",
+    "WiFiNINA": "2.1.1",
+    "Arduino_SpiNINA": "0.0.2",
+    "ArduinoMqttClient": "0.1.8",
+    "Arduino_LSM6DSOX": "1.1.2",
+    "IRremote": "4.7.1"
+  },
+  "ble_gate": {
+    "rssi_min_dbm": -70,
+    "samples_min": 2,
+    "span_min_ms": 3000,
+    "window_ms": 60000
+  },
+  "arduino_ble_overlay": {
+    "base": "ArduinoBLE 2.1.0",
+    "max_spi_read_bytes": 1,
+    "cached_availability_limit": 64,
+    "availability_wire_order": "big-endian",
+    "nano_rp2040_nina_reset_on_ble_end": true,
+    "poll_limits": {
+      "bytes": 192,
+      "microseconds_between_spi_operations": 20000
+    },
+    "upstream_sha256": {
+      "HCI.cpp": "8a74bc8d33f5b676c05c382ca7e19f7f5549e2e5ecfebb0b4f52ff8549513a6f",
+      "HCINinaSpiTransport.cpp": "34c4e40efae61aa5d7b7fbad8dd34d3611d897490e85150fff3e32cd4d7879ad",
+      "HCINinaSpiTransport.h": "c70d8486aafb31c9d7bc99fb151a6d191b2c526695077c2c5224d4d12e3f4afe"
+    },
+    "patched_sha256": {
+      "HCI.cpp": "b46abee76a5d7192b6c78c858cc1c416ba8b72bf6e0c47d0342a484f863b0b26",
+      "HCINinaSpiTransport.cpp": "02671369f573743485d6da92ef061f3314daea150c28e7c2f3083b1448649626",
+      "HCINinaSpiTransport.h": "428cde5ad20cd98e5c12fc998d1ec39216e12945b3fc0209c21d2859600191f7",
+      "BumpNinaRxBatch.h": "4f1c43a4a72a82c174c45c8a514087c29822567ec09c8baa3f13a7f4f3b3455a"
+    }
+  },
+  "firmware": "BumpDualBadge 0.5.8-dual",
+  "source_release": "0.5.7-dual",
+  "compiled_utc": "2026-11-19T01:12:35.229220+00:00",
+  "flash_bytes": 167583,
+  "static_ram_bytes": 50352,
+  "uf2_blocks": 657,
+  "files": {
+    "BumpDualBadge/BadgeApp.cpp": "889987503140b2ff047579f027eaa209b12c51008c14534c972274d1f86d27d1",
+    "BumpDualBadge/BadgeApp.h": "abac674adc4269ebed412b87ad8aa5572be975b1e383f32bd9121273cfccbc05",
+    "BumpDualBadge/BootEntropy.h": "6a24d97c8671d5342a353ad4ba91aa70e5bece35c2ae7f6db9484c806730cce0",
+    "BumpDualBadge/BumpDualBadge.ino": "56bffc54daeb2dc6df77f0faac6ebcdd7f0e8ecfc197f7997bb7ad665e7c8b2e",
+    "BumpDualBadge/ClockRetry.h": "ddf4a00c536d7fd922009b7f149ac8cbfee104667ebbf2e70f98b9963b9d8798",
+    "BumpDualBadge/MotionDetector.h": "7eaad6b70f964aa528086f26b3dbff1ca45d3bdae3cc38a5e4767a55ee5463da",
+    "BumpDualBadge/Nearfield.cpp": "d7d9363d6e7d5a4f09e4afbedeef794d4eaa9bed69d4077e5d23bd86debeb347",
+    "BumpDualBadge/Nearfield.h": "fb3fcfb844616f3d0d665936d7e763aed06c6a896610dfaf6ae978ebbc2d31ab",
+    "BumpDualBadge/WireAck.h": "1bcb42899fa2917c5cc3fd044022b9464146e6d82b962945ebf76ad99b9aa011",
+    "build/BumpDualBadge.ino.uf2": "fa8ddf36e59fa972a4d304cb03df986ae50ea8c38986c6a6c7475fdcc2acbdf5",
+    "build/BumpDualBadge.ino.bin": "139d7f7cc3c35f0b9d27c87207c71674fe1c7f8c6686e6651b82f280faf3ab97",
+    "build/BumpDualBadge.ino.elf": "329f89bcb911441e779ed7fb55877b8a43aeba2e47efe970819d1fcdd96801d5",
+    "bump-overlay.json": "bd3c016940105751bc94174b08a917e5bd0cc89e6a6127088023f9968484ad42",
+    "test_clock_retry.cpp": "1b166ff8a2cc1ca3e642ca8c77973385089d51455a2856f9ddb3f83b1fecbc35"
+  },
+  "offline_checks": [
+    "Source hashes of 0.5.7 verified; 0.5.8 compiler input verified",
+    "Final compiled protections distinguish IR and BLE",
+    "Target compiler static_assert exercises fast, slow, bounded retries, clock wrap, no continuous idle scheduling and cancellation",
+    "Verified contiguous RP2040 UF2 against BIN and ARM ELF"
+  ]
+}

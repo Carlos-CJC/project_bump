@@ -1,0 +1,1 @@
+PASS: normal stop and six returning BLE begin failures share one physical NINA reset; host GATT/advertising cleanup, next Wi-Fi/SPI startup, unchanged stock libraries and 647 matching UF2 blocks checked offline.

@@ -1,0 +1,653 @@
+{
+  "observed": "2026-11-18T16:39:28.853+00:00",
+  "capture": {
+    "relative_path": "hardware/logs/physical-buttons-01/serial.jsonl",
+    "first_utc": "2026-11-18T16:31:08.215+00:00",
+    "last_utc": "2026-11-18T16:37:20.233+00:00",
+    "prefix_bytes": 43462,
+    "prefix_sha256": "0a217ebaeb6859a12c70298a9fbd306bde2ca90948862bd2c495d96328b5c6c0",
+    "complete_lines": 313,
+    "serialized_command_names_only": [
+      "SET",
+      "status"
+    ],
+    "serial_button_commands_seen": false
+  },
+  "method": {
+    "rounds": "Blue: start pairing and both boards' PAIRED lines before next round; event IDs bound by nearby queued payloads then matched through publish/receipt/removal.",
+    "bye": "Peer-code/address filtered RX within the same host UTC second and at most 150 ms from its TX; UART logging may reverse apparent order by tens of milliseconds. Unseen RX remains unconfirmed.",
+    "sqlite": "Existing database opened read-only. Each count is exact for the queued event_id and payload identity fields.",
+    "wifi_context": "Capture started with both boards' networks unconfigured. The six events used direct MQTT rather than USB relay. No serial button injection appears among captured commands. Serial SET configured the temporary network after the manual rounds."
+  },
+  "human_led_observation": {
+    "quote": "都绿、都回白",
+    "scope": "User's unaided observation for the session as a whole; not independently verified for each press or packet."
+  },
+  "physical_rounds": [
+    {
+      "round": 1,
+      "first_pressed_utc": "2026-11-18T16:34:13.217+00:00",
+      "blue_presses": [
+        {
+          "line": 85,
+          "utc": "2026-11-18T16:34:13.217+00:00",
+          "board": "B",
+          "observation": "Blue: start pairing"
+        },
+        {
+          "line": 88,
+          "utc": "2026-11-18T16:34:13.965+00:00",
+          "board": "A",
+          "observation": "Blue: start pairing"
+        }
+      ],
+      "paired": {
+        "A": [
+          {
+            "line": 97,
+            "utc": "2026-11-18T16:34:14.585+00:00",
+            "board": "A",
+            "observation": "PAIRED (DONE) peer=0xC371 state=PAIRED"
+          }
+        ],
+        "B": [
+          {
+            "line": 93,
+            "utc": "2026-11-18T16:34:14.429+00:00",
+            "board": "B",
+            "observation": "PAIRED (ACK) peer=0xA30F state=PAIRED"
+          }
+        ]
+      },
+      "both_boards_paired": true,
+      "paired_same_second": true,
+      "blue_ignored_while_paired": [
+        {
+          "line": 108,
+          "utc": "2026-11-18T16:34:22.206+00:00",
+          "board": "B",
+          "observation": "Blue ignored: press white to unpair first"
+        },
+        {
+          "line": 109,
+          "utc": "2026-11-18T16:34:23.447+00:00",
+          "board": "B",
+          "observation": "Blue ignored: press white to unpair first"
+        },
+        {
+          "line": 112,
+          "utc": "2026-11-18T16:34:27.470+00:00",
+          "board": "A",
+          "observation": "Blue ignored: press white to unpair first"
+        }
+      ],
+      "white_button_bye": [
+        {
+          "direction": "A->B",
+          "local_white_press": [
+            {
+              "line": 113,
+              "utc": "2026-11-18T16:34:30.150+00:00"
+            }
+          ],
+          "bye_frames": [
+            {
+              "tx": {
+                "line": 114,
+                "utc": "2026-11-18T16:34:30.279+00:00"
+              },
+              "rx_same_second": {
+                "line": 115,
+                "utc": "2026-11-18T16:34:30.279+00:00"
+              }
+            },
+            {
+              "tx": {
+                "line": 118,
+                "utc": "2026-11-18T16:34:30.488+00:00"
+              },
+              "rx_same_second": {
+                "line": 117,
+                "utc": "2026-11-18T16:34:30.461+00:00"
+              }
+            }
+          ],
+          "peer_rx_seen": true,
+          "peer_rx_all": [
+            {
+              "line": 115,
+              "utc": "2026-11-18T16:34:30.279+00:00"
+            },
+            {
+              "line": 117,
+              "utc": "2026-11-18T16:34:30.461+00:00"
+            }
+          ],
+          "unassociated_peer_rx": [],
+          "peer_pairing_off": [
+            {
+              "line": 116,
+              "utc": "2026-11-18T16:34:30.279+00:00"
+            }
+          ],
+          "remote_release_confirmed": true
+        }
+      ],
+      "events": [
+        {
+          "board": "B",
+          "event_id": "ir_c8c9a3e65ba4_a3d1cdec_00000001",
+          "queued": {
+            "line": 94,
+            "utc": "2026-11-18T16:34:14.429+00:00"
+          },
+          "uptime_ms": 368580,
+          "mqtt_transmit": [
+            {
+              "line": 236,
+              "utc": "2026-11-18T16:35:19.065+00:00"
+            }
+          ],
+          "queued_and_transmitted_content_agrees": true,
+          "mqtt_puback": {
+            "line": 237,
+            "utc": "2026-11-18T16:35:19.272+00:00"
+          },
+          "application_ack_matched": {
+            "line": 238,
+            "utc": "2026-11-18T16:35:19.324+00:00"
+          },
+          "queue_removed_after_application_ack": {
+            "line": 239,
+            "utc": "2026-11-18T16:35:19.324+00:00",
+            "queued_remaining": 2,
+            "origin": "wifi_mqtt"
+          },
+          "sqlite_row_count_for_id": 1,
+          "sqlite_payload_fields_agree": true,
+          "sqlite_rows": [
+            {
+              "event_id": "ir_c8c9a3e65ba4_a3d1cdec_00000001",
+              "device": "bump-c8c9a3e65ba4",
+              "boot": "a3d1cdec",
+              "self_code": "C371",
+              "peer_code": "A30F",
+              "uptime_ms": 368580,
+              "transport": "mqtt",
+              "matched": 1,
+              "request_id": 2,
+              "received_utc": "2026-11-18T16:35:19.255+00:00"
+            }
+          ],
+          "direct_mqtt_pipeline_confirmed": true
+        },
+        {
+          "board": "A",
+          "event_id": "ir_349454276354_5e2e0b2d_00000001",
+          "queued": {
+            "line": 98,
+            "utc": "2026-11-18T16:34:14.585+00:00"
+          },
+          "uptime_ms": 398477,
+          "mqtt_transmit": [
+            {
+              "line": 228,
+              "utc": "2026-11-18T16:35:18.547+00:00"
+            }
+          ],
+          "queued_and_transmitted_content_agrees": true,
+          "mqtt_puback": {
+            "line": 229,
+            "utc": "2026-11-18T16:35:18.728+00:00"
+          },
+          "application_ack_matched": {
+            "line": 233,
+            "utc": "2026-11-18T16:35:18.935+00:00"
+          },
+          "queue_removed_after_application_ack": {
+            "line": 234,
+            "utc": "2026-11-18T16:35:18.961+00:00",
+            "queued_remaining": 2,
+            "origin": "wifi_mqtt"
+          },
+          "sqlite_row_count_for_id": 1,
+          "sqlite_payload_fields_agree": true,
+          "sqlite_rows": [
+            {
+              "event_id": "ir_349454276354_5e2e0b2d_00000001",
+              "device": "bump-349454276354",
+              "boot": "5e2e0b2d",
+              "self_code": "A30F",
+              "peer_code": "C371",
+              "uptime_ms": 398477,
+              "transport": "mqtt",
+              "matched": 1,
+              "request_id": 2,
+              "received_utc": "2026-11-18T16:35:18.705+00:00"
+            }
+          ],
+          "direct_mqtt_pipeline_confirmed": true
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "first_pressed_utc": "2026-11-18T16:34:35.241+00:00",
+      "blue_presses": [
+        {
+          "line": 121,
+          "utc": "2026-11-18T16:34:35.241+00:00",
+          "board": "B",
+          "observation": "Blue: start pairing"
+        },
+        {
+          "line": 125,
+          "utc": "2026-11-18T16:34:36.299+00:00",
+          "board": "A",
+          "observation": "Blue: start pairing"
+        }
+      ],
+      "paired": {
+        "A": [
+          {
+            "line": 141,
+            "utc": "2026-11-18T16:34:38.314+00:00",
+            "board": "A",
+            "observation": "PAIRED (DONE) peer=0xC371 state=PAIRED"
+          }
+        ],
+        "B": [
+          {
+            "line": 138,
+            "utc": "2026-11-18T16:34:38.158+00:00",
+            "board": "B",
+            "observation": "PAIRED (ACK) peer=0xA30F state=PAIRED"
+          }
+        ]
+      },
+      "both_boards_paired": true,
+      "paired_same_second": true,
+      "blue_ignored_while_paired": [],
+      "white_button_bye": [
+        {
+          "direction": "A->B",
+          "local_white_press": [
+            {
+              "line": 150,
+              "utc": "2026-11-18T16:34:41.358+00:00"
+            }
+          ],
+          "bye_frames": [
+            {
+              "tx": {
+                "line": 151,
+                "utc": "2026-11-18T16:34:41.488+00:00"
+              },
+              "rx_same_second": null
+            },
+            {
+              "tx": {
+                "line": 152,
+                "utc": "2026-11-18T16:34:41.669+00:00"
+              },
+              "rx_same_second": null
+            }
+          ],
+          "peer_rx_seen": false,
+          "peer_rx_all": [],
+          "unassociated_peer_rx": [],
+          "peer_pairing_off": [],
+          "remote_release_confirmed": false
+        },
+        {
+          "direction": "B->A",
+          "local_white_press": [
+            {
+              "line": 153,
+              "utc": "2026-11-18T16:34:44.875+00:00"
+            }
+          ],
+          "bye_frames": [
+            {
+              "tx": {
+                "line": 154,
+                "utc": "2026-11-18T16:34:45.005+00:00"
+              },
+              "rx_same_second": null
+            },
+            {
+              "tx": {
+                "line": 155,
+                "utc": "2026-11-18T16:34:45.186+00:00"
+              },
+              "rx_same_second": null
+            }
+          ],
+          "peer_rx_seen": false,
+          "peer_rx_all": [],
+          "unassociated_peer_rx": [],
+          "peer_pairing_off": [],
+          "remote_release_confirmed": false
+        }
+      ],
+      "events": [
+        {
+          "board": "B",
+          "event_id": "ir_c8c9a3e65ba4_a3d1cdec_00000002",
+          "queued": {
+            "line": 139,
+            "utc": "2026-11-18T16:34:38.158+00:00"
+          },
+          "uptime_ms": 392297,
+          "mqtt_transmit": [
+            {
+              "line": 240,
+              "utc": "2026-11-18T16:35:19.350+00:00"
+            }
+          ],
+          "queued_and_transmitted_content_agrees": true,
+          "mqtt_puback": {
+            "line": 242,
+            "utc": "2026-11-18T16:35:19.453+00:00"
+          },
+          "application_ack_matched": {
+            "line": 246,
+            "utc": "2026-11-18T16:35:19.582+00:00"
+          },
+          "queue_removed_after_application_ack": {
+            "line": 247,
+            "utc": "2026-11-18T16:35:19.582+00:00",
+            "queued_remaining": 1,
+            "origin": "wifi_mqtt"
+          },
+          "sqlite_row_count_for_id": 1,
+          "sqlite_payload_fields_agree": true,
+          "sqlite_rows": [
+            {
+              "event_id": "ir_c8c9a3e65ba4_a3d1cdec_00000002",
+              "device": "bump-c8c9a3e65ba4",
+              "boot": "a3d1cdec",
+              "self_code": "C371",
+              "peer_code": "A30F",
+              "uptime_ms": 392297,
+              "transport": "mqtt",
+              "matched": 1,
+              "request_id": 2,
+              "received_utc": "2026-11-18T16:35:19.427+00:00"
+            }
+          ],
+          "direct_mqtt_pipeline_confirmed": true
+        },
+        {
+          "board": "A",
+          "event_id": "ir_349454276354_5e2e0b2d_00000002",
+          "queued": {
+            "line": 142,
+            "utc": "2026-11-18T16:34:38.314+00:00"
+          },
+          "uptime_ms": 422194,
+          "mqtt_transmit": [
+            {
+              "line": 235,
+              "utc": "2026-11-18T16:35:18.961+00:00"
+            }
+          ],
+          "queued_and_transmitted_content_agrees": true,
+          "mqtt_puback": {
+            "line": 241,
+            "utc": "2026-11-18T16:35:19.376+00:00"
+          },
+          "application_ack_matched": {
+            "line": 243,
+            "utc": "2026-11-18T16:35:19.479+00:00"
+          },
+          "queue_removed_after_application_ack": {
+            "line": 244,
+            "utc": "2026-11-18T16:35:19.479+00:00",
+            "queued_remaining": 1,
+            "origin": "wifi_mqtt"
+          },
+          "sqlite_row_count_for_id": 1,
+          "sqlite_payload_fields_agree": true,
+          "sqlite_rows": [
+            {
+              "event_id": "ir_349454276354_5e2e0b2d_00000002",
+              "device": "bump-349454276354",
+              "boot": "5e2e0b2d",
+              "self_code": "A30F",
+              "peer_code": "C371",
+              "uptime_ms": 422194,
+              "transport": "mqtt",
+              "matched": 1,
+              "request_id": 2,
+              "received_utc": "2026-11-18T16:35:19.342+00:00"
+            }
+          ],
+          "direct_mqtt_pipeline_confirmed": true
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "first_pressed_utc": "2026-11-18T16:34:47.720+00:00",
+      "blue_presses": [
+        {
+          "line": 158,
+          "utc": "2026-11-18T16:34:47.720+00:00",
+          "board": "B",
+          "observation": "Blue: start pairing"
+        },
+        {
+          "line": 164,
+          "utc": "2026-11-18T16:34:49.740+00:00",
+          "board": "A",
+          "observation": "Blue: start pairing"
+        }
+      ],
+      "paired": {
+        "A": [
+          {
+            "line": 180,
+            "utc": "2026-11-18T16:34:51.520+00:00",
+            "board": "A",
+            "observation": "PAIRED (DONE) peer=0xC371 state=PAIRED"
+          }
+        ],
+        "B": [
+          {
+            "line": 176,
+            "utc": "2026-11-18T16:34:51.366+00:00",
+            "board": "B",
+            "observation": "PAIRED (ACK) peer=0xA30F state=PAIRED"
+          }
+        ]
+      },
+      "both_boards_paired": true,
+      "paired_same_second": true,
+      "blue_ignored_while_paired": [],
+      "white_button_bye": [
+        {
+          "direction": "B->A",
+          "local_white_press": [
+            {
+              "line": 189,
+              "utc": "2026-11-18T16:34:58.059+00:00"
+            }
+          ],
+          "bye_frames": [
+            {
+              "tx": {
+                "line": 192,
+                "utc": "2026-11-18T16:34:58.189+00:00"
+              },
+              "rx_same_second": {
+                "line": 190,
+                "utc": "2026-11-18T16:34:58.163+00:00"
+              }
+            },
+            {
+              "tx": {
+                "line": 194,
+                "utc": "2026-11-18T16:34:58.369+00:00"
+              },
+              "rx_same_second": {
+                "line": 193,
+                "utc": "2026-11-18T16:34:58.342+00:00"
+              }
+            }
+          ],
+          "peer_rx_seen": true,
+          "peer_rx_all": [
+            {
+              "line": 190,
+              "utc": "2026-11-18T16:34:58.163+00:00"
+            },
+            {
+              "line": 193,
+              "utc": "2026-11-18T16:34:58.342+00:00"
+            }
+          ],
+          "unassociated_peer_rx": [],
+          "peer_pairing_off": [
+            {
+              "line": 191,
+              "utc": "2026-11-18T16:34:58.163+00:00"
+            }
+          ],
+          "remote_release_confirmed": true
+        }
+      ],
+      "events": [
+        {
+          "board": "B",
+          "event_id": "ir_c8c9a3e65ba4_a3d1cdec_00000003",
+          "queued": {
+            "line": 177,
+            "utc": "2026-11-18T16:34:51.366+00:00"
+          },
+          "uptime_ms": 405518,
+          "mqtt_transmit": [
+            {
+              "line": 248,
+              "utc": "2026-11-18T16:35:19.582+00:00"
+            }
+          ],
+          "queued_and_transmitted_content_agrees": true,
+          "mqtt_puback": {
+            "line": 249,
+            "utc": "2026-11-18T16:35:19.685+00:00"
+          },
+          "application_ack_matched": {
+            "line": 250,
+            "utc": "2026-11-18T16:35:19.789+00:00"
+          },
+          "queue_removed_after_application_ack": {
+            "line": 251,
+            "utc": "2026-11-18T16:35:19.815+00:00",
+            "queued_remaining": 0,
+            "origin": "wifi_mqtt"
+          },
+          "sqlite_row_count_for_id": 1,
+          "sqlite_payload_fields_agree": true,
+          "sqlite_rows": [
+            {
+              "event_id": "ir_c8c9a3e65ba4_a3d1cdec_00000003",
+              "device": "bump-c8c9a3e65ba4",
+              "boot": "a3d1cdec",
+              "self_code": "C371",
+              "peer_code": "A30F",
+              "uptime_ms": 405518,
+              "transport": "mqtt",
+              "matched": 1,
+              "request_id": 2,
+              "received_utc": "2026-11-18T16:35:19.668+00:00"
+            }
+          ],
+          "direct_mqtt_pipeline_confirmed": true
+        },
+        {
+          "board": "A",
+          "event_id": "ir_349454276354_5e2e0b2d_00000003",
+          "queued": {
+            "line": 181,
+            "utc": "2026-11-18T16:34:51.520+00:00"
+          },
+          "uptime_ms": 435415,
+          "mqtt_transmit": [
+            {
+              "line": 245,
+              "utc": "2026-11-18T16:35:19.479+00:00"
+            }
+          ],
+          "queued_and_transmitted_content_agrees": true,
+          "mqtt_puback": {
+            "line": 253,
+            "utc": "2026-11-18T16:35:21.237+00:00"
+          },
+          "application_ack_matched": {
+            "line": 256,
+            "utc": "2026-11-18T16:35:21.443+00:00"
+          },
+          "queue_removed_after_application_ack": {
+            "line": 257,
+            "utc": "2026-11-18T16:35:21.443+00:00",
+            "queued_remaining": 0,
+            "origin": "wifi_mqtt"
+          },
+          "sqlite_row_count_for_id": 1,
+          "sqlite_payload_fields_agree": true,
+          "sqlite_rows": [
+            {
+              "event_id": "ir_349454276354_5e2e0b2d_00000003",
+              "device": "bump-349454276354",
+              "boot": "5e2e0b2d",
+              "self_code": "A30F",
+              "peer_code": "C371",
+              "uptime_ms": 435415,
+              "transport": "mqtt",
+              "matched": 1,
+              "request_id": 2,
+              "received_utc": "2026-11-18T16:35:21.202+00:00"
+            }
+          ],
+          "direct_mqtt_pipeline_confirmed": true
+        }
+      ]
+    }
+  ],
+  "final_sync_complete": {
+    "A": [
+      {
+        "line": 259,
+        "utc": "2026-11-18T16:35:23.018+00:00",
+        "transport": "wifi_mqtt_tcp",
+        "queued_remaining": 0
+      }
+    ],
+    "B": [
+      {
+        "line": 254,
+        "utc": "2026-11-18T16:35:21.289+00:00",
+        "transport": "wifi_mqtt_tcp",
+        "queued_remaining": 0
+      }
+    ]
+  },
+  "linked_web_invites": [
+    {
+      "id": 2,
+      "status": "pending",
+      "created_before_capture": true,
+      "created_utc": "2026-11-18T15:46:29.761+00:00"
+    }
+  ],
+  "totals": {
+    "rounds_with_both_boards_paired": 3,
+    "rounds_observed": 3,
+    "events_with_unique_sqlite_rows": 6,
+    "direct_mqtt_with_matching_application_ack_and_queue_removal": 6,
+    "directions_with_remote_release_evidence": 2,
+    "directions_with_white_button_and_unconfirmed_remote_release": 2
+  }
+}
+

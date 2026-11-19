@@ -1,0 +1,1 @@
+PASS: original 0.5.5 artifact and BLE overlay preserved; 0.5.6 diagnostic symbols, exact compiler input, ARM ELF and 652 RP2040 UF2 blocks matching BIN.

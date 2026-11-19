@@ -1,0 +1,57 @@
+{
+  "started_utc": "2026-11-15T09:37:15.016330+00:00",
+  "firmware": "BumpSingleBoardDiag",
+  "independent_diagnostic": true,
+  "external_modules_tested": false,
+  "gesture_tested": false,
+  "wifi_connected": false,
+  "mqtt_tested": false,
+  "two_badges_tested": false,
+  "port": "COM12",
+  "imu": {
+    "samples": 110,
+    "all_finite": true,
+    "all_real_sensor": true,
+    "first_uptime_ms": 733,
+    "last_uptime_ms": 22533,
+    "accel_norm_mean_g": 1.0138547588067393,
+    "accel_norm_min_g": 1.010248092994983,
+    "accel_norm_max_g": 1.0465873332407574,
+    "max_abs_gyro_dps": 15.93018,
+    "controlled_motion_applied": false
+  },
+  "led": {
+    "commands": 6,
+    "matching_readbacks": 6,
+    "optical_confirmation": false
+  },
+  "wifi_scans": [
+    {
+      "type": "wifi_scan",
+      "network_count": 6,
+      "strongest_rssi_dbm": -41,
+      "weakest_rssi_dbm": -81,
+      "connected": false,
+      "identifiers_logged": false
+    },
+    {
+      "type": "wifi_scan",
+      "network_count": 6,
+      "strongest_rssi_dbm": -39,
+      "weakest_rssi_dbm": -79,
+      "connected": false,
+      "identifiers_logged": false
+    },
+    {
+      "type": "wifi_scan",
+      "network_count": 10,
+      "strongest_rssi_dbm": -43,
+      "weakest_rssi_dbm": -84,
+      "connected": false,
+      "identifiers_logged": false
+    }
+  ],
+  "wifi_firmware_version": "3.0.1",
+  "error": "Cannot configure port, something went wrong. Original message: PermissionError(13, '\u8fde\u5230\u7cfb\u7edf\u4e0a\u7684\u8bbe\u5907\u6ca1\u6709\u53d1\u6325\u4f5c\u7528\u3002', None, 31)",
+  "finished_utc": "2026-11-15T09:38:19.297819+00:00"
+}

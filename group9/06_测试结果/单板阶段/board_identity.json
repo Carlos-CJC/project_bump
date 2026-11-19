@@ -1,0 +1,23 @@
+{
+  "matching_boards": [
+    {
+      "name": "Arduino Nano RP2040 Connect",
+      "fqbn": "arduino:mbed_nano:nanorp2040connect"
+    }
+  ],
+  "port": {
+    "address": "COM12",
+    "label": "COM12",
+    "protocol": "serial",
+    "protocol_label": "Serial Port (USB)",
+    "properties": {
+      "configuration": "",
+      "manufacturer": "Arduino",
+      "pid": "0x005E",
+      "product": "Nano RP2040 Connect",
+      "serialNumber": "416523501C74AAC8",
+      "vid": "0x2341"
+    },
+    "hardware_id": "416523501C74AAC8"
+  }
+}

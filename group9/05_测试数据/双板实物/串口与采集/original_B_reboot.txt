@@ -1,0 +1,7 @@
+
+=== IR Near-Field Pairing ===
+Chip UID: 50236541C8965F1C
+My machine code: 0xC371
+Blue = start pairing, White = stop/unpair
+STATUS state=IDLE my=0xC371
+STATUS state=IDLE my=0xC371

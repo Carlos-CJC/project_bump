@@ -1,0 +1,54 @@
+{
+  "firmware": "BumpDualBadge 0.5.2-dual",
+  "compiled_utc": "2026-11-18T16:07:23.174290+00:00",
+  "fqbn": "arduino:mbed_nano:nanorp2040connect",
+  "core_version": "4.6.0",
+  "libraries": {
+    "ArduinoBLE": "2.1.0",
+    "WiFiNINA": "2.1.1",
+    "Arduino_SpiNINA": "0.0.2",
+    "ArduinoMqttClient": "0.1.8",
+    "Arduino_LSM6DSOX": "1.1.2",
+    "IRremote": "4.7.1"
+  },
+  "flash_bytes": 164632,
+  "static_ram_bytes": 50184,
+  "uf2_blocks": 646,
+  "uf2_target_address": "0x10000000",
+  "ble_gate": {
+    "rssi_min_dbm": -70,
+    "samples_min": 2,
+    "span_min_ms": 3000,
+    "window_ms": 60000
+  },
+  "offline_validation": {
+    "entropy": "PASS: two entropy streams produce separate BLE/boot IDs; stuck and biased bits fail closed",
+    "reliability_driver": "8 tests passed including reset-round rejection",
+    "transport": "Publish payload and ACK/connection logic match 0.5.1",
+    "phase_model": "12.5 s minimum overlap each way under a 0.25 s grid of -15 to +15 s start skew and 1.3/1.54/1.8 s switch delays",
+    "artifact": "646 valid continuous RP2040 UF2 blocks, compiled BIN parity and ARM ELF"
+  },
+  "files": {
+    "BumpDualBadge/BadgeApp.cpp": "dbb2fb584ff4435fa186aa874f291e6adf731ad321863beac073dfd9fbf08230",
+    "BumpDualBadge/BadgeApp.h": "abac674adc4269ebed412b87ad8aa5572be975b1e383f32bd9121273cfccbc05",
+    "BumpDualBadge/BumpDualBadge.ino": "56bffc54daeb2dc6df77f0faac6ebcdd7f0e8ecfc197f7997bb7ad665e7c8b2e",
+    "BumpDualBadge/MotionDetector.h": "7eaad6b70f964aa528086f26b3dbff1ca45d3bdae3cc38a5e4767a55ee5463da",
+    "BumpDualBadge/Nearfield.cpp": "8568ade31c63760d079b42c3bf5c463fcd14058743a410705bb1c209da24bb86",
+    "BumpDualBadge/Nearfield.h": "7564323c948fa43ec0dfbfc59d35918d4e2825dd3a72a6bc5f43f938f9a6f832",
+    "BumpDualBadge/WireAck.h": "1bcb42899fa2917c5cc3fd044022b9464146e6d82b962945ebf76ad99b9aa011",
+    "build/BumpDualBadge.ino.uf2": "3fb55a3c5e7599d88cd9b7a76cefd48ac62d6068a49200a029bb393dbe036dec",
+    "build/BumpDualBadge.ino.bin": "897cc6f66f10adfff4cd2327d151c7b4446619689b979e1c6020a7ba7a8113da",
+    "build/BumpDualBadge.ino.elf": "400c5f901ab88c1acf18eac65e567c72c4e4583918a24d6c219512f10c1a8510",
+    "vendor/IRremote-4.7.1.zip": "33d7630e883cc60088b8d81f4fd1129b72bf14894edd56ec3ddbed998b3d4ce1",
+    "vendor/firmware/nearfield_pairing/nearfield_pairing.ino": "5628e4a69a7869342866656ec9a13c29aaa21fff91f72abcf05bfc8ddbf75a8b",
+    "baseline-build/nearfield_pairing.ino.uf2": "ed8b40f5d03e7816f1af414ccf09a22cfd13c720093357bc33090947278a5aae",
+    "BumpDualBadge/BootEntropy.h": "6a24d97c8671d5342a353ad4ba91aa70e5bece35c2ae7f6db9484c806730cce0"
+  },
+  "changes": [
+    "Two complementary BLE phases per 60-second window",
+    "Single paced HCI poll path",
+    "8-second discovery watchdog with saved stage and queue depth",
+    "One-time idle NINA version probe",
+    "Independent 32-bit boot and 48-bit BLE short IDs from RP2040 ring-oscillator samples"
+  ]
+}

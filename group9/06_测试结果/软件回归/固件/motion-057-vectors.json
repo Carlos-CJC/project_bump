@@ -1,0 +1,86 @@
+{
+  "tested_at_utc": "2026-11-19T00:49:11.3200792Z",
+  "firmware": "0.5.7-dual",
+  "method": "11 pre-existing synthetic acceleration vectors compiled against the release header",
+  "motion_header_sha256": "7EAAD6B70F964AA528086F26B3DBFF1CA45D3BDAE3CC38A5E4767A55EE5463DA",
+  "identical_motion_header_in_0_5_0": true,
+  "cases": [
+    {
+      "case": "quiet",
+      "source": "synthetic_test_vectors",
+      "actual_triggers": 0,
+      "expected_triggers": 0,
+      "pass": true
+    },
+    {
+      "case": "constant_gravity_rotation",
+      "source": "synthetic_test_vectors",
+      "actual_triggers": 0,
+      "expected_triggers": 0,
+      "pass": true
+    },
+    {
+      "case": "single_peak",
+      "source": "synthetic_test_vectors",
+      "actual_triggers": 0,
+      "expected_triggers": 0,
+      "pass": true
+    },
+    {
+      "case": "low_amplitude",
+      "source": "synthetic_test_vectors",
+      "actual_triggers": 0,
+      "expected_triggers": 0,
+      "pass": true
+    },
+    {
+      "case": "too_fast_100ms",
+      "source": "synthetic_test_vectors",
+      "actual_triggers": 0,
+      "expected_triggers": 0,
+      "pass": true
+    },
+    {
+      "case": "too_slow_1000ms",
+      "source": "synthetic_test_vectors",
+      "actual_triggers": 0,
+      "expected_triggers": 0,
+      "pass": true
+    },
+    {
+      "case": "valid_300ms",
+      "source": "synthetic_test_vectors",
+      "actual_triggers": 1,
+      "expected_triggers": 1,
+      "pass": true
+    },
+    {
+      "case": "minimum_150ms",
+      "source": "synthetic_test_vectors",
+      "actual_triggers": 1,
+      "expected_triggers": 1,
+      "pass": true
+    },
+    {
+      "case": "maximum_800ms",
+      "source": "synthetic_test_vectors",
+      "actual_triggers": 1,
+      "expected_triggers": 1,
+      "pass": true
+    },
+    {
+      "case": "cooldown_reject",
+      "source": "synthetic_test_vectors",
+      "actual_triggers": 1,
+      "expected_triggers": 1,
+      "pass": true
+    },
+    {
+      "case": "after_cooldown",
+      "source": "synthetic_test_vectors",
+      "actual_triggers": 2,
+      "expected_triggers": 2,
+      "pass": true
+    }
+  ]
+}

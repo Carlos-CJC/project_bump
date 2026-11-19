@@ -1,0 +1,1 @@
+PASS: exact firmware encoder parsed by the live server, stable observance time on a 45 s delayed retry, IR identity, 7 application ACK cases and hardware shake detector fixtures

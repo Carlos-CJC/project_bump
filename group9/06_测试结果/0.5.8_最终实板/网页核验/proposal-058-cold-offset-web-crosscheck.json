@@ -1,0 +1,139 @@
+{
+  "captured_utc": "2026-11-19T01:37:26.821+00:00",
+  "firmware": "0.5.8-dual",
+  "endpoint": "http://127.0.0.1:8875",
+  "method": "Authenticated timeline API with separate cookie jars; SQLite snapshot connection mode=ro and query_only",
+  "hardware_evidence": "firmware/verification/live-058-cold-offset.jsonl",
+  "hardware_evidence_sha256": "1734ca13024d64d492d46d9840fe0a19220a034eebe28c39a72e44057eff428e",
+  "business_actions": 0,
+  "manual_match_or_clock_import": false,
+  "original_trial_reported_passed": true,
+  "original_trial_timeout": null,
+  "boards": {
+    "A": {
+      "event_id": "ev_349454276354_5d54a08a_00000001",
+      "boot_id": "5d54a08a",
+      "timeline_id": 67,
+      "stored_rows": 1,
+      "source_input": "real BLE; serial_diagnostic opening",
+      "transport": "mqtt",
+      "sample_count": 39,
+      "duration_s": 20.0,
+      "rssi_avg_dbm": -64.0,
+      "received_utc": "2026-11-19T01:35:42.239+00:00",
+      "raw_time_quality": "estimated",
+      "projected_time_quality": "anchored",
+      "clock_samples_for_this_boot": {
+        "mqtt_connack": 1
+      },
+      "clock_uncertainty_s": 0.6421182155609131,
+      "observation_start_utc": "2026-11-19T01:34:37.344+00:00",
+      "observation_end_utc": "2026-11-19T01:34:57.344+00:00",
+      "window_start_utc": "2026-11-19T01:34:35.269+00:00",
+      "window_end_utc": "2026-11-19T01:35:35.269+00:00",
+      "store_mutual": true,
+      "store_match_state": "confirmed",
+      "counterpart_event_id": "ev_c8c9a3e65ba4_d4b80a4f_00000001"
+    },
+    "B": {
+      "event_id": "ev_c8c9a3e65ba4_d4b80a4f_00000001",
+      "boot_id": "d4b80a4f",
+      "timeline_id": 68,
+      "stored_rows": 1,
+      "source_input": "real BLE; serial_diagnostic opening",
+      "transport": "mqtt",
+      "sample_count": 18,
+      "duration_s": 12.0,
+      "rssi_avg_dbm": -67.0,
+      "received_utc": "2026-11-19T01:35:50.418+00:00",
+      "raw_time_quality": "estimated",
+      "projected_time_quality": "anchored",
+      "clock_samples_for_this_boot": {
+        "mqtt_connack": 1
+      },
+      "clock_uncertainty_s": 0.6175552606582642,
+      "observation_start_utc": "2026-11-19T01:35:07.822+00:00",
+      "observation_end_utc": "2026-11-19T01:35:19.822+00:00",
+      "window_start_utc": "2026-11-19T01:34:23.043+00:00",
+      "window_end_utc": "2026-11-19T01:35:23.043+00:00",
+      "store_mutual": true,
+      "store_match_state": "confirmed",
+      "counterpart_event_id": "ev_349454276354_5d54a08a_00000001"
+    }
+  },
+  "roles": {
+    "Alice": {
+      "total_timeline": 34,
+      "mutual_timeline": 31,
+      "request_count": 2,
+      "device_bound": true,
+      "trial_cards_visible": 1,
+      "card": {
+        "peer_alias": "挂件 B",
+        "match_state": "confirmed",
+        "mutual": true,
+        "time_quality": "anchored",
+        "source": "hardware",
+        "transport": "mqtt",
+        "simulated": false,
+        "sample_count": 39,
+        "duration_ms": 20000,
+        "rssi_median": -64.0,
+        "start_utc": "2026-11-19T01:34:37.344Z",
+        "end_utc": "2026-11-19T01:34:57.344Z",
+        "received_at": "2026-11-19T01:35:42.239Z",
+        "can_invite": true,
+        "contact_status": "pending",
+        "invite_button_expected": false,
+        "profile_visible": false
+      },
+      "matching_relationship_rows": 1
+    },
+    "Bob": {
+      "total_timeline": 34,
+      "mutual_timeline": 31,
+      "request_count": 2,
+      "device_bound": true,
+      "trial_cards_visible": 1,
+      "card": {
+        "peer_alias": "挂件 A",
+        "match_state": "confirmed",
+        "mutual": true,
+        "time_quality": "anchored",
+        "source": "hardware",
+        "transport": "mqtt",
+        "simulated": false,
+        "sample_count": 18,
+        "duration_ms": 12000,
+        "rssi_median": -67.0,
+        "start_utc": "2026-11-19T01:35:07.822Z",
+        "end_utc": "2026-11-19T01:35:19.822Z",
+        "received_at": "2026-11-19T01:35:50.418Z",
+        "can_invite": true,
+        "contact_status": "pending",
+        "invite_button_expected": false,
+        "profile_visible": false
+      },
+      "matching_relationship_rows": 1
+    },
+    "Charlie": {
+      "total_timeline": 0,
+      "mutual_timeline": 0,
+      "request_count": 0,
+      "device_bound": false,
+      "trial_cards_visible": 0
+    }
+  },
+  "raw_serial_corroboration": {
+    "path": "hardware/logs/proposal-058-cold-offset/serial.jsonl",
+    "sha256": "4156eed0717a353b11a0ae0a30c40e107dc980c7ae16c080c0631b5f193f37c7",
+    "captured_explicit_sync_commands": {
+      "A": 0,
+      "B": 0
+    },
+    "queue_removed_after_application_ack_utc": {
+      "ev_349454276354_5d54a08a_00000001": "2026-11-19T01:35:42.486+00:00",
+      "ev_c8c9a3e65ba4_d4b80a4f_00000001": "2026-11-19T01:35:50.646+00:00"
+    }
+  }
+}

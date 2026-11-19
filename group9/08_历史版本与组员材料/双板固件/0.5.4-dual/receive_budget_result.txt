@@ -1,0 +1,1 @@
+PASS: big-endian counts 1 and 256; 619 unchanged bytes across four poll budgets; 11 availability queries; failed read never inserts a byte and refreshes quota.

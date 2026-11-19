@@ -1,0 +1,8 @@
+{
+  "method": "bounded raw COM read/write without changing baud rate",
+  "port": "COM12",
+  "write_ok": false,
+  "write_error": 31,
+  "received_bytes": 0,
+  "sample_preview": ""
+}

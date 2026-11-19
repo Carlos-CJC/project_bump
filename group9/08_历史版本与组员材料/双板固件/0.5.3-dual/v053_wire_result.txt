@@ -1,0 +1,1 @@
+PASS: actual encoder holds stable 60000 ms discovery bounds on 45 s delayed retry; extreme BLE payload stays within 512-byte buffer; IR surface unchanged; application ACK and motion fixtures pass

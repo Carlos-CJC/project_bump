@@ -1,0 +1,11 @@
+{"case":"quiet","source":"synthetic_test_vectors","actual_triggers":0,"expected_triggers":0,"pass":true}
+{"case":"constant_gravity_rotation","source":"synthetic_test_vectors","actual_triggers":0,"expected_triggers":0,"pass":true}
+{"case":"single_peak","source":"synthetic_test_vectors","actual_triggers":0,"expected_triggers":0,"pass":true}
+{"case":"low_amplitude","source":"synthetic_test_vectors","actual_triggers":0,"expected_triggers":0,"pass":true}
+{"case":"too_fast_100ms","source":"synthetic_test_vectors","actual_triggers":0,"expected_triggers":0,"pass":true}
+{"case":"too_slow_1000ms","source":"synthetic_test_vectors","actual_triggers":0,"expected_triggers":0,"pass":true}
+{"case":"valid_300ms","source":"synthetic_test_vectors","actual_triggers":1,"expected_triggers":1,"pass":true}
+{"case":"minimum_150ms","source":"synthetic_test_vectors","actual_triggers":1,"expected_triggers":1,"pass":true}
+{"case":"maximum_800ms","source":"synthetic_test_vectors","actual_triggers":1,"expected_triggers":1,"pass":true}
+{"case":"cooldown_reject","source":"synthetic_test_vectors","actual_triggers":1,"expected_triggers":1,"pass":true}
+{"case":"after_cooldown","source":"synthetic_test_vectors","actual_triggers":2,"expected_triggers":2,"pass":true}

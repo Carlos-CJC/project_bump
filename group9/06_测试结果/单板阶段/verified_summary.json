@@ -1,0 +1,344 @@
+{
+  "provided_log": {
+    "samples": 59,
+    "events": [
+      {
+        "event": "encounter",
+        "peer": "a10000000001",
+        "rssi_avg": -65,
+        "rssi_last": -65,
+        "duration_s": 3,
+        "samples": 8,
+        "flags": 1,
+        "uptime_s": 11,
+        "sim": true
+      },
+      {
+        "event": "encounter",
+        "peer": "b20000000002",
+        "rssi_avg": -62,
+        "rssi_last": -62,
+        "duration_s": 3,
+        "samples": 8,
+        "flags": 1,
+        "uptime_s": 29,
+        "sim": true
+      }
+    ],
+    "source": "teammate supplied serial capture",
+    "radio_rx": "simulated"
+  },
+  "local_board": {
+    "model": "Arduino Nano RP2040 Connect",
+    "port": "COM12",
+    "serial_responded": true,
+    "previous_program": "WorkspaceMonitor DHT11 lab sketch",
+    "diagnostic_compiled": true,
+    "diagnostic_uploaded": true,
+    "new_sensor_or_radio_measurements": true,
+    "current_serial_usable": true,
+    "current_firmware": "BumpSingleBoardMotionMqtt v2 (independent motion/telemetry prototype)",
+    "diagnostic_version_observed": 2,
+    "current_firmware_version": 2
+  },
+  "source_sha256": {
+    "18b2ef66e0839f2a960c9c0149e3f8a5.jpg": "f30d29fed714d62ea7a4df48e256d2096684edd653e0877ebc8601df15a4d68a",
+    "hardware_clarification.txt": "682777ae73dbb4172b63a201319cc53290a8a757ff524f713cd3033043d3c8db",
+    "mock_process_summary.md": "f8a7e7b6ce2a5fceca473a410e80ef52ffb4e6f13a293c63a082898e8900309a",
+    "mock_serial_log.txt": "379b430fb33ef3f69c76c4b8209a39168da9a93243affcda307bd66d92e13201"
+  },
+  "software_recheck": {
+    "tests": 76,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "passed": 76
+  },
+  "hardware_tests": {
+    "started_utc": "2026-11-15T12:50:05.605235+00:00",
+    "firmware": "BumpSingleBoardDiag",
+    "independent_diagnostic": true,
+    "expected_firmware_version": 2,
+    "external_modules_tested": false,
+    "gesture_tested": false,
+    "wifi_connected": false,
+    "mqtt_tested": false,
+    "two_badges_tested": false,
+    "port": "COM12",
+    "imu": {
+      "samples": 110,
+      "all_finite": true,
+      "all_real_sensor": true,
+      "first_uptime_ms": 391,
+      "last_uptime_ms": 22190,
+      "accel_norm_mean_g": 1.0135663370578978,
+      "accel_norm_min_g": 1.0113339996756758,
+      "accel_norm_max_g": 1.015464008717197,
+      "max_abs_gyro_dps": 0.36621,
+      "controlled_motion_applied": false
+    },
+    "led": {
+      "commands": 6,
+      "matching_readbacks": 6,
+      "optical_confirmation": false
+    },
+    "wifi_scans": [
+      {
+        "type": "wifi_scan",
+        "network_count": 7,
+        "strongest_rssi_dbm": -48,
+        "weakest_rssi_dbm": -83,
+        "connected": false,
+        "identifiers_logged": false
+      },
+      {
+        "type": "wifi_scan",
+        "network_count": 6,
+        "strongest_rssi_dbm": -48,
+        "weakest_rssi_dbm": -83,
+        "connected": false,
+        "identifiers_logged": false
+      },
+      {
+        "type": "wifi_scan",
+        "network_count": 8,
+        "strongest_rssi_dbm": -45,
+        "weakest_rssi_dbm": -85,
+        "connected": false,
+        "identifiers_logged": false
+      }
+    ],
+    "wifi_firmware_version": "3.0.1",
+    "ble_advertise": {
+      "type": "ble_advertise",
+      "independent_diagnostic": true,
+      "started": 1,
+      "service_uuid": "A5B0",
+      "manufacturer_hex": "FFFF017C9EBD7DE53E01FC",
+      "over_air_verified": false
+    },
+    "ble_pc_receiver": {
+      "duration_s": 20,
+      "matching_callbacks": 54,
+      "matching_manufacturer_hex": "FFFF017C9EBD7DE53E01FC",
+      "matching_service_uuid_callbacks": 54,
+      "rssi_min_dbm": -28,
+      "rssi_max_dbm": -18,
+      "over_air_verified": true
+    },
+    "board_ble_scans": [
+      {
+        "type": "ble_scan",
+        "started": 1,
+        "duration_ms": 5032,
+        "reports": 135,
+        "advertising_resumed": 1,
+        "identifiers_logged": false
+      }
+    ],
+    "imu_during_ble_samples": 25,
+    "board_left_in": "diagnostic BLE advertising, IMU output paused",
+    "finished_utc": "2026-11-15T12:51:19.108992+00:00"
+  },
+  "hardware_tests_previous_v1": "hardware_verified/summary.json",
+  "hardware_followup": {
+    "started_utc": "2026-11-15T12:52:54.298014+00:00",
+    "independent_diagnostic": true,
+    "external_modules_tested": false,
+    "two_badges_tested": false,
+    "wifi_connected": false,
+    "mqtt_tested": false,
+    "port": "COM12",
+    "last_stage": "Checking software restart and USB reconnection",
+    "initial_advertisement": {
+      "type": "ble_advertise",
+      "independent_diagnostic": true,
+      "started": 1,
+      "service_uuid": "A5B0",
+      "manufacturer_hex": "FFFF017C9EBD7DE53E01FC",
+      "over_air_verified": false
+    },
+    "board_ble_scan": {
+      "type": "ble_scan",
+      "started": 1,
+      "duration_ms": 5032,
+      "reports": 112,
+      "advertising_resumed": 1,
+      "identifiers_logged": false
+    },
+    "after_board_scan": {
+      "duration_s": 10,
+      "matching_callbacks": 33,
+      "matching_uuid_callbacks": 33,
+      "over_air_verified": true,
+      "rssi_min_dbm": -27,
+      "rssi_max_dbm": -18
+    },
+    "switch_wifi_scan": {
+      "type": "wifi_scan",
+      "network_count": 4,
+      "strongest_rssi_dbm": -48,
+      "weakest_rssi_dbm": -87,
+      "connected": false,
+      "identifiers_logged": false
+    },
+    "switch_ble_advertisement": {
+      "type": "ble_advertise",
+      "independent_diagnostic": true,
+      "started": 1,
+      "service_uuid": "A5B0",
+      "manufacturer_hex": "FFFF017C9EBD7DE53E01FC",
+      "over_air_verified": false
+    },
+    "after_radio_switch": {
+      "duration_s": 10,
+      "matching_callbacks": 25,
+      "matching_uuid_callbacks": 25,
+      "over_air_verified": true,
+      "rssi_min_dbm": -27,
+      "rssi_max_dbm": -18
+    },
+    "imu_after_switch": {
+      "samples": 15,
+      "first_uptime_ms": 202019,
+      "last_uptime_ms": 204818,
+      "no_mcu_restart_across_switch": true
+    },
+    "serial_reopen_checks": [
+      {
+        "pass": true,
+        "samples": 10,
+        "port": "COM12"
+      },
+      {
+        "pass": true,
+        "samples": 10,
+        "port": "COM12"
+      }
+    ],
+    "before_restart_checks_saved": true,
+    "expected_restart_disconnect": "ClearCommError failed (PermissionError(13, '设备不识别此命令。', None, 22))",
+    "software_restart": {
+      "serial_reconnected": true,
+      "observed_boot_version": 2,
+      "imu_samples": 10,
+      "first_uptime_ms": 589,
+      "observation_elapsed_s": 3.328,
+      "pass": true
+    },
+    "post_reset_advertisement": {
+      "type": "ble_advertise",
+      "independent_diagnostic": true,
+      "started": 1,
+      "service_uuid": "A5B0",
+      "manufacturer_hex": "FFFF017C9EBD7DE53E01FC",
+      "over_air_verified": false
+    },
+    "after_software_restart": {
+      "duration_s": 10,
+      "matching_callbacks": 35,
+      "matching_uuid_callbacks": 35,
+      "over_air_verified": true,
+      "rssi_min_dbm": -28,
+      "rssi_max_dbm": -18
+    },
+    "board_left_in": "diagnostic BLE advertising with IMU output paused",
+    "finished_utc": "2026-11-15T12:53:51.939823+00:00"
+  },
+  "hardware_bootloader_roundtrip": {
+    "started_utc": "2026-11-15T12:55:49.494955+00:00",
+    "flash_rewritten_during_this_check": false,
+    "expected_disconnect": "ClearCommError failed (PermissionError(13, '设备不识别此命令。', None, 22))",
+    "software_bootloader_entry_verified": true,
+    "v2_flash_preserved_and_verified": true,
+    "return_to_application": {
+      "port": "COM12",
+      "observed_boot_version": 2,
+      "imu_samples": 10,
+      "first_uptime_ms": 347,
+      "pass": true
+    },
+    "final_ble": {
+      "duration_s": 10,
+      "matching_callbacks": 34,
+      "matching_uuid_callbacks": 34,
+      "over_air_verified": true
+    },
+    "board_left_in": "v2 diagnostic; serial responsive, BLE advertising, IMU output paused",
+    "finished_utc": "2026-11-15T12:56:05.709898+00:00"
+  },
+  "historical_diagnostic_scope": "Existing hardware_tests/followup/bootloader records describe the earlier BumpSingleBoardDiag v2; current results are motion_mqtt below.",
+  "motion_mqtt": {
+    "direct_stored_events": 3,
+    "direct_sources": {
+      "hardware_imu_sample": 1,
+      "injected_test_motion_trigger": 2
+    },
+    "serial_bridge_stored_events": 2,
+    "serial_bridge_sources": {
+      "hardware_imu_sample": 1,
+      "injected_test_motion_trigger": 1
+    },
+    "real_controlled_gesture_verified": false,
+    "two_badges_tested": false,
+    "external_modules_tested": false,
+    "direct_tls": false,
+    "pc_bridge_tls": true,
+    "natural_direct_window_ms": [
+      60001,
+      60000
+    ],
+    "application_ack_verified": true,
+    "final_queue": 0,
+    "earlier_loss_of_response_cause": "unresolved; subsequent instrumented and quiet runs succeeded",
+    "independent_audit": "motion_mqtt/independent_audit.json",
+    "final_state": {
+      "checked_utc": "2026-11-15T14:05:53.956565+00:00",
+      "port": "COM12",
+      "status": {
+        "type": "status",
+        "firmware": "BumpSingleBoardMotionMqtt",
+        "firmware_version": 2,
+        "uptime_ms": 529919,
+        "state": "IDLE",
+        "nina_mode": "NONE",
+        "ble_advertising": false,
+        "window_started_ms": 225267,
+        "window_deadline_ms": 0,
+        "window_remaining_ms": 0,
+        "queued": 0,
+        "overflow": 0,
+        "source": "hardware",
+        "imu_ready": true,
+        "samples": 55449,
+        "span_ms": 528254,
+        "max_gap_ms": 6069,
+        "trigger_count": 2,
+        "accepted_hardware_triggers": 0,
+        "injected_trigger_count": 3,
+        "last_sample_uptime_ms": 529919,
+        "boot_id_set": true,
+        "transport": "wifi_mqtt",
+        "mqtt_tls": false,
+        "accel_g": [
+          0.02759,
+          -0.01526,
+          1.01221
+        ]
+      },
+      "network_services_stopped": true,
+      "hotspot_cleanup": {
+        "original_configuration_restored": true,
+        "ready": false,
+        "finished_utc": "2026-11-15T14:03:36.6880233Z",
+        "final_state": "Off",
+        "original_state": "Off",
+        "started_utc": "2026-11-15T13:39:19.4988675Z",
+        "band": "TwoPointFourGigahertz",
+        "pid": 1304,
+        "status": "Success",
+        "stop_status": "Success"
+      }
+    }
+  }
+}

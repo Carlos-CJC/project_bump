@@ -1,0 +1,42 @@
+{
+  "captured_utc": "2026-11-19T01:24:46.929Z",
+  "trial": "proposal-058-human-shake",
+  "endpoint": "http://127.0.0.1:8875",
+  "roles": {
+    "alice": {
+      "event_id": "ev_349454276354_1136c725_00000002",
+      "timeline_id": 66,
+      "match_state": "confirmed",
+      "time_quality": "anchored",
+      "invite_button_visible": false,
+      "contact_status": "pending",
+      "alias": "挂件 B",
+      "metrics": [
+        "相遇 19.0 秒",
+        "平均信号 -54 dBm",
+        "42 次采样"
+      ],
+      "screenshot": "proposal-058-human-shake-alice-card.png"
+    },
+    "bob": {
+      "event_id": "ev_c8c9a3e65ba4_50005cfb_00000002",
+      "timeline_id": 65,
+      "match_state": "confirmed",
+      "time_quality": "anchored",
+      "invite_button_visible": false,
+      "contact_status": "pending",
+      "alias": "挂件 A",
+      "metrics": [
+        "相遇 14.0 秒",
+        "平均信号 -55 dBm",
+        "31 次采样"
+      ],
+      "screenshot": "proposal-058-human-shake-bob-card.png"
+    },
+    "charlie": {
+      "device": false,
+      "timeline": 0,
+      "requests": 0
+    }
+  }
+}

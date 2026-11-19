@@ -1,0 +1,14 @@
+{
+  "ok": true,
+  "checks": [
+    "Cold start: self-contained Windows Python, actual loopback HTTP, SQLite and MQTT worker ready",
+    "Anonymous read and fixed rehearsal are rejected",
+    "Fresh accounts; unlinked account, incorrect CSRF and client-selected inputs rejected",
+    "Two v1 MQTT/TLS publishers -> durable records -> resolved mutual aliases; legacy timeline and contacts untouched",
+    "Second participant can repeat; raw events remain distinct from display counts",
+    "Hide is owner-only and cannot remove the other participant's protocol view",
+    "Legacy fixed discovery, application ACK, request, consent and revoke still work in the same running service"
+  ],
+  "simulated": true,
+  "evidence_scope": "isolated software sandbox, no hardware or BLE radio test"
+}

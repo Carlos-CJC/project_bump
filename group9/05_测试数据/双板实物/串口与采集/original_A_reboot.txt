@@ -1,0 +1,5 @@
+
+Chip UID: 50351706825E8318
+My machine code: 0xA30F
+Blue = start pairing, White = stop/unpair
+STATUS state=IDLE my=0xA30F

@@ -1,0 +1,78 @@
+[
+  {
+    "board": "A",
+    "utc": "2026-11-18T17:11:58.436694+00:00",
+    "uf2_sha256": "ed5e3f0aae24524e892fe706a3672a77cf199b059737103828bce84c68e89a8f",
+    "flash_verified": true,
+    "boot_banner_seen": true,
+    "status": {
+      "type": "status",
+      "firmware": "BumpDualBadge",
+      "fw": "0.5.5-dual",
+      "device_id": "bump-349454276354",
+      "boot_id": "b5abdc79",
+      "self_short_id": "c301bd8fdd84",
+      "self_code16": "a30f",
+      "peer_code16": "0000",
+      "ir_paired": false,
+      "uptime_ms": 1537,
+      "paused": false,
+      "discovery": false,
+      "ble_phase": "idle",
+      "window_remaining_ms": 0,
+      "queued": 0,
+      "dropped": 0,
+      "imu_ready": true,
+      "imu_samples": 30,
+      "motion_triggers": 0,
+      "network_configured": false,
+      "transport": "wifi_mqtt_tcp",
+      "nina_version": "3.0.2",
+      "last_watchdog_stage": "none",
+      "pre_reset_ram_queued": 0,
+      "accel_g": [
+        0.02893,
+        -0.00403,
+        1.01611
+      ]
+    }
+  },
+  {
+    "board": "B",
+    "utc": "2026-11-18T17:12:06.219577+00:00",
+    "uf2_sha256": "ed5e3f0aae24524e892fe706a3672a77cf199b059737103828bce84c68e89a8f",
+    "flash_verified": true,
+    "boot_banner_seen": true,
+    "status": {
+      "type": "status",
+      "firmware": "BumpDualBadge",
+      "fw": "0.5.5-dual",
+      "device_id": "bump-c8c9a3e65ba4",
+      "boot_id": "f1393eec",
+      "self_short_id": "f2c26cf10326",
+      "self_code16": "c371",
+      "peer_code16": "0000",
+      "ir_paired": false,
+      "uptime_ms": 1548,
+      "paused": false,
+      "discovery": false,
+      "ble_phase": "idle",
+      "window_remaining_ms": 0,
+      "queued": 0,
+      "dropped": 0,
+      "imu_ready": true,
+      "imu_samples": 31,
+      "motion_triggers": 0,
+      "network_configured": false,
+      "transport": "wifi_mqtt_tcp",
+      "nina_version": "3.0.2",
+      "last_watchdog_stage": "none",
+      "pre_reset_ram_queued": 0,
+      "accel_g": [
+        -0.1051,
+        0.01367,
+        0.98865
+      ]
+    }
+  }
+]

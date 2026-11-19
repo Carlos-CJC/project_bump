@@ -1,0 +1,65 @@
+{
+  "began": "2026-11-18T15:59:40.887857+00:00",
+  "before": [
+    {
+      "id": "USB\\VID_2341&PID_005E\\0617355018835E82",
+      "loc": "PCIROOT(0)#PCI(1400)#USBROOT(0)#USB(2)#USB(1)#USB(1)"
+    },
+    {
+      "id": "USB\\VID_2341&PID_005E\\416523501C5F96C8",
+      "loc": "PCIROOT(0)#PCI(1400)#USBROOT(0)#USB(2)#USB(1)#USB(2)"
+    }
+  ],
+  "target": "A",
+  "writes_to_flash": false,
+  "rom": [
+    {
+      "id": "USB\\VID_2E8A&PID_0003\\E0C9125B0D9B",
+      "loc": "PCIROOT(0)#PCI(1400)#USBROOT(0)#USB(2)#USB(1)#USB(1)"
+    },
+    {
+      "id": "USB\\VID_2341&PID_005E\\416523501C5F96C8",
+      "loc": "PCIROOT(0)#PCI(1400)#USBROOT(0)#USB(2)#USB(1)#USB(2)"
+    }
+  ],
+  "sha256": "7d16eeae793c8a0f9d51f5d70fc042053aa090d4ef70c84f42433da55081091a",
+  "after": [
+    {
+      "id": "USB\\VID_2341&PID_005E\\0617355018835E82",
+      "loc": "PCIROOT(0)#PCI(1400)#USBROOT(0)#USB(2)#USB(1)#USB(1)"
+    },
+    {
+      "id": "USB\\VID_2341&PID_005E\\416523501C5F96C8",
+      "loc": "PCIROOT(0)#PCI(1400)#USBROOT(0)#USB(2)#USB(1)#USB(2)"
+    }
+  ],
+  "status": {
+    "type": "status",
+    "firmware": "BumpDualBadge",
+    "fw": "0.5.1-dual",
+    "device_id": "bump-349454276354",
+    "boot_id": "a92ede3f",
+    "self_short_id": "2d025ee0c3ef",
+    "self_code16": "a30f",
+    "peer_code16": "0000",
+    "ir_paired": false,
+    "uptime_ms": 1539,
+    "paused": false,
+    "discovery": false,
+    "ble_phase": "idle",
+    "window_remaining_ms": 0,
+    "queued": 0,
+    "dropped": 0,
+    "imu_ready": true,
+    "imu_samples": 30,
+    "motion_triggers": 0,
+    "network_configured": false,
+    "transport": "wifi_mqtt_tcp",
+    "accel_g": [
+      0.02698,
+      -0.01624,
+      1.01685
+    ]
+  },
+  "ended": "2026-11-18T15:59:45.043489+00:00"
+}

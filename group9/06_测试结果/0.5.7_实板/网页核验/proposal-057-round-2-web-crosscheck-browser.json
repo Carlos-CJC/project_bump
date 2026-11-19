@@ -1,0 +1,42 @@
+{
+  "captured_utc": "2026-11-19T01:07:14.310Z",
+  "trial": "proposal-057-round-2",
+  "endpoint": "http://127.0.0.1:8875",
+  "roles": {
+    "alice": {
+      "event_id": "ev_349454276354_cdc3936c_00000002",
+      "timeline_id": 62,
+      "match_state": "confirmed",
+      "time_quality": "anchored",
+      "invite_button_visible": false,
+      "contact_status": "pending",
+      "alias": "挂件 B",
+      "metrics": [
+        "相遇 13.0 秒",
+        "平均信号 -68 dBm",
+        "19 次采样"
+      ],
+      "screenshot": "proposal-057-round-2-alice-card.png"
+    },
+    "bob": {
+      "event_id": "ev_c8c9a3e65ba4_b94fdaef_00000002",
+      "timeline_id": 61,
+      "match_state": "confirmed",
+      "time_quality": "anchored",
+      "invite_button_visible": false,
+      "contact_status": "pending",
+      "alias": "挂件 A",
+      "metrics": [
+        "相遇 12.0 秒",
+        "平均信号 -68 dBm",
+        "16 次采样"
+      ],
+      "screenshot": "proposal-057-round-2-bob-card.png"
+    },
+    "charlie": {
+      "device": false,
+      "timeline": 0,
+      "requests": 0
+    }
+  }
+}

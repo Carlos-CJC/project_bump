@@ -1,0 +1,1 @@
+PASS: 0.5.0 and 0.5.1 archives unchanged; 0.5.2 scan/threshold, wire parity, reset/entropy diagnostics, ARM ELF and 646 verified UF2 blocks

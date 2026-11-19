@@ -1,0 +1,142 @@
+{
+  "at_utc": "2026-11-18T16:50:06.495328+00:00",
+  "image_identity": "BumpNinaProbe/batch",
+  "begin": "2026-11-18T16:49:06.337713+00:00",
+  "outcome": "probe_complete",
+  "A_before": {
+    "type": "status",
+    "firmware": "BumpNinaProbe/batch",
+    "role": "idle",
+    "uptime_ms": 1039,
+    "elapsed_ms": 0,
+    "reports": 0,
+    "samples": 0,
+    "span_ms": 0,
+    "last_rssi": 0,
+    "qualified": false,
+    "max_poll_us": 0,
+    "last_watchdog_stage": "none"
+  },
+  "B_before": {
+    "type": "status",
+    "firmware": "BumpDualBadge",
+    "fw": "0.5.3-dual",
+    "device_id": "bump-c8c9a3e65ba4",
+    "boot_id": "8285f7c6",
+    "self_short_id": "a32fe9aae9af",
+    "self_code16": "c371",
+    "peer_code16": "0000",
+    "ir_paired": false,
+    "uptime_ms": 532609,
+    "paused": false,
+    "discovery": false,
+    "ble_phase": "idle",
+    "window_remaining_ms": 0,
+    "queued": 0,
+    "dropped": 0,
+    "imu_ready": true,
+    "imu_samples": 56660,
+    "motion_triggers": 0,
+    "network_configured": false,
+    "transport": "wifi_mqtt_tcp",
+    "nina_version": "3.0.2",
+    "last_watchdog_stage": "ble_poll",
+    "pre_reset_ram_queued": 0,
+    "accel_g": [
+      -0.10559,
+      0.01331,
+      0.98779
+    ]
+  },
+  "A_best": {
+    "type": "probe_complete",
+    "firmware": "BumpNinaProbe/batch",
+    "role": "idle",
+    "uptime_ms": 61546,
+    "elapsed_ms": 60003,
+    "reports": 1633,
+    "samples": 53,
+    "span_ms": 27839,
+    "last_rssi": -65,
+    "qualified": true,
+    "max_poll_us": 20502,
+    "last_watchdog_stage": "none"
+  },
+  "A_max_reports": 1633,
+  "A_last_status": {
+    "type": "status",
+    "firmware": "BumpNinaProbe/batch",
+    "role": "scan",
+    "uptime_ms": 59394,
+    "elapsed_ms": 57851,
+    "reports": 1591,
+    "samples": 53,
+    "span_ms": 27839,
+    "last_rssi": -65,
+    "qualified": true,
+    "max_poll_us": 20502,
+    "last_watchdog_stage": "none"
+  },
+  "B_last_status": {
+    "type": "status",
+    "firmware": "BumpDualBadge",
+    "fw": "0.5.3-dual",
+    "device_id": "bump-c8c9a3e65ba4",
+    "boot_id": "e132dfcd",
+    "self_short_id": "3ee42c68f164",
+    "self_code16": "c371",
+    "peer_code16": "0000",
+    "ir_paired": false,
+    "uptime_ms": 18467,
+    "paused": false,
+    "discovery": false,
+    "ble_phase": "idle",
+    "window_remaining_ms": 0,
+    "queued": 0,
+    "dropped": 0,
+    "imu_ready": true,
+    "imu_samples": 1834,
+    "motion_triggers": 0,
+    "network_configured": false,
+    "transport": "wifi_mqtt_tcp",
+    "nina_version": "3.0.2",
+    "last_watchdog_stage": "ble_poll",
+    "pre_reset_ram_queued": 0,
+    "accel_g": [
+      -0.1062,
+      0.01392,
+      0.99011
+    ]
+  },
+  "B_advertise_ready_utc": [
+    "2026-11-18T16:49:07.724+00:00"
+  ],
+  "usb_events": [
+    [
+      "B",
+      "2026-11-18T16:49:45.251+00:00",
+      "lost"
+    ],
+    [
+      "B",
+      "2026-11-18T16:49:46.278+00:00",
+      "reopen"
+    ]
+  ],
+  "probe_complete": [
+    {
+      "type": "probe_complete",
+      "firmware": "BumpNinaProbe/batch",
+      "role": "idle",
+      "uptime_ms": 61546,
+      "elapsed_ms": 60003,
+      "reports": 1633,
+      "samples": 53,
+      "span_ms": 27839,
+      "last_rssi": -65,
+      "qualified": true,
+      "max_poll_us": 20502,
+      "last_watchdog_stage": "none"
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+PASS ack_full_identity_status_schema_and_malformed_rejection
+PASS unchanged_motion_detector_positive_negative_cooldown_and_clock
+ALL_MOTION_PROTOCOL_SOFTWARE_TESTS_PASSED

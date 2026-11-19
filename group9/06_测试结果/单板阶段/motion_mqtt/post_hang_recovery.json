@@ -1,0 +1,30 @@
+{
+  "probe": "",
+  "recovery": "1200_baud_touch",
+  "ports": [
+    {
+      "port": "COM7",
+      "vid": null,
+      "pid": null,
+      "serial": null
+    },
+    {
+      "port": "COM3",
+      "vid": null,
+      "pid": null,
+      "serial": null
+    },
+    {
+      "port": "COM4",
+      "vid": null,
+      "pid": null,
+      "serial": null
+    },
+    {
+      "port": "COM6",
+      "vid": null,
+      "pid": null,
+      "serial": null
+    }
+  ]
+}

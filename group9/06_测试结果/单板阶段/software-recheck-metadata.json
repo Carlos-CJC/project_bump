@@ -1,0 +1,9 @@
+{
+  "pytest_exit": 0,
+  "runtime_files_before": 6,
+  "runtime_files_after": 6,
+  "runtime_changed_count": 0,
+  "run_date": "2026-11-15",
+  "scope": "Existing Bump_Starter software tests; no hardware or serial access",
+  "temp_directory": "E:\\港理课程\\课程文件\\eie568\\Proposal_智能社交挂件\\2026-11-15_单板调试与进度报告\\private\\pytest-software-recheck-10fdbd70338b469a967e7f624e93988d"
+}

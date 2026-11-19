@@ -1,0 +1,22 @@
+{
+  "base": "ArduinoBLE 2.1.0",
+  "max_spi_read_bytes": 1,
+  "cached_availability_limit": 64,
+  "availability_wire_order": "big-endian",
+  "nano_rp2040_nina_reset_on_ble_end": true,
+  "poll_limits": {
+    "bytes": 192,
+    "microseconds_between_spi_operations": 20000
+  },
+  "upstream_sha256": {
+    "HCI.cpp": "8a74bc8d33f5b676c05c382ca7e19f7f5549e2e5ecfebb0b4f52ff8549513a6f",
+    "HCINinaSpiTransport.cpp": "34c4e40efae61aa5d7b7fbad8dd34d3611d897490e85150fff3e32cd4d7879ad",
+    "HCINinaSpiTransport.h": "c70d8486aafb31c9d7bc99fb151a6d191b2c526695077c2c5224d4d12e3f4afe"
+  },
+  "patched_sha256": {
+    "HCI.cpp": "b46abee76a5d7192b6c78c858cc1c416ba8b72bf6e0c47d0342a484f863b0b26",
+    "HCINinaSpiTransport.cpp": "02671369f573743485d6da92ef061f3314daea150c28e7c2f3083b1448649626",
+    "HCINinaSpiTransport.h": "428cde5ad20cd98e5c12fc998d1ec39216e12945b3fc0209c21d2859600191f7",
+    "BumpNinaRxBatch.h": "4f1c43a4a72a82c174c45c8a514087c29822567ec09c8baa3f13a7f4f3b3455a"
+  }
+}

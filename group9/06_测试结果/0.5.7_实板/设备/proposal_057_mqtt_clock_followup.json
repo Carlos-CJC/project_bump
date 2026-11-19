@@ -1,0 +1,140 @@
+{
+  "current_anchors": [
+    {
+      "device": "bump-349454276354",
+      "boot": "cdc3936c",
+      "raw_uptime_ms": 146000,
+      "utc_low": 1795049435.6082456,
+      "utc_high": 1795049436.7617643,
+      "source": "mqtt_connack"
+    },
+    {
+      "device": "bump-c8c9a3e65ba4",
+      "boot": "b94fdaef",
+      "raw_uptime_ms": 841000,
+      "utc_low": 1795050138.9633923,
+      "utc_high": 1795050140.1825962,
+      "source": "mqtt_connack"
+    },
+    {
+      "device": "bump-349454276354",
+      "boot": "cdc3936c",
+      "raw_uptime_ms": 909000,
+      "utc_low": 1795050199.0918052,
+      "utc_high": 1795050200.8261254,
+      "source": "mqtt_connack"
+    },
+    {
+      "device": "bump-c8c9a3e65ba4",
+      "boot": "b94fdaef",
+      "raw_uptime_ms": 980000,
+      "utc_low": 1795050277.6120794,
+      "utc_high": 1795050278.9198902,
+      "source": "mqtt_connack"
+    },
+    {
+      "device": "bump-349454276354",
+      "boot": "cdc3936c",
+      "raw_uptime_ms": 988000,
+      "utc_low": 1795050277.7355897,
+      "utc_high": 1795050278.9380083,
+      "source": "mqtt_connack"
+    }
+  ],
+  "verified_events": [
+    {
+      "event_id": "ev_349454276354_cdc3936c_00000001",
+      "boot": "cdc3936c",
+      "transport": "mqtt",
+      "time_quality": "anchored",
+      "clock_uncertainty_s": 0.62715744972229
+    },
+    {
+      "event_id": "ev_349454276354_cdc3936c_00000002",
+      "boot": "cdc3936c",
+      "transport": "mqtt",
+      "time_quality": "anchored",
+      "clock_uncertainty_s": 0.46260154247283936
+    },
+    {
+      "event_id": "ev_c8c9a3e65ba4_b94fdaef_00000001",
+      "boot": "b94fdaef",
+      "transport": "mqtt",
+      "time_quality": "estimated",
+      "clock_uncertainty_s": null
+    },
+    {
+      "event_id": "ev_c8c9a3e65ba4_b94fdaef_00000002",
+      "boot": "b94fdaef",
+      "transport": "mqtt",
+      "time_quality": "anchored",
+      "clock_uncertainty_s": 0.5477489233016968
+    }
+  ],
+  "final": {
+    "A": {
+      "type": "status",
+      "firmware": "BumpDualBadge",
+      "fw": "0.5.7-dual",
+      "device_id": "bump-349454276354",
+      "boot_id": "cdc3936c",
+      "self_short_id": "99e3f77c947a",
+      "self_code16": "a30f",
+      "peer_code16": "0000",
+      "ir_paired": false,
+      "uptime_ms": 1017832,
+      "paused": false,
+      "discovery": false,
+      "ble_phase": "idle",
+      "window_remaining_ms": 0,
+      "queued": 0,
+      "dropped": 0,
+      "imu_ready": true,
+      "imu_samples": 99673,
+      "motion_triggers": 0,
+      "network_configured": true,
+      "transport": "wifi_mqtt_tcp",
+      "nina_version": "3.0.2",
+      "last_watchdog_stage": "none",
+      "pre_reset_ram_queued": 0,
+      "accel_g": [
+        0.02905,
+        -0.00732,
+        1.01587
+      ]
+    },
+    "B": {
+      "type": "status",
+      "firmware": "BumpDualBadge",
+      "fw": "0.5.7-dual",
+      "device_id": "bump-c8c9a3e65ba4",
+      "boot_id": "b94fdaef",
+      "self_short_id": "01054d8ff96b",
+      "self_code16": "c371",
+      "peer_code16": "0000",
+      "ir_paired": false,
+      "uptime_ms": 1010055,
+      "paused": false,
+      "discovery": false,
+      "ble_phase": "idle",
+      "window_remaining_ms": 0,
+      "queued": 0,
+      "dropped": 0,
+      "imu_ready": true,
+      "imu_samples": 97802,
+      "motion_triggers": 0,
+      "network_configured": true,
+      "transport": "wifi_mqtt_tcp",
+      "nina_version": "3.0.2",
+      "last_watchdog_stage": "none",
+      "pre_reset_ram_queued": 0,
+      "accel_g": [
+        -0.10535,
+        0.01404,
+        0.99048
+      ]
+    }
+  },
+  "before": "proposal-057-b-clock/before.json",
+  "second_driver": "firmware/verification/live-057-recent-mqtt-anchors.jsonl"
+}

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Bump · 相遇记录</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="Bump 首页"><span class="brand-mark">b</span>Bump<span class="brand-note">GROUP 09</span></a>
+    <span class="service" id="service">正在连接本机服务</span>
+  </header>
+  <main>
+    <div class="prototype"><span class="dot"></span> 无硬件演示版 <span class="prototype-note">使用模拟挂件与虚构资料，真实感应效果待实测。</span></div>
+    <section id="login-view" class="login-layout">
+      <div class="intro">
+        <p class="eyebrow">A SMALL MOMENT. A NEW CONNECTION.</p>
+        <h1>让一次相遇，<br>有下一次交流。</h1>
+        <p class="lead">摇动挂件，开启短暂的发现窗口。相遇记录留在自己的时间线里，双方同意后再交换资料。</p>
+        <div class="steps"><span>01 <b>记录相遇</b></span><span>02 <b>发出邀请</b></span><span>03 <b>双方同意</b></span></div>
+        <p class="intro-note">当前可以验证完整的软件流程；距离、摇动识别和无线连接需要拿到实物后确认。</p>
+      </div>
+      <form id="login-form" class="card login-card">
+        <p class="eyebrow">LOCAL DEMO</p>
+        <h2>打开我的相遇记录</h2>
+        <p class="muted">使用本机生成的演示账号登录。</p>
+        <label for="username">演示账号</label>
+        <select id="username" name="username"><option value="alice">Alice · 挂件 A</option><option value="bob">Bob · 挂件 B</option><option value="charlie">Charlie · 第三人权限检查</option></select>
+        <label for="password">演示密码</label>
+        <input id="password" name="password" type="password" autocomplete="current-password" required placeholder="见 .runtime/credentials.txt">
+        <button class="primary full" type="submit">登录</button>
+        <p class="small muted">密码由每台电脑独立生成，运行说明中有打开方式。三个账号都是虚构测试身份。</p>
+      </form>
+    </section>
+    <section id="dashboard" hidden>
+      <div class="page-heading"><div><p class="eyebrow" id="greeting">MY CONNECTIONS</p><h1 class="dashboard-title">我的相遇</h1></div><div class="toolbar"><button id="refresh" class="quiet">刷新</button><button id="logout" class="quiet">退出登录</button></div></div>
+      <div class="stats">
+        <div class="stat"><span>相遇记录</span><strong id="stat-total">0</strong></div>
+        <div class="stat"><span>双方记录已匹配</span><strong id="stat-mutual">0</strong></div>
+        <div class="stat"><span>待我回应的邀请</span><strong id="stat-pending">0</strong></div>
+      </div>
+      <div class="content-grid">
+        <section><div class="section-heading"><h2>相遇时间线</h2><span class="small muted" id="updated">尚未更新</span></div><div id="encounters" class="stack"></div></section>
+        <aside><div class="section-heading"><h2>联系邀请</h2></div><div id="requests" class="stack"></div><div class="privacy-note"><b>资料由你决定何时分享。</b><p>邀请被接受后，双方才能看到对方资料；任意一方撤销联系后，系统会重新隐藏资料。</p><p>撤销无法收回对方此前已看到或保存的内容。</p></div></aside>
+      </div>
+    </section>
+    <div id="notice" class="notice" role="status" aria-live="polite" hidden></div>
+  </main>
+  <dialog id="confirm-dialog" aria-labelledby="confirm-title">
+    <form method="dialog">
+      <h2 id="confirm-title">确认操作</h2>
+      <p id="confirm-message"></p>
+      <div class="actions"><button value="cancel" autofocus>取消</button><button class="primary" value="confirm">确认</button></div>
+    </form>
+  </dialog>
+  <footer>Bump · EIE568 Group 9 <span>本机软件原型 / 2026</span></footer>
+</body>
+</html>

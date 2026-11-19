@@ -1,0 +1,471 @@
+{
+  "built_at_utc": "2026-11-18T17:42:12.107+00:00",
+  "status": "series-summary-observed",
+  "runner_method": "Serial diagnostic opened windows; samples were from physical BLE. The runner preserved its own 65 s monotonic decision after both boards reported their discovery end. The displayed UTC deadline is estimated from the last logged window end plus 65 s; it never determines or replaces the original decision.",
+  "mqtt_method": "A serial transmit record is tied to the original queued event ID. Device PUBACK detail can record received or not_received. The application ACK is tied to the explicit queue-removal event ID. SQLite exact matches use a read-only snapshot. A delayed row or application ACK never promotes the original round.",
+  "firmware": "0.5.5-dual",
+  "operator_network_context": "Windows hotspot was offline during the timed trial; both events only uploaded after reconnection.",
+  "measured_opening_skew_s": 12.264,
+  "nominal_b_lead_requested_s": 12.247,
+  "series": {
+    "relative_path": "firmware/verification/live-055-motion-offset.jsonl",
+    "sha256_of_complete_prefix": "8a065e3ff5da08127ea7c8140be22435f3558622605af67a562eaab21b320ec1",
+    "complete_prefix_bytes": 3808,
+    "last_line": 4,
+    "malformed_top_level_lines": []
+  },
+  "serial": {
+    "relative_path": "hardware/logs/dual-live-06/serial.jsonl",
+    "sha256_of_complete_prefix": "4a083261cd3e5463370c0c6720492a433310e4dd8d66693141aada88fea6a130",
+    "complete_prefix_bytes": 175080,
+    "last_line": 1083,
+    "malformed_top_level_lines": [],
+    "malformed_firmware_json_lines": [],
+    "last_complete_record_utc": "2026-11-18T17:40:15.423+00:00"
+  },
+  "database": {
+    "relative_path": "private/live/live.sqlite3",
+    "access": "sqlite uri mode=ro and query_only"
+  },
+  "original_start_record": {
+    "record": "start",
+    "at": "2026-11-18T17:27:11.768+00:00",
+    "requested_rounds": 1,
+    "source": "serial_diagnostic",
+    "preexisting_event_count": 13,
+    "line": 1
+  },
+  "original_final_record": {
+    "record": "summary",
+    "at": "2026-11-18T17:29:30.091+00:00",
+    "attempted": 1,
+    "verified_dual_direction": 0,
+    "both_observed": 1,
+    "requested": 1,
+    "stop_reason": "completed",
+    "line": 4
+  },
+  "planned_rounds": 1,
+  "rounds_started": 1,
+  "rounds_completed": 1,
+  "all_planned_rounds_completed": true,
+  "totals": {
+    "original_passes": 0,
+    "original_failures": 1,
+    "original_bidirectional_qualified_ble": 1,
+    "unique_mqtt_rows": 2,
+    "late_mqtt_delivery_reconciled": 2,
+    "observed_round_reset_counts": {}
+  },
+  "late_reconciled_event_deliveries": [
+    {
+      "round": 1,
+      "board": "A",
+      "event_id": "ev_349454276354_b5abdc79_00000004",
+      "received_utc": "2026-11-18T17:29:51.352+00:00",
+      "application_ack_utc": "2026-11-18T17:29:51.593+00:00",
+      "puback_received_utc": "2026-11-18T17:29:51.386+00:00",
+      "estimated_seconds_past_original_deadline": 21.602,
+      "database_received_late": true,
+      "application_ack_received_late": true,
+      "reset_observed_while_pending": false
+    },
+    {
+      "round": 1,
+      "board": "B",
+      "event_id": "ev_c8c9a3e65ba4_f1393eec_00000004",
+      "received_utc": "2026-11-18T17:35:17.420+00:00",
+      "application_ack_utc": "2026-11-18T17:35:17.723+00:00",
+      "puback_received_utc": "2026-11-18T17:35:17.440+00:00",
+      "estimated_seconds_past_original_deadline": 347.732,
+      "database_received_late": true,
+      "application_ack_received_late": true,
+      "reset_observed_while_pending": false
+    }
+  ],
+  "rounds": [
+    {
+      "round": 1,
+      "series_line": 3,
+      "round_start_series_line": 2,
+      "original_passed_unchanged": false,
+      "original_timeout_unchanged": "database_or_application_ack",
+      "both_boards_saw_expected_short_original": true,
+      "both_boards_queued_qualified_observation_original": true,
+      "latest_window_end_utc": "2026-11-18T17:28:24.991+00:00",
+      "approximate_65s_deadline_utc": "2026-11-18T17:29:29.991+00:00",
+      "directions": {
+        "A": {
+          "first_open_utc": "2026-11-18T17:27:24.290+00:00",
+          "window_end_utc": "2026-11-18T17:28:24.991+00:00",
+          "window_complete": true,
+          "original_resets": [],
+          "original_failed_conditions": [
+            "broker_puback_not_observed",
+            "matching_application_ack_not_observed",
+            "encounter_not_in_database"
+          ],
+          "events": [
+            {
+              "event_id": "ev_349454276354_b5abdc79_00000004",
+              "expected_peer_short_id": "f2c26cf10326",
+              "qualifying_rf_observation": true,
+              "observed_samples": 34,
+              "duration_s": 17,
+              "rssi_avg": -66,
+              "queued_at_utc": "2026-11-18T17:28:24.242+00:00",
+              "serial_enqueue": [
+                {
+                  "line": 723,
+                  "utc": "2026-11-18T17:28:24.242+00:00"
+                }
+              ],
+              "observation_boot_id": "b5abdc79",
+              "observation_peer_short_id": "f2c26cf10326",
+              "original_trial_window": {
+                "transmits": [],
+                "broker_puback": [],
+                "application_ack": [],
+                "database_rows": []
+              },
+              "original_required_delivery_evidence": false,
+              "serial_mqtt_attempts": [
+                {
+                  "line": 780,
+                  "utc": "2026-11-18T17:29:51.283+00:00",
+                  "boot_id": "b5abdc79",
+                  "batch_uptime_ms": 1074376,
+                  "mqtt_puback_reports": [
+                    {
+                      "line": 781,
+                      "utc": "2026-11-18T17:29:51.386+00:00",
+                      "detail": "received"
+                    }
+                  ],
+                  "application_ack_detail": {
+                    "line": 783,
+                    "utc": "2026-11-18T17:29:51.593+00:00",
+                    "transport_origin": "wifi_mqtt",
+                    "queued_remaining": 0,
+                    "matching_detail": {
+                      "line": 782,
+                      "utc": "2026-11-18T17:29:51.593+00:00",
+                      "detail": "matched"
+                    }
+                  }
+                }
+              ],
+              "puback_received_at_utc": "2026-11-18T17:29:51.386+00:00",
+              "serial_acks_and_queue_removals": [
+                {
+                  "line": 783,
+                  "utc": "2026-11-18T17:29:51.593+00:00",
+                  "transport_origin": "wifi_mqtt",
+                  "queued_remaining": 0,
+                  "matching_detail": {
+                    "line": 782,
+                    "utc": "2026-11-18T17:29:51.593+00:00",
+                    "detail": "matched"
+                  }
+                }
+              ],
+              "next_sync_complete": {
+                "line": 786,
+                "utc": "2026-11-18T17:29:54.070+00:00",
+                "transport": "wifi_mqtt_tcp",
+                "queued": 0
+              },
+              "database_rows_after_reconciliation": [
+                {
+                  "event_id": "ev_349454276354_b5abdc79_00000004",
+                  "device": "bump-349454276354",
+                  "boot": "b5abdc79",
+                  "peer_short": "f2c26cf10326",
+                  "peer_device": "bump-c8c9a3e65ba4",
+                  "transport": "mqtt",
+                  "duration_s": 17.0,
+                  "samples": 34,
+                  "rssi_avg": -66.0,
+                  "received_utc": "2026-11-18T17:29:51.352+00:00",
+                  "seen_utc": "2026-11-18T17:27:43.611+00:00",
+                  "start_utc": "2026-11-18T17:27:26.611+00:00",
+                  "discovery_start_utc": "2026-11-18T17:27:24.301+00:00",
+                  "discovery_end_utc": "2026-11-18T17:28:24.301+00:00"
+                }
+              ],
+              "unique_matching_mqtt_row": true,
+              "database_received_utc": "2026-11-18T17:29:51.352+00:00",
+              "application_ack_utc": "2026-11-18T17:29:51.593+00:00",
+              "application_ack_delay_from_both_window_ends_s": 86.602,
+              "application_ack_after_approximate_deadline_s": 21.602,
+              "application_ack_delay_from_queue_s": 87.351,
+              "application_ack_delay_from_first_mqtt_transmit_s": 0.31,
+              "eventually_reconciled_outside_original_required_evidence": true,
+              "database_received_late": true,
+              "device_puback_received_late": true,
+              "application_ack_received_late": true,
+              "late_mqtt_delivery_reconciled": true,
+              "connection_trace_while_pending": [
+                {
+                  "line": 777,
+                  "utc": "2026-11-18T17:29:51.101+00:00",
+                  "detail": "broker_connected",
+                  "code": null
+                },
+                {
+                  "line": 778,
+                  "utc": "2026-11-18T17:29:51.179+00:00",
+                  "detail": "ack_subscribed",
+                  "code": null
+                }
+              ],
+              "explicit_watchdog_recovery_while_pending": [],
+              "observed_new_boot_while_pending": [],
+              "browser": {
+                "role": "Alice",
+                "viewed_at_utc": "2026-11-18T17:40:07.799Z",
+                "pair_label": "双方记录已匹配",
+                "estimation_label": "2026/11/19 01:27:43 · 由设备运行时间估算",
+                "screenshot": "Alice_12秒错位BLE匹配.png"
+              }
+            }
+          ]
+        },
+        "B": {
+          "first_open_utc": "2026-11-18T17:27:12.026+00:00",
+          "window_end_utc": "2026-11-18T17:28:12.748+00:00",
+          "window_complete": true,
+          "original_resets": [],
+          "original_failed_conditions": [
+            "broker_puback_not_observed",
+            "matching_application_ack_not_observed",
+            "encounter_not_in_database"
+          ],
+          "events": [
+            {
+              "event_id": "ev_c8c9a3e65ba4_f1393eec_00000004",
+              "expected_peer_short_id": "c301bd8fdd84",
+              "qualifying_rf_observation": true,
+              "observed_samples": 30,
+              "duration_s": 16,
+              "rssi_avg": -67,
+              "queued_at_utc": "2026-11-18T17:28:11.997+00:00",
+              "serial_enqueue": [
+                {
+                  "line": 712,
+                  "utc": "2026-11-18T17:28:11.997+00:00"
+                }
+              ],
+              "observation_boot_id": "f1393eec",
+              "observation_peer_short_id": "c301bd8fdd84",
+              "original_trial_window": {
+                "transmits": [],
+                "broker_puback": [],
+                "application_ack": [],
+                "database_rows": []
+              },
+              "original_required_delivery_evidence": false,
+              "serial_mqtt_attempts": [
+                {
+                  "line": 920,
+                  "utc": "2026-11-18T17:34:18.130+00:00",
+                  "boot_id": "f1393eec",
+                  "batch_uptime_ms": 1333439,
+                  "mqtt_puback_reports": [
+                    {
+                      "line": 922,
+                      "utc": "2026-11-18T17:34:21.625+00:00",
+                      "detail": "not_received"
+                    }
+                  ],
+                  "application_ack_detail": null
+                },
+                {
+                  "line": 952,
+                  "utc": "2026-11-18T17:35:15.061+00:00",
+                  "boot_id": "f1393eec",
+                  "batch_uptime_ms": 1390391,
+                  "mqtt_puback_reports": [
+                    {
+                      "line": 953,
+                      "utc": "2026-11-18T17:35:17.440+00:00",
+                      "detail": "received"
+                    }
+                  ],
+                  "application_ack_detail": {
+                    "line": 955,
+                    "utc": "2026-11-18T17:35:17.723+00:00",
+                    "transport_origin": "wifi_mqtt",
+                    "queued_remaining": 0,
+                    "matching_detail": {
+                      "line": 954,
+                      "utc": "2026-11-18T17:35:17.723+00:00",
+                      "detail": "matched"
+                    }
+                  }
+                }
+              ],
+              "puback_received_at_utc": "2026-11-18T17:35:17.440+00:00",
+              "serial_acks_and_queue_removals": [
+                {
+                  "line": 955,
+                  "utc": "2026-11-18T17:35:17.723+00:00",
+                  "transport_origin": "wifi_mqtt",
+                  "queued_remaining": 0,
+                  "matching_detail": {
+                    "line": 954,
+                    "utc": "2026-11-18T17:35:17.723+00:00",
+                    "detail": "matched"
+                  }
+                }
+              ],
+              "next_sync_complete": {
+                "line": 958,
+                "utc": "2026-11-18T17:35:20.952+00:00",
+                "transport": "wifi_mqtt_tcp",
+                "queued": 0
+              },
+              "database_rows_after_reconciliation": [
+                {
+                  "event_id": "ev_c8c9a3e65ba4_f1393eec_00000004",
+                  "device": "bump-c8c9a3e65ba4",
+                  "boot": "f1393eec",
+                  "peer_short": "c301bd8fdd84",
+                  "peer_device": "bump-349454276354",
+                  "transport": "mqtt",
+                  "duration_s": 16.0,
+                  "samples": 30,
+                  "rssi_avg": -67.0,
+                  "received_utc": "2026-11-18T17:35:17.420+00:00",
+                  "seen_utc": "2026-11-18T17:28:13.845+00:00",
+                  "start_utc": "2026-11-18T17:27:57.845+00:00",
+                  "discovery_start_utc": "2026-11-18T17:27:14.317+00:00",
+                  "discovery_end_utc": "2026-11-18T17:28:14.317+00:00"
+                }
+              ],
+              "unique_matching_mqtt_row": true,
+              "database_received_utc": "2026-11-18T17:35:17.420+00:00",
+              "application_ack_utc": "2026-11-18T17:35:17.723+00:00",
+              "application_ack_delay_from_both_window_ends_s": 412.732,
+              "application_ack_after_approximate_deadline_s": 347.732,
+              "application_ack_delay_from_queue_s": 425.726,
+              "application_ack_delay_from_first_mqtt_transmit_s": 59.593,
+              "eventually_reconciled_outside_original_required_evidence": true,
+              "database_received_late": true,
+              "device_puback_received_late": true,
+              "application_ack_received_late": true,
+              "late_mqtt_delivery_reconciled": true,
+              "connection_trace_while_pending": [
+                {
+                  "line": 788,
+                  "utc": "2026-11-18T17:29:56.735+00:00",
+                  "detail": "broker_connect_failed",
+                  "code": -1
+                },
+                {
+                  "line": 800,
+                  "utc": "2026-11-18T17:30:21.369+00:00",
+                  "detail": "broker_connect_failed",
+                  "code": -2
+                },
+                {
+                  "line": 812,
+                  "utc": "2026-11-18T17:30:44.910+00:00",
+                  "detail": "broker_connect_failed",
+                  "code": -2
+                },
+                {
+                  "line": 823,
+                  "utc": "2026-11-18T17:31:08.079+00:00",
+                  "detail": "broker_connect_failed",
+                  "code": -2
+                },
+                {
+                  "line": 835,
+                  "utc": "2026-11-18T17:31:31.423+00:00",
+                  "detail": "broker_connect_failed",
+                  "code": -2
+                },
+                {
+                  "line": 847,
+                  "utc": "2026-11-18T17:31:54.551+00:00",
+                  "detail": "broker_connect_failed",
+                  "code": -2
+                },
+                {
+                  "line": 859,
+                  "utc": "2026-11-18T17:32:19.191+00:00",
+                  "detail": "broker_connect_failed",
+                  "code": -1
+                },
+                {
+                  "line": 871,
+                  "utc": "2026-11-18T17:32:44.224+00:00",
+                  "detail": "broker_connect_failed",
+                  "code": -1
+                },
+                {
+                  "line": 882,
+                  "utc": "2026-11-18T17:33:08.323+00:00",
+                  "detail": "broker_connect_failed",
+                  "code": -1
+                },
+                {
+                  "line": 894,
+                  "utc": "2026-11-18T17:33:31.628+00:00",
+                  "detail": "broker_connect_failed",
+                  "code": -2
+                },
+                {
+                  "line": 906,
+                  "utc": "2026-11-18T17:33:54.972+00:00",
+                  "detail": "broker_connect_failed",
+                  "code": -2
+                },
+                {
+                  "line": 917,
+                  "utc": "2026-11-18T17:34:17.741+00:00",
+                  "detail": "broker_connected",
+                  "code": null
+                },
+                {
+                  "line": 918,
+                  "utc": "2026-11-18T17:34:17.869+00:00",
+                  "detail": "ack_subscribed",
+                  "code": null
+                },
+                {
+                  "line": 937,
+                  "utc": "2026-11-18T17:34:52.194+00:00",
+                  "detail": "broker_connect_failed",
+                  "code": -2
+                },
+                {
+                  "line": 948,
+                  "utc": "2026-11-18T17:35:13.743+00:00",
+                  "detail": "broker_connected",
+                  "code": null
+                },
+                {
+                  "line": 949,
+                  "utc": "2026-11-18T17:35:13.769+00:00",
+                  "detail": "ack_subscribed",
+                  "code": null
+                }
+              ],
+              "explicit_watchdog_recovery_while_pending": [],
+              "observed_new_boot_while_pending": [],
+              "browser": {
+                "role": "Bob",
+                "viewed_at_utc": "2026-11-18T17:40:06.124Z",
+                "pair_label": "双方记录已匹配",
+                "estimation_label": "2026/11/19 01:28:13 · 由设备运行时间估算",
+                "screenshot": "Bob_12秒错位BLE匹配.png"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

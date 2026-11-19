@@ -1,0 +1,31 @@
+{
+  "checked_utc": "2026-11-18T19:16:29.147+00:00",
+  "boards": {
+    "A": {
+      "device": "bump-349454276354",
+      "boot": "4c68e8e8",
+      "short": "2e3735bcdfab",
+      "sources": [
+        {
+          "source": "mqtt_connack",
+          "count": 1,
+          "min_span": 1.3024508953094482
+        }
+      ],
+      "last_sync_complete_utc": "2026-11-18T19:16:23.324+00:00"
+    },
+    "B": {
+      "device": "bump-c8c9a3e65ba4",
+      "boot": "a01735c2",
+      "short": "be1ae1b7b706",
+      "sources": [
+        {
+          "source": "mqtt_connack",
+          "count": 1,
+          "min_span": 1.1008970737457275
+        }
+      ],
+      "last_sync_complete_utc": "2026-11-18T19:16:28.920+00:00"
+    }
+  }
+}

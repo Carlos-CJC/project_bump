@@ -1,0 +1,11 @@
+{
+  "boot": "b94fdaef",
+  "anchors": [],
+  "events": [
+    [
+      "ev_c8c9a3e65ba4_b94fdaef_00000001",
+      "estimated",
+      "mqtt"
+    ]
+  ]
+}

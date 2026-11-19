@@ -1,0 +1,102 @@
+Bump BLE MVP — 单板 Mock 串口输出
+====================================================================
+
+采集日期 : 2026-11-15
+硬件     : Arduino Nano RP2040 Connect
+固件分支 : caojiecheng/mid-report-mock (b535419)
+构建环境 : nanorp2040connect_mock
+串口     : /dev/cu.usbmodem1301 @ 115200
+
+说明
+--------------------------------------------------------------------
+1. [tx] 行为设备真实 BLE 广播帧。
+2. [mock] rx 行为固件注入的模拟接收样本，用于单板演示；
+   对应的偶遇事件均带 "sim":true，请勿作为实测数据。
+3. 日志开头的 Disconnected/Reconnecting 为串口监视器重连提示，
+   不是固件异常。
+
+==================== 原始串口输出 ====================
+
+Reconnecting to /dev/cu.usbmodem1301 .   Connected!
+[boot] Bump BLE MVP: mode=mock self=f85396794e8f uuid=a5b0 rssi_thr=-70 min_samples=5 dwell=3000ms adv=600ms scan=400ms
+[tx] adv uuid=a5b0 mfg=ffff01f85396794e8f01fc
+[mock] injecting 2 simulated peers through the real RX pipeline; events carry "sim":true
+[mock] rx mfg=ffff01a1000000000101fc rssi=-83 avg=-83 n=0
+[mock] rx mfg=ffff01a1000000000101fc rssi=-80 avg=-80 n=0
+[mock] rx mfg=ffff01a1000000000101fc rssi=-81 avg=-81 n=0
+[mock] rx mfg=ffff01a1000000000101fc rssi=-75 avg=-75 n=0
+[mock] rx mfg=ffff01a1000000000101fc rssi=-72 avg=-72 n=0
+[mock] rx mfg=ffff01a1000000000101fc rssi=-69 avg=-69 n=1
+[mock] rx mfg=ffff01a1000000000101fc rssi=-65 avg=-68 n=2
+[mock] rx mfg=ffff01a1000000000101fc rssi=-68 avg=-68 n=3
+[mock] rx mfg=ffff01a1000000000101fc rssi=-64 avg=-67 n=4
+[mock] rx mfg=ffff01a1000000000101fc rssi=-67 avg=-67 n=5
+[status] phase=adv self=f85396794e8f peers=1 uptime=10s
+[mock] rx mfg=ffff01a1000000000101fc rssi=-65 avg=-66 n=6
+[mock] rx mfg=ffff01a1000000000101fc rssi=-64 avg=-65 n=7
+{"event":"encounter","peer":"a10000000001","rssi_avg":-65,"rssi_last":-65,"duration_s":3,"samples":8,"flags":1,"uptime_s":11,"sim":true}
+[mock] rx mfg=ffff01a1000000000101fc rssi=-65 avg=-65 n=8
+[mock] rx mfg=ffff01a1000000000101fc rssi=-63 avg=-64 n=9
+[mock] rx mfg=ffff01a1000000000101fc rssi=-60 avg=-63 n=10
+[mock] rx mfg=ffff01a1000000000101fc rssi=-60 avg=-62 n=11
+[mock] rx mfg=ffff01a1000000000101fc rssi=-59 avg=-61 n=12
+[mock] rx mfg=ffff01a1000000000101fc rssi=-62 avg=-61 n=13
+[mock] rx mfg=ffff01a1000000000101fc rssi=-59 avg=-60 n=14
+[mock] rx mfg=ffff01a1000000000101fc rssi=-60 avg=-60 n=15
+[mock] rx mfg=ffff01a1000000000101fc rssi=-57 avg=-59 n=16
+[mock] rx mfg=ffff01a1000000000101fc rssi=-59 avg=-59 n=17
+[mock] rx mfg=ffff01a1000000000101fc rssi=-56 avg=-58 n=18
+[mock] rx mfg=ffff01a1000000000101fc rssi=-74 avg=-58 n=18
+[mock] rx mfg=ffff01a1000000000101fc rssi=-76 avg=-58 n=18
+[mock] rx mfg=ffff01a1000000000101fc rssi=-83 avg=-58 n=18
+[mock] rx mfg=ffff01a1000000000101fc rssi=-84 avg=-58 n=18
+[mock] rx mfg=ffff01a1000000000101fc rssi=-86 avg=-58 n=18
+[mock] rx mfg=ffff01a1000000000101fc rssi=-89 avg=-58 n=18
+[status] phase=scan self=f85396794e8f peers=1 uptime=20s
+[mock] rx mfg=ffff01b2000000000201fc rssi=-84 avg=-84 n=0
+[mock] rx mfg=ffff01b2000000000201fc rssi=-83 avg=-83 n=0
+[mock] rx mfg=ffff01b2000000000201fc rssi=-78 avg=-78 n=0
+[mock] rx mfg=ffff01b2000000000201fc rssi=-76 avg=-76 n=0
+[mock] rx mfg=ffff01b2000000000201fc rssi=-76 avg=-76 n=0
+[mock] rx mfg=ffff01b2000000000201fc rssi=-73 avg=-73 n=0
+[mock] rx mfg=ffff01b2000000000201fc rssi=-73 avg=-73 n=0
+[mock] rx mfg=ffff01b2000000000201fc rssi=-69 avg=-69 n=1
+[mock] rx mfg=ffff01b2000000000201fc rssi=-68 avg=-68 n=2
+[mock] rx mfg=ffff01b2000000000201fc rssi=-66 avg=-67 n=3
+[mock] rx mfg=ffff01b2000000000201fc rssi=-65 avg=-66 n=4
+[mock] rx mfg=ffff01b2000000000201fc rssi=-62 avg=-65 n=5
+[mock] rx mfg=ffff01b2000000000201fc rssi=-64 avg=-64 n=6
+[mock] rx mfg=ffff01b2000000000201fc rssi=-63 avg=-63 n=7
+{"event":"encounter","peer":"b20000000002","rssi_avg":-62,"rssi_last":-62,"duration_s":3,"samples":8,"flags":1,"uptime_s":29,"sim":true}
+[mock] rx mfg=ffff01b2000000000201fc rssi=-62 avg=-62 n=8
+[mock] rx mfg=ffff01b2000000000201fc rssi=-64 avg=-62 n=9
+[status] phase=scan self=f85396794e8f peers=2 uptime=30s
+[mock] rx mfg=ffff01b2000000000201fc rssi=-63 avg=-62 n=10
+[mock] rx mfg=ffff01b2000000000201fc rssi=-61 avg=-61 n=11
+[mock] rx mfg=ffff01b2000000000201fc rssi=-61 avg=-61 n=12
+[mock] rx mfg=ffff01b2000000000201fc rssi=-57 avg=-60 n=13
+[mock] rx mfg=ffff01b2000000000201fc rssi=-56 avg=-59 n=14
+[mock] rx mfg=ffff01b2000000000201fc rssi=-54 avg=-57 n=15
+[mock] rx mfg=ffff01b2000000000201fc rssi=-57 avg=-57 n=16
+[mock] rx mfg=ffff01b2000000000201fc rssi=-74 avg=-57 n=16
+[mock] rx mfg=ffff01b2000000000201fc rssi=-77 avg=-57 n=16
+[mock] rx mfg=ffff01b2000000000201fc rssi=-82 avg=-57 n=16
+[mock] rx mfg=ffff01b2000000000201fc rssi=-80 avg=-57 n=16
+[mock] rx mfg=ffff01b2000000000201fc rssi=-81 avg=-57 n=16
+[mock] rx mfg=ffff01b2000000000201fc rssi=-88 avg=-57 n=16
+[mock] rx mfg=ffff01b2000000000201fc rssi=-89 avg=-57 n=16
+[status] phase=scan self=f85396794e8f peers=2 uptime=40s
+[mock] scenario complete: 59 samples, 2 encounter event(s) simulated
+[status] phase=adv self=f85396794e8f peers=1 uptime=50s
+[status] phase=adv self=f85396794e8f peers=1 uptime=60s
+[status] phase=scan self=f85396794e8f peers=0 uptime=70s
+[status] phase=adv self=f85396794e8f peers=0 uptime=80s
+[status] phase=scan self=f85396794e8f peers=0 uptime=90s
+[status] phase=adv self=f85396794e8f peers=0 uptime=100s
+[status] phase=adv self=f85396794e8f peers=0 uptime=110s
+[status] phase=adv self=f85396794e8f peers=0 uptime=120s
+[status] phase=scan self=f85396794e8f peers=0 uptime=130s
+[status] phase=scan self=f85396794e8f peers=0 uptime=140s
+[status] phase=adv self=f85396794e8f peers=0 uptime=150s
+
+==================== 输出结束 ====================

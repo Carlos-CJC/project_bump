@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#173e36">
+  <title>Bump · 蓝牙发现工作台</title>
+  <link rel="icon" type="image/svg+xml" href="/mark.svg">
+  <link rel="stylesheet" href="/style.css">
+  <script src="/compat-lab.js" defer></script>
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">跳至主要内容</a>
+  <header class="masthead"><div class="shell masthead-inner">
+    <a class="brand" href="/" aria-label="Bump 首页"><img src="/mark.svg" width="38" height="38" alt=""><b>Bump</b></a>
+    <span class="brand-sub">智能社交挂件</span>
+    <div class="local-badge" id="service-box"><i aria-hidden="true"></i><span id="service" role="status">正在连接本机服务</span></div>
+  </div></header>
+  <main id="main" class="shell">
+    <noscript><p class="warning">本机演示需要 JavaScript。请在浏览器中启用后刷新。</p></noscript>
+    <div id="login-view">
+      <section class="entry" aria-labelledby="entry-title">
+        <div class="cover">
+          <div class="cover-top"><span class="overline">FIELD NOTES / 01</span><span class="tag tag-outline">模拟演示</span></div>
+          <h1 id="entry-title">一次摇动，<br>遇见彼此。</h1>
+          <p class="cover-deck">用两枚模拟挂件记录一次蓝牙相遇。留不留联系方式，由相遇的两个人决定。</p>
+          <figure class="cover-figure"><img src="/pendants.svg" width="580" height="224" alt="两枚模拟挂件的无线发现原理示意"><figcaption><span>图 01 · 挂件蓝牙发现示意</span><span>非实物扫描</span></figcaption></figure>
+        </div>
+        <form id="login-form" class="entry-form">
+          <div class="module-code"><i></i> LOCAL ACCESS</div><h2>MQTT v1 软件兼容演示登录</h2>
+          <p class="muted form-deck">当前服务 <code id="login-address"></code></p>
+          <label for="username">角色</label>
+          <select id="username" name="username" autocomplete="username"><option value="alice">Alice · 挂件 A</option><option value="bob">Bob · 挂件 B</option><option value="charlie">Charlie · 无挂件的第三人</option></select>
+          <label for="password">本机演示密码</label>
+          <input id="password" name="password" type="password" autocomplete="current-password" required aria-describedby="password-hint" placeholder="输入此角色的密码">
+          <p id="password-hint" class="field-hint">打开此次启动的兼容演示目录内的 <code>.runtime/credentials.txt</code>。自选运行目录时，以启动窗口显示的路径为准。 复制 <code id="credential-role">alice</code> 行冒号后从首字符到行末的完整密码。</p>
+          <p class="form-error" id="login-error" role="alert" hidden></p>
+          <button class="button primary login-submit" type="submit">登录<span aria-hidden="true">↗</span></button>
+          <div class="auth-foot"><span class="tag">本机运行</span> 仅使用虚构账号和资料。</div>
+        </form>
+      </section>
+      <section class="entry-steps" aria-label="软件演示流程">
+        <div><span>01 / DISCOVER</span><h3>模拟挂件发现</h3><p>模拟摇动两枚挂件，快进 60 秒发现窗口。</p></div>
+        <div><span>02 / RECORD</span><h3>在本机留下一条记录</h3><p>模拟观察经本机 MQTT 上传，应用确认后可在时间线查看。</p></div>
+        <div><span>03 / CONNECT</span><h3>双方同意后再联系</h3><p>先用化名发邀请。对方接受后，双方才能查看资料。</p></div>
+      </section>
+    </div>
+    <div id="dashboard" hidden>
+      <div class="work-heading"><div><div class="module-code"><i></i> DISCOVERY DESK <span class="code-divider">/</span> <span id="greeting">我的空间</span></div><h1>蓝牙发现工作台</h1><p class="muted">在本机运行一次模拟，再查看属于你的相遇与邀请。</p></div>
+        <div class="toolbar"><button class="button subtle" id="refresh" type="button">刷新数据</button><button class="button linklike" id="logout" type="button">退出登录</button></div>
+      </div>
+      <details id="compat-lab" class="panel compat-lab">
+        <summary><span><span class="module-code"><i aria-hidden="true"></i> PROTOCOL LAB / V1</span><strong>MQTT v1 协议实验</strong></span><span class="compat-caption">独立实验 · 仅本机</span></summary>
+        <div class="compat-body">
+          <p class="compat-intro">让两个软件客户端按 Bump v1 格式上报。它们通过本机回环上的 MQTT 3.1.1 / TLS 传送示例，服务端将有效记录写入 SQLite。不扫描实体 BLE 挂件，也不开放局域网或生产接入。</p>
+          <div class="run-row"><button class="button primary" type="button" id="compat-run" disabled>运行双端上报</button><button class="button subtle" type="button" id="compat-refresh">刷新实验记录</button><span class="minor" id="compat-hint" role="status">展开后读取当前账号的实验状态。</span></div>
+          <p id="compat-result" class="compat-result" role="status" hidden></p>
+          <div class="compat-grid">
+            <section aria-labelledby="compat-device-title">
+              <h3 id="compat-device-title">我的软件设备</h3>
+              <dl class="facts"><div><dt>设备化名</dt><dd id="compat-alias">尚未读取</dd></div><div><dt>最近收到状态</dt><dd id="compat-time">尚未读取</dd></div><div><dt>模拟在线状态</dt><dd id="compat-online">尚未读取</dd></div></dl>
+              <p class="minor">这里只判断软件客户端最近是否上报过在线状态，不是实体挂件的连接证明。</p>
+            </section>
+            <section aria-labelledby="compat-list-title"><h3 id="compat-list-title">我的协议观察</h3><p class="minor">按 8 小时归并显示；15 分钟内有对应的反向观察才算匹配。</p><p class="minor" id="compat-count">尚未读取</p><ul class="compat-records" id="compat-items"></ul></section>
+          </div>
+          <p class="compat-note"><b>如何看待确认？</b> QoS 1 的 PUBACK 只确认 MQTT 代理收到了发布，不是应用 ACK。这里的成功指服务端核验了写入，不代表向设备发送了入库回执。实验观察不会加入下方相遇时间线，也不会创建邀请或分享资料。</p>
+        </div>
+      </details>
+      <div class="desk-grid">
+        <section class="experiment" aria-labelledby="experiment-title">
+          <div class="experiment-visual"><div><span class="overline">FIELD TEST / 01</span><h2 id="experiment-title">模拟发现</h2><span class="tag tag-outline">软件模拟 · 非实物扫描</span></div><img src="/pendants.svg" alt="" width="580" height="224"></div>
+          <div class="experiment-body"><p>让两枚模拟挂件互相发现，并通过本机 MQTT/TLS 上传观察记录。发现窗口按虚拟时间快进，不会打开电脑蓝牙。</p>
+            <div class="run-row"><button id="simulate" class="button primary" type="button" disabled>模拟摇动与相遇 <span aria-hidden="true">→</span></button><span id="sim-hint" class="minor">正在核对权限…</span></div>
+          </div>
+        </section>
+        <section class="device panel" aria-labelledby="device-title">
+          <div class="panel-header"><div class="module-code"><i></i> MY DEVICE</div><span class="tag paper">账号绑定</span></div>
+          <h2 id="device-title">我的挂件</h2><strong class="device-alias" id="device-alias">读取中…</strong>
+          <dl class="facts"><div><dt>最近收到数据</dt><dd id="device-time">读取中…</dd></div><div><dt>最近记录来源</dt><dd id="device-source">读取中…</dd></div></dl>
+          <p class="minor device-note">显示本机服务的收件时间，不代表设备在线。实物遥测尚未接入。</p>
+        </section>
+      </div>
+      <section class="trace panel" id="trace" aria-labelledby="trace-title">
+        <div class="section-bar"><div><div class="module-code"><i></i> EVENT TRACE</div><h2 id="trace-title">本次模拟事件</h2></div><span id="run-status" class="tag paper" role="status">尚未运行</span></div>
+        <ol class="trace-steps">
+          <li><span class="step-no">01</span><div><b>摇动触发</b><span id="trace-shake">等待模拟输入</span></div></li>
+          <li><span class="step-no">02</span><div><b>发现窗口</b><span id="trace-window">60 秒 · 虚拟时钟</span></div></li>
+          <li><span class="step-no">03</span><div><b>发现对方</b><span id="trace-peer">尚无本次结果</span></div></li>
+          <li><span class="step-no">04</span><div><b>上传与应用 ACK</b><span id="trace-ack">尚无本次结果</span></div></li>
+        </ol><p class="minor trace-note" id="trace-note">仅显示这次登录后由此页面触发的模拟结果，不是设备实时日志。</p>
+      </section>
+      <section class="social" aria-labelledby="social-title">
+        <div class="section-bar heading-row"><div><div class="module-code"><i></i> ENCOUNTER LOG</div><h2 id="social-title">相遇与联系</h2></div><span class="minor" id="updated">尚未读取</span></div>
+        <div class="stats" aria-label="当前账号的数据摘要">
+          <div><strong id="stat-total">–</strong><span>可见相遇</span></div><div><strong id="stat-mutual">–</strong><span>双方记录匹配</span></div><div><strong id="stat-pending">–</strong><span>待我回应</span></div>
+        </div>
+        <div class="social-grid">
+          <section aria-labelledby="timeline-title"><div class="list-head"><h3 id="timeline-title">相遇时间线</h3><label class="source-filter" for="source-filter">来源 <select id="source-filter"><option value="all">全部记录</option><option value="simulated">模拟记录</option><option value="hardware">硬件上报</option></select></label></div><div class="stack" id="encounters"></div></section>
+          <aside aria-labelledby="requests-title"><div class="list-head"><h3 id="requests-title">联系邀请</h3></div><div class="stack" id="requests"></div>
+            <div class="privacy"><span class="module-code">CONSENT / 双方同意</span><h4>资料由你决定何时分享。</h4><p>只有邀请被接受，双方才可看到对方的虚构资料。撤销联系会重新隐藏资料，但不能收回对方已保存的内容。</p></div>
+          </aside>
+        </div>
+      </section>
+    </div>
+  </main>
+  <div id="notice" class="notice" role="status" aria-live="polite" hidden></div>
+  <dialog id="confirm-dialog" aria-labelledby="confirm-title"><form method="dialog"><div class="module-code"><i></i> CONFIRM</div><h2 id="confirm-title">确认操作</h2><p id="confirm-message"></p><div class="actions"><button class="button" value="cancel" autofocus>取消</button><button class="button primary" value="confirm">确认</button></div></form></dialog>
+  <footer class="shell"><b>Bump <span>/</span> 佩戴式社交实验</b><span>EIE568 · GROUP 09 <i></i> 本机软件原型</span></footer>
+</body></html>

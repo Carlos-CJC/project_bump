@@ -1,0 +1,49 @@
+{
+  "verified_date": "2026-10-23",
+  "timezone": "Asia/Shanghai",
+  "board_fqbn": "arduino:mbed_nano:nanorp2040connect",
+  "arduino_cli": "1.5.1",
+  "board_core": "arduino:mbed_nano 4.6.0",
+  "imu_library": "Arduino_LSM6DSOX 1.1.2",
+  "host_cpp_compiler": "Zig 0.14.1",
+  "source_sha256": {
+    "firmware/BumpBadge/BumpBadge.ino": "47b1e3c61216301a388fd87d549fa958f91c83f3f3ce293004e4aa2309bb0578",
+    "firmware/compile.ps1": "6b5bdc02175e542cab92e19fcc99cbaedbed98e11ab637aa453c9fa14c169f74",
+    "tests/test_firmware_core.py": "1a788c840c4f3418f7034fb4c26951b7ae051c4561477c5ede4289c0a0e77ba8",
+    "firmware/test_core.cpp": "d2c8f64af17ab75556d15d723c7fcd3ee212214c9600a71434dd8fb70abc52ae",
+    "firmware/BumpBadge/BumpCore.h": "4a0026e111fffd127c5a385316f3d3c1550c87b0d60384b4bde872a58d63378a"
+  },
+  "arduino_builds": [
+    {
+      "result": "passed",
+      "mode": "mock",
+      "log": "compile-mock.log",
+      "static_ram_bytes": 51148,
+      "flash_bytes": 98641
+    },
+    {
+      "result": "passed",
+      "mode": "real-imu-api",
+      "log": "compile-real-imu-api.log",
+      "static_ram_bytes": 51944,
+      "flash_bytes": 106418
+    }
+  ],
+  "host_tests": {
+    "result": "2 passed",
+    "log": "host-tests.log",
+    "cpp_suites": 6,
+    "backend_contract_test": true
+  },
+  "physical_board_uploaded": false,
+  "hardware_tests_run": false,
+  "network_adapter_implemented": false,
+  "source": "simulated",
+  "time_quality": "unknown",
+  "limitations": [
+    "Serial-only firmware transport; Python simulator provides the running MQTT/TLS loop",
+    "BLE/Wi-Fi/MQTT driver integration and production boot ID/UTC mapping remain",
+    "No physical sensor, button, LED, power or RF claims",
+    "RAM queue deliberately does not survive power loss"
+  ]
+}
