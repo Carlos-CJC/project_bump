@@ -178,6 +178,13 @@ def cmd_server(args: argparse.Namespace) -> int:
     return run([py, str(stage / "live_server.py"), *args.forward], cwd=ROOT)
 
 
+def cmd_bridge(args: argparse.Namespace) -> int:
+    if not args.forward:
+        return fail("请提供参数，例如：run.py bridge --runtime group9/.run/state/hardware-live")
+    py = venv_python()
+    return run([py, str(ROOT / "hivemq_bridge.py"), *args.forward], cwd=ROOT)
+
+
 def pytest_targets(compat_v1_only: bool) -> list[str]:
     tests = COMPAT / "tests"
     if not compat_v1_only:
@@ -267,6 +274,10 @@ def build_parser() -> argparse.ArgumentParser:
     server = sub.add_parser("server", help="透传参数给 live_server.py（init/serve/inspect/ingest）")
     server.add_argument("forward", nargs=argparse.REMAINDER)
     server.set_defaults(func=cmd_server)
+
+    bridge = sub.add_parser("bridge", help="订阅公开 HiveMQ 并写入本地 runtime 数据库")
+    bridge.add_argument("forward", nargs=argparse.REMAINDER)
+    bridge.set_defaults(func=cmd_bridge)
 
     test = sub.add_parser("test", help="运行兼容演示、服务端或前端测试")
     test.add_argument("--suite", choices=("all", "compat", "compat-v1", "server", "node"), default="all")

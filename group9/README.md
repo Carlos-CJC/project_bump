@@ -48,6 +48,7 @@ cd group9
 | `simulate --scenario normal\|offline\|retry` | 向已启动的兼容演示注入模拟偶遇 |
 | `prepare` | 把后端、`web/` 与服务测试组装到 `.run/server` |
 | `server init\|serve\|inspect\|ingest ...` | 透传参数给 `live_server.py`，首次使用前自动准备目录 |
+| `bridge --runtime DIR ...` | 订阅公开 HiveMQ 的 v1 上报并写入该 runtime 的数据库 |
 | `test --suite all\|compat\|compat-v1\|server\|node` | 兼容演示 pytest、服务端回环测试、可选前端 Node 用例 |
 
 示例：初始化并启动独立的实板接收端。示例设备 ID 与端口同原交付说明；首次初始化会生成新的测试口令。启动后打开 [独立接收端](http://127.0.0.1:8876)，账号见 `.run/state/hardware/credentials.txt`（或自定义的 `--runtime` 目录）。
@@ -69,6 +70,17 @@ cd group9
 **查看两枚实板的记录**，在实验电脑打开 [Open-Hardware.cmd](01_前端源码/双板实物/Open-Hardware.cmd)（Windows）或直接访问已在运行的 8875 接收端；其他电脑可用 `.\run.ps1 server ...` 初始化 8876 独立库。[实板网页说明](01_前端源码/双板实物/README.md)
 
 接入两枚实板时，按[双板联调手册](07_课程与硬件文档/实物联调/双板联调手册.md)和[固件串口命令](07_课程与硬件文档/实物联调/实板固件说明.md)将接收端绑定到该次测试热点网卡的 IPv4，将相同地址、端口和新生成的网络配置写入设备。上面的回环模式用于本机浏览和离线自检。既有历史日志的机器路径指向当时的实验环境。
+
+**走公开 HiveMQ 的固件**（`platformio.ini` 的 `mqtt` 环境）不会连到上面的本地接收端，它只把消息发到 `broker.hivemq.com:8883`；网页也不会自己订阅 HiveMQ。要让网页出现真板数据，接收端和桥接进程一起运行：
+
+~~~bash
+./run.sh server init --runtime .run/state/hardware-live \
+  --device-a <板A的device_id> --device-b <板B的device_id>
+./run.sh server serve --runtime .run/state/hardware-live --mqtt-host 127.0.0.1
+./run.sh bridge --runtime .run/state/hardware-live
+~~~
+
+桥接日志里的“收到未登记设备 …”表示板上报的 `device_id` 与 `init` 时的两枚不一致，用日志中的 ID 重建 runtime 即可。`device_id` 可在串口输入 `status` 读取。公网主题没有访问控制，桥接只接受已登记 ID 的消息。
 
 原有 Windows 启动脚本（`Start-Bump.cmd`、`Setup.ps1`、`Test.ps1` 等）保留文件名，内部改为调用根目录的 `run.ps1`，两种入口行为一致。
 
