@@ -48,6 +48,9 @@ static size_t buildStatusFor(char* buf, size_t cap, const char* state) {
   info.queueDepth = (uint8_t)eventQueueCount();
   info.eventsDropped = eventQueueDropped();
   info.wifiRssi = (int)WiFi.RSSI();
+  char shortHex[13];
+  bumpSelfShortId(shortHex, sizeof(shortHex));
+  info.selfShortId = shortHex;
   return buildStatus(buf, cap, info);
 }
 
@@ -196,11 +199,13 @@ static void runWindow() {
     size_t n = eventQueuePeek(batch, BUMP_MQTT_BATCH_MAX);
     identityFormatBatchId(s_batchId, sizeof(s_batchId), batch[0].seq,
                           (uint8_t)n);
+    char shortHex[13];
+    bumpSelfShortId(shortHex, sizeof(shortHex));
     BatchMeta meta;
     meta.batchId = s_batchId;
     meta.deviceId = identityDeviceId();
     meta.bootId = identityBootId();
-    meta.selfShortId = identityShortIdDev();
+    meta.selfShortId = shortHex;
     meta.fw = BUMP_FW_VERSION;
     meta.uptimeMs = millis();
     meta.timeSource = "uptime";
