@@ -40,13 +40,14 @@ def uplink_topic(device, kind):
 
 
 def ingest(store, topic, payload, device, stamp, transport, clock_connack_at=None,
-           mqtt_session_at=None):
+           mqtt_session_at=None, retained=False):
     if device not in store.by_device or not topic.startswith(f"{TOPIC_BASE}/{device}/"):
         raise ValueError("unprovisioned source or inconsistent topic")
     kind = topic.rsplit("/", 1)[-1]
     if kind == "ir":
         return store.ingest_ir(device, parse_ir(device, payload), stamp, transport)
-    parsed = parse_message(topic, payload, observed_at=stamp, authenticated_device_id=device)
+    parsed = parse_message(topic, payload, observed_at=stamp, retained=retained,
+                           authenticated_device_id=device)
     parsed["transport"] = transport
     parsed["clock_connack_at"] = clock_connack_at
     parsed["mqtt_session_at"] = mqtt_session_at
