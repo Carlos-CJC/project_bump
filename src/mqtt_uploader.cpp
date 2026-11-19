@@ -15,6 +15,7 @@
 #include "device_identity.h"
 #include "event_queue.h"
 #include "payload_writer.h"
+#include "radio.h"
 #include "watchdog.h"
 
 static UploaderResumeFn s_resume;
@@ -130,11 +131,12 @@ static void runWindow() {
   logf("[mqtt] session start queued=%u fails=%u", (unsigned)eventQueueCount(),
        (unsigned)s_failures);
 
-  // Wi-Fi 与 BLE 共用 NINA 射频：先整体关闭 BLE，窗口结束后再恢复。
-  // 500ms 不够：NINA 从 BLE 模式释放射频需要数秒，过早 begin 会 20s 超时。
+  // Wi-Fi 与 BLE 共用 NINA 射频：关 BLE 后硬复位，确保 NINA 干净进入 Wi-Fi 模式。
+  // 只调 BLE.end() 时 NINA 偶尔仍停在 BLE 模式，WiFi.begin() 返回 WL_NO_MODULE。
   BLE.end();
   delay(3000);
   watchdogKick();
+  bumpNinaReset();
 
   if (!wifiConnect()) {
     failWindow("wifi");
