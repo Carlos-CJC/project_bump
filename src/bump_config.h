@@ -43,14 +43,18 @@
 #define BUMP_WIFI_TIMEOUT_MS 20000
 #endif
 #ifndef BUMP_MQTT_TIMEOUT_MS
-#define BUMP_MQTT_TIMEOUT_MS 10000
+// 必须短于看门狗实际超时：connect() 阻塞期间无法喂狗，
+// 一旦 TLS 握手卡住超过看门狗上限就会在“上传中”复位并丢掉内存队列。
+#define BUMP_MQTT_TIMEOUT_MS 5000
 #endif
 #ifndef BUMP_UPLOAD_MIN_INTERVAL_MS
 #define BUMP_UPLOAD_MIN_INTERVAL_MS 0
 #endif
 
 // 硬件看门狗超时。NINA 的 SPI 驱动没有超时，射频切换一旦卡死只能复位恢复；
-// 看门狗把这种死锁变成自动重启。取值需大于单次 TLS 握手 + CONNACK 的耗时。
+// 看门狗把这种死锁变成自动重启。
+// 注意：RP2040 的 mbed Watchdog 实际上限约 8388ms，更大的值会被静默截断，
+// 所以串口日志里的 timeout 只是请求值，不是生效值。
 #ifndef BUMP_WDT_TIMEOUT_MS
 #define BUMP_WDT_TIMEOUT_MS 16000
 #endif
