@@ -27,6 +27,10 @@ group9/**/evidence/
 # 压缩交付包不入库
 /EIE568_Group9_Bump_*.zip
 
+# 本机固件构建凭据
+/secrets.env
+/secrets.ps1
+
 # 系统与编辑器
 .DS_Store
 Thumbs.db
